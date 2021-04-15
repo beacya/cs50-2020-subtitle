@@ -8010,7 +8010,7 @@ and I'm going to change the 10 to a one.
 
 1603
 01:15:00,270 --> 01:15:01,860
-现在我要打Play。
+现在我要点击 Play。
 And now I'm going to hit Play.
 
 1604
