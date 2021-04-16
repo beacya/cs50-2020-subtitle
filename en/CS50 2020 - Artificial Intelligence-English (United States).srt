@@ -1,0 +1,7118 @@
+1
+00:00:00,000 --> 00:00:02,475
+[MUSIC PLAYING]
+
+2
+00:00:02,475 --> 00:00:49,804
+
+
+3
+00:00:49,804 --> 00:00:52,969
+DAVID MALAN: This is CS50,
+Harvard University's introduction
+
+4
+00:00:52,969 --> 00:00:56,449
+to the intellectual enterprises
+of computer science--
+
+5
+00:00:56,450 --> 00:00:59,100
+over here, computer science.
+
+6
+00:00:59,100 --> 00:01:02,990
+So today we are joined
+by CS50's own Brian Yu.
+
+7
+00:01:02,990 --> 00:01:06,740
+This is an unusual week, a look
+at artificial intelligence or AI.
+
+8
+00:01:06,739 --> 00:01:09,979
+You might recall that some weeks
+ago when we first introduced Python,
+
+9
+00:01:09,980 --> 00:01:13,160
+we talked about writing
+programs that answered you
+
+10
+00:01:13,159 --> 00:01:17,059
+by saying hello if you said hello, or
+by saying goodbye if you said goodbye.
+
+11
+00:01:17,060 --> 00:01:20,450
+But those programs were all implemented
+with if conditions and else ifs
+
+12
+00:01:20,450 --> 00:01:23,330
+and else ifs and so that really
+wasn't artificial intelligence.
+
+13
+00:01:23,329 --> 00:01:25,746
+If you wanted to have a whole
+conversation with a computer
+
+14
+00:01:25,746 --> 00:01:29,629
+program like that, that would be a
+huge number of ifs and else ifs just
+
+15
+00:01:29,629 --> 00:01:31,969
+to anticipate all of the
+things the human might say.
+
+16
+00:01:31,969 --> 00:01:34,099
+So we can do better,
+and indeed humans have
+
+17
+00:01:34,099 --> 00:01:36,709
+been doing better in this field
+of artificial intelligence.
+
+18
+00:01:36,709 --> 00:01:40,279
+And I'm so pleased to say that Brian
+is here to lead us along that way.
+
+19
+00:01:40,280 --> 00:01:42,705
+Now, CS50's own, Brian Yu.
+
+20
+00:01:42,704 --> 00:01:43,829
+BRIAN YU: Thanks very much.
+
+21
+00:01:43,829 --> 00:01:44,954
+Welcome, everyone, to CS50.
+
+22
+00:01:44,954 --> 00:01:47,779
+And today as David alluded
+to, the topic of discussion
+
+23
+00:01:47,780 --> 00:01:50,960
+is artificial intelligence, which
+is all about taking our computers
+
+24
+00:01:50,959 --> 00:01:53,179
+and trying to make them
+intelligent somehow,
+
+25
+00:01:53,180 --> 00:01:55,460
+trying to get them to
+be able to act in a way
+
+26
+00:01:55,459 --> 00:01:57,799
+that's somewhat rational,
+somewhat human and that
+
+27
+00:01:57,799 --> 00:01:59,489
+could take a number of different forms.
+
+28
+00:01:59,489 --> 00:02:03,234
+One example of artificial intelligence,
+for example, might be game play.
+
+29
+00:02:03,234 --> 00:02:05,359
+You might be familiar with
+the game of tic-tac-toe,
+
+30
+00:02:05,359 --> 00:02:07,159
+where you've got this
+three by three grid
+
+31
+00:02:07,159 --> 00:02:10,379
+and X and O take turns
+trying to get three in a row.
+
+32
+00:02:10,379 --> 00:02:12,859
+And if, for example X
+started the game and played
+
+33
+00:02:12,860 --> 00:02:15,860
+in the middle square of this
+grid and then it was O's turn
+
+34
+00:02:15,860 --> 00:02:20,000
+and O played in the top, it turns
+out that at this point in the game
+
+35
+00:02:20,000 --> 00:02:21,979
+X has a very strategic move.
+
+36
+00:02:21,979 --> 00:02:25,219
+And a human that's very good at the
+game or a computer that can maybe
+
+37
+00:02:25,219 --> 00:02:27,199
+try and figure out how
+to play this game well,
+
+38
+00:02:27,199 --> 00:02:29,509
+might make an intelligent
+move like playing
+
+39
+00:02:29,509 --> 00:02:31,679
+in the top right corner for example.
+
+40
+00:02:31,680 --> 00:02:34,020
+And if X plays in the top
+right corner, well then
+
+41
+00:02:34,020 --> 00:02:36,440
+O is going to need to play
+in the bottom left corner
+
+42
+00:02:36,439 --> 00:02:39,599
+in order to block X from
+getting three in a row.
+
+43
+00:02:39,599 --> 00:02:42,589
+And here maybe you can see one of
+a couple of possible good moves
+
+44
+00:02:42,590 --> 00:02:45,980
+that X has now, but X could
+play a move like moving
+
+45
+00:02:45,979 --> 00:02:48,289
+in the right square over there.
+
+46
+00:02:48,289 --> 00:02:52,219
+And now O is in a tricky position,
+X has one way that could potentially
+
+47
+00:02:52,219 --> 00:02:55,189
+win the game horizontally, and
+another way they could potentially
+
+48
+00:02:55,189 --> 00:02:56,479
+win the game vertically.
+
+49
+00:02:56,479 --> 00:02:59,029
+And so O is going to have
+to block one of those ways,
+
+50
+00:02:59,030 --> 00:03:01,640
+and maybe they go to block
+horizontally but then
+
+51
+00:03:01,639 --> 00:03:05,609
+X is going to win no matter what just
+by playing in that bottom right corner.
+
+52
+00:03:05,610 --> 00:03:09,020
+And so a human playing this game
+could reason through the game thinking
+
+53
+00:03:09,020 --> 00:03:12,680
+about how the opponent might respond
+and how X would respond in turn
+
+54
+00:03:12,680 --> 00:03:15,800
+and a computer might try to do the
+same thing for a game as simple
+
+55
+00:03:15,800 --> 00:03:18,890
+as tic-tac-toe or a
+game even more complex.
+
+56
+00:03:18,889 --> 00:03:21,799
+But AI goes beyond just game
+plan, you might see examples
+
+57
+00:03:21,800 --> 00:03:24,470
+like handwriting recognition,
+where nowadays computers
+
+58
+00:03:24,469 --> 00:03:28,069
+are pretty good at taking human
+handwritten text, which can be messy,
+
+59
+00:03:28,069 --> 00:03:30,019
+which is different
+from person to person,
+
+60
+00:03:30,020 --> 00:03:34,640
+and somehow figuring out with pretty
+high accuracy exactly what characters
+
+61
+00:03:34,639 --> 00:03:36,439
+the human was actually writing.
+
+62
+00:03:36,439 --> 00:03:39,559
+AI comes up in areas
+like spam detection.
+
+63
+00:03:39,560 --> 00:03:42,020
+Maybe in your email
+inbox you have your inbox
+
+64
+00:03:42,020 --> 00:03:45,620
+and your spam email usually gets
+sorted into a separate folder
+
+65
+00:03:45,620 --> 00:03:49,040
+where you might get a whole bunch of
+emails coming into your email inbox
+
+66
+00:03:49,039 --> 00:03:52,919
+and somehow your computer is able to
+figure out with reasonable accuracy,
+
+67
+00:03:52,919 --> 00:03:56,029
+which emails are good and
+which emails are spam.
+
+68
+00:03:56,030 --> 00:03:58,160
+Now of course, the computer
+is not perfect at this.
+
+69
+00:03:58,159 --> 00:04:01,669
+There are false positives, where the
+computer thinks that an email might
+
+70
+00:04:01,669 --> 00:04:03,319
+be spam when it isn't actually.
+
+71
+00:04:03,319 --> 00:04:06,949
+And there are false negatives too,
+where a spam email might accidentally
+
+72
+00:04:06,949 --> 00:04:09,799
+end up in your inbox because
+the computer doesn't catch it,
+
+73
+00:04:09,800 --> 00:04:12,350
+but those sorts of false
+positives and false negatives
+
+74
+00:04:12,349 --> 00:04:14,539
+are the types of things
+that AI researchers are
+
+75
+00:04:14,539 --> 00:04:18,117
+working on trying to reduce to make
+these systems more and more accurate.
+
+76
+00:04:18,117 --> 00:04:20,659
+You see these kinds of systems
+show up as well if you've ever
+
+77
+00:04:20,660 --> 00:04:23,460
+been on a video watching
+website, like YouTube or Netflix,
+
+78
+00:04:23,459 --> 00:04:27,349
+for example, where you have watched
+a whole bunch of videos or TV shows
+
+79
+00:04:27,350 --> 00:04:31,400
+or movies and then software
+behind Netflix or behind YouTube
+
+80
+00:04:31,399 --> 00:04:35,089
+is able to give you recommendations,
+suggest other videos that you
+
+81
+00:04:35,089 --> 00:04:39,049
+might be interested in watching based on
+the things that you've watched already.
+
+82
+00:04:39,050 --> 00:04:41,300
+And in more recent years,
+AI has gotten pretty good
+
+83
+00:04:41,300 --> 00:04:45,470
+at doing even more sophisticated
+things, things like generating data.
+
+84
+00:04:45,470 --> 00:04:48,650
+Take a look at these two
+images, for example, of people
+
+85
+00:04:48,649 --> 00:04:50,599
+and see if you notice anything strange.
+
+86
+00:04:50,600 --> 00:04:52,940
+See if either of these
+people look strange to you.
+
+87
+00:04:52,939 --> 00:04:58,129
+In fact, can you figure out which of
+these two images is not a real person?
+
+88
+00:04:58,129 --> 00:05:02,179
+That is to say, a computer-generated
+person that looks like it's human
+
+89
+00:05:02,180 --> 00:05:04,260
+but is not actually a
+photo of a real person.
+
+90
+00:05:04,259 --> 00:05:06,634
+So you can look at these two
+images carefully, maybe look
+
+91
+00:05:06,634 --> 00:05:09,379
+at the eyes and the hair
+and the mouth and the nose
+
+92
+00:05:09,379 --> 00:05:11,749
+and see if you can figure
+out which one it is.
+
+93
+00:05:11,750 --> 00:05:15,140
+It turns out neither of these two
+images are images of real people.
+
+94
+00:05:15,139 --> 00:05:19,069
+They're both computer generated, not
+photos of real people but a computer
+
+95
+00:05:19,069 --> 00:05:22,909
+has been trained to generate images of
+people that look like real people that
+
+96
+00:05:22,910 --> 00:05:25,910
+could fool someone into thinking
+that it's a real person,
+
+97
+00:05:25,910 --> 00:05:29,367
+but it's all just AI
+generated information.
+
+98
+00:05:29,367 --> 00:05:31,700
+So today we'll take a look
+at all of those ideas, how it
+
+99
+00:05:31,699 --> 00:05:33,619
+is that artificial intelligence works.
+
+100
+00:05:33,620 --> 00:05:37,010
+And ultimately one of the big
+takeaways is that AI is not just
+
+101
+00:05:37,009 --> 00:05:39,619
+one algorithm or one
+principle, it's really
+
+102
+00:05:39,620 --> 00:05:43,310
+a collection, a category of approaches
+to problem solving that can all
+
+103
+00:05:43,310 --> 00:05:46,400
+be used to try and solve some
+of these problems of trying
+
+104
+00:05:46,399 --> 00:05:49,159
+to make computers intelligent.
+
+105
+00:05:49,160 --> 00:05:51,350
+So let's begin with
+one of the first areas
+
+106
+00:05:51,350 --> 00:05:53,750
+where we might want to
+make our AI work and that's
+
+107
+00:05:53,750 --> 00:05:55,610
+in the area of decision making.
+
+108
+00:05:55,610 --> 00:05:57,770
+Very frequently we want
+to train a computer
+
+109
+00:05:57,769 --> 00:05:59,539
+to be able to make a decision well.
+
+110
+00:05:59,540 --> 00:06:03,530
+That decision might be deciding
+if an email is spam or not spam,
+
+111
+00:06:03,529 --> 00:06:06,319
+or deciding whether or not
+to recommend a video to you,
+
+112
+00:06:06,319 --> 00:06:10,131
+or it could be deciding what action
+to take in a game, for example.
+
+113
+00:06:10,132 --> 00:06:11,840
+So let's take a simple
+game, maybe you've
+
+114
+00:06:11,839 --> 00:06:15,721
+played a game like this before where
+you control this paddle along the bottom
+
+115
+00:06:15,721 --> 00:06:18,679
+and you're trying to bounce this ball
+in order to hit all of the bricks
+
+116
+00:06:18,680 --> 00:06:19,730
+along the top.
+
+117
+00:06:19,730 --> 00:06:22,550
+Imagine if you were trying
+to program a computer
+
+118
+00:06:22,550 --> 00:06:25,610
+to be able to play this game
+strategically, to play this game well
+
+119
+00:06:25,610 --> 00:06:30,410
+and the computer observed
+the ball move that way.
+
+120
+00:06:30,410 --> 00:06:34,190
+So the ball is moving that way, what
+should you program the computer to do?
+
+121
+00:06:34,189 --> 00:06:37,219
+Well, it makes logical sense that if
+the ball's moving to the left, then
+
+122
+00:06:37,220 --> 00:06:40,190
+you should program the computer to
+move the paddle to the left as well,
+
+123
+00:06:40,189 --> 00:06:44,229
+to try and catch that ball before
+it falls through the ground.
+
+124
+00:06:44,230 --> 00:06:47,360
+And so you could take that
+kind of logic and encode it
+
+125
+00:06:47,360 --> 00:06:51,140
+into a computer program using what
+we might call a decision tree.
+
+126
+00:06:51,139 --> 00:06:54,109
+Decision trees are just a way
+of representing a decision
+
+127
+00:06:54,110 --> 00:06:56,670
+that a computer might
+make by asking questions
+
+128
+00:06:56,670 --> 00:07:00,290
+and depending on the answers to those
+questions we might ask another question
+
+129
+00:07:00,290 --> 00:07:02,400
+or make some sort of decision.
+
+130
+00:07:02,399 --> 00:07:05,329
+So for this game of the paddle,
+we could create a decision tree
+
+131
+00:07:05,329 --> 00:07:07,549
+by asking a question
+like this, we could ask,
+
+132
+00:07:07,550 --> 00:07:10,280
+is the ball to the left of the paddle?
+
+133
+00:07:10,279 --> 00:07:13,909
+If the answer to that question is yes,
+well then the action we should take
+
+134
+00:07:13,910 --> 00:07:17,360
+is we should move the paddle to the
+left because the ball is moving left,
+
+135
+00:07:17,360 --> 00:07:19,640
+the paddle should move left as well.
+
+136
+00:07:19,639 --> 00:07:22,609
+If the answer to the
+question is no, well then we
+
+137
+00:07:22,610 --> 00:07:25,650
+need to maybe ask another question,
+we might ask a question like,
+
+138
+00:07:25,649 --> 00:07:27,889
+is the ball to the right of the paddle?
+
+139
+00:07:27,889 --> 00:07:29,861
+And if the answer to
+that question is yes,
+
+140
+00:07:29,862 --> 00:07:32,070
+then we'll go ahead and move
+the paddle to the right.
+
+141
+00:07:32,069 --> 00:07:34,271
+And if the answer to the
+question is no, well that
+
+142
+00:07:34,271 --> 00:07:36,229
+means the ball is not to
+the left of the paddle
+
+143
+00:07:36,230 --> 00:07:39,410
+and it's not to the right of the
+paddle, so we may as well just not
+
+144
+00:07:39,410 --> 00:07:42,540
+move the paddle at all in that case.
+
+145
+00:07:42,540 --> 00:07:45,140
+So this again is that
+decision tree that can
+
+146
+00:07:45,139 --> 00:07:48,379
+allow us to make these choices
+about what it is that our AI should
+
+147
+00:07:48,379 --> 00:07:52,397
+do in this situation and we could
+take that decision tree and turn it
+
+148
+00:07:52,398 --> 00:07:55,190
+into a kind of pseudocode, something
+that might look like something
+
+149
+00:07:55,189 --> 00:07:57,349
+you would write in C or in Python.
+
+150
+00:07:57,350 --> 00:08:00,470
+I might say while the game
+is ongoing, if the ball is
+
+151
+00:08:00,470 --> 00:08:03,620
+to the left of the paddle, go ahead
+and move the paddle to the left.
+
+152
+00:08:03,620 --> 00:08:07,310
+Else if the ball is to the right of the
+paddle, move the paddle to the right.
+
+153
+00:08:07,310 --> 00:08:10,800
+And else if neither of those are true,
+then don't move the paddle at all.
+
+154
+00:08:10,800 --> 00:08:12,890
+So one of the advantages
+of this decision tree
+
+155
+00:08:12,889 --> 00:08:15,289
+is that it translates quite
+nicely to the conditions
+
+156
+00:08:15,290 --> 00:08:18,600
+that you're familiar with
+from the world of programming.
+
+157
+00:08:18,600 --> 00:08:21,300
+So let's give this a try with
+something a little more complex.
+
+158
+00:08:21,300 --> 00:08:23,520
+Let's take the game of
+tic-tac-toe for example.
+
+159
+00:08:23,519 --> 00:08:27,319
+And imagine you were trying to
+program an AI to strategically play
+
+160
+00:08:27,319 --> 00:08:28,759
+the game of tic-tac-toe.
+
+161
+00:08:28,759 --> 00:08:33,678
+What questions might you ask in your
+decision tree, what yes or no questions
+
+162
+00:08:33,678 --> 00:08:37,376
+might you want to ask to create an
+AI that can play this game well,
+
+163
+00:08:37,376 --> 00:08:38,959
+that can play this game strategically?
+
+164
+00:08:38,960 --> 00:08:40,820
+And maybe I'll take
+a volunteer if anyone
+
+165
+00:08:40,820 --> 00:08:45,020
+wants to suggest one possible
+question I might want to ask of my AI
+
+166
+00:08:45,019 --> 00:08:48,659
+as I'm trying to teach this
+AI how to play this game?
+
+167
+00:08:48,659 --> 00:08:52,829
+Any thoughts for questions that
+I might ask in this situation?
+
+168
+00:08:52,830 --> 00:08:55,850
+And let's go to--
+
+169
+00:08:55,850 --> 00:08:59,390
+let's see, let's try
+[? Vasily ?] if you have an idea?
+
+170
+00:08:59,389 --> 00:09:02,629
+AUDIENCE: Maybe let's ask
+what is the probability
+
+171
+00:09:02,629 --> 00:09:04,242
+of winning given a certain move?
+
+172
+00:09:04,243 --> 00:09:04,910
+BRIAN YU: Great.
+
+173
+00:09:04,909 --> 00:09:05,869
+And what would winning mean?
+
+174
+00:09:05,870 --> 00:09:08,578
+How could you detect what it would
+mean to win, like what are you
+
+175
+00:09:08,577 --> 00:09:10,849
+going to look for on the board?
+
+176
+00:09:10,850 --> 00:09:15,193
+AUDIENCE: Three consecutive
+yeah, Xs or circles.
+
+177
+00:09:15,192 --> 00:09:17,359
+BRIAN YU: Great, you're
+looking for some opportunity
+
+178
+00:09:17,360 --> 00:09:19,970
+for like three consecutive
+Xs or three consecutive Os.
+
+179
+00:09:19,970 --> 00:09:22,490
+So one of the questions
+you might ask is checking
+
+180
+00:09:22,490 --> 00:09:26,842
+to see whether or not you could get
+three in a row maybe on the next turn.
+
+181
+00:09:26,841 --> 00:09:29,299
+If you already have two in a
+row and there's an empty space
+
+182
+00:09:29,299 --> 00:09:32,174
+that could be an opportunity for
+something that we might want to try.
+
+183
+00:09:32,174 --> 00:09:35,719
+Any other questions we might want to
+ask as part of our strategic decision
+
+184
+00:09:35,720 --> 00:09:38,390
+making if we're trying to
+play this game of tic-tac-toe,
+
+185
+00:09:38,389 --> 00:09:41,509
+any thoughts about other
+things we could try,
+
+186
+00:09:41,509 --> 00:09:44,869
+other types of things we
+should be looking for or asking
+
+187
+00:09:44,870 --> 00:09:47,180
+as we're training our artificial
+intelligence, as we're
+
+188
+00:09:47,179 --> 00:09:50,689
+trying to program it to play
+this game strategically?
+
+189
+00:09:50,690 --> 00:09:53,770
+Let's go to Santiago, you have an idea?
+
+190
+00:09:53,769 --> 00:09:54,729
+AUDIENCE: Hello, Brian.
+
+191
+00:09:54,730 --> 00:09:58,788
+If there is any possibility
+to win, the other player?
+
+192
+00:09:58,788 --> 00:10:00,080
+BRIAN YU: For the other player?
+
+193
+00:10:00,080 --> 00:10:01,760
+Yeah, so you might want to
+check the other player to see
+
+194
+00:10:01,759 --> 00:10:03,364
+if they have some possibility to win.
+
+195
+00:10:03,365 --> 00:10:06,240
+And if they have some possibility
+to win you could try to block them.
+
+196
+00:10:06,240 --> 00:10:08,032
+So those are great
+questions you could ask.
+
+197
+00:10:08,032 --> 00:10:11,000
+And we could start to formulate
+a decision tree for tic-tac-toe
+
+198
+00:10:11,000 --> 00:10:12,139
+based on those questions.
+
+199
+00:10:12,139 --> 00:10:15,979
+I might start by asking, can I
+get three in a row on this turn?
+
+200
+00:10:15,980 --> 00:10:19,050
+And if the answer is yes, well, then
+my action is pretty straightforward.
+
+201
+00:10:19,049 --> 00:10:22,669
+I should play in the square that
+will get me to three in a row.
+
+202
+00:10:22,669 --> 00:10:25,129
+If the answer to the
+question is no, well then I
+
+203
+00:10:25,129 --> 00:10:27,229
+might ask Santiago's
+question, I might ask,
+
+204
+00:10:27,230 --> 00:10:30,800
+can my opponent get three
+in a row on their next turn?
+
+205
+00:10:30,799 --> 00:10:33,127
+And if the answer to that
+is yes, well then, we better
+
+206
+00:10:33,128 --> 00:10:35,670
+play in the square to block them
+from getting three in a row,
+
+207
+00:10:35,669 --> 00:10:39,769
+otherwise they're going to win the
+game if we don't block them now.
+
+208
+00:10:39,769 --> 00:10:41,689
+If the answer to this
+question is no though,
+
+209
+00:10:41,690 --> 00:10:43,850
+if I can't get three
+in a row in this turn
+
+210
+00:10:43,850 --> 00:10:46,640
+and my opponent can't get three
+in a row in the next turn,
+
+211
+00:10:46,639 --> 00:10:48,404
+well now it's a little bit less clear.
+
+212
+00:10:48,404 --> 00:10:50,779
+You could maybe try and come
+up with additional questions
+
+213
+00:10:50,779 --> 00:10:53,749
+you might ask but these two
+questions are very clear
+
+214
+00:10:53,750 --> 00:10:56,470
+and the rest maybe a little bit
+less obvious but ultimately we
+
+215
+00:10:56,470 --> 00:10:58,970
+don't want to be doing any of
+this as we're starting to make
+
+216
+00:10:58,970 --> 00:11:00,740
+our AI more and more intelligent.
+
+217
+00:11:00,740 --> 00:11:02,960
+As David was alluding
+to earlier, ultimately
+
+218
+00:11:02,960 --> 00:11:05,930
+rather than us have to program
+every condition into the computer,
+
+219
+00:11:05,929 --> 00:11:08,389
+telling it what to do
+in every situation,
+
+220
+00:11:08,389 --> 00:11:11,959
+we'd like for the computer to be smart
+enough to just figure out on its own,
+
+221
+00:11:11,960 --> 00:11:14,480
+analyze on its own all
+of the possibilities
+
+222
+00:11:14,480 --> 00:11:16,490
+and figure out what move it should make.
+
+223
+00:11:16,490 --> 00:11:18,350
+And ultimately we want
+our computer to make
+
+224
+00:11:18,350 --> 00:11:22,970
+the optimal decision, the best possible
+decision when playing this game.
+
+225
+00:11:22,970 --> 00:11:25,880
+And so to do so we can
+introduce our first algorithm
+
+226
+00:11:25,879 --> 00:11:28,219
+in artificial intelligence
+that we'll look at today
+
+227
+00:11:28,220 --> 00:11:30,020
+and that algorithm is called minimax.
+
+228
+00:11:30,019 --> 00:11:32,539
+Minimax is a game
+playing algorithm that's
+
+229
+00:11:32,539 --> 00:11:35,299
+useful any time you have
+two competing players that
+
+230
+00:11:35,299 --> 00:11:38,539
+are trying to play some sort of
+competitive game like tic-tac-toe,
+
+231
+00:11:38,539 --> 00:11:40,619
+but it'll work for other games as well.
+
+232
+00:11:40,620 --> 00:11:43,460
+And ultimately as with we've
+seen all throughout CS50,
+
+233
+00:11:43,460 --> 00:11:47,082
+we need some way of representing
+this game inside of the computer.
+
+234
+00:11:47,081 --> 00:11:49,789
+And ultimately you'll recall way
+back from the beginning of CS50,
+
+235
+00:11:49,789 --> 00:11:53,149
+we've been trying to take everything
+and represent it just with numbers
+
+236
+00:11:53,149 --> 00:11:54,919
+and we can do the same thing with games.
+
+237
+00:11:54,919 --> 00:11:58,969
+As far as our AI is concerned, there
+are only three possible outcomes
+
+238
+00:11:58,970 --> 00:12:01,250
+of the game that our AI
+is going to care about,
+
+239
+00:12:01,250 --> 00:12:04,879
+either O wins or X wins
+and X gets three in a row,
+
+240
+00:12:04,879 --> 00:12:08,689
+or it's possible that neither side
+wins, that it ends up being a tie.
+
+241
+00:12:08,690 --> 00:12:12,500
+And so what we're going to do is take
+each of these three possible outcomes
+
+242
+00:12:12,500 --> 00:12:14,645
+and assign a number to
+each of those outcomes.
+
+243
+00:12:14,644 --> 00:12:16,519
+We'll say O winning,
+we're just going to say,
+
+244
+00:12:16,519 --> 00:12:19,889
+let's call that negative one,
+X winning, we'll call that one.
+
+245
+00:12:19,889 --> 00:12:22,457
+And a tie, well that's
+somewhere in between the two.
+
+246
+00:12:22,457 --> 00:12:23,999
+So we'll go ahead and call that zero.
+
+247
+00:12:24,000 --> 00:12:25,919
+Nobody wins that game.
+
+248
+00:12:25,919 --> 00:12:29,309
+And now each player has a
+goal, some objective that we
+
+249
+00:12:29,309 --> 00:12:31,439
+can quantify using these numbers.
+
+250
+00:12:31,440 --> 00:12:34,620
+The X player, who we might
+also call the max player,
+
+251
+00:12:34,620 --> 00:12:39,150
+aims to maximize the score, what's
+best for X is a score of one,
+
+252
+00:12:39,149 --> 00:12:40,779
+meaning X is going to win.
+
+253
+00:12:40,779 --> 00:12:43,349
+But if X can't win,
+well then tying the game
+
+254
+00:12:43,350 --> 00:12:46,790
+is zero, that's better than losing
+the game which is negative one.
+
+255
+00:12:46,789 --> 00:12:48,539
+Meanwhile the O player
+we're going to call
+
+256
+00:12:48,539 --> 00:12:52,119
+the min player, the minimizing player,
+their goal is to minimize the score.
+
+257
+00:12:52,120 --> 00:12:54,730
+Negative one is the best
+outcome for the O player,
+
+258
+00:12:54,730 --> 00:12:57,750
+but if negative one can't
+happen, if O can't win, well,
+
+259
+00:12:57,750 --> 00:12:59,970
+then tying the game
+is still better than X
+
+260
+00:12:59,970 --> 00:13:04,050
+winning because X winning would mean
+our minimizing player, player O,
+
+261
+00:13:04,049 --> 00:13:06,429
+is ultimately going to lose the game.
+
+262
+00:13:06,429 --> 00:13:10,679
+And so we can take every board in
+tic-tac-toe and assign a score to it,
+
+263
+00:13:10,679 --> 00:13:13,679
+it's either one or zero or negative one.
+
+264
+00:13:13,679 --> 00:13:17,639
+So this board for example, this game
+is over, X has already won the game
+
+265
+00:13:17,639 --> 00:13:21,209
+and because X has won the game, we're
+going to give that a value of one.
+
+266
+00:13:21,210 --> 00:13:26,490
+One corresponds to X winning, negative
+one to O winning, zero for a tie.
+
+267
+00:13:26,490 --> 00:13:28,740
+So let's now consider this game board.
+
+268
+00:13:28,740 --> 00:13:32,130
+This game board isn't over yet, but
+we can still assign a score to it.
+
+269
+00:13:32,129 --> 00:13:36,689
+Let's assume that it's X's turn,
+what score would we give this board?
+
+270
+00:13:36,690 --> 00:13:38,730
+Well, when we're giving
+each board a score,
+
+271
+00:13:38,730 --> 00:13:42,360
+we're considering what would happen if
+both players were playing optimally.
+
+272
+00:13:42,360 --> 00:13:46,200
+In other words, if both players
+are playing the best possible moves
+
+273
+00:13:46,200 --> 00:13:48,900
+and in this case, if X is
+playing the best possible move,
+
+274
+00:13:48,899 --> 00:13:52,409
+well then X is going to play in
+this square to get three in a row
+
+275
+00:13:52,409 --> 00:13:57,419
+and so this board also has a value of
+one because if X plays their best move,
+
+276
+00:13:57,419 --> 00:14:01,609
+ultimately X is going to win the
+game, that has a value of one.
+
+277
+00:14:01,610 --> 00:14:04,860
+So let's take a look at another board,
+maybe one that's a little bit trickier.
+
+278
+00:14:04,860 --> 00:14:08,870
+Now in this board let's assume it's
+O's turn, so O gets to make a move
+
+279
+00:14:08,870 --> 00:14:10,620
+and then because there's
+one empty square,
+
+280
+00:14:10,620 --> 00:14:14,010
+X will get to make a move
+after that, what value
+
+281
+00:14:14,009 --> 00:14:15,256
+would you give to this board?
+
+282
+00:14:15,256 --> 00:14:16,589
+Maybe we'll ask for a volunteer.
+
+283
+00:14:16,590 --> 00:14:19,350
+Remember the possibilities
+are one if X is
+
+284
+00:14:19,350 --> 00:14:22,140
+going to win, negative
+one if O is going to win,
+
+285
+00:14:22,139 --> 00:14:24,089
+and a zero if it's going to be a tie.
+
+286
+00:14:24,090 --> 00:14:29,280
+If both players play the best
+moves and it's O's turn right now,
+
+287
+00:14:29,279 --> 00:14:32,309
+what value would you give
+to this board and why?
+
+288
+00:14:32,309 --> 00:14:35,159
+Maybe let's go to Santiago, go ahead.
+
+289
+00:14:35,159 --> 00:14:38,219
+AUDIENCE: Yeah, I would say
+that the value would be zero
+
+290
+00:14:38,220 --> 00:14:41,970
+because if both players pay
+their best move no one in the end
+
+291
+00:14:41,970 --> 00:14:46,145
+will win because O will block X and
+then there would be nothing left to do.
+
+292
+00:14:46,144 --> 00:14:46,769
+BRIAN YU: Yeah.
+
+293
+00:14:46,769 --> 00:14:47,979
+Absolutely correct.
+
+294
+00:14:47,980 --> 00:14:51,570
+It's certainly possible that X could
+win because X has two in a row,
+
+295
+00:14:51,570 --> 00:14:53,080
+they could get three in a row.
+
+296
+00:14:53,080 --> 00:14:55,380
+But if both players
+play their best moves,
+
+297
+00:14:55,379 --> 00:14:57,614
+well then O is going
+to block here and then
+
+298
+00:14:57,615 --> 00:14:59,490
+X is going to play in
+the upper left and it's
+
+299
+00:14:59,490 --> 00:15:02,790
+going to be a tie, which means this
+board is going to have a value of zero.
+
+300
+00:15:02,789 --> 00:15:04,889
+And the way a computer
+might figure that out
+
+301
+00:15:04,889 --> 00:15:07,379
+is by reasoning it through
+exactly the same way we did,
+
+302
+00:15:07,379 --> 00:15:09,909
+by considering both of
+the possible options.
+
+303
+00:15:09,909 --> 00:15:13,499
+If I want to know the value for
+this board where it's O's turn,
+
+304
+00:15:13,500 --> 00:15:16,470
+well then I'm going to consider
+both of the possible options.
+
+305
+00:15:16,470 --> 00:15:19,920
+O has two choices, O
+could play in the top left
+
+306
+00:15:19,919 --> 00:15:23,219
+or O could block X by
+playing in the bottom there
+
+307
+00:15:23,220 --> 00:15:26,490
+and the computer would consider
+both of those possible choices
+
+308
+00:15:26,490 --> 00:15:30,800
+and try and figure out what
+value each of those boards has.
+
+309
+00:15:30,799 --> 00:15:33,119
+So what happens if O
+plays in the top left?
+
+310
+00:15:33,120 --> 00:15:37,860
+Well, then X is going to play in the
+bottom and X is going to win the game.
+
+311
+00:15:37,860 --> 00:15:40,500
+X winning the game,
+that has a value of one,
+
+312
+00:15:40,500 --> 00:15:43,786
+remember X winning, that's the value
+of one, which means this board also
+
+313
+00:15:43,787 --> 00:15:45,120
+is going to have a value of one.
+
+314
+00:15:45,120 --> 00:15:47,487
+So X wins, that's not great.
+
+315
+00:15:47,486 --> 00:15:49,319
+So let's consider the
+other possible choice,
+
+316
+00:15:49,320 --> 00:15:53,130
+O could also have blocked X
+by playing in the bottom here
+
+317
+00:15:53,129 --> 00:15:56,609
+and in that case, that's going to
+lead to X playing in the upper left,
+
+318
+00:15:56,610 --> 00:16:00,270
+it's the only other possible option,
+that board has a value of zero,
+
+319
+00:16:00,269 --> 00:16:02,039
+it's a tie since nobody won.
+
+320
+00:16:02,039 --> 00:16:05,099
+Which means this board
+also has a value of zero.
+
+321
+00:16:05,100 --> 00:16:08,490
+And now the minimizing player is
+going to look at these two options.
+
+322
+00:16:08,490 --> 00:16:11,520
+If I play in the top left, that's
+going to be a value of one,
+
+323
+00:16:11,519 --> 00:16:13,049
+that's not good for me.
+
+324
+00:16:13,049 --> 00:16:16,979
+If I play in the bottom, that's going
+to be a value of zero, so that's better.
+
+325
+00:16:16,980 --> 00:16:19,680
+And so ultimately we can
+conclude that this board up
+
+326
+00:16:19,679 --> 00:16:24,149
+top as Santiago correctly stated, is
+also going to have a value of zero.
+
+327
+00:16:24,149 --> 00:16:28,049
+If both players play their best moves
+it's ultimately going to be a tie.
+
+328
+00:16:28,049 --> 00:16:30,329
+And this is what we may
+call a game tree, where
+
+329
+00:16:30,330 --> 00:16:33,450
+you're exploring all of the
+possible branches, all of the ways
+
+330
+00:16:33,450 --> 00:16:34,590
+this game could go.
+
+331
+00:16:34,590 --> 00:16:37,255
+And from here, we're two moves
+away from the end of the game.
+
+332
+00:16:37,254 --> 00:16:40,379
+But you could back up and consider what
+would it look like three moves away
+
+333
+00:16:40,379 --> 00:16:41,399
+from the end of the game.
+
+334
+00:16:41,399 --> 00:16:43,524
+And you'd end up with a
+bigger tree because you now
+
+335
+00:16:43,524 --> 00:16:45,869
+need to explore even more
+possibilities if you're
+
+336
+00:16:45,870 --> 00:16:50,280
+trying to figure out what the value
+of any particular game board is.
+
+337
+00:16:50,279 --> 00:16:52,379
+And so that's the way the
+minimax algorithm works,
+
+338
+00:16:52,379 --> 00:16:55,109
+consider all of the possible
+moves you could make
+
+339
+00:16:55,110 --> 00:16:59,337
+and then recursively in a sense,
+consider if I make my best move, what's
+
+340
+00:16:59,336 --> 00:17:01,169
+my opponent going to
+do in response and then
+
+341
+00:17:01,169 --> 00:17:03,129
+what could I do in response to that?
+
+342
+00:17:03,129 --> 00:17:05,789
+And we could formulate that
+as a little bit of pseudocode
+
+343
+00:17:05,789 --> 00:17:10,289
+by saying if the player is X, well
+then for all of the possible moves
+
+344
+00:17:10,289 --> 00:17:12,749
+let's go ahead and calculate
+a score for that board.
+
+345
+00:17:12,750 --> 00:17:15,358
+The same way we were just
+doing, by recursively following
+
+346
+00:17:15,358 --> 00:17:18,118
+all the possible moves, let's
+get a score for that board
+
+347
+00:17:18,118 --> 00:17:21,838
+and let's choose the move
+with the highest score.
+
+348
+00:17:21,838 --> 00:17:24,899
+And otherwise, if the player is O,
+well, then we'll do the same thing.
+
+349
+00:17:24,900 --> 00:17:28,319
+For all the possible moves, we'll
+calculate a score for that board,
+
+350
+00:17:28,318 --> 00:17:31,569
+but then we'll choose the
+move with the lowest score.
+
+351
+00:17:31,569 --> 00:17:34,709
+So the X player is picking the
+move that maximizes the score,
+
+352
+00:17:34,710 --> 00:17:38,100
+the O player is picking the
+move that minimizes the score.
+
+353
+00:17:38,099 --> 00:17:40,589
+And using this approach
+you can create an AI
+
+354
+00:17:40,589 --> 00:17:42,689
+that can play a game like
+tic-tac-toe perfectly.
+
+355
+00:17:42,690 --> 00:17:46,440
+It'll never lose the game if
+you've programmed it correctly.
+
+356
+00:17:46,440 --> 00:17:49,710
+And this works not only for tic-tac-toe
+but for other games as well.
+
+357
+00:17:49,710 --> 00:17:52,500
+But do you see any problems
+with this approach?
+
+358
+00:17:52,500 --> 00:17:56,009
+This approach of considering
+all of my possible moves, then
+
+359
+00:17:56,009 --> 00:17:58,979
+all of my opponent's possible
+responses to those moves, and then
+
+360
+00:17:58,980 --> 00:18:02,400
+all of my possible responses
+to those moves recursively
+
+361
+00:18:02,400 --> 00:18:04,230
+until we get down to
+the end of the game.
+
+362
+00:18:04,230 --> 00:18:06,180
+Any possible problems that might arise?
+
+363
+00:18:06,180 --> 00:18:08,088
+Let's go to Sophia maybe.
+
+364
+00:18:08,087 --> 00:18:11,129
+AUDIENCE: It can take a really long
+time to like explore all the branches
+
+365
+00:18:11,130 --> 00:18:12,780
+and actually come to a conclusion.
+
+366
+00:18:12,779 --> 00:18:14,654
+BRIAN YU: Yeah, the
+amount of time it's going
+
+367
+00:18:14,654 --> 00:18:16,709
+to take to explore all
+of those possible moves,
+
+368
+00:18:16,710 --> 00:18:19,740
+it could be quite large depending
+on how complex the game is.
+
+369
+00:18:19,740 --> 00:18:23,220
+For a game like tic-tac-toe, maybe
+think about how many possible games
+
+370
+00:18:23,220 --> 00:18:24,450
+of tic-tac-toe there are.
+
+371
+00:18:24,450 --> 00:18:30,210
+It turns out there are about 255,000
+possible games of tic-tac-toe, which
+
+372
+00:18:30,210 --> 00:18:32,190
+seems like a lot, but
+computers are pretty fast
+
+373
+00:18:32,190 --> 00:18:35,460
+and computers can make
+it through all 255,000
+
+374
+00:18:35,460 --> 00:18:38,790
+of these possible tic-tac-toe games
+usually in a matter of seconds
+
+375
+00:18:38,789 --> 00:18:40,499
+on most modern computers.
+
+376
+00:18:40,500 --> 00:18:43,109
+But if you imagine a game
+like chess for example,
+
+377
+00:18:43,109 --> 00:18:46,869
+known for being a fairly complex
+game, how many possible games of chess
+
+378
+00:18:46,869 --> 00:18:47,369
+are there?
+
+379
+00:18:47,369 --> 00:18:51,689
+If there are 255,000 possible
+games of tic-tac-toe,
+
+380
+00:18:51,690 --> 00:18:53,680
+how many possible games
+of chess are there?
+
+381
+00:18:53,680 --> 00:18:57,360
+Well, it turns out that only
+after the first four moves,
+
+382
+00:18:57,359 --> 00:19:00,059
+if you only look at the
+first four moves of chess,
+
+383
+00:19:00,059 --> 00:19:04,169
+there are 288 billion
+possible chess games, which
+
+384
+00:19:04,170 --> 00:19:06,288
+is a lot for any computer
+to try to deal with
+
+385
+00:19:06,288 --> 00:19:07,830
+and that's only the first four moves.
+
+386
+00:19:07,829 --> 00:19:11,609
+If you consider the entire game of
+chess, nobody knows the answer exactly,
+
+387
+00:19:11,609 --> 00:19:15,149
+but people estimate
+that 10 to the 29,000
+
+388
+00:19:15,150 --> 00:19:18,750
+is probably a lower bound on the
+number of possible chess games.
+
+389
+00:19:18,750 --> 00:19:21,089
+The actual number is
+probably higher than that.
+
+390
+00:19:21,089 --> 00:19:25,079
+That is far too many for any computer
+to be able to reasonably get through
+
+391
+00:19:25,079 --> 00:19:26,439
+in any amount of time.
+
+392
+00:19:26,440 --> 00:19:28,470
+Computers as they
+exist now are not going
+
+393
+00:19:28,470 --> 00:19:31,650
+to be able to consider all
+of the possible moves going
+
+394
+00:19:31,650 --> 00:19:34,050
+all the way to the end of the
+game in order to figure out
+
+395
+00:19:34,049 --> 00:19:35,382
+what the score for any board is.
+
+396
+00:19:35,383 --> 00:19:38,640
+Which is why a game like
+chess is much harder for an AI
+
+397
+00:19:38,640 --> 00:19:40,530
+to play than a game like tic-tac-toe.
+
+398
+00:19:40,529 --> 00:19:41,819
+But it's not impossible.
+
+399
+00:19:41,819 --> 00:19:43,829
+And in fact, the best
+computer chess players
+
+400
+00:19:43,829 --> 00:19:47,739
+are far better than the best
+human chess players at this point.
+
+401
+00:19:47,740 --> 00:19:50,670
+So what could we do, what
+maybe improvement could we make
+
+402
+00:19:50,670 --> 00:19:52,710
+or what change could we
+make to the algorithm
+
+403
+00:19:52,710 --> 00:19:56,730
+so that our AI can still play a
+game like chess even though there
+
+404
+00:19:56,730 --> 00:19:59,057
+are so many additional possible moves?
+
+405
+00:19:59,057 --> 00:20:01,140
+There are a lot of possible
+answers but any ideas,
+
+406
+00:20:01,140 --> 00:20:04,080
+anyone want to offer a
+thought or a suggestion
+
+407
+00:20:04,079 --> 00:20:07,769
+as to how we might address this problem?
+
+408
+00:20:07,769 --> 00:20:11,159
+They are so many moves to
+consider, too many for a computer
+
+409
+00:20:11,160 --> 00:20:15,000
+to ever reasonably try to attempt.
+
+410
+00:20:15,000 --> 00:20:18,680
+Any thoughts on something we could try?
+
+411
+00:20:18,680 --> 00:20:19,700
+Let's go to, Kurt.
+
+412
+00:20:19,700 --> 00:20:21,320
+Yeah, you have an idea?
+
+413
+00:20:21,319 --> 00:20:24,139
+AUDIENCE: Yeah, just if there
+was some way along the way
+
+414
+00:20:24,140 --> 00:20:27,590
+to maybe assign some point values where
+you could, below some threshold maybe
+
+415
+00:20:27,589 --> 00:20:29,571
+you could like discard those paths?
+
+416
+00:20:29,571 --> 00:20:32,779
+BRIAN YU: Yeah, we want some way to be
+able to more intelligently not explore
+
+417
+00:20:32,779 --> 00:20:36,139
+all of the paths, but somehow
+like discard some of the paths
+
+418
+00:20:36,140 --> 00:20:38,810
+or not consider some of them
+or stop ourselves somewhere.
+
+419
+00:20:38,809 --> 00:20:40,849
+So that rather than
+consider all of the 10
+
+420
+00:20:40,849 --> 00:20:45,139
+to the 29,000 possible games of
+chess, we just consider fewer of them.
+
+421
+00:20:45,140 --> 00:20:49,137
+Exploring fewer possible games,
+exploring fewer possible levels
+
+422
+00:20:49,136 --> 00:20:51,469
+and so there are many variants
+on the minimax algorithm.
+
+423
+00:20:51,470 --> 00:20:55,280
+One of the most common being what's
+called depth-limited minimax, where
+
+424
+00:20:55,279 --> 00:20:59,509
+in depth-limited minimax, we consider
+what's called an evaluation function.
+
+425
+00:20:59,509 --> 00:21:01,939
+Rather than follow the
+game until the very end,
+
+426
+00:21:01,940 --> 00:21:04,190
+we follow the game some number of moves.
+
+427
+00:21:04,190 --> 00:21:07,010
+In chess maybe you're going 15,
+16 moves, but not all the way
+
+428
+00:21:07,009 --> 00:21:10,519
+to the end of the game and then you're
+just asking a question like all right,
+
+429
+00:21:10,519 --> 00:21:13,062
+at this point in the game,
+who seems likely to win?
+
+430
+00:21:13,063 --> 00:21:15,230
+Even if we're not going to
+calculate it all the way,
+
+431
+00:21:15,230 --> 00:21:17,660
+you can maybe make some
+judgment by counting up
+
+432
+00:21:17,660 --> 00:21:20,750
+how many pieces of what value
+each side happens to have.
+
+433
+00:21:20,750 --> 00:21:23,569
+And you might come up with other
+strategies for different games.
+
+434
+00:21:23,569 --> 00:21:26,989
+But this now is where we
+need to start being even more
+
+435
+00:21:26,990 --> 00:21:30,770
+intelligent, to thinking about how
+can we come up with a good evaluation
+
+436
+00:21:30,769 --> 00:21:34,939
+function that's able to take a
+complex game and estimate who
+
+437
+00:21:34,940 --> 00:21:38,080
+is potentially likely to win.
+
+438
+00:21:38,079 --> 00:21:40,689
+So that then is minimax, an
+example of an algorithm that
+
+439
+00:21:40,690 --> 00:21:42,580
+can be used to play games.
+
+440
+00:21:42,579 --> 00:21:46,059
+And I'll pause here for any
+questions about minimax or game
+
+441
+00:21:46,059 --> 00:21:48,399
+playing artificial
+intelligence before we
+
+442
+00:21:48,400 --> 00:21:52,280
+move on to an entirely different
+type of artificial intelligence.
+
+443
+00:21:52,279 --> 00:21:53,264
+Yeah, Sophia, go ahead.
+
+444
+00:21:53,265 --> 00:21:53,890
+AUDIENCE: Yeah.
+
+445
+00:21:53,890 --> 00:21:56,230
+I just have a question,
+like this algorithm
+
+446
+00:21:56,230 --> 00:21:58,837
+is kind of following like how
+you would think about the game,
+
+447
+00:21:58,836 --> 00:22:01,419
+but are there any other algorithms
+that like don't necessarily
+
+448
+00:22:01,420 --> 00:22:04,715
+look like step by step evaluations?
+
+449
+00:22:04,714 --> 00:22:07,839
+BRIAN YU: Yeah, there are definitely
+other algorithms and other approaches.
+
+450
+00:22:07,839 --> 00:22:10,119
+In fact, right now what
+we've given an example of
+
+451
+00:22:10,119 --> 00:22:12,879
+is really just an example
+of an exhaustive search,
+
+452
+00:22:12,880 --> 00:22:14,980
+searching for all of the
+possible different moves
+
+453
+00:22:14,980 --> 00:22:16,880
+and then making a
+judgment based on that.
+
+454
+00:22:16,880 --> 00:22:20,350
+We'll see some examples of more
+intelligent algorithms or algorithms
+
+455
+00:22:20,349 --> 00:22:22,042
+that can learn later today in fact.
+
+456
+00:22:22,042 --> 00:22:24,459
+And we'll take a look at some
+of those other possibilities
+
+457
+00:22:24,460 --> 00:22:25,850
+and how we might apply them.
+
+458
+00:22:25,849 --> 00:22:29,829
+And so this then is really an example of
+what we might call a search algorithm.
+
+459
+00:22:29,829 --> 00:22:32,439
+A search algorithm is
+just a type of algorithm
+
+460
+00:22:32,440 --> 00:22:35,710
+where we're looking for some
+solution or some answer.
+
+461
+00:22:35,710 --> 00:22:38,200
+It could be looking for the
+best move to make in a game
+
+462
+00:22:38,200 --> 00:22:41,170
+or you might imagine a search
+problem more abstractly of something
+
+463
+00:22:41,170 --> 00:22:43,180
+like finding your way through a maze.
+
+464
+00:22:43,180 --> 00:22:46,270
+You're trying to get from one point
+in a maze to another point in a maze
+
+465
+00:22:46,269 --> 00:22:49,689
+and you have to make decisions about
+which way to turn and how to go.
+
+466
+00:22:49,690 --> 00:22:51,730
+And the real world
+application of this might
+
+467
+00:22:51,730 --> 00:22:53,380
+be something like driving directions.
+
+468
+00:22:53,380 --> 00:22:55,610
+If you go into Google Maps for example.
+
+469
+00:22:55,609 --> 00:22:58,599
+And you type where you are and
+where you're trying to get to,
+
+470
+00:22:58,599 --> 00:23:02,469
+Google Maps pretty quickly can give
+you a fairly optimal route, some path
+
+471
+00:23:02,470 --> 00:23:05,630
+to take which way to turn and when,
+when to make which decision, that
+
+472
+00:23:05,630 --> 00:23:07,880
+will get you from one point to another.
+
+473
+00:23:07,880 --> 00:23:10,150
+This is an example of a
+search problem, Google Maps
+
+474
+00:23:10,150 --> 00:23:13,030
+needs to somehow search through
+all of the possible routes you
+
+475
+00:23:13,029 --> 00:23:17,259
+can take to figure out how to get
+you to the place that you're going.
+
+476
+00:23:17,259 --> 00:23:20,289
+And so we could come up with an
+algorithm for trying to do that.
+
+477
+00:23:20,289 --> 00:23:24,489
+Imagine we have a maze like this, we're
+trying to get from point A to point B
+
+478
+00:23:24,490 --> 00:23:26,440
+but of course, we have
+some walls here, these
+
+479
+00:23:26,440 --> 00:23:29,050
+grayed out squares are walls
+that we can't cross through,
+
+480
+00:23:29,049 --> 00:23:33,049
+but we'd still like to try and find
+some path that will get us from point A
+
+481
+00:23:33,049 --> 00:23:33,549
+to point B.
+
+482
+00:23:33,549 --> 00:23:36,489
+There are a number of
+algorithms that you might try.
+
+483
+00:23:36,490 --> 00:23:39,790
+And you could think about if you
+were solving this maze as a person,
+
+484
+00:23:39,789 --> 00:23:40,719
+how would you do this?
+
+485
+00:23:40,720 --> 00:23:43,303
+How would you decide what decision
+to make, whether to go left
+
+486
+00:23:43,303 --> 00:23:44,418
+or whether to go right?
+
+487
+00:23:44,417 --> 00:23:46,209
+But as far as the
+computer is concerned, we
+
+488
+00:23:46,210 --> 00:23:48,130
+need to give it a very
+precise algorithm.
+
+489
+00:23:48,130 --> 00:23:50,860
+And one of the simplest
+algorithms we might come up with
+
+490
+00:23:50,859 --> 00:23:53,199
+is one called depth-first search.
+
+491
+00:23:53,200 --> 00:23:56,650
+And the way that depth-first search
+would navigate its way through a maze
+
+492
+00:23:56,650 --> 00:24:00,010
+is to say, the AI is going
+to just follow a path
+
+493
+00:24:00,009 --> 00:24:03,409
+and if ever the AI needs to make a
+choice, it reaches a fork in the road,
+
+494
+00:24:03,410 --> 00:24:06,250
+so to speak, where it could
+go left, or it could go right,
+
+495
+00:24:06,250 --> 00:24:07,875
+it's just going to choose one randomly.
+
+496
+00:24:07,875 --> 00:24:10,666
+It doesn't know which way is better,
+so it's going to pick one path
+
+497
+00:24:10,666 --> 00:24:11,899
+and it's going to try it.
+
+498
+00:24:11,900 --> 00:24:13,700
+And if ever it hits a
+dead end, it reaches
+
+499
+00:24:13,700 --> 00:24:15,910
+some wall where it can't
+make any more progress,
+
+500
+00:24:15,910 --> 00:24:20,150
+then our AI is just going to back up and
+it's going to try another path instead.
+
+501
+00:24:20,150 --> 00:24:22,900
+So I can show you what that looks
+like, we're starting at point A,
+
+502
+00:24:22,900 --> 00:24:26,170
+we're trying to get to point B.
+And the way our AI might work
+
+503
+00:24:26,170 --> 00:24:28,935
+is that we might start by just
+following one square after another.
+
+504
+00:24:28,934 --> 00:24:31,059
+Initially, we don't have
+much choice in the matter,
+
+505
+00:24:31,059 --> 00:24:34,479
+we haven't reached any branching
+points or any forks in the road.
+
+506
+00:24:34,480 --> 00:24:38,260
+But at this point right here, now
+we have a decision, we could go left
+
+507
+00:24:38,259 --> 00:24:39,579
+or we could go right.
+
+508
+00:24:39,579 --> 00:24:43,899
+And as far as depth-first search,
+otherwise known as DFS is concerned,
+
+509
+00:24:43,900 --> 00:24:45,400
+DFS doesn't know which way to go.
+
+510
+00:24:45,400 --> 00:24:48,400
+It doesn't know whether to go left,
+it doesn't know whether to go right,
+
+511
+00:24:48,400 --> 00:24:49,720
+so we pick one randomly.
+
+512
+00:24:49,720 --> 00:24:51,440
+We might choose to go left for example.
+
+513
+00:24:51,440 --> 00:24:52,960
+So we're going to go left
+and we're going to keep
+
+514
+00:24:52,960 --> 00:24:55,510
+following the path until we get
+to another fork in the road.
+
+515
+00:24:55,509 --> 00:24:58,449
+We could go left or right, DFS
+doesn't know which to pick,
+
+516
+00:24:58,450 --> 00:25:00,820
+so we're going to choose
+randomly, maybe we'll go left
+
+517
+00:25:00,819 --> 00:25:02,619
+and now we hit a dead end.
+
+518
+00:25:02,619 --> 00:25:06,469
+At that point our algorithm knows
+this was not a good path to take.
+
+519
+00:25:06,470 --> 00:25:09,640
+So it's going to back up to
+the latest decision point
+
+520
+00:25:09,640 --> 00:25:11,010
+and make a different choice.
+
+521
+00:25:11,009 --> 00:25:14,259
+So it's going to back up to right here
+and say, all right, I tried going left,
+
+522
+00:25:14,259 --> 00:25:15,169
+it didn't work.
+
+523
+00:25:15,170 --> 00:25:16,880
+Let's try going right instead.
+
+524
+00:25:16,880 --> 00:25:19,433
+So it's going to go right,
+it'll hit a dead end,
+
+525
+00:25:19,432 --> 00:25:22,599
+realize that OK, this was not a good
+path to take, it just led to dead ends,
+
+526
+00:25:22,599 --> 00:25:23,809
+it didn't go anywhere.
+
+527
+00:25:23,809 --> 00:25:26,546
+So instead of going left,
+let's try going right.
+
+528
+00:25:26,547 --> 00:25:29,380
+So we'll try this path, maybe we'll
+try going up but hit a dead end,
+
+529
+00:25:29,380 --> 00:25:30,880
+so we'll try going to the right.
+
+530
+00:25:30,880 --> 00:25:33,688
+Here again, we hit a decision,
+we're going to make some choice.
+
+531
+00:25:33,688 --> 00:25:35,980
+And again, we're just going
+to repeatedly hit dead ends
+
+532
+00:25:35,980 --> 00:25:42,470
+and try new paths until eventually
+we make our way to the destination.
+
+533
+00:25:42,470 --> 00:25:44,740
+And so that is depth-first
+search, and as long
+
+534
+00:25:44,740 --> 00:25:47,500
+as there are like a
+finite number of squares,
+
+535
+00:25:47,500 --> 00:25:51,530
+this algorithm is eventually going
+to find a path to the destination
+
+536
+00:25:51,529 --> 00:25:52,659
+if such a path exists.
+
+537
+00:25:52,660 --> 00:25:55,810
+Like if there is a way to
+get from point A to point B,
+
+538
+00:25:55,809 --> 00:25:59,281
+then this algorithm will eventually
+find it because it tries something
+
+539
+00:25:59,281 --> 00:26:01,239
+and if we reach a dead
+end then we try it again
+
+540
+00:26:01,240 --> 00:26:06,190
+and we keep doing that until eventually
+we find our way to the destination.
+
+541
+00:26:06,190 --> 00:26:08,290
+But this algorithm isn't great.
+
+542
+00:26:08,289 --> 00:26:11,569
+There are certainly some problems,
+some maybe room for improvement.
+
+543
+00:26:11,569 --> 00:26:15,849
+So maybe I'll ask all of you, what
+problems do you see with this approach?
+
+544
+00:26:15,849 --> 00:26:17,829
+Maybe reasons why this
+algorithm might not
+
+545
+00:26:17,829 --> 00:26:22,029
+be ideal, areas where we might be
+able to improve upon this algorithm
+
+546
+00:26:22,029 --> 00:26:24,279
+as it stands right now?
+
+547
+00:26:24,279 --> 00:26:25,719
+This again is depth-first search.
+
+548
+00:26:25,720 --> 00:26:28,390
+Let's go to Joy.
+
+549
+00:26:28,390 --> 00:26:30,223
+AUDIENCE: I think it
+is very time consuming.
+
+550
+00:26:30,222 --> 00:26:31,931
+BRIAN YU: Yeah, it's
+very time consuming.
+
+551
+00:26:31,932 --> 00:26:33,820
+And it's time consuming
+in a number of ways.
+
+552
+00:26:33,819 --> 00:26:37,639
+In one sense, we're exploring a lot of
+paths that really don't lead anywhere
+
+553
+00:26:37,640 --> 00:26:40,730
+in the sense that we
+explored all of this area
+
+554
+00:26:40,730 --> 00:26:43,550
+but ultimately that didn't help us
+towards trying to find the goal.
+
+555
+00:26:43,549 --> 00:26:47,569
+And it's also time consuming in
+the route that it ultimately finds,
+
+556
+00:26:47,569 --> 00:26:52,189
+like if you imagine using Google
+Maps, for example, to navigate
+
+557
+00:26:52,190 --> 00:26:54,830
+our way from one place
+to another, it's likely
+
+558
+00:26:54,829 --> 00:26:57,679
+going to be the case that you
+want to find an efficient route,
+
+559
+00:26:57,680 --> 00:27:00,140
+you want like the fastest
+way to get from where
+
+560
+00:27:00,140 --> 00:27:01,545
+you are to where you want to go.
+
+561
+00:27:01,545 --> 00:27:04,670
+And if Google Maps were to give you
+like a long and winding route with lots
+
+562
+00:27:04,670 --> 00:27:07,340
+of detours that got you to
+the destination but took
+
+563
+00:27:07,339 --> 00:27:09,409
+much longer than it
+needed to, that's probably
+
+564
+00:27:09,410 --> 00:27:11,510
+not the best user experience for you.
+
+565
+00:27:11,509 --> 00:27:15,449
+And depth-first search unfortunately
+could run into just that situation.
+
+566
+00:27:15,450 --> 00:27:19,155
+Imagine a maze like this, where
+from point A, we could go up
+
+567
+00:27:19,154 --> 00:27:21,529
+or we could go to the right,
+we don't know which to take,
+
+568
+00:27:21,529 --> 00:27:24,269
+so depth-first search
+will just randomly choose.
+
+569
+00:27:24,269 --> 00:27:27,469
+We might choose to go up
+and maybe we'll go right
+
+570
+00:27:27,470 --> 00:27:30,020
+and we'll find our way
+to the destination.
+
+571
+00:27:30,019 --> 00:27:33,709
+Sure, depth-first search was able
+to find us a path from A to B,
+
+572
+00:27:33,710 --> 00:27:35,960
+but remember that often
+what we want to do
+
+573
+00:27:35,960 --> 00:27:37,850
+is we want to make the optimal decision.
+
+574
+00:27:37,849 --> 00:27:41,904
+This is a correct path for getting from
+A to B, but it's not the best path.
+
+575
+00:27:41,904 --> 00:27:44,029
+If we're looking for the
+shortest path from A to B,
+
+576
+00:27:44,029 --> 00:27:46,459
+well that's going to
+be this one, it's going
+
+577
+00:27:46,460 --> 00:27:50,537
+to be this path here that
+goes from A to B there.
+
+578
+00:27:50,537 --> 00:27:52,370
+So we'd like some way
+to fix that, we'd like
+
+579
+00:27:52,369 --> 00:27:55,819
+an algorithm that is able to
+find us the shortest path,
+
+580
+00:27:55,819 --> 00:27:57,989
+not just finding us any path.
+
+581
+00:27:57,990 --> 00:28:01,610
+And so for that, we can use an algorithm
+called breadth-first search, otherwise
+
+582
+00:28:01,609 --> 00:28:03,769
+known as BFS.
+
+583
+00:28:03,769 --> 00:28:06,799
+And the way this algorithm works
+is that instead of whenever we
+
+584
+00:28:06,799 --> 00:28:09,799
+reach a fork in the road, pick
+one until we hit a dead end
+
+585
+00:28:09,799 --> 00:28:11,119
+and then pick the other.
+
+586
+00:28:11,119 --> 00:28:14,569
+What breadth-first search is going to do
+is whenever we hit a fork in the road,
+
+587
+00:28:14,569 --> 00:28:16,819
+let's take both paths, let's
+take one step on the left
+
+588
+00:28:16,819 --> 00:28:19,486
+and then one step on the right
+and then another step on the left
+
+589
+00:28:19,487 --> 00:28:21,590
+and another step on the
+right and effectively just
+
+590
+00:28:21,589 --> 00:28:23,682
+search outwards from the starting point.
+
+591
+00:28:23,682 --> 00:28:26,599
+We're going to start from the beginning
+and look for all of the places
+
+592
+00:28:26,599 --> 00:28:29,869
+we can get to by taking
+one step away from A,
+
+593
+00:28:29,869 --> 00:28:32,869
+and then everywhere we can get
+to taking two steps away from A,
+
+594
+00:28:32,869 --> 00:28:35,759
+and then three steps away
+from A, so on and so forth.
+
+595
+00:28:35,759 --> 00:28:37,759
+So we're always looking
+at the things that
+
+596
+00:28:37,759 --> 00:28:41,849
+are nearby before we look at the
+things that are further away.
+
+597
+00:28:41,849 --> 00:28:45,547
+So the way this might work is that
+from A we're going to take one step up
+
+598
+00:28:45,548 --> 00:28:47,840
+and then we're going to search
+one square to the right.
+
+599
+00:28:47,839 --> 00:28:51,089
+And then we'll look a second square on
+this direction and then a second square
+
+600
+00:28:51,089 --> 00:28:54,079
+along the path to the right and then
+a third square and a third square
+
+601
+00:28:54,079 --> 00:28:56,809
+and we're going to repeat that
+process, effectively alternating
+
+602
+00:28:56,809 --> 00:28:59,539
+between all of the different
+options that we have
+
+603
+00:28:59,539 --> 00:29:03,469
+until eventually we find this
+optimal path from A to B.
+
+604
+00:29:03,470 --> 00:29:06,050
+And because we're looking
+for the shorter paths
+
+605
+00:29:06,049 --> 00:29:09,289
+before we look for those
+longer paths, eventually we're
+
+606
+00:29:09,289 --> 00:29:12,957
+going to find that
+shortest possible path.
+
+607
+00:29:12,958 --> 00:29:14,750
+Now there are still
+problems with this too.
+
+608
+00:29:14,750 --> 00:29:17,600
+As Joy pointed out, these
+algorithms have a tendency
+
+609
+00:29:17,599 --> 00:29:20,309
+to explore a lot of paths unnecessarily.
+
+610
+00:29:20,309 --> 00:29:22,649
+Let's go back to that
+original maze for example
+
+611
+00:29:22,650 --> 00:29:24,980
+and consider what would
+breadth-first search
+
+612
+00:29:24,980 --> 00:29:27,350
+do if I presented it with this maze.
+
+613
+00:29:27,349 --> 00:29:29,479
+We'll consider what
+might happen, we might
+
+614
+00:29:29,480 --> 00:29:32,250
+go until we reach the first
+decision point right here,
+
+615
+00:29:32,250 --> 00:29:33,840
+we could go left or right.
+
+616
+00:29:33,839 --> 00:29:36,259
+And remember, depth-first
+search picked one
+
+617
+00:29:36,259 --> 00:29:38,059
+and just followed it until a dead end.
+
+618
+00:29:38,059 --> 00:29:40,952
+What breadth-first search is going
+to do is it's going to pick both.
+
+619
+00:29:40,952 --> 00:29:42,869
+It's going to go to the
+left and to the right.
+
+620
+00:29:42,869 --> 00:29:45,411
+And then to the left and to the
+right and basically alternate
+
+621
+00:29:45,412 --> 00:29:48,830
+between all of those until we reach
+another decision point and then
+
+622
+00:29:48,829 --> 00:29:50,919
+it's going to consider all
+of those possibilities.
+
+623
+00:29:50,920 --> 00:29:55,550
+Let's go left or left here and right
+and consider these possibilities too
+
+624
+00:29:55,549 --> 00:29:57,169
+and it's going to keep exploring.
+
+625
+00:29:57,170 --> 00:29:59,780
+Any time we reach any
+decision point, it's
+
+626
+00:29:59,779 --> 00:30:05,029
+going to explore this way and
+that way, this way and that way,
+
+627
+00:30:05,029 --> 00:30:06,289
+over and over again.
+
+628
+00:30:06,289 --> 00:30:08,089
+And ultimately, if we
+repeat this process
+
+629
+00:30:08,089 --> 00:30:11,359
+and consider what breadth-first
+search is looking for,
+
+630
+00:30:11,359 --> 00:30:16,009
+sure it's going to find me the shortest
+and in this case, the only possible
+
+631
+00:30:16,009 --> 00:30:20,869
+path to get from A to B but it took
+such a long time to be able to do so.
+
+632
+00:30:20,869 --> 00:30:22,979
+It looked at so many
+different squares, in fact,
+
+633
+00:30:22,980 --> 00:30:25,340
+it looked at all of the
+squares in order to do
+
+634
+00:30:25,339 --> 00:30:29,939
+something as simple as find the shortest
+path to get from one point to another.
+
+635
+00:30:29,940 --> 00:30:33,800
+And so here we can try to start to
+be a little bit more intelligent.
+
+636
+00:30:33,799 --> 00:30:37,519
+What we'd ideally like to do is that
+when we reach this first decision
+
+637
+00:30:37,519 --> 00:30:41,569
+point, go left or go right, most
+humans if you gave them this maze
+
+638
+00:30:41,569 --> 00:30:44,269
+and told you to try to solve
+it at this decision point,
+
+639
+00:30:44,269 --> 00:30:48,049
+you wouldn't just pick randomly,
+you would choose to go to the right
+
+640
+00:30:48,049 --> 00:30:50,926
+because you know the goal
+is somewhere to the right
+
+641
+00:30:50,926 --> 00:30:52,759
+and so it's probably
+the case that we should
+
+642
+00:30:52,759 --> 00:30:57,049
+follow that direction if we're trying
+to find our way to the end of the maze.
+
+643
+00:30:57,049 --> 00:30:59,899
+And so these algorithms
+we've looked at so far,
+
+644
+00:30:59,900 --> 00:31:02,090
+depth-first search and
+breadth-first search
+
+645
+00:31:02,089 --> 00:31:05,329
+are examples of what we
+might call uninformed search.
+
+646
+00:31:05,329 --> 00:31:08,059
+They're not using any specialized
+knowledge about the problem.
+
+647
+00:31:08,059 --> 00:31:10,017
+They don't really know
+anything about the maze.
+
+648
+00:31:10,018 --> 00:31:12,860
+They're just basically
+blindly guessing and hoping
+
+649
+00:31:12,859 --> 00:31:15,679
+that eventually we make
+our way to the solution.
+
+650
+00:31:15,680 --> 00:31:19,670
+But in AI we can improve upon
+this by using an informed search.
+
+651
+00:31:19,670 --> 00:31:23,660
+An informed search uses something
+that we know about the problem
+
+652
+00:31:23,660 --> 00:31:27,740
+to try and improve the way we search,
+to allow us to search a little bit more
+
+653
+00:31:27,740 --> 00:31:28,930
+effectively.
+
+654
+00:31:28,930 --> 00:31:30,680
+And to do so we're
+often going to make use
+
+655
+00:31:30,680 --> 00:31:34,070
+of what's known as a heuristic,
+some way of estimating how
+
+656
+00:31:34,069 --> 00:31:36,739
+good a particular state is going to be.
+
+657
+00:31:36,740 --> 00:31:40,120
+So in this maze for example, if
+I'm trying to get from A to B,
+
+658
+00:31:40,119 --> 00:31:42,999
+a heuristic would allow me
+to answer a question like,
+
+659
+00:31:43,000 --> 00:31:48,099
+if I see point C over here and point D
+over there, which one of those points
+
+660
+00:31:48,099 --> 00:31:49,209
+would I rather be at?
+
+661
+00:31:49,210 --> 00:31:53,710
+Which one is better for trying to
+find our way to the destination?
+
+662
+00:31:53,710 --> 00:31:56,467
+And between C and D, breadth-first
+search and depth-first search,
+
+663
+00:31:56,467 --> 00:31:58,300
+they have no knowledge
+of which one of those
+
+664
+00:31:58,299 --> 00:32:01,329
+is going to be better, as far as
+it's concerned every square is just
+
+665
+00:32:01,329 --> 00:32:04,749
+a square, but if you're
+looking at this as a maze,
+
+666
+00:32:04,750 --> 00:32:07,930
+most people would intuitively
+tell you, well, D is better.
+
+667
+00:32:07,930 --> 00:32:11,300
+Even if I don't know exactly
+how to get to the destination,
+
+668
+00:32:11,299 --> 00:32:14,139
+if I could be at either
+C or D, I'd probably
+
+669
+00:32:14,140 --> 00:32:19,340
+pick D because it just looks like
+it's closer to that destination.
+
+670
+00:32:19,339 --> 00:32:21,639
+And so the heuristic we
+could use is one that's
+
+671
+00:32:21,640 --> 00:32:23,800
+often known as the Manhattan distance.
+
+672
+00:32:23,799 --> 00:32:26,409
+The Manhattan distance
+between any two squares
+
+673
+00:32:26,410 --> 00:32:29,890
+effectively says ignore the
+walls, ignore all the boundaries,
+
+674
+00:32:29,890 --> 00:32:34,180
+just consider how many squares like
+in this case up and to the right
+
+675
+00:32:34,180 --> 00:32:38,480
+would I have to go to get from
+where I am to the destination.
+
+676
+00:32:38,480 --> 00:32:41,470
+And so for C, we would go up this
+many squares and then all the way
+
+677
+00:32:41,470 --> 00:32:44,290
+to the right, whereas from D
+doesn't matter whether you go up
+
+678
+00:32:44,289 --> 00:32:47,559
+or to the right first, but I would go
+right four squares and then up two.
+
+679
+00:32:47,559 --> 00:32:50,439
+D as far as Manhattan
+distance is concerned
+
+680
+00:32:50,440 --> 00:32:56,620
+is much closer to the goal than C and
+so I would rather be at D than at C.
+
+681
+00:32:56,619 --> 00:32:59,829
+And as soon as we have that notion
+of like between any two choices,
+
+682
+00:32:59,829 --> 00:33:02,139
+which one of those would I rather be at?
+
+683
+00:33:02,140 --> 00:33:05,470
+That gives us a way to improve
+upon the random guessing
+
+684
+00:33:05,470 --> 00:33:06,680
+that the other algorithms do.
+
+685
+00:33:06,680 --> 00:33:09,430
+Remember the depth-first search
+when it reached a fork in the road
+
+686
+00:33:09,430 --> 00:33:12,160
+and it could go left or right,
+it didn't know which to pick,
+
+687
+00:33:12,160 --> 00:33:14,110
+so it just randomly picked one.
+
+688
+00:33:14,109 --> 00:33:17,709
+Now that we have a heuristic like
+this, we can make an informed choice.
+
+689
+00:33:17,710 --> 00:33:21,070
+We can say, I don't know whether left
+or right is the correct solution,
+
+690
+00:33:21,069 --> 00:33:25,179
+but right is probably going to be better
+than left because of this heuristic.
+
+691
+00:33:25,180 --> 00:33:28,108
+And so I can make those
+sorts of judgments.
+
+692
+00:33:28,107 --> 00:33:30,399
+And so for that, we'll take
+a look at another algorithm
+
+693
+00:33:30,400 --> 00:33:33,130
+known as greedy best-first search.
+
+694
+00:33:33,130 --> 00:33:35,470
+So in greedy best-first
+search, what we're going to do
+
+695
+00:33:35,470 --> 00:33:40,030
+is consider for each of the squares
+what it's heuristic value is according
+
+696
+00:33:40,029 --> 00:33:42,049
+to the Manhattan distance in this case.
+
+697
+00:33:42,049 --> 00:33:45,309
+So this square for example,
+is one away from the goal,
+
+698
+00:33:45,309 --> 00:33:47,169
+so we've labeled it with the number one.
+
+699
+00:33:47,170 --> 00:33:49,200
+This square meanwhile is
+two away from our goal,
+
+700
+00:33:49,200 --> 00:33:51,742
+so we're labeling it with the
+number two, this is three away,
+
+701
+00:33:51,741 --> 00:33:52,746
+this is four away.
+
+702
+00:33:52,747 --> 00:33:54,580
+You'll notice though
+that we're ignoring any
+
+703
+00:33:54,579 --> 00:33:56,997
+of the walls, any of the
+boundaries, because those
+
+704
+00:33:56,998 --> 00:33:58,540
+are going to be difficult to compute.
+
+705
+00:33:58,539 --> 00:34:00,159
+We want something efficient.
+
+706
+00:34:00,160 --> 00:34:02,980
+This square here, even though
+in order to get to the goal
+
+707
+00:34:02,980 --> 00:34:06,208
+we have to follow this winding path
+to go around all the boundaries,
+
+708
+00:34:06,208 --> 00:34:07,750
+we're still giving it a score of two.
+
+709
+00:34:07,750 --> 00:34:11,388
+We want something efficient, right
+now, it just looks like it's two away.
+
+710
+00:34:11,389 --> 00:34:14,949
+So it's not a perfect heuristic,
+the heuristic is just an estimate
+
+711
+00:34:14,949 --> 00:34:17,080
+but we're using it as
+an approximation that's
+
+712
+00:34:17,079 --> 00:34:20,629
+going to help us as we go
+about this search process.
+
+713
+00:34:20,630 --> 00:34:24,460
+And so what we'll do is we'll start the
+same way, starting from point A looking
+
+714
+00:34:24,460 --> 00:34:28,150
+at all of the squares we can get to
+until we reach our first decision
+
+715
+00:34:28,150 --> 00:34:29,120
+point.
+
+716
+00:34:29,119 --> 00:34:33,039
+So here we could choose to go left
+or we could choose to go right
+
+717
+00:34:33,039 --> 00:34:36,369
+and in this case, going left
+according to the heuristic,
+
+718
+00:34:36,369 --> 00:34:40,238
+this square is 13 away from
+the goal and this one over here
+
+719
+00:34:40,239 --> 00:34:41,900
+is 11 away from the goal.
+
+720
+00:34:41,900 --> 00:34:44,650
+So between those two, being
+11 away from the goal,
+
+721
+00:34:44,650 --> 00:34:46,280
+that sounds a whole lot better.
+
+722
+00:34:46,280 --> 00:34:49,969
+So greedy best-first search is going
+to make the choice to go to the right.
+
+723
+00:34:49,969 --> 00:34:53,980
+So we'll go 11, we'll keep following
+until we reach the next decision point.
+
+724
+00:34:53,980 --> 00:34:57,730
+Here from the eight we have two
+choices, up or to the right.
+
+725
+00:34:57,730 --> 00:35:01,090
+As far as the heuristic is concerned
+both of these are equivalent,
+
+726
+00:35:01,090 --> 00:35:05,680
+going up we're seven squares away,
+going to the right we're six plus one.
+
+727
+00:35:05,679 --> 00:35:07,609
+That's a total of seven squares away.
+
+728
+00:35:07,610 --> 00:35:11,020
+So here even greedy best-first search
+sometimes needs to pick randomly.
+
+729
+00:35:11,019 --> 00:35:14,829
+If both squares have the same heuristic
+value, we just have to make a choice.
+
+730
+00:35:14,829 --> 00:35:16,894
+And maybe we make a bad
+choice and hit a dead end
+
+731
+00:35:16,894 --> 00:35:18,519
+but then we can just try the other one.
+
+732
+00:35:18,519 --> 00:35:21,069
+So seven, six, we're
+going to keep following.
+
+733
+00:35:21,070 --> 00:35:25,660
+Here we have another decision point, we
+can go down or we can go to the right,
+
+734
+00:35:25,659 --> 00:35:28,149
+but the one to the right has
+a smaller heuristic value.
+
+735
+00:35:28,150 --> 00:35:29,817
+It's a six instead of an eight.
+
+736
+00:35:29,817 --> 00:35:31,900
+So we're always going to
+try and pick the one that
+
+737
+00:35:31,900 --> 00:35:33,610
+looks like it's going to be closer.
+
+738
+00:35:33,610 --> 00:35:36,370
+So we'll pick the six,
+we'll go to the five.
+
+739
+00:35:36,369 --> 00:35:38,209
+And here we reach one
+more decision point,
+
+740
+00:35:38,210 --> 00:35:40,780
+we can go up which has
+a heuristic of four
+
+741
+00:35:40,780 --> 00:35:43,060
+and we can go down which
+has a heuristic of six.
+
+742
+00:35:43,059 --> 00:35:46,119
+So even here because the
+four is the smaller value,
+
+743
+00:35:46,119 --> 00:35:48,656
+we're going to go up even
+though you, the human can
+
+744
+00:35:48,657 --> 00:35:50,740
+see we're ultimately going
+to run into a dead end,
+
+745
+00:35:50,739 --> 00:35:52,197
+the computer doesn't know that yet.
+
+746
+00:35:52,197 --> 00:35:54,879
+The computer just has to judge
+based on the heuristic what
+
+747
+00:35:54,880 --> 00:35:57,280
+it thinks is the best
+thing to do but eventually
+
+748
+00:35:57,280 --> 00:36:00,550
+it's going to run into that wall,
+realize that it can't make any progress
+
+749
+00:36:00,550 --> 00:36:05,500
+and then go back down here and will
+follow that path until ultimately we
+
+750
+00:36:05,500 --> 00:36:06,860
+arrive at the solution.
+
+751
+00:36:06,860 --> 00:36:10,990
+And so here we arrived at the same
+solution that breadth-first search did,
+
+752
+00:36:10,989 --> 00:36:13,389
+but we didn't need to
+consider all of the squares.
+
+753
+00:36:13,389 --> 00:36:15,789
+We could ignore all of
+these off to the left,
+
+754
+00:36:15,789 --> 00:36:18,429
+we could ignore all of
+these down below just
+
+755
+00:36:18,429 --> 00:36:21,309
+by being a little bit smarter
+about what choice we make.
+
+756
+00:36:21,309 --> 00:36:25,209
+Instead of just choosing randomly
+we make an informed choice
+
+757
+00:36:25,210 --> 00:36:27,770
+based on that heuristic.
+
+758
+00:36:27,769 --> 00:36:30,799
+I'll pause here for any questions
+then about the algorithms
+
+759
+00:36:30,800 --> 00:36:34,760
+we've looked at so far, depth-first
+search, breadth-first search, and now
+
+760
+00:36:34,760 --> 00:36:38,630
+an informed algorithm,
+greedy best-first search.
+
+761
+00:36:38,630 --> 00:36:40,580
+Any questions about these algorithms?
+
+762
+00:36:40,579 --> 00:36:45,099
+Yeah, let's go to let's see, Sofia?
+
+763
+00:36:45,099 --> 00:36:48,709
+AUDIENCE: In like the
+decision to go randomly
+
+764
+00:36:48,710 --> 00:36:53,420
+is it possible to like go further and
+see if there's like lesser values,
+
+765
+00:36:53,420 --> 00:36:55,610
+like go one more step?
+
+766
+00:36:55,610 --> 00:36:59,180
+BRIAN YU: You certainly could like maybe
+try and look ahead a couple of steps
+
+767
+00:36:59,179 --> 00:37:01,039
+and look at what might be following it.
+
+768
+00:37:01,039 --> 00:37:04,399
+And that might offer numbers that
+would improve upon the situation.
+
+769
+00:37:04,400 --> 00:37:07,860
+But even this algorithm is not perfect.
+
+770
+00:37:07,860 --> 00:37:10,580
+In fact, when you're just
+looking at these heuristic values
+
+771
+00:37:10,579 --> 00:37:13,819
+and following the heuristic values,
+sometimes the heuristic values
+
+772
+00:37:13,820 --> 00:37:17,240
+will lead you in a good direction,
+like sometimes in this case,
+
+773
+00:37:17,239 --> 00:37:19,279
+we ultimately, we made
+a couple of wrong turns
+
+774
+00:37:19,280 --> 00:37:21,260
+but ultimately we kind of found our way.
+
+775
+00:37:21,260 --> 00:37:23,280
+But that's not always
+going to be the case.
+
+776
+00:37:23,280 --> 00:37:27,380
+There are some cases where because the
+heuristic is really just an estimate,
+
+777
+00:37:27,380 --> 00:37:29,720
+the heuristic can sometimes be wrong.
+
+778
+00:37:29,719 --> 00:37:31,939
+Take a maze like this
+for example, if you
+
+779
+00:37:31,940 --> 00:37:34,280
+were to follow greedy
+best-first search, you
+
+780
+00:37:34,280 --> 00:37:38,240
+would go 16, 15, 14,
+13, 12, at this point
+
+781
+00:37:38,239 --> 00:37:40,969
+you could decide either
+the 11 or the 13.
+
+782
+00:37:40,969 --> 00:37:43,339
+And greedy best-first search
+would look ahead and say,
+
+783
+00:37:43,340 --> 00:37:46,550
+this path looks pretty good and it's
+going to-- and none of these values
+
+784
+00:37:46,550 --> 00:37:48,860
+are any bigger than
+this 12 and so it would
+
+785
+00:37:48,860 --> 00:37:51,920
+find this path that
+takes you from A to B.
+
+786
+00:37:51,920 --> 00:37:55,220
+But even that path isn't actually
+the optimal path to take.
+
+787
+00:37:55,219 --> 00:37:58,879
+The optimal path to take, the
+shortest path between A and B
+
+788
+00:37:58,880 --> 00:38:02,900
+is actually this one here, which
+looks a little counterintuitive
+
+789
+00:38:02,900 --> 00:38:05,120
+and the reason we didn't
+catch it is because it
+
+790
+00:38:05,119 --> 00:38:09,469
+involves like going to the left
+first and then winding around.
+
+791
+00:38:09,469 --> 00:38:11,509
+And normally according
+to this heuristic,
+
+792
+00:38:11,510 --> 00:38:13,430
+we usually don't want
+to be going to the left
+
+793
+00:38:13,429 --> 00:38:16,489
+because we know that our goal, point
+B where we're trying to get to,
+
+794
+00:38:16,489 --> 00:38:17,559
+it's off to the right.
+
+795
+00:38:17,559 --> 00:38:20,839
+So even if you're looking at these
+heuristic values and looking ahead,
+
+796
+00:38:20,840 --> 00:38:23,120
+this algorithm might not be perfect.
+
+797
+00:38:23,119 --> 00:38:26,504
+And so we might try to improve
+upon this algorithm even more.
+
+798
+00:38:26,505 --> 00:38:28,880
+And so for one final search
+algorithm that I'll show you,
+
+799
+00:38:28,880 --> 00:38:31,130
+the most complex one
+that we've seen yet,
+
+800
+00:38:31,130 --> 00:38:33,860
+is an algorithm known as A * search.
+
+801
+00:38:33,860 --> 00:38:38,210
+A * search tries to build upon the
+ideas of greedy best-first search, which
+
+802
+00:38:38,210 --> 00:38:43,070
+is to say we're going to use a heuristic
+to try and intelligently make choices,
+
+803
+00:38:43,070 --> 00:38:45,840
+but we're going to try and
+solve the problem we just saw,
+
+804
+00:38:45,840 --> 00:38:48,800
+which is that greedy best-first
+search isn't always optimal.
+
+805
+00:38:48,800 --> 00:38:51,230
+When it just takes into
+account the heuristic,
+
+806
+00:38:51,230 --> 00:38:53,360
+it's not always going
+to make the best choice
+
+807
+00:38:53,360 --> 00:38:57,620
+because we might end up choosing
+a path that's ultimately longer.
+
+808
+00:38:57,619 --> 00:39:00,139
+What A * search is
+going to try to realize
+
+809
+00:39:00,139 --> 00:39:03,229
+is that if we've made it
+like all the way down here
+
+810
+00:39:03,230 --> 00:39:06,320
+and now we're at a spot where
+we could be like 11 squares away
+
+811
+00:39:06,320 --> 00:39:11,960
+from the goal, that's OK but honestly,
+being 13 squares away from the goal
+
+812
+00:39:11,960 --> 00:39:14,630
+much sooner is probably better.
+
+813
+00:39:14,630 --> 00:39:17,750
+So we can't just take into
+account the heuristic value,
+
+814
+00:39:17,750 --> 00:39:21,439
+we should also take into account
+how far have we gone already.
+
+815
+00:39:21,440 --> 00:39:23,960
+If I've already traveled
+many squares and I
+
+816
+00:39:23,960 --> 00:39:26,510
+find myself pretty close
+to the goal, I would rather
+
+817
+00:39:26,510 --> 00:39:30,330
+have traveled fewer squares and
+find myself close to the goal.
+
+818
+00:39:30,329 --> 00:39:33,469
+And so A * search is going
+to try to combine these two
+
+819
+00:39:33,469 --> 00:39:37,189
+pieces of information, combine the
+heuristic information that we have seen
+
+820
+00:39:37,190 --> 00:39:40,220
+here, and also combine
+how many steps have
+
+821
+00:39:40,219 --> 00:39:45,679
+I taken so far because that factors
+into the ultimate optimal solution too.
+
+822
+00:39:45,679 --> 00:39:47,681
+And so here's how A *
+search is going to work.
+
+823
+00:39:47,681 --> 00:39:49,639
+It's going to be the
+exact same idea as before,
+
+824
+00:39:49,639 --> 00:39:53,119
+just looking at the heuristic value,
+but instead of only considering
+
+825
+00:39:53,119 --> 00:39:56,779
+the heuristic value, we're going to
+consider taking the heuristic value
+
+826
+00:39:56,780 --> 00:40:00,620
+and adding to it how many
+steps we've already taken.
+
+827
+00:40:00,619 --> 00:40:02,069
+So we take our first step.
+
+828
+00:40:02,070 --> 00:40:06,740
+And now we've taken one step and
+we're 16 squares away from the goal
+
+829
+00:40:06,739 --> 00:40:08,929
+according to the heuristic,
+for a total of 17.
+
+830
+00:40:08,929 --> 00:40:12,739
+And then we take our second step and
+we're 15 squares away from the goal
+
+831
+00:40:12,739 --> 00:40:15,739
+and we take our third step and
+we're 14 squares away from the goal,
+
+832
+00:40:15,739 --> 00:40:20,569
+and we keep going until we reach a
+decision point after five squares,
+
+833
+00:40:20,570 --> 00:40:23,880
+we're now 12 away from the
+goal and now we have a choice,
+
+834
+00:40:23,880 --> 00:40:27,290
+we could go six squares and
+be 11 away from the goal
+
+835
+00:40:27,289 --> 00:40:31,769
+or we could go six squares and be 13
+away from the goal, which is worse.
+
+836
+00:40:31,769 --> 00:40:33,719
+So we're going to make
+the decision to go up.
+
+837
+00:40:33,719 --> 00:40:36,259
+So for now, it doesn't seem
+like we've done any better,
+
+838
+00:40:36,260 --> 00:40:38,525
+we haven't found the
+optimal solution just yet.
+
+839
+00:40:38,525 --> 00:40:40,400
+But notice what will
+happen, eventually if we
+
+840
+00:40:40,400 --> 00:40:44,180
+follow this path for long
+enough we'll end up at a point
+
+841
+00:40:44,179 --> 00:40:47,359
+where we've made 14
+steps and we're estimated
+
+842
+00:40:47,360 --> 00:40:51,560
+to be five away from the goal, one, two,
+three, four, five, ignoring the walls.
+
+843
+00:40:51,559 --> 00:40:55,849
+And now we have a choice, we could
+be six squares away from the goal
+
+844
+00:40:55,849 --> 00:41:01,859
+after having walked 15 steps, so
+15 plus six that's a total of 21,
+
+845
+00:41:01,860 --> 00:41:04,790
+or this option is still available to us.
+
+846
+00:41:04,789 --> 00:41:08,569
+We could be six squares
+away from the start,
+
+847
+00:41:08,570 --> 00:41:13,430
+but be 13 away from the goal,
+six plus 13, that's a total of 19
+
+848
+00:41:13,429 --> 00:41:17,659
+and that 19 is a smaller
+number than this 21.
+
+849
+00:41:17,659 --> 00:41:22,739
+So this 19 is ultimately a better
+choice as far as A * is concerned.
+
+850
+00:41:22,739 --> 00:41:25,849
+So by combining information
+about how far we've traveled
+
+851
+00:41:25,849 --> 00:41:29,162
+and how far is left to go, we can
+make a more intelligent choice,
+
+852
+00:41:29,163 --> 00:41:31,580
+we can say you know what, let's
+go ahead and try this path
+
+853
+00:41:31,579 --> 00:41:35,069
+and A * then will ultimately
+be able to find its way
+
+854
+00:41:35,070 --> 00:41:38,030
+to get from the starting
+point ultimately to the goal.
+
+855
+00:41:38,030 --> 00:41:42,230
+And this algorithm then relies upon
+having a good heuristic function
+
+856
+00:41:42,230 --> 00:41:44,110
+and it just so happens
+that you can prove
+
+857
+00:41:44,110 --> 00:41:46,420
+that if you pick a good
+heuristic function,
+
+858
+00:41:46,420 --> 00:41:48,070
+this algorithm will be optimal.
+
+859
+00:41:48,070 --> 00:41:52,900
+it will always find the shortest
+path from point A to point B
+
+860
+00:41:52,900 --> 00:41:56,200
+and it's not going to get stuck
+like greedy best-first search might
+
+861
+00:41:56,199 --> 00:41:58,509
+on a path that isn't actually optimal.
+
+862
+00:41:58,510 --> 00:42:00,970
+And so there are many of these
+sorts of search algorithms
+
+863
+00:42:00,969 --> 00:42:04,659
+that are designed to try and
+find intelligent ways to find
+
+864
+00:42:04,659 --> 00:42:09,109
+a solution to some problem, to navigate
+its way through some landscape.
+
+865
+00:42:09,110 --> 00:42:11,590
+And so I'll pause here
+for any questions then
+
+866
+00:42:11,590 --> 00:42:14,230
+about search algorithms in general.
+
+867
+00:42:14,230 --> 00:42:17,470
+We've taken a look at what we
+call classical search, navigating
+
+868
+00:42:17,469 --> 00:42:20,887
+our way through a maze for example,
+or finding driving directions as well
+
+869
+00:42:20,887 --> 00:42:23,679
+as what we might call adversarial
+search, where there's an opponent
+
+870
+00:42:23,679 --> 00:42:27,309
+and you're trying to search for the
+best move in a game of tic-tac-toe
+
+871
+00:42:27,309 --> 00:42:28,591
+or a game of chess.
+
+872
+00:42:28,592 --> 00:42:30,550
+DAVID MALAN: Brian, one
+question from the chat.
+
+873
+00:42:30,550 --> 00:42:32,560
+Does the assignment of
+these heuristic values
+
+874
+00:42:32,559 --> 00:42:35,631
+also take a lot of time for the
+computer or is that automatic?
+
+875
+00:42:35,632 --> 00:42:37,840
+BRIAN YU: Ideally you want
+to find a heuristic that's
+
+876
+00:42:37,840 --> 00:42:40,420
+going to be efficient to calculate.
+
+877
+00:42:40,420 --> 00:42:44,170
+So if the time it takes to calculate the
+heuristic takes a long time, then yeah,
+
+878
+00:42:44,170 --> 00:42:46,490
+it could be the case that
+this would be even worse.
+
+879
+00:42:46,489 --> 00:42:48,656
+But ideally, you want to
+look for a heuristic that's
+
+880
+00:42:48,657 --> 00:42:50,500
+going to be very quick
+to calculate and this
+
+881
+00:42:50,500 --> 00:42:52,839
+is why sometimes when we're
+looking at heuristics,
+
+882
+00:42:52,840 --> 00:42:56,845
+we're going to ignore some of the
+details that make this more complex.
+
+883
+00:42:56,844 --> 00:42:58,719
+Like when we're calculating
+these heuristics,
+
+884
+00:42:58,719 --> 00:43:02,169
+we're ignoring the walls because
+having to deal with the walls is
+
+885
+00:43:02,170 --> 00:43:03,220
+going to make it even--
+
+886
+00:43:03,219 --> 00:43:05,799
+it's going to make it take
+longer and longer amounts of time
+
+887
+00:43:05,800 --> 00:43:07,605
+to be able to figure out these values.
+
+888
+00:43:07,605 --> 00:43:09,730
+And so by ignoring the
+walls, we can pretty quickly
+
+889
+00:43:09,730 --> 00:43:12,400
+calculate just like
+x, y coordinate wise,
+
+890
+00:43:12,400 --> 00:43:16,840
+how many coordinate squares are
+we away from that destination.
+
+891
+00:43:16,840 --> 00:43:19,990
+Also, I've been labeling
+all of the squares
+
+892
+00:43:19,989 --> 00:43:22,479
+in this grid with their
+heuristic value, just so you can
+
+893
+00:43:22,480 --> 00:43:24,610
+see what those heuristic values are.
+
+894
+00:43:24,610 --> 00:43:28,600
+In practice, if our search
+algorithm never touches a square,
+
+895
+00:43:28,599 --> 00:43:30,759
+like it never touches
+any of these squares,
+
+896
+00:43:30,760 --> 00:43:33,500
+it's not going to bother computing
+heuristic values for them
+
+897
+00:43:33,500 --> 00:43:35,500
+because it's not relevant
+to the search process.
+
+898
+00:43:35,500 --> 00:43:38,200
+So it'll never actually
+calculate the heuristic values
+
+899
+00:43:38,199 --> 00:43:40,419
+for all of these squares,
+which will save time too.
+
+900
+00:43:40,420 --> 00:43:43,928
+I have just shown them to you visually
+so that you can see all of the squares
+
+901
+00:43:43,927 --> 00:43:45,719
+and what numbers would
+be assigned to them.
+
+902
+00:43:45,719 --> 00:43:47,109
+But yeah, really great question.
+
+903
+00:43:47,110 --> 00:43:50,550
+
+
+904
+00:43:50,550 --> 00:43:52,550
+All right and, Kurt, was
+there another question?
+
+905
+00:43:52,550 --> 00:43:57,020
+
+
+906
+00:43:57,019 --> 00:43:58,769
+AUDIENCE: Yeah, I was
+just wondering if, I
+
+907
+00:43:58,769 --> 00:44:02,369
+mean, the example that you
+showed it's using like a map
+
+908
+00:44:02,369 --> 00:44:04,349
+to actually search through
+a map, so it kind of
+
+909
+00:44:04,349 --> 00:44:07,139
+like maps directly onto
+sort of the concept
+
+910
+00:44:07,139 --> 00:44:10,089
+but like could this also be
+used for like textual search
+
+911
+00:44:10,090 --> 00:44:12,840
+or other kinds of searches through
+like different kinds of problem
+
+912
+00:44:12,840 --> 00:44:14,112
+spaces or no?
+
+913
+00:44:14,112 --> 00:44:17,070
+BRIAN YU: Yeah, this can be used for
+a lot of different problem spaces.
+
+914
+00:44:17,070 --> 00:44:19,080
+For text they're usually
+different approaches
+
+915
+00:44:19,079 --> 00:44:21,209
+in the world of like
+natural language processing
+
+916
+00:44:21,210 --> 00:44:24,180
+but you can use these kinds
+of search algorithms any time
+
+917
+00:44:24,179 --> 00:44:26,819
+you have some computer
+which we'll usually
+
+918
+00:44:26,820 --> 00:44:29,490
+call like an agent, something
+that's making decisions, that
+
+919
+00:44:29,489 --> 00:44:33,059
+has to make certain
+decisions at certain points,
+
+920
+00:44:33,059 --> 00:44:36,059
+even if those decisions aren't like
+geographic decisions about which
+
+921
+00:44:36,059 --> 00:44:40,139
+way to walk, for example, as long as
+it's making some decision that moves it
+
+922
+00:44:40,139 --> 00:44:44,819
+into like a different position, you can
+often apply these types of algorithms
+
+923
+00:44:44,820 --> 00:44:46,660
+in order to solve problems.
+
+924
+00:44:46,659 --> 00:44:49,769
+And so these algorithms are
+not just good for maze solving,
+
+925
+00:44:49,769 --> 00:44:52,537
+they can be used in other domains too.
+
+926
+00:44:52,538 --> 00:44:54,330
+So ultimately what I
+want to move on to now
+
+927
+00:44:54,329 --> 00:44:58,109
+is less about just coming up with these
+algorithms that let the AI figure out
+
+928
+00:44:58,110 --> 00:45:00,330
+exactly what to do
+right away, but looking
+
+929
+00:45:00,329 --> 00:45:03,359
+at a type of artificial
+intelligence that you've probably
+
+930
+00:45:03,360 --> 00:45:04,980
+heard of called machine learning.
+
+931
+00:45:04,980 --> 00:45:08,130
+And machine learning is all
+about trying to take our AI
+
+932
+00:45:08,130 --> 00:45:11,520
+and trying to get it to
+learn, learn somehow from data
+
+933
+00:45:11,519 --> 00:45:13,199
+or learn from experience.
+
+934
+00:45:13,199 --> 00:45:15,332
+Much the same way that
+humans might learn,
+
+935
+00:45:15,333 --> 00:45:17,250
+that we learn from looking
+at our environment,
+
+936
+00:45:17,250 --> 00:45:20,700
+we learn from our surroundings,
+we learn from our experiences,
+
+937
+00:45:20,699 --> 00:45:23,529
+and we get something out
+of those experiences.
+
+938
+00:45:23,530 --> 00:45:25,860
+And so one type of
+machine learning is known
+
+939
+00:45:25,860 --> 00:45:27,750
+as reinforcement
+learning, where you learn
+
+940
+00:45:27,750 --> 00:45:29,819
+from positive or negative rewards.
+
+941
+00:45:29,820 --> 00:45:32,880
+The computer does something
+well and it gets a reward,
+
+942
+00:45:32,880 --> 00:45:36,030
+the computer does something poorly,
+it gets some sort of punishment
+
+943
+00:45:36,030 --> 00:45:38,890
+and the computer tries
+to learn from that.
+
+944
+00:45:38,889 --> 00:45:41,069
+Let's imagine for example,
+a very simple game
+
+945
+00:45:41,070 --> 00:45:43,440
+that we might want our
+computer to play, the computer
+
+946
+00:45:43,440 --> 00:45:45,950
+is going to try to navigate
+its way through these tiles
+
+947
+00:45:45,949 --> 00:45:47,699
+and it's going to try
+and get to the goal,
+
+948
+00:45:47,699 --> 00:45:51,239
+similar to what we've seen
+before, but this time the computer
+
+949
+00:45:51,239 --> 00:45:53,039
+doesn't know where the obstacles are.
+
+950
+00:45:53,039 --> 00:45:56,429
+Let's imagine that there are some
+obstacles in its way highlighted
+
+951
+00:45:56,429 --> 00:46:00,119
+in red here and if our computer
+agent, this yellow dot here,
+
+952
+00:46:00,119 --> 00:46:04,199
+ever hits one of those obstacles,
+the computer loses this game.
+
+953
+00:46:04,199 --> 00:46:06,749
+So it hits an obstacle, the
+computer loses but the computer
+
+954
+00:46:06,750 --> 00:46:08,939
+doesn't know where the obstacles are.
+
+955
+00:46:08,940 --> 00:46:12,098
+I'm showing them to you visually
+but the computer has no idea.
+
+956
+00:46:12,097 --> 00:46:14,139
+How would the computer
+try to solve this problem?
+
+957
+00:46:14,139 --> 00:46:16,049
+How would you try to solve the problem?
+
+958
+00:46:16,050 --> 00:46:19,980
+Well, all it can do it first is
+randomly make a choice, randomly guess.
+
+959
+00:46:19,980 --> 00:46:24,000
+Like let's choose to go to the right,
+OK we hit an obstacle that was no good.
+
+960
+00:46:24,000 --> 00:46:26,100
+But the computer now can
+learn from experience.
+
+961
+00:46:26,099 --> 00:46:30,419
+As long as it knows once it hits the
+obstacle that was a bad outcome, well
+
+962
+00:46:30,420 --> 00:46:33,870
+now in the future the computer can
+learn, I better not do that anymore,
+
+963
+00:46:33,869 --> 00:46:37,214
+rather than go to the right, let me
+try something else, I'll try moving up.
+
+964
+00:46:37,215 --> 00:46:39,090
+All right, that seemed
+to have worked better,
+
+965
+00:46:39,090 --> 00:46:41,790
+let me try making another action
+and let's try another one,
+
+966
+00:46:41,789 --> 00:46:43,439
+maybe I'll go down this time.
+
+967
+00:46:43,440 --> 00:46:46,260
+OK that led to an obstacle, so
+the computer learns from that too.
+
+968
+00:46:46,260 --> 00:46:49,770
+It learns that was a bad thing to
+try, so let's try something else.
+
+969
+00:46:49,769 --> 00:46:52,109
+Maybe we try going up
+this time, that too
+
+970
+00:46:52,110 --> 00:46:55,697
+leads to an obstacle, that was no good,
+so maybe we'll try going to the right.
+
+971
+00:46:55,697 --> 00:46:57,780
+That seemed OK, maybe we'll
+go to the right again.
+
+972
+00:46:57,780 --> 00:46:59,850
+All right, that led to another obstacle.
+
+973
+00:46:59,849 --> 00:47:02,309
+And so over and over
+it's just making mistakes
+
+974
+00:47:02,309 --> 00:47:04,869
+and we let the computer
+make those mistakes
+
+975
+00:47:04,869 --> 00:47:07,019
+but every time it makes
+a mistake, the computer
+
+976
+00:47:07,019 --> 00:47:08,352
+is learning something from that.
+
+977
+00:47:08,353 --> 00:47:11,820
+It's learning what to do or
+what not to do the next time it
+
+978
+00:47:11,820 --> 00:47:13,660
+goes through the same process.
+
+979
+00:47:13,659 --> 00:47:17,339
+And so in the future, it can navigate
+its way around and eventually
+
+980
+00:47:17,340 --> 00:47:20,560
+with enough trial and error, it
+can find its way to the goal.
+
+981
+00:47:20,559 --> 00:47:22,559
+And once it's found its
+way to the goal, it'll
+
+982
+00:47:22,559 --> 00:47:27,179
+remember that too, it'll know I now
+know exactly what sequence of actions
+
+983
+00:47:27,179 --> 00:47:30,189
+will take me from the
+starting point to the goal.
+
+984
+00:47:30,190 --> 00:47:35,160
+And so in the future I can just keep
+doing that again and again and again.
+
+985
+00:47:35,159 --> 00:47:37,709
+So that then is an example
+of reinforcement learning,
+
+986
+00:47:37,710 --> 00:47:40,698
+but even with this example here
+do you see any potential problems
+
+987
+00:47:40,697 --> 00:47:41,489
+with this approach?
+
+988
+00:47:41,489 --> 00:47:43,559
+Limitations or downsides
+to what we've just
+
+989
+00:47:43,559 --> 00:47:50,019
+done here, reasons why this AI
+might not be perfect, any thoughts?
+
+990
+00:47:50,019 --> 00:47:51,564
+Let's go to [? Lexleen. ?]
+
+991
+00:47:51,565 --> 00:47:53,940
+AUDIENCE: It might not be
+taking the most efficient path.
+
+992
+00:47:53,940 --> 00:47:56,460
+BRIAN YU: Yeah, absolutely
+because it's randomly trying,
+
+993
+00:47:56,460 --> 00:47:58,560
+eventually it will find
+its way to the goal
+
+994
+00:47:58,559 --> 00:48:01,679
+but it might not necessarily find
+the best path because here there
+
+995
+00:48:01,679 --> 00:48:04,629
+was a faster path, there was a
+faster way to get to the goal,
+
+996
+00:48:04,630 --> 00:48:08,340
+and that was to say once
+you get here go up instead
+
+997
+00:48:08,340 --> 00:48:10,470
+and that will lead to
+a more efficient path.
+
+998
+00:48:10,469 --> 00:48:12,809
+But because our AI is
+learning, like whenever it
+
+999
+00:48:12,809 --> 00:48:14,669
+reaches the goal it learns to do that.
+
+1000
+00:48:14,670 --> 00:48:17,170
+When it doesn't reach the
+goal learns not to do that.
+
+1001
+00:48:17,170 --> 00:48:22,823
+Our AI doesn't have that ability to
+find that better path in the future.
+
+1002
+00:48:22,822 --> 00:48:24,239
+And so we could improve upon this.
+
+1003
+00:48:24,239 --> 00:48:28,379
+And this is what we call a trade
+off between exploring and exploiting
+
+1004
+00:48:28,380 --> 00:48:29,520
+in artificial intelligence.
+
+1005
+00:48:29,519 --> 00:48:31,979
+We want our AI to do
+both of these things.
+
+1006
+00:48:31,980 --> 00:48:36,360
+We want AI to exploit the knowledge
+it already has, it knows what to do,
+
+1007
+00:48:36,360 --> 00:48:39,270
+it knows what not to do, we
+want it to use that information,
+
+1008
+00:48:39,269 --> 00:48:42,059
+but we also want it to
+explore a little bit.
+
+1009
+00:48:42,059 --> 00:48:44,939
+We want it to sometimes
+try some new action
+
+1010
+00:48:44,940 --> 00:48:47,190
+that it hasn't tried
+before because maybe
+
+1011
+00:48:47,190 --> 00:48:51,120
+that'll be even better than the
+things I've already tried in the past.
+
+1012
+00:48:51,119 --> 00:48:53,669
+So so far our AI in
+the example just now,
+
+1013
+00:48:53,670 --> 00:48:57,890
+was only ever exploiting the knowledge
+it already has but it was never
+
+1014
+00:48:57,889 --> 00:48:59,699
+exploring something new.
+
+1015
+00:48:59,699 --> 00:49:01,834
+And so often when we're
+training AI, we want
+
+1016
+00:49:01,835 --> 00:49:04,170
+it to find some sort of nice
+balance between the two.
+
+1017
+00:49:04,170 --> 00:49:07,850
+We want it to make good choices,
+but occasionally take a risk,
+
+1018
+00:49:07,849 --> 00:49:11,719
+try something else, see if maybe
+we can find a better solution.
+
+1019
+00:49:11,719 --> 00:49:15,919
+And so one strategy for doing this is
+known as the epsilon-greedy approach
+
+1020
+00:49:15,920 --> 00:49:19,850
+to trying to solve these problems,
+where we assign a value, epsilon,
+
+1021
+00:49:19,849 --> 00:49:23,239
+which is equal to some
+proportion, some probability
+
+1022
+00:49:23,239 --> 00:49:26,249
+that our computer is just
+going to make a random choice.
+
+1023
+00:49:26,250 --> 00:49:29,359
+And so we might say if we
+generate a random number
+
+1024
+00:49:29,360 --> 00:49:33,440
+and it's less than epsilon, which in
+this case happens like 10% of the time,
+
+1025
+00:49:33,440 --> 00:49:35,600
+then let's go ahead
+and make a random move,
+
+1026
+00:49:35,599 --> 00:49:38,899
+rather than make an intelligent,
+smart move just pick a move randomly
+
+1027
+00:49:38,900 --> 00:49:41,678
+and the rest of the
+time, 90% of the time,
+
+1028
+00:49:41,677 --> 00:49:44,719
+make the move that we know to be the
+best, the one with the highest value
+
+1029
+00:49:44,719 --> 00:49:46,249
+we know of so far.
+
+1030
+00:49:46,250 --> 00:49:48,680
+And this will often
+result in a nice balance.
+
+1031
+00:49:48,679 --> 00:49:51,679
+90% of the time our AI
+will make good choices
+
+1032
+00:49:51,679 --> 00:49:54,889
+that it knows to be good
+choices, but 10% of the time
+
+1033
+00:49:54,889 --> 00:49:56,809
+it'll make a new
+choice, something random
+
+1034
+00:49:56,809 --> 00:49:58,789
+and maybe it'll stumble
+across something bad
+
+1035
+00:49:58,789 --> 00:50:01,129
+and know to avoid that in
+the future, but maybe it'll
+
+1036
+00:50:01,130 --> 00:50:06,180
+come across something better and know
+to do that better in the future as well.
+
+1037
+00:50:06,179 --> 00:50:08,659
+And so I'll show you a real
+live demo of this actually.
+
+1038
+00:50:08,659 --> 00:50:11,929
+Years back, the Italian
+Institute of Technology
+
+1039
+00:50:11,929 --> 00:50:15,079
+was working through an example of
+trying to do something just like this,
+
+1040
+00:50:15,079 --> 00:50:18,009
+but before we move on I think
+there's a question from the chat?
+
+1041
+00:50:18,010 --> 00:50:20,180
+DAVID MALAN: Brian, someone
+asks, is this related
+
+1042
+00:50:20,179 --> 00:50:22,489
+to genetic algorithms, this approach?
+
+1043
+00:50:22,489 --> 00:50:25,729
+BRIAN YU: Genetic algorithms are
+another type of this type of learning.
+
+1044
+00:50:25,730 --> 00:50:28,010
+We're going to actually going to
+talk about genetic algorithms in just
+
+1045
+00:50:28,010 --> 00:50:28,510
+a moment.
+
+1046
+00:50:28,510 --> 00:50:30,240
+So we'll get there very shortly.
+
+1047
+00:50:30,239 --> 00:50:33,289
+But yes, definitely something related.
+
+1048
+00:50:33,289 --> 00:50:35,659
+So the Italian Institute of
+Technology a couple of years
+
+1049
+00:50:35,659 --> 00:50:39,166
+back tried to teach a
+robot how to flip pancakes.
+
+1050
+00:50:39,166 --> 00:50:41,749
+Something that you might have
+done before or seen someone else
+
+1051
+00:50:41,750 --> 00:50:46,429
+do before but in practice, it's
+difficult to encode in a robot
+
+1052
+00:50:46,429 --> 00:50:47,569
+exactly how to do that.
+
+1053
+00:50:47,570 --> 00:50:51,200
+Exactly what moves to make, exactly
+how to move its robotic muscle to be
+
+1054
+00:50:51,199 --> 00:50:52,939
+able to flip a pancake effectively.
+
+1055
+00:50:52,940 --> 00:50:57,440
+So rather than try to program every
+last movement into the computer,
+
+1056
+00:50:57,440 --> 00:51:00,290
+they just let the robot learn
+via reinforcement learning.
+
+1057
+00:51:00,289 --> 00:51:02,959
+Every time it flipped a
+pancake incorrectly it
+
+1058
+00:51:02,960 --> 00:51:05,300
+learned what not to do in
+the future and every time it
+
+1059
+00:51:05,300 --> 00:51:08,730
+flipped a pancake correctly, it
+learned what to do in the future.
+
+1060
+00:51:08,730 --> 00:51:11,760
+And so I'll go ahead and pull
+up an example of this now.
+
+1061
+00:51:11,760 --> 00:51:15,500
+And so what we're going to take a
+look at here is a artificial pancake.
+
+1062
+00:51:15,500 --> 00:51:18,950
+And initially, the
+human researcher shows
+
+1063
+00:51:18,949 --> 00:51:20,629
+the robot what success looks like.
+
+1064
+00:51:20,630 --> 00:51:22,940
+The robot needs to know
+what is success and what
+
+1065
+00:51:22,940 --> 00:51:24,980
+is failure so the human demonstrates.
+
+1066
+00:51:24,980 --> 00:51:27,620
+Here is what it looks like to
+actually do the pancake flipping
+
+1067
+00:51:27,619 --> 00:51:30,049
+by demonstrating exactly
+what motion to make
+
+1068
+00:51:30,050 --> 00:51:32,390
+and what it feels like to
+successfully flip a pancake
+
+1069
+00:51:32,389 --> 00:51:33,859
+and then we let the robot try it.
+
+1070
+00:51:33,860 --> 00:51:36,722
+
+
+1071
+00:51:36,722 --> 00:51:38,930
+All right, that was his
+first try, not to successful.
+
+1072
+00:51:38,929 --> 00:51:40,269
+We'll try it again.
+
+1073
+00:51:40,269 --> 00:51:43,606
+Here's after three tries.
+
+1074
+00:51:43,606 --> 00:51:44,939
+OK, not great but it's learning.
+
+1075
+00:51:44,940 --> 00:51:48,023
+Every time it does something wrong it
+learns what not to do in the future.
+
+1076
+00:51:48,023 --> 00:51:50,280
+He has five tries, he
+has 10 tries, not great.
+
+1077
+00:51:50,280 --> 00:51:59,580
+And now after 15 tries or so, or 11
+tries I guess, we'll see what happens.
+
+1078
+00:51:59,579 --> 00:52:00,629
+OK so not great, right?
+
+1079
+00:52:00,630 --> 00:52:04,980
+It takes a while to learn these kinds
+of techniques to learn, here's 15 tries,
+
+1080
+00:52:04,980 --> 00:52:08,950
+all right but finally after enough tries
+once you do enough practice with this.
+
+1081
+00:52:08,949 --> 00:52:11,369
+Here's after 50 tries
+and we now actually
+
+1082
+00:52:11,369 --> 00:52:14,939
+have a robot that has learned to
+successfully perform this task,
+
+1083
+00:52:14,940 --> 00:52:17,615
+not because human programmers
+told it exactly how to do so,
+
+1084
+00:52:17,614 --> 00:52:20,489
+but because it learned from that
+failure and learned from experience.
+
+1085
+00:52:20,489 --> 00:52:23,399
+And once it knows how, it knows
+exactly what to do in the future.
+
+1086
+00:52:23,400 --> 00:52:27,090
+It can continually replicate
+that behavior over and over again
+
+1087
+00:52:27,090 --> 00:52:30,385
+once it's trained to be
+able to perform that task.
+
+1088
+00:52:30,385 --> 00:52:33,450
+
+
+1089
+00:52:33,449 --> 00:52:39,579
+So that then is how you might take
+advantage of this idea of reinforcement
+
+1090
+00:52:39,579 --> 00:52:42,249
+learning but someone in the
+chat brought up another approach
+
+1091
+00:52:42,250 --> 00:52:45,850
+to this type of thing known as genetic
+algorithms or genetic learning.
+
+1092
+00:52:45,849 --> 00:52:48,069
+And this is where a
+lot of machine learning
+
+1093
+00:52:48,070 --> 00:52:52,600
+has taken inspiration from the
+human brain, how humans learn
+
+1094
+00:52:52,599 --> 00:52:55,179
+and how nature works and
+because nature has managed
+
+1095
+00:52:55,179 --> 00:52:57,729
+to evolve intelligent
+beings, why couldn't we
+
+1096
+00:52:57,730 --> 00:53:00,320
+try to do the same thing
+in a computer as well?
+
+1097
+00:53:00,320 --> 00:53:04,300
+And so in nature, you have generations
+of populations that evolve over time,
+
+1098
+00:53:04,300 --> 00:53:06,790
+where the most fit
+organisms survive and are
+
+1099
+00:53:06,789 --> 00:53:10,959
+able to evolve and mutate and change
+over time to become better and better
+
+1100
+00:53:10,960 --> 00:53:12,800
+at adapting to their environment.
+
+1101
+00:53:12,800 --> 00:53:15,460
+And so one strategy,
+one approach to trying
+
+1102
+00:53:15,460 --> 00:53:20,830
+to build intelligent machines is
+rather than program one algorithm that
+
+1103
+00:53:20,829 --> 00:53:23,019
+is really good at
+performing a task, let's
+
+1104
+00:53:23,019 --> 00:53:27,189
+just create a lot of algorithms that
+are really bad at performing the task
+
+1105
+00:53:27,190 --> 00:53:29,120
+because that's much easier to do.
+
+1106
+00:53:29,119 --> 00:53:32,169
+But we'll let them evolve,
+we'll let them try some task
+
+1107
+00:53:32,170 --> 00:53:35,540
+and after they do it,
+they won't do very well
+
+1108
+00:53:35,539 --> 00:53:37,569
+but we'll take the
+ones that did the best
+
+1109
+00:53:37,570 --> 00:53:40,450
+and replicate them and mutate
+them and let them try again.
+
+1110
+00:53:40,449 --> 00:53:42,939
+And then repeat this
+generation after generation,
+
+1111
+00:53:42,940 --> 00:53:46,090
+eliminating all of the computer
+programs that don't perform well
+
+1112
+00:53:46,090 --> 00:53:48,732
+but duplicating and
+mutating the ones that do.
+
+1113
+00:53:48,731 --> 00:53:51,439
+The pseudocode for which might
+look a little something like this.
+
+1114
+00:53:51,440 --> 00:53:55,030
+We're going to start by making an
+initial generation of candidates
+
+1115
+00:53:55,030 --> 00:53:59,170
+randomly, where each candidate is
+some program designed to try and solve
+
+1116
+00:53:59,170 --> 00:54:01,705
+some task but rather than
+program it intelligently
+
+1117
+00:54:01,704 --> 00:54:03,579
+the way you've been
+doing all semester, we're
+
+1118
+00:54:03,579 --> 00:54:06,879
+just going to program them randomly
+to just make random choices
+
+1119
+00:54:06,880 --> 00:54:10,690
+and we're going to repeat this process
+until eventually they're successful.
+
+1120
+00:54:10,690 --> 00:54:14,050
+We're going to for each one of these
+candidates calculate its fitness,
+
+1121
+00:54:14,050 --> 00:54:18,767
+calculate how good is it at performing
+the task that it's designed to do.
+
+1122
+00:54:18,766 --> 00:54:21,099
+And then we're going to remove
+the least fit candidates.
+
+1123
+00:54:21,099 --> 00:54:23,329
+Maybe take the half of them
+that didn't do very well,
+
+1124
+00:54:23,329 --> 00:54:26,749
+eliminate those but take
+the ones that did do well
+
+1125
+00:54:26,750 --> 00:54:30,609
+and make a new generation from the
+remaining candidates, duplicate them,
+
+1126
+00:54:30,610 --> 00:54:33,430
+make a few mutations to them
+randomly just to change things up
+
+1127
+00:54:33,429 --> 00:54:37,809
+and to see how things work in order
+to try to create a better generation.
+
+1128
+00:54:37,809 --> 00:54:41,919
+And over time as we repeat this process,
+in much the same way that evolution
+
+1129
+00:54:41,920 --> 00:54:44,710
+is able to continually produce
+better and better organisms that
+
+1130
+00:54:44,710 --> 00:54:48,490
+are more and more fit, we can do
+the same thing with our algorithms
+
+1131
+00:54:48,489 --> 00:54:51,279
+too, producing better and
+better algorithms over time.
+
+1132
+00:54:51,280 --> 00:54:53,470
+I have another demo to show you of this.
+
+1133
+00:54:53,469 --> 00:54:57,909
+Here is a simulation of
+some self-driving cars that
+
+1134
+00:54:57,909 --> 00:55:02,229
+have not been programmed how to drive
+but are starting out driving entirely
+
+1135
+00:55:02,230 --> 00:55:04,450
+randomly each of these
+rectangles you see
+
+1136
+00:55:04,449 --> 00:55:07,149
+is one example of a
+virtual self-driving car.
+
+1137
+00:55:07,150 --> 00:55:09,940
+Each of the little crosshairs
+you see, the little Xs,
+
+1138
+00:55:09,940 --> 00:55:11,960
+are sensors that the car has access to.
+
+1139
+00:55:11,960 --> 00:55:16,450
+So the car has access to data about
+how far away in any given direction
+
+1140
+00:55:16,449 --> 00:55:19,389
+particular obstacles are and
+what these cars are trying
+
+1141
+00:55:19,389 --> 00:55:23,499
+to learn is how to drive
+through some sort of environment
+
+1142
+00:55:23,500 --> 00:55:25,247
+while not crashing into anything.
+
+1143
+00:55:25,248 --> 00:55:27,040
+And initially they
+didn't do very well, you
+
+1144
+00:55:27,039 --> 00:55:29,649
+notice they were crashing
+almost immediately but now we're
+
+1145
+00:55:29,650 --> 00:55:32,158
+about six generations
+in, seven generations in,
+
+1146
+00:55:32,157 --> 00:55:33,949
+they're starting to do
+a little bit better.
+
+1147
+00:55:33,949 --> 00:55:38,177
+They're starting to get a sense for
+like turning when you run into a wall.
+
+1148
+00:55:38,177 --> 00:55:39,969
+Even when they get to
+new environments they
+
+1149
+00:55:39,969 --> 00:55:43,136
+haven't necessarily seen before, they're
+starting to do a little bit better.
+
+1150
+00:55:43,137 --> 00:55:45,095
+But of course, they're
+still not great, they're
+
+1151
+00:55:45,094 --> 00:55:46,449
+still crashing quite frequently.
+
+1152
+00:55:46,449 --> 00:55:50,469
+Sometimes a generation does even
+worse than the generation before it,
+
+1153
+00:55:50,469 --> 00:55:52,719
+because it's not always going
+to be the case that when
+
+1154
+00:55:52,719 --> 00:55:55,779
+you make random mutations those
+mutations are not necessarily
+
+1155
+00:55:55,780 --> 00:55:56,840
+going to be better.
+
+1156
+00:55:56,840 --> 00:56:00,020
+Sometimes the mutations actually
+end up being a little bit worse.
+
+1157
+00:56:00,019 --> 00:56:02,859
+And so they might move
+backwards a little bit.
+
+1158
+00:56:02,860 --> 00:56:05,320
+But over time, generation
+after generation,
+
+1159
+00:56:05,320 --> 00:56:09,490
+you're hopefully seeing that now 10
+generations in, these cars in general
+
+1160
+00:56:09,489 --> 00:56:11,889
+are doing a whole lot
+better than they were before
+
+1161
+00:56:11,889 --> 00:56:15,249
+and every generation we're taking
+whichever cars made it the furthest,
+
+1162
+00:56:15,250 --> 00:56:19,599
+duplicating those, eliminating
+the rest, and moving forward.
+
+1163
+00:56:19,599 --> 00:56:21,519
+Is there a question in the chat?
+
+1164
+00:56:21,519 --> 00:56:23,769
+DAVID MALAN: Yeah, with
+regard to the pancakes,
+
+1165
+00:56:23,769 --> 00:56:27,219
+how did the robot know what was wrong
+with the previous pancake flips?
+
+1166
+00:56:27,219 --> 00:56:30,549
+In the case of the cars how
+does the car know that it erred?
+
+1167
+00:56:30,550 --> 00:56:33,800
+BRIAN YU: Yeah, so whenever you're doing
+anything with reinforcement learning,
+
+1168
+00:56:33,800 --> 00:56:36,040
+whether it's the pancakes
+or these robots here,
+
+1169
+00:56:36,039 --> 00:56:39,909
+the programmer still needs to tell
+the AI what does success look like
+
+1170
+00:56:39,909 --> 00:56:41,539
+and what does failure look like.
+
+1171
+00:56:41,539 --> 00:56:45,549
+So in the pancake example, we
+trained the pancake flipper
+
+1172
+00:56:45,550 --> 00:56:49,795
+to be able to know that when you're
+flipping this pancake when it's first
+
+1173
+00:56:49,795 --> 00:56:51,920
+taught what does it look
+like when it's successful.
+
+1174
+00:56:51,920 --> 00:56:53,837
+So it gets a feel for
+that and it was probably
+
+1175
+00:56:53,836 --> 00:56:57,469
+also told that if the pancake falls,
+that's not a good thing for example.
+
+1176
+00:56:57,469 --> 00:57:00,769
+And that's not something
+that the AI should try to do.
+
+1177
+00:57:00,769 --> 00:57:02,739
+And in this case, I
+assume these cars have
+
+1178
+00:57:02,739 --> 00:57:06,579
+been programmed to be told that if you
+crash into something that that is not
+
+1179
+00:57:06,579 --> 00:57:10,029
+good, that the car presumably can
+detect after it's crashed into something
+
+1180
+00:57:10,030 --> 00:57:14,042
+and so it probably also has some sense
+of like how far it was able to drive,
+
+1181
+00:57:14,041 --> 00:57:16,749
+such that we could duplicate the
+ones that did drive the furthest
+
+1182
+00:57:16,750 --> 00:57:19,839
+and not the ones that didn't
+and let's see how this car does,
+
+1183
+00:57:19,840 --> 00:57:22,330
+it was so close to the
+end, didn't quite make it.
+
+1184
+00:57:22,329 --> 00:57:27,029
+Maybe give it one more generation and
+we'll see how this generation does.
+
+1185
+00:57:27,030 --> 00:57:29,075
+And all right, so it's
+navigating these turns,
+
+1186
+00:57:29,074 --> 00:57:31,199
+looks like a whole bunch
+didn't make it but as long
+
+1187
+00:57:31,199 --> 00:57:32,999
+as we get one successful
+one, we can learn
+
+1188
+00:57:33,000 --> 00:57:35,020
+from that successful one in the future.
+
+1189
+00:57:35,019 --> 00:57:39,929
+Here's the ending, looks like
+they crashed but and all right, it
+
+1190
+00:57:39,929 --> 00:57:42,989
+looks like one car was finally
+able to make it to the end
+
+1191
+00:57:42,989 --> 00:57:46,679
+and was able to successfully
+learn that task of how to navigate
+
+1192
+00:57:46,679 --> 00:57:48,539
+through this environment of mazes.
+
+1193
+00:57:48,539 --> 00:57:52,499
+So I'll pause here for questions
+then about reinforcement learning
+
+1194
+00:57:52,500 --> 00:57:56,519
+and how these ideas might have worked.
+
+1195
+00:57:56,519 --> 00:57:58,659
+And, Samuel, did you have a question?
+
+1196
+00:57:58,659 --> 00:58:00,209
+AUDIENCE: Yes.
+
+1197
+00:58:00,210 --> 00:58:05,490
+So with the genetic algorithm,
+the car one specifically,
+
+1198
+00:58:05,489 --> 00:58:12,299
+so all the cars are learning from
+each other as each one crashes?
+
+1199
+00:58:12,300 --> 00:58:15,240
+BRIAN YU: It's not so much that the
+cars are learning from each other
+
+1200
+00:58:15,239 --> 00:58:18,509
+that we're generating new
+cars based on the cars that
+
+1201
+00:58:18,510 --> 00:58:20,160
+were previously successful.
+
+1202
+00:58:20,159 --> 00:58:22,889
+The idea being that if
+we run 10 cars and see
+
+1203
+00:58:22,889 --> 00:58:25,889
+how far they go, we take the
+five that went the furthest,
+
+1204
+00:58:25,889 --> 00:58:28,592
+we eliminate the other five
+that didn't make it very far
+
+1205
+00:58:28,592 --> 00:58:30,509
+but then we duplicate
+and repeat the ones that
+
+1206
+00:58:30,510 --> 00:58:34,260
+did do well, such that in the future,
+hopefully this new generation of cars
+
+1207
+00:58:34,260 --> 00:58:35,790
+will make it a little bit further.
+
+1208
+00:58:35,789 --> 00:58:37,627
+And generation after
+generation, the hope
+
+1209
+00:58:37,628 --> 00:58:40,170
+is that we're able to make it
+a little further along the road
+
+1210
+00:58:40,170 --> 00:58:42,900
+until eventually as you
+saw like 15 generations in,
+
+1211
+00:58:42,900 --> 00:58:47,290
+we were able to get some cars that
+could perform the task successfully.
+
+1212
+00:58:47,289 --> 00:58:48,989
+Let's go now to Josiah.
+
+1213
+00:58:48,989 --> 00:58:56,789
+AUDIENCE: Is the car specifically
+learning just from the track?
+
+1214
+00:58:56,789 --> 00:59:03,029
+I mean, when you change the
+track, do we need another, I mean,
+
+1215
+00:59:03,030 --> 00:59:06,063
+do we need to start from zero again or?
+
+1216
+00:59:06,063 --> 00:59:09,230
+BRIAN YU: Yeah, so if the track were
+different would it have to learn again?
+
+1217
+00:59:09,230 --> 00:59:10,130
+Hopefully not.
+
+1218
+00:59:10,130 --> 00:59:12,620
+Hopefully what the
+cars were learning was
+
+1219
+00:59:12,619 --> 00:59:14,879
+in this case was learning
+based on sensor data,
+
+1220
+00:59:14,880 --> 00:59:18,380
+like how far away a wall is in
+any direction, which way to turn.
+
+1221
+00:59:18,380 --> 00:59:20,990
+And the goal is for this type
+of approach to generalize.
+
+1222
+00:59:20,989 --> 00:59:24,259
+And I mean, hopefully actual
+self-driving cars in the real world
+
+1223
+00:59:24,260 --> 00:59:25,640
+are not trained this way.
+
+1224
+00:59:25,639 --> 00:59:28,609
+But you would hope that as they're
+trained on sample environments,
+
+1225
+00:59:28,610 --> 00:59:30,800
+that when you put them in
+a different environment
+
+1226
+00:59:30,800 --> 00:59:32,840
+they would be able to
+generalize their knowledge
+
+1227
+00:59:32,840 --> 00:59:34,490
+to be able to apply similar techniques.
+
+1228
+00:59:34,489 --> 00:59:37,789
+That if in a real world setting
+you take a car and put it on a road
+
+1229
+00:59:37,789 --> 00:59:39,649
+that it's never seen
+before, hopefully it's
+
+1230
+00:59:39,650 --> 00:59:42,620
+seen enough examples of things
+that are like it, sensor data
+
+1231
+00:59:42,619 --> 00:59:46,629
+that it recognizes, that it's able
+to make an intelligent decision based
+
+1232
+00:59:46,630 --> 00:59:47,130
+on that.
+
+1233
+00:59:47,130 --> 00:59:49,760
+So yeah, the hope is and the
+goal in many cases with AI
+
+1234
+00:59:49,760 --> 00:59:52,910
+is to be able to generalize
+this knowledge beyond just
+
+1235
+00:59:52,909 --> 00:59:53,764
+a specific example.
+
+1236
+00:59:53,764 --> 00:59:56,479
+
+
+1237
+00:59:56,480 --> 00:59:58,360
+Any other questions?
+
+1238
+00:59:58,360 --> 01:00:02,730
+Yeah, let's go to [? Yagonch. ?]
+
+1239
+01:00:02,730 --> 01:00:07,380
+AUDIENCE: Yeah, so can these algorithms
+ever reach like a bottleneck,
+
+1240
+01:00:07,380 --> 01:00:11,730
+just like in real life
+evolution, there are branches
+
+1241
+01:00:11,730 --> 01:00:14,550
+and some branches just
+reach a bottleneck.
+
+1242
+01:00:14,550 --> 01:00:16,450
+So is that possible here [INAUDIBLE]?
+
+1243
+01:00:16,449 --> 01:00:19,459
+BRIAN YU: Yes, it's definitely
+possible that there might be--
+
+1244
+01:00:19,460 --> 01:00:22,800
+the algorithms might end up converging
+to something that seems pretty good
+
+1245
+01:00:22,800 --> 01:00:25,410
+and it doesn't seem like any
+mutations are doing any better,
+
+1246
+01:00:25,409 --> 01:00:27,539
+but it turns out a totally
+different algorithm
+
+1247
+01:00:27,539 --> 01:00:29,099
+might actually do better than that.
+
+1248
+01:00:29,099 --> 01:00:31,229
+That's what we will often
+call a local maximum
+
+1249
+01:00:31,230 --> 01:00:33,060
+in the context of
+artificial intelligence,
+
+1250
+01:00:33,059 --> 01:00:36,419
+where there is some better approach,
+there is some better algorithm
+
+1251
+01:00:36,420 --> 01:00:37,990
+but we can't necessarily find it.
+
+1252
+01:00:37,989 --> 01:00:40,839
+There are other strategies for
+trying to deal with that problem.
+
+1253
+01:00:40,840 --> 01:00:43,863
+But it is definitely a
+challenge we're thinking about.
+
+1254
+01:00:43,862 --> 01:00:44,779
+And one more question.
+
+1255
+01:00:44,780 --> 01:00:45,783
+Let's go to Sophia.
+
+1256
+01:00:45,782 --> 01:00:48,449
+AUDIENCE: I have a question about
+how the fitness is calculated.
+
+1257
+01:00:48,449 --> 01:00:51,989
+Like in both of these cases, is
+it like [INAUDIBLE] motors that
+
+1258
+01:00:51,989 --> 01:00:54,871
+are running or here like the distance?
+
+1259
+01:00:54,871 --> 01:00:57,329
+BRIAN YU: Yeah, in the case of
+the pancake, it was probably
+
+1260
+01:00:57,329 --> 01:01:00,029
+like a binary of just like
+did the pancake end up
+
+1261
+01:01:00,030 --> 01:01:02,520
+landing in the pan or not,
+was our way of calculating
+
+1262
+01:01:02,519 --> 01:01:04,729
+the fitness of that particular example.
+
+1263
+01:01:04,730 --> 01:01:07,230
+In the case of the cars, we
+would probably calculate fitness
+
+1264
+01:01:07,230 --> 01:01:11,190
+based on distance traveled, whichever
+cars ended up traveling the furthest,
+
+1265
+01:01:11,190 --> 01:01:13,380
+that would be our definition
+of fitness and that's
+
+1266
+01:01:13,380 --> 01:01:15,690
+really the part the programmer
+needs to be involved in.
+
+1267
+01:01:15,690 --> 01:01:17,610
+The programmer needs
+to decide, what does it
+
+1268
+01:01:17,610 --> 01:01:21,720
+mean to be most fit, what does a bad
+example look like and using that,
+
+1269
+01:01:21,719 --> 01:01:25,319
+once the computer knows what success
+looks like and what failure looks like,
+
+1270
+01:01:25,320 --> 01:01:28,620
+then it's able to learn from that to
+be able to do better in the future.
+
+1271
+01:01:28,619 --> 01:01:31,299
+
+
+1272
+01:01:31,300 --> 01:01:33,160
+All right, so that was
+genetic algorithms,
+
+1273
+01:01:33,159 --> 01:01:38,339
+which is one example of computers
+that are able to learn from the way
+
+1274
+01:01:38,340 --> 01:01:41,428
+that humans learn, learning from the
+way that nature works for example,
+
+1275
+01:01:41,427 --> 01:01:43,469
+but computer scientists
+didn't really stop there.
+
+1276
+01:01:43,469 --> 01:01:46,869
+There are other examples that we
+can do to add to this as well.
+
+1277
+01:01:46,869 --> 01:01:50,849
+And so one other example of using
+this idea of reinforcement learning
+
+1278
+01:01:50,849 --> 01:01:55,139
+and using genetic algorithms might be
+in video recommendations for example,
+
+1279
+01:01:55,139 --> 01:01:58,349
+where you could have some
+watch history and the way
+
+1280
+01:01:58,349 --> 01:02:01,589
+that an algorithm like YouTube or
+Netflix might suggest videos for you
+
+1281
+01:02:01,590 --> 01:02:04,320
+to watch is via this
+reinforcement process,
+
+1282
+01:02:04,320 --> 01:02:08,247
+that it will just try suggesting videos
+to you and learn from experience.
+
+1283
+01:02:08,246 --> 01:02:10,829
+If it suggests a video to you
+that you like, that you click on
+
+1284
+01:02:10,829 --> 01:02:12,537
+that, you watch all
+the way through, well
+
+1285
+01:02:12,538 --> 01:02:14,890
+then the algorithm learns in
+the future, let's recommend
+
+1286
+01:02:14,889 --> 01:02:16,139
+more of those sorts of things.
+
+1287
+01:02:16,139 --> 01:02:18,689
+That's like the car
+traveling very far and so we
+
+1288
+01:02:18,690 --> 01:02:20,520
+learn to do more of that in the future.
+
+1289
+01:02:20,519 --> 01:02:22,936
+If they recommend a video to
+you and you don't click on it
+
+1290
+01:02:22,936 --> 01:02:25,584
+you don't ever watch it,
+well then it's probably not
+
+1291
+01:02:25,585 --> 01:02:27,460
+going to recommend that
+to you in the future.
+
+1292
+01:02:27,460 --> 01:02:31,390
+And it's probably going to learn
+from that experience as well.
+
+1293
+01:02:31,389 --> 01:02:35,129
+And so this is one example of
+computer science learning from nature,
+
+1294
+01:02:35,130 --> 01:02:36,780
+learning from the way that humans are.
+
+1295
+01:02:36,780 --> 01:02:40,080
+Another place that's happened too
+is by looking at the human brain.
+
+1296
+01:02:40,079 --> 01:02:43,409
+That the human brain consists of
+neurons and those neurons are connected
+
+1297
+01:02:43,409 --> 01:02:45,959
+to one another and they pass
+information from one to another,
+
+1298
+01:02:45,960 --> 01:02:49,380
+electrical signals flow through
+one neuron to another neuron
+
+1299
+01:02:49,380 --> 01:02:51,960
+and that's how brains are
+able to make these very
+
+1300
+01:02:51,960 --> 01:02:54,700
+sophisticated kinds of computations.
+
+1301
+01:02:54,699 --> 01:02:58,709
+And this is what we might call a neural
+network, a collection of these neurons.
+
+1302
+01:02:58,710 --> 01:03:01,920
+And one place that AI has been looking
+into especially recently gaining
+
+1303
+01:03:01,920 --> 01:03:05,760
+in popularity, has been trying to
+develop artificial neural networks.
+
+1304
+01:03:05,760 --> 01:03:08,700
+Instead of using a
+biological neuron we just
+
+1305
+01:03:08,699 --> 01:03:11,849
+use what we might call an
+artificial neuron or a unit.
+
+1306
+01:03:11,849 --> 01:03:14,879
+And you can think of this unit
+as just storing some value,
+
+1307
+01:03:14,880 --> 01:03:18,360
+like some electrical signal for example,
+like you might find in the human brain,
+
+1308
+01:03:18,360 --> 01:03:21,960
+now just in a digital format
+and these artificial neurons,
+
+1309
+01:03:21,960 --> 01:03:24,360
+these units can be
+connected to each other
+
+1310
+01:03:24,360 --> 01:03:28,140
+in sort of an input that translates
+into an output sort of format
+
+1311
+01:03:28,139 --> 01:03:32,909
+where this arrow represents some sort
+of calculation, some calculation that
+
+1312
+01:03:32,909 --> 01:03:35,999
+is taking this value on the
+left and transforming it
+
+1313
+01:03:36,000 --> 01:03:38,009
+into that value on the right.
+
+1314
+01:03:38,010 --> 01:03:42,180
+And neural networks are usually not
+just one input unit and one output unit,
+
+1315
+01:03:42,179 --> 01:03:43,409
+but they can be more complex.
+
+1316
+01:03:43,409 --> 01:03:46,469
+You might have a neural network with
+two different inputs, each of which
+
+1317
+01:03:46,469 --> 01:03:49,349
+connects to an output or even
+more sophisticated neural networks
+
+1318
+01:03:49,349 --> 01:03:53,069
+like this one, where you have multiple
+layers of these units that are all
+
+1319
+01:03:53,070 --> 01:03:55,710
+connected to each other, each
+of these arrows performing
+
+1320
+01:03:55,710 --> 01:03:57,630
+some sort of calculation
+and if you've ever
+
+1321
+01:03:57,630 --> 01:04:00,810
+heard the term deep learning, this
+is often what that's referring to,
+
+1322
+01:04:00,809 --> 01:04:04,649
+this idea of deep neural networks
+with many layers, each of which
+
+1323
+01:04:04,650 --> 01:04:06,140
+is performing calculations.
+
+1324
+01:04:06,139 --> 01:04:09,059
+And ultimately using
+some linear algebra,
+
+1325
+01:04:09,059 --> 01:04:11,159
+these neural networks
+are able to figure out
+
+1326
+01:04:11,159 --> 01:04:16,169
+exactly how to tune these calculations
+to translate input into some output.
+
+1327
+01:04:16,170 --> 01:04:19,560
+If you give a neural network enough
+data it can learn from that data,
+
+1328
+01:04:19,559 --> 01:04:22,949
+it can learn exactly how to set
+these various different arrows
+
+1329
+01:04:22,949 --> 01:04:25,889
+to be able to calculate some
+task, to be able to translate
+
+1330
+01:04:25,889 --> 01:04:28,689
+some input into some output.
+
+1331
+01:04:28,690 --> 01:04:32,640
+So for example, that might take the
+form of handwriting recognition.
+
+1332
+01:04:32,639 --> 01:04:35,909
+How exactly do we train
+computers to be able to learn
+
+1333
+01:04:35,909 --> 01:04:39,389
+how to recognize handwriting given all
+the different types of handwriting?
+
+1334
+01:04:39,389 --> 01:04:42,389
+Well, one way to try to do that
+is by using a neural network,
+
+1335
+01:04:42,389 --> 01:04:45,929
+setting up a network of all of these
+neurons and all of these connections
+
+1336
+01:04:45,929 --> 01:04:49,289
+and then you give to that neural
+network a whole bunch of data.
+
+1337
+01:04:49,289 --> 01:04:51,089
+I give to the neural
+network a whole bunch
+
+1338
+01:04:51,090 --> 01:04:54,970
+of already existing handwritten
+digits, each of which is labeled.
+
+1339
+01:04:54,969 --> 01:04:57,852
+So the computer knows which
+image corresponds to which digit.
+
+1340
+01:04:57,853 --> 01:05:00,270
+This data set you're looking
+at here is a very famous data
+
+1341
+01:05:00,269 --> 01:05:03,719
+set of handwritten digits
+called the MNIST data set,
+
+1342
+01:05:03,719 --> 01:05:08,129
+and given all of this data the computer
+can start to train the neural network
+
+1343
+01:05:08,130 --> 01:05:10,740
+and start to figure out
+exactly what calculations
+
+1344
+01:05:10,739 --> 01:05:13,109
+to run at each layer
+of the neural network
+
+1345
+01:05:13,110 --> 01:05:16,020
+to be able to translate
+the input into the output,
+
+1346
+01:05:16,019 --> 01:05:19,829
+to be able to translate like
+a screenshot of what looks
+
+1347
+01:05:19,829 --> 01:05:23,069
+like a handwritten number eight, that
+we all could tell is the number eight
+
+1348
+01:05:23,070 --> 01:05:26,130
+but might be difficult for us to
+describe exactly how a computer could
+
+1349
+01:05:26,130 --> 01:05:28,260
+figure that out, but
+via the neural network,
+
+1350
+01:05:28,260 --> 01:05:30,810
+by training the neural network
+on all of the sample data,
+
+1351
+01:05:30,809 --> 01:05:33,899
+it's able to learn some
+sort of function that
+
+1352
+01:05:33,900 --> 01:05:36,780
+can translate this input,
+this handwritten digit
+
+1353
+01:05:36,780 --> 01:05:39,850
+into the output, what the
+actual digit happens to be.
+
+1354
+01:05:39,849 --> 01:05:42,569
+And these neural networks have
+proved to be incredibly versatile
+
+1355
+01:05:42,570 --> 01:05:44,430
+and we won't get into all
+the math here because it
+
+1356
+01:05:44,429 --> 01:05:47,304
+does get a little bit more complex,
+but it's used all over the place.
+
+1357
+01:05:47,304 --> 01:05:50,289
+It can be used for email
+spam detection, where
+
+1358
+01:05:50,289 --> 01:05:53,369
+if you give the computer a whole bunch
+of data, a whole bunch of emails,
+
+1359
+01:05:53,369 --> 01:05:56,039
+some of which are labeled spam
+and some of which are not,
+
+1360
+01:05:56,039 --> 01:05:57,389
+it can learn a function.
+
+1361
+01:05:57,389 --> 01:06:01,199
+It can learn exactly how to tune that
+neural network to be able to predict,
+
+1362
+01:06:01,199 --> 01:06:04,509
+for any given email,
+whether it's spam or not.
+
+1363
+01:06:04,510 --> 01:06:07,260
+And really the key factor here
+to making these networks work
+
+1364
+01:06:07,260 --> 01:06:09,520
+is having access to
+large amounts of data.
+
+1365
+01:06:09,519 --> 01:06:12,539
+And this is why a lot of companies
+now are doing a lot of work
+
+1366
+01:06:12,539 --> 01:06:15,329
+and trying to get a lot of data
+and use that data in training
+
+1367
+01:06:15,329 --> 01:06:18,939
+their machine learning models, it's
+because the more data that you have,
+
+1368
+01:06:18,940 --> 01:06:22,650
+the better you can make these algorithms
+because the better you can tune them
+
+1369
+01:06:22,650 --> 01:06:25,050
+to all the different types
+of inputs there might be,
+
+1370
+01:06:25,050 --> 01:06:27,300
+to help to make them even
+more accurate in the future,
+
+1371
+01:06:27,300 --> 01:06:30,330
+to be able to test these networks
+to see how well they work.
+
+1372
+01:06:30,329 --> 01:06:33,419
+And every time you're
+interacting with websites online,
+
+1373
+01:06:33,420 --> 01:06:35,820
+you're often helping to
+provide some of that data.
+
+1374
+01:06:35,820 --> 01:06:38,380
+Every time you go to your
+email app for example
+
+1375
+01:06:38,380 --> 01:06:42,270
+and you mark an email as spam, that
+email app might be learning from that,
+
+1376
+01:06:42,269 --> 01:06:45,729
+learning OK this type of email,
+that's an example of a spam email.
+
+1377
+01:06:45,730 --> 01:06:48,120
+And so it learns in the
+future to do a better job
+
+1378
+01:06:48,119 --> 01:06:49,739
+of trying to do that classification.
+
+1379
+01:06:49,739 --> 01:06:52,147
+And likewise, every time
+an email is marked as spam
+
+1380
+01:06:52,148 --> 01:06:53,940
+and you have to tell
+the computer, you know
+
+1381
+01:06:53,940 --> 01:06:56,523
+what, that wasn't spam the
+computer is learning from that too.
+
+1382
+01:06:56,523 --> 01:07:01,110
+It's more data that the computer can
+use to help to inform its algorithm
+
+1383
+01:07:01,110 --> 01:07:02,640
+and the way that it's working.
+
+1384
+01:07:02,639 --> 01:07:07,289
+And so for one final example, we can
+take a look at how images like this
+
+1385
+01:07:07,289 --> 01:07:08,429
+were actually generated.
+
+1386
+01:07:08,429 --> 01:07:11,369
+How could a computer possibly
+get an image like this
+
+1387
+01:07:11,369 --> 01:07:14,849
+and generate it and make something that
+looks very much like a real person,
+
+1388
+01:07:14,849 --> 01:07:17,691
+even though it's not
+actually a real person?
+
+1389
+01:07:17,692 --> 01:07:19,650
+Well, it's done using
+the exact same technique,
+
+1390
+01:07:19,650 --> 01:07:23,220
+using a neural network that
+learns how to translate inputs
+
+1391
+01:07:23,219 --> 01:07:25,909
+into outputs by having access
+to a large amount of data.
+
+1392
+01:07:25,909 --> 01:07:29,799
+In this case, having access to
+many, many photos of real people,
+
+1393
+01:07:29,800 --> 01:07:33,150
+so the computer can start to get a
+sense for what a real person looks like,
+
+1394
+01:07:33,150 --> 01:07:35,400
+it can start to train
+the network in that way.
+
+1395
+01:07:35,400 --> 01:07:38,490
+And then rather than build
+the entire person all at once,
+
+1396
+01:07:38,489 --> 01:07:39,959
+build it up step by step.
+
+1397
+01:07:39,960 --> 01:07:43,920
+A computer generating a photo like
+this, this is a pretty complicated task,
+
+1398
+01:07:43,920 --> 01:07:45,550
+it's pretty difficult to do.
+
+1399
+01:07:45,550 --> 01:07:48,690
+But you know what's
+easier is generating that.
+
+1400
+01:07:48,690 --> 01:07:51,570
+That is 16 pixels it doesn't
+look like a person at all
+
+1401
+01:07:51,570 --> 01:07:53,580
+but this a computer
+could do pretty readily,
+
+1402
+01:07:53,579 --> 01:07:57,629
+just generate what seems to be a whole
+bunch of kind of random looking pixels.
+
+1403
+01:07:57,630 --> 01:08:01,080
+But then you would train the computer
+to add a little bit of detail
+
+1404
+01:08:01,079 --> 01:08:04,659
+to this image to be able to
+learn if this were a real image,
+
+1405
+01:08:04,659 --> 01:08:08,129
+how would I add a little more detail
+to it to make it look a little bit more
+
+1406
+01:08:08,130 --> 01:08:09,600
+like what a person would look like?
+
+1407
+01:08:09,599 --> 01:08:12,539
+And it does so again by having
+access to large amounts of data
+
+1408
+01:08:12,539 --> 01:08:16,539
+many, many photos of people, so it can
+begin to learn from that experience.
+
+1409
+01:08:16,539 --> 01:08:19,049
+So the computer learns
+how to take this image
+
+1410
+01:08:19,050 --> 01:08:22,540
+and turn it into this for example.
+
+1411
+01:08:22,539 --> 01:08:24,539
+Still doesn't really
+look like a person but it
+
+1412
+01:08:24,539 --> 01:08:25,956
+looks a little more like a person.
+
+1413
+01:08:25,957 --> 01:08:27,210
+It's got a higher resolution.
+
+1414
+01:08:27,210 --> 01:08:30,420
+You can maybe make out that there
+is some hair here and a face here.
+
+1415
+01:08:30,420 --> 01:08:35,310
+And then the algorithm learns how do you
+take an image like this, an 8 by 8 grid
+
+1416
+01:08:35,310 --> 01:08:37,560
+and turn it into a 16 by 16 grid.
+
+1417
+01:08:37,560 --> 01:08:40,080
+Now this, I mean, it still
+doesn't look like a person,
+
+1418
+01:08:40,079 --> 01:08:41,579
+but it looks a little more accurate.
+
+1419
+01:08:41,579 --> 01:08:44,459
+And over time we can
+follow these steps one
+
+1420
+01:08:44,460 --> 01:08:46,380
+after another adding
+more and more detail.
+
+1421
+01:08:46,380 --> 01:08:51,210
+Until eventually, the computer is able
+to generate an entire image that really
+
+1422
+01:08:51,210 --> 01:08:53,880
+looks like a person, that's
+very hard to distinguish just
+
+1423
+01:08:53,880 --> 01:08:56,160
+by this input to output process.
+
+1424
+01:08:56,159 --> 01:08:58,648
+Learning some mapping
+from inputs to outputs
+
+1425
+01:08:58,649 --> 01:09:02,189
+by having access to a whole lot of data.
+
+1426
+01:09:02,189 --> 01:09:05,430
+So before we wrap up here I'll
+pause for any final questions
+
+1427
+01:09:05,430 --> 01:09:08,910
+about artificial intelligence,
+any of the algorithms
+
+1428
+01:09:08,909 --> 01:09:13,669
+we looked at for searching, for
+learning or anything like that?
+
+1429
+01:09:13,670 --> 01:09:14,660
+Any final questions?
+
+1430
+01:09:14,659 --> 01:09:16,589
+Yeah, Sophia, go ahead.
+
+1431
+01:09:16,590 --> 01:09:18,899
+AUDIENCE: I had a question
+about like with the fitness,
+
+1432
+01:09:18,899 --> 01:09:22,115
+how is all the I guess, like data--
+you mentioned they get regenerated
+
+1433
+01:09:22,114 --> 01:09:23,989
+like the successful
+ones, but I was wondering
+
+1434
+01:09:23,989 --> 01:09:27,964
+like how is all that data sort
+like what the success was exactly,
+
+1435
+01:09:27,965 --> 01:09:30,770
+but fitness is just like
+a score it's hard to know
+
+1436
+01:09:30,770 --> 01:09:35,373
+like exactly what decisions it
+made that said it was successful.
+
+1437
+01:09:35,372 --> 01:09:38,539
+BRIAN YU: Yeah, and that's actually one
+of the trickier things about machine
+
+1438
+01:09:38,539 --> 01:09:41,059
+learning, that we can train
+these machine learning models
+
+1439
+01:09:41,060 --> 01:09:43,220
+to be very, very good
+but it's not always
+
+1440
+01:09:43,220 --> 01:09:47,310
+immediately apparent to us like what
+it was doing in order to be successful.
+
+1441
+01:09:47,310 --> 01:09:50,007
+And this is an active area of
+research within machine learning,
+
+1442
+01:09:50,006 --> 01:09:52,339
+including some faculty at
+Harvard that work on this too,
+
+1443
+01:09:52,340 --> 01:09:55,490
+which is the interpretability
+of machine learning results.
+
+1444
+01:09:55,489 --> 01:09:58,999
+Like the algorithm becomes very, very
+good at recommending a video to you
+
+1445
+01:09:59,000 --> 01:10:02,120
+or generating an image of a
+person, but it's hard for a person
+
+1446
+01:10:02,119 --> 01:10:04,909
+to look at that machine
+learning model and understand
+
+1447
+01:10:04,909 --> 01:10:06,829
+how it arrived at that conclusion.
+
+1448
+01:10:06,829 --> 01:10:09,804
+Ultimately, in many cases, people
+just throw their hands up and say,
+
+1449
+01:10:09,805 --> 01:10:11,930
+we don't really care how
+the algorithm is doing it,
+
+1450
+01:10:11,930 --> 01:10:14,030
+as long as the algorithm
+is doing it successfully
+
+1451
+01:10:14,029 --> 01:10:16,694
+and eventually produces
+good results, we'll
+
+1452
+01:10:16,694 --> 01:10:19,069
+just take the ones that are
+doing the best and use those,
+
+1453
+01:10:19,069 --> 01:10:23,119
+even if we don't necessarily understand
+exactly how those algorithms are
+
+1454
+01:10:23,119 --> 01:10:23,659
+working.
+
+1455
+01:10:23,659 --> 01:10:25,999
+And that's definitely an area
+of concern for some people
+
+1456
+01:10:26,000 --> 01:10:29,959
+and an area of research for others that
+are looking into these types of tools
+
+1457
+01:10:29,960 --> 01:10:32,510
+and technologies.
+
+1458
+01:10:32,510 --> 01:10:34,255
+Is there a question in the chat maybe?
+
+1459
+01:10:34,255 --> 01:10:36,380
+DAVID MALAN: A final question
+from the chat, Brian.
+
+1460
+01:10:36,380 --> 01:10:39,890
+Every time I choose the parts of the
+picture that contain traffic lights
+
+1461
+01:10:39,890 --> 01:10:45,398
+or crosswalks to prove I am not a robot,
+am I training Google's driverless car?
+
+1462
+01:10:45,398 --> 01:10:47,690
+BRIAN YU: Maybe not Google's
+necessarily, but certainly
+
+1463
+01:10:47,689 --> 01:10:49,399
+a lot of times when you're
+doing that type of thing.
+
+1464
+01:10:49,399 --> 01:10:52,169
+I mean, in one part it's to
+verify that you are in fact human.
+
+1465
+01:10:52,170 --> 01:10:54,003
+That is one of the
+purposes of those things,
+
+1466
+01:10:54,002 --> 01:10:57,199
+to make sure that robots aren't
+signing up for websites, for example.
+
+1467
+01:10:57,199 --> 01:11:00,769
+But certainly it could be just
+giving more examples of labeled data.
+
+1468
+01:11:00,770 --> 01:11:03,080
+That oftentimes what machine
+learning models rely on
+
+1469
+01:11:03,079 --> 01:11:06,769
+is labeled data where you have
+like a digit, a handwritten digit,
+
+1470
+01:11:06,770 --> 01:11:10,190
+and you have a label of "this is the
+number 2," or "this is the number 8."
+
+1471
+01:11:10,189 --> 01:11:13,879
+And so the computer can then use
+those digits along with those numbers
+
+1472
+01:11:13,880 --> 01:11:17,960
+in order to figure out how to learn
+how to take handwritten digits
+
+1473
+01:11:17,960 --> 01:11:20,570
+and convert it to individual numbers.
+
+1474
+01:11:20,569 --> 01:11:23,419
+And so having access to that
+kind of labeled data ultimately
+
+1475
+01:11:23,420 --> 01:11:25,910
+ends up being really, really valuable.
+
+1476
+01:11:25,909 --> 01:11:28,699
+All right, so that's it for
+artificial intelligence for today.
+
+1477
+01:11:28,699 --> 01:11:32,899
+Thank you all so much and
+we'll see you next time.
+
+1478
+01:11:32,899 --> 01:11:35,649
+[MUSIC PLAYING]
+
+1479
+01:11:35,649 --> 01:12:32,999
+
+

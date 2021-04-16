@@ -1,0 +1,5750 @@
+1
+00:00:00,000 --> 00:00:48,804
+[音乐响起--字幕精校中--By Persisan]
+[MUSIC PLAYING]
+
+2
+00:00:48,804 --> 00:00:51,460
+DAVID J. MALAN：好的，这是CS50。
+DAVID J. MALAN: All right, this is CS50.
+
+3
+00:00:51,460 --> 00:00:53,620
+这不是CS50的典型一周。
+And this is not a typical week of CS50.
+
+4
+00:00:53,619 --> 00:00:57,399
+确实，我们正处于2020年秋季的周三
+Indeed, we're midweek here in the fall of 2020
+
+5
+00:00:57,399 --> 00:01:00,339
+在校园里，通常是一年级的家庭
+here on campus, which would normally be first year family
+
+6
+00:01:00,340 --> 00:01:02,942
+周末，给父母和家人一个机会
+weekend, an opportunity for the parents and family members
+
+7
+00:01:02,942 --> 00:01:05,650
+哈佛这所大学的本科生实际上是来校园的，
+of the undergraduates here at Harvard to actually come to campus,
+
+8
+00:01:05,650 --> 00:01:10,300
+坐在课堂上，参加讲座，并就地了解他们的学生
+sit in on classes, attend talks, and get to know their students in situ
+
+9
+00:01:10,299 --> 00:01:11,499
+就在校园里
+here right on campus.
+
+10
+00:01:11,500 --> 00:01:14,169
+当然，这一年，我们所有人
+Of course, this particular year, all of us
+
+11
+00:01:14,170 --> 00:01:16,960
+除了我们以外的人，都以数字方式停留在遥远的地方
+are staying afar, digitally, except those of us
+
+12
+00:01:16,959 --> 00:01:20,559
+实际上已经住在剑桥的人了。
+who are actually here living in Cambridge itself already.
+
+13
+00:01:20,560 --> 00:01:23,800
+因此，我们认为我们今年会做的是一次虚拟的演讲，
+And so what we thought we would do this year is hold a virtual talk of sorts,
+
+14
+00:01:23,799 --> 00:01:27,099
+围绕一个不需要主题的虚拟讨论
+a virtual discussion focused on one topic that doesn't require
+
+15
+00:01:27,099 --> 00:01:29,469
+对计算机科学有任何先前的了解，
+any prior familiarity with computer science,
+
+16
+00:01:29,469 --> 00:01:32,019
+不需要您进入或已被带走
+does not require that you be in or have taken
+
+17
+00:01:32,019 --> 00:01:35,349
+CS50本身，因为它涉及的主题至少部分是
+CS50 itself because it's about a topic that's at least in part
+
+18
+00:01:35,349 --> 00:01:36,969
+我们所有人都熟悉。
+familiar to all of us.
+
+19
+00:01:36,969 --> 00:01:40,269
+即使在技术上不那么熟悉，
+Even if it's a little bit less familiar technically,
+
+20
+00:01:40,269 --> 00:01:43,179
+作为技术用户，我们所有人当然都很熟悉。
+it's certainly familiar to all of us as users of technology.
+
+21
+00:01:43,180 --> 00:01:45,702
+那个话题就是安全性或网络安全性。
+And that topic is security or cybersecurity.
+
+22
+00:01:45,701 --> 00:01:47,409
+今天我们建议的是
+And what we propose today is that we have
+
+23
+00:01:47,409 --> 00:01:51,069
+关于如何保持自己的计算机的讨论-
+a discussion about how you might go about keeping your own computer-- be
+
+24
+00:01:51,069 --> 00:01:53,679
+它是笔记本电脑，台式机还是您自己的手机，
+it a laptop or desktop or your own phone, which
+
+25
+00:01:53,680 --> 00:01:56,530
+也是一种安全的计算机。
+is also a form of computer-- secure.
+
+26
+00:01:56,530 --> 00:01:59,140
+我敢说这个话题，即使我们
+And I daresay that this topic, even though we'll
+
+27
+00:01:59,140 --> 00:02:02,080
+了解它意味着什么的一些技术细节，
+get into some of the technicalities of what it means to be secure,
+
+28
+00:02:02,079 --> 00:02:06,519
+我们所有人都在考虑或遇到良好的安全感，因此很熟悉
+is familiar in the sense that all of us think about or encounter good security
+
+29
+00:02:06,519 --> 00:02:08,769
+以及现实世界中每天的安全问题。
+and bad security in the real world every day.
+
+30
+00:02:08,770 --> 00:02:11,860
+考虑一下您居住的房屋，无论是房屋还是公寓
+Think about the home that you live in, be it a house or an apartment
+
+31
+00:02:11,860 --> 00:02:13,750
+或宿舍或其他地方。
+or a dormitory or somewhere else.
+
+32
+00:02:13,750 --> 00:02:16,189
+通常，您会在门上放一些东西，例如锁。
+Typically, you'll have things, like, locks on the doors.
+
+33
+00:02:16,189 --> 00:02:18,189
+根据您的居住地，您甚至可能
+And you might even, depending on where you live,
+
+34
+00:02:18,189 --> 00:02:20,659
+在窗户上有酒吧等。
+have bars on the windows and the like.
+
+35
+00:02:20,659 --> 00:02:24,996
+但通常情况下，安全的体现在不同的级别。
+But typically, there are manifestations of security at different levels.
+
+36
+00:02:24,997 --> 00:02:26,080
+我的意思是从字面上看。
+And I mean that literally.
+
+37
+00:02:26,080 --> 00:02:28,450
+例如，在一个典型的城市中，可能会有酒吧
+For instance, in a typical city, there might be bars
+
+38
+00:02:28,449 --> 00:02:32,739
+在一楼的窗户上，但不在二楼或三楼。
+on the first floor windows, but not on the second floor or the third floor.
+
+39
+00:02:32,740 --> 00:02:35,410
+这就是说，有人可以从技术上
+And that is to say that someone could technically
+
+40
+00:02:35,409 --> 00:02:38,734
+通过二楼或三楼进入您的家，
+make their way into your home by way of the second floor or the third floor,
+
+41
+00:02:38,735 --> 00:02:41,860
+但这当然会更加困难，因为他们需要梯子。
+but it's going to be more difficult, of course, because they need a ladder.
+
+42
+00:02:41,860 --> 00:02:43,600
+他们需要其他形式的物理访问
+They need some other form of physical access
+
+43
+00:02:43,599 --> 00:02:45,279
+达到这样的高度，此时，他们可能
+to a height like that, at which point, they're probably
+
+44
+00:02:45,280 --> 00:02:46,660
+将吸引更多的关注。
+going to attract more attention.
+
+45
+00:02:46,659 --> 00:02:50,259
+因此，对手的概率是
+And so the probability that an adversary is
+
+46
+00:02:50,259 --> 00:02:53,019
+鉴于他们会闯入你的家
+going to break into your home given that they
+
+47
+00:02:53,020 --> 00:02:56,410
+必须实际上升到该水平并到达一楼以上
+have to actually rise to that level and get above the first floor
+
+48
+00:02:56,409 --> 00:02:58,149
+可能相对较低。
+is probably relatively low.
+
+49
+00:02:58,150 --> 00:02:59,025
+不是零
+It's not zero.
+
+50
+00:02:59,025 --> 00:03:01,900
+从技术上讲，没有什么可以阻止某人提起梯子的
+There's nothing stopping someone technically from pulling up a ladder
+
+51
+00:03:01,900 --> 00:03:05,290
+然后进入那个开着的窗户或没有障碍的灯。
+and going into that open window or the light that has no bars.
+
+52
+00:03:05,289 --> 00:03:06,489
+但是可能性较小。
+But it's less likely.
+
+53
+00:03:06,490 --> 00:03:10,060
+这实际上是思考数字世界中安全性的好方法
+And that's actually a good way to think about security in the digital world
+
+54
+00:03:10,060 --> 00:03:13,660
+同样，确实没有安全性之类的东西。
+as well, that there's really no such thing as secure.
+
+55
+00:03:13,659 --> 00:03:16,299
+就像，您的手机从根本上来说并不安全。
+Like, your phone is not secure fundamentally.
+
+56
+00:03:16,300 --> 00:03:20,380
+您的笔记本电脑和台式机从根本上来说并不安全。
+Your laptop, your desktop is not secure fundamentally.
+
+57
+00:03:20,379 --> 00:03:22,089
+在某种程度上是安全的。
+It's secure to some extent.
+
+58
+00:03:22,090 --> 00:03:26,530
+对于某些攻击或某些类型的对手，它可能是安全的
+It might be secure against certain attacks or certain types of adversaries
+
+59
+00:03:26,530 --> 00:03:29,360
+或拥有一定资源的对手。
+or adversaries with certain amounts of resources.
+
+60
+00:03:29,360 --> 00:03:33,490
+这些资源可能是时间，可能是金钱，可能是精通技术。
+And those resources might be time, might be money, might be technical savvy.
+
+61
+00:03:33,490 --> 00:03:35,440
+但这确实是一个折衷。
+But it really is going to be a trade-off.
+
+62
+00:03:35,439 --> 00:03:39,519
+因此，虽然有些不幸，但是一种考虑安全性的方法
+And so while a bit unfortunate, one way of thinking about security
+
+63
+00:03:39,520 --> 00:03:42,760
+是您绝对不想成为安全的人。
+is that you don't want to be a secure in an absolute sense.
+
+64
+00:03:42,759 --> 00:03:46,749
+在现实世界中，您希望比邻居的房子更安全，
+In the real world, you want to be more secure than your neighbor's house,
+
+65
+00:03:46,750 --> 00:03:47,689
+例如。
+for instance.
+
+66
+00:03:47,689 --> 00:03:52,029
+您想以某种方式从物理上或隐喻上提高标准，
+You want to somehow raise the bar, either physically or metaphorically,
+
+67
+00:03:52,030 --> 00:03:55,150
+对手，这样它也将把那个对手也带走
+to the adversary so that it's going to take that adversary just too
+
+68
+00:03:55,150 --> 00:03:59,230
+太多的时间，太多的钱，太多的精力闯入你的家
+much time, too much money too much effort to break into your home
+
+69
+00:03:59,229 --> 00:04:01,809
+他们不如直接去隔壁。
+that they might as well just go next door instead.
+
+70
+00:04:01,810 --> 00:04:04,720
+在计算机世界中同样如此。
+And the same is going to be true in the world of computers.
+
+71
+00:04:04,719 --> 00:04:08,079
+但是我们要衡量系统的安全性
+But we're going to measure the security of systems
+
+72
+00:04:08,080 --> 00:04:10,870
+更多的是计算，而不是物理上的更多。
+more computationally, not so much physically.
+
+73
+00:04:10,870 --> 00:04:15,560
+因此，让我邀请您在屏幕上的此处打开此URL。
+So with that said, let me invite you to open up this URL here on your screen.
+
+74
+00:04:15,560 --> 00:04:18,579
+如果您使用的是笔记本电脑或台式机，请继续将其打开
+If you're using a laptop or desktop, go ahead and just open it up
+
+75
+00:04:18,579 --> 00:04:20,560
+在另一个浏览器的单独标签中。
+in a separate tab in another browser.
+
+76
+00:04:20,560 --> 00:04:22,900
+如果您在通话中，可以来回切换
+If you're on your phone, you can go back and forth
+
+77
+00:04:22,899 --> 00:04:25,959
+最有可能在两个窗口之间切换，具体取决于您的操作系统。
+between two windows most likely, depending on your operating system.
+
+78
+00:04:25,959 --> 00:04:28,417
+但是，如果有时间，请继续打开此URL。
+But go ahead, when you have a moment, and open up this URL.
+
+79
+00:04:28,418 --> 00:04:31,390
+我们将使用此URL提出一些互动问题
+And we'll use this URL to ask a few interactive questions
+
+80
+00:04:31,389 --> 00:04:33,579
+您可以进行数字响应。
+that you can respond to digitally.
+
+81
+00:04:33,579 --> 00:04:37,849
+我们还将在今天整个过程中也提出问题和意见。
+And we'll also take questions and comments throughout today as well.
+
+82
+00:04:37,850 --> 00:04:41,110
+这么说，那么安全是什么意思呢？
+So with that said, what does it mean to be secure, then?
+
+83
+00:04:41,110 --> 00:04:43,090
+让我们对此进行一些思考。
+Let's take a couple of thoughts on this.
+
+84
+00:04:43,089 --> 00:04:46,689
+您如何看待“安全”一词的含义
+What do you think of the word "secure" as meaning
+
+85
+00:04:46,689 --> 00:04:50,949
+在您的电话，您的计算机，您的家中？
+in the context of your phone, of your computer, of your home?
+
+86
+00:04:50,949 --> 00:04:52,389
+随心所欲地解释。
+Interpret as you will.
+
+87
+00:04:52,389 --> 00:04:57,249
+您会说安全是什么意思？
+What does it mean to be secure, would you say?
+
+88
+00:04:57,250 --> 00:05:01,599
+放大中有数字手吗？
+Any digital hands in Zoom?
+
+89
+00:05:01,600 --> 00:05:03,340
+如果您感到害羞，请随时发出提示音
+If you're feeling shy, feel free to chime
+
+90
+00:05:03,339 --> 00:05:05,889
+通过聊天进入，Brian可以代理。
+in via the chat and Brian can proxy.
+
+91
+00:05:05,889 --> 00:05:09,219
+但是，否则，请随意抬起虚拟的手
+But otherwise, do feel free to raise your hand virtually
+
+92
+00:05:09,220 --> 00:05:12,550
+如果您想提供您的定义。
+if you would like to offer your definition.
+
+93
+00:05:12,550 --> 00:05:16,210
+是的，如果我说对了，那Pranav呢？
+Yeah, how about over to Pranav, if I'm pronouncing it right?
+
+94
+00:05:16,209 --> 00:05:17,939
+安全是什么意思？
+What does it mean to be secure?
+
+95
+00:05:17,939 --> 00:05:21,789
+普拉纳夫：是的，我认为这意味着，出于安全考虑，
+PRANAV: Yeah, I think it means, by security,
+
+96
+00:05:21,790 --> 00:05:28,945
+您的意思是保护存储在特定系统上的所有数据
+you mean to protect all the data that's stored on a particular system
+
+97
+00:05:28,944 --> 00:05:31,089
+如果我们在谈论技术。
+if we're talking about technology.
+
+98
+00:05:31,089 --> 00:05:37,359
+至少要加倍努力，让自己有足够的时间
+And at least make it hard and buy yourself enough time
+
+99
+00:05:37,360 --> 00:05:44,000
+当前某个人可能无法入侵您的系统
+that a certain person may not hack into your system at the current moment
+
+100
+00:05:44,000 --> 00:05:44,500
+因为 -
+because--
+
+101
+00:05:44,500 --> 00:05:45,185
+DAVID J. MALAN：很好。
+DAVID J. MALAN: Good.
+
+102
+00:05:45,185 --> 00:05:46,240
+普拉纳夫：-让我们面对现实吧。
+PRANAV: --let's face it.
+
+103
+00:05:46,240 --> 00:05:51,340
+您可能无法在一生中保护系统。
+You may not be able to protect your system for your entire lifetime.
+
+104
+00:05:51,339 --> 00:05:57,746
+但是我会说，至少要自己买，要不断地给自己买时间。
+But I would say, at least buy yourself, continuously buy yourself time.
+
+105
+00:05:57,747 --> 00:05:59,080
+DAVID J. MALAN：好的，我喜欢。
+DAVID J. MALAN: OK, I like that.
+
+106
+00:05:59,079 --> 00:06:03,589
+因此，安全就是将某人排除在您的资源之外。
+So security is all about keeping someone out of your resources.
+
+107
+00:06:03,589 --> 00:06:07,929
+但是，正如我本人迄今所声称的那样，绝对是很难争论的。
+But as I myself have claimed thus far, that's hard to argue in the absolute.
+
+108
+00:06:07,930 --> 00:06:13,960
+确实，您希望您的系统花太多时间来妥协，您的手机
+Really you want your system to just take too much time to compromise, your phone
+
+109
+00:06:13,959 --> 00:06:16,839
+或您的笔记本电脑花费太多时间进行折衷，此时
+or your laptop to take too much time to compromise, at which point
+
+110
+00:06:16,839 --> 00:06:21,399
+您在概率上，统计上对付对手是安全的。
+you're sort of probabilistically, statistically safe against adversaries.
+
+111
+00:06:21,399 --> 00:06:24,489
+再次因为他们不想浪费那么多时间或精力
+Because again, they're not going to want to waste that much time or effort
+
+112
+00:06:24,490 --> 00:06:27,790
+或金钱入侵您的特定系统而不是其他人。
+or money hacking into your particular system versus someone else.
+
+113
+00:06:27,790 --> 00:06:30,940
+现在，您和我在现实世界中有不同的方式
+Now, there are different ways that you and I in the real world
+
+114
+00:06:30,939 --> 00:06:34,179
+尝试保持笔记本电脑和手机的安全。
+try to keep our laptops and our phones secure.
+
+115
+00:06:34,180 --> 00:06:37,240
+当然，最流行的机制之一就是密码。
+And one of those most popular mechanisms is, of course, passwords.
+
+116
+00:06:37,240 --> 00:06:41,320
+密码，是某种短语，实际上是某种数字
+Passwords, being some kind of phrase, some kind of number that you actually
+
+117
+00:06:41,319 --> 00:06:45,849
+配置您的设备，以便理想情况下只有您知道该密码。
+configure your device with so that ideally, only you know that password.
+
+118
+00:06:45,850 --> 00:06:49,570
+因此，只有您才能使用该密码进入设备。
+And only you, therefore, can get into the device by using that password.
+
+119
+00:06:49,569 --> 00:06:51,939
+因此，通过举手示意，你们中有多少人
+And so by a show of physical hands, how many of you
+
+120
+00:06:51,939 --> 00:06:55,089
+在笔记本电脑或台式机上输入密码
+have passwords on your laptops or desktops
+
+121
+00:06:55,089 --> 00:06:56,889
+如果您使用这些设备之一？
+if you use one of those devices?
+
+122
+00:06:56,889 --> 00:06:59,259
+所以几乎所有的人都举起了手。
+So almost all of the hands are going up.
+
+123
+00:06:59,259 --> 00:07:02,319
+那些没有举手的人，您可能已经做到了，
+Those of you who don't have your hand going up, you've probably made,
+
+124
+00:07:02,319 --> 00:07:04,869
+我认为，有意识的选择是不使用密码。
+I presume, a conscious choice to not use a password.
+
+125
+00:07:04,870 --> 00:07:06,342
+也许很烦人。
+Maybe it's annoying to type in.
+
+126
+00:07:06,341 --> 00:07:08,049
+也许你真的不担心任何人
+Maybe you don't really worry about anyone
+
+127
+00:07:08,050 --> 00:07:09,508
+进入设备的周围。
+around you getting into the device.
+
+128
+00:07:09,507 --> 00:07:13,119
+但是您应该承认或意识到存在威胁。
+But you should concede or recognize that there is therefore a threat.
+
+129
+00:07:13,120 --> 00:07:16,690
+有人进入您的笔记本电脑或台式机要容易得多
+It's much easier for someone to get into your laptop or desktop
+
+130
+00:07:16,689 --> 00:07:20,629
+然后就是刚才其他举手的人。
+then into that of anyone else who raised their hand just a moment ago.
+
+131
+00:07:20,629 --> 00:07:25,149
+现在，那些拥有电话，移动设备，
+Now, those of you who have a phone, a mobile device, those
+
+132
+00:07:25,149 --> 00:07:27,099
+使用该设备的人当中，有多少人拥有
+of you with that device, how many of you have
+
+133
+00:07:27,100 --> 00:07:31,300
+您手机上该设备上的密码或密码？
+a password or a passcode on that device, on your phone?
+
+134
+00:07:31,300 --> 00:07:32,785
+我所看到的手少了一些。
+So somewhat fewer hands I'm seeing.
+
+135
+00:07:32,785 --> 00:07:34,660
+因此，有很多人举手是很好的。
+So it's good that so many hands are going up.
+
+136
+00:07:34,660 --> 00:07:36,850
+但是那里也似乎有些人没有。
+But there, too, it seems that some of you don't have.
+
+137
+00:07:36,850 --> 00:07:39,017
+希望您已经考虑了其中的含义
+And hopefully, you've thought about the implications
+
+138
+00:07:39,016 --> 00:07:43,209
+其中，这意味着您的父母，兄弟姐妹，陌生人（如果他们只是
+of that, which means that your parents, your siblings, a stranger, if they just
+
+139
+00:07:43,209 --> 00:07:45,759
+亲自接听电话，无论是在家中
+physically pick up your phone, whether it's in your home
+
+140
+00:07:45,759 --> 00:07:49,619
+或在咖啡馆或机场中，可以立即访问您的所有数据。
+or in a cafe or an airport, has immediate access to all of your data.
+
+141
+00:07:49,620 --> 00:07:51,340
+因此，可以肯定地说，安全性要差得多
+So arguably, much less secure, certainly,
+
+142
+00:07:51,339 --> 00:07:53,659
+而不是需要密码的人。
+than someone that requires a password.
+
+143
+00:07:53,660 --> 00:07:58,180
+但是，让我们考虑一下我们如何衡量您手机的安全性，
+But let's consider how we can measure the security of your phone,
+
+144
+00:07:58,180 --> 00:08:00,130
+衡量您计算机的安全性
+measure the security of your computer, just
+
+145
+00:08:00,129 --> 00:08:03,699
+通过使用这种简单的熟悉机制，例如密码。
+by using this simple familiar mechanism, like, a password.
+
+146
+00:08:03,699 --> 00:08:06,624
+事实证明，你和我坦白地说，作为人类，
+So it turns out that you and I, frankly, as humans,
+
+147
+00:08:06,625 --> 00:08:09,250
+首先不是很擅长选择这些密码。
+aren't very good at picking these passwords in the first place.
+
+148
+00:08:09,250 --> 00:08:12,819
+截至2019年，就在几个月前的年底，
+As of 2019, just some months ago at year's end,
+
+149
+00:08:12,819 --> 00:08:16,509
+安全研究人员认为这很可悲，
+this was determined by security researchers to be sadly,
+
+150
+00:08:16,509 --> 00:08:21,579
+世界上最常用的密码，字面意思是123456。
+the most common password in the world, literally, 123456.
+
+151
+00:08:21,579 --> 00:08:23,679
+那是最常见的密码
+That was the most common password according
+
+152
+00:08:23,680 --> 00:08:28,360
+过去一年来，在已知的密码中采取了许多措施。
+to many measures this past year among those passwords that were known.
+
+153
+00:08:28,360 --> 00:08:32,440
+名单上的第二名稍好一点，为123456789。
+Number two on the list was slightly better, 123456789.
+
+154
+00:08:32,440 --> 00:08:34,206
+之后是qwerty。
+After that was qwerty.
+
+155
+00:08:34,206 --> 00:08:37,539
+如果那个看起来有点怪异，如果您有美式英语键盘并且您看起来
+If that one looks a little weird, if you have a US English keyboard and you look
+
+156
+00:08:37,538 --> 00:08:42,579
+在键的左上角，QWERTY是它们的拼写形式
+at the top left row of your keys, Q-W-E-R-T-Y is what they would spell
+
+157
+00:08:42,580 --> 00:08:43,659
+在美国键盘上。
+on a US keyboard.
+
+158
+00:08:43,658 --> 00:08:46,759
+人们确实不是很努力地想出自己的密码，
+People are really not trying very hard to come up with their password,
+
+159
+00:08:46,759 --> 00:08:49,419
+即使从技术上讲它本身不是英语单词。
+even though it's not technically an English word, per se.
+
+160
+00:08:49,419 --> 00:08:54,159
+密码是最受欢迎的第四大密码，
+Password was the number four most popular password, P-A-S-S-W-O-R-D,
+
+161
+00:08:54,159 --> 00:08:57,369
+这太勉强了，一点都不安全。
+which is a little too tongue in cheek to be at all secure.
+
+162
+00:08:57,370 --> 00:09:03,520
+此后情况稍差一些，为1234567；之后是12345678；在那之后，
+After that was slightly worse, 1234567; after that, 12345678; after that,
+
+163
+00:09:03,519 --> 00:09:04,689
+12345。
+12345.
+
+164
+00:09:04,690 --> 00:09:06,400
+您也许可以在这里看到模式。
+You can perhaps see the pattern here.
+
+165
+00:09:06,399 --> 00:09:08,919
+值得庆幸的是，在那之后，我爱你。
+After that was, adorably, iloveyou.
+
+166
+00:09:08,919 --> 00:09:12,909
+但是，如果您认为使用iloveyou作为密码会很聪明，
+But if you think you're being clever by having iloveyou as your password,
+
+167
+00:09:12,909 --> 00:09:15,189
+好吧，世界上还有很多其他人
+well, there's a lot of other humans in the world that
+
+168
+00:09:15,190 --> 00:09:16,930
+认为他们也很可爱。
+think they're being cute, too.
+
+169
+00:09:16,929 --> 00:09:19,989
+111111也很受欢迎。
+111111 was also popular.
+
+170
+00:09:19,990 --> 00:09:23,020
+最后是123123。
+And then lastly, 123123.
+
+171
+00:09:23,019 --> 00:09:24,459
+那么，现在为什么要使用这些密码？
+So now why these passwords?
+
+172
+00:09:24,460 --> 00:09:27,880
+您也许可以从此列表中推断出其中一些密码的原因
+You can perhaps infer from this list why some of these passwords
+
+173
+00:09:27,879 --> 00:09:29,169
+是他们的样子。
+are the way that they are.
+
+174
+00:09:29,169 --> 00:09:34,509
+奇怪的是这些人在电话或网站上使用了这些密码
+Odds are these people were using these passwords on phones or on websites
+
+175
+00:09:34,509 --> 00:09:38,499
+或在其他可能具有最小密码长度的系统中。
+or in other systems that probably had, like, a minimum password length.
+
+176
+00:09:38,500 --> 00:09:42,669
+这些人可能需要一个六个字符长的密码。
+These people probably needed a password that was six characters long.
+
+177
+00:09:42,669 --> 00:09:47,029
+这些人可能需要一个9个字符长的字符，依此类推。
+These people probably needed one that was nine characters long, and so forth.
+
+178
+00:09:47,029 --> 00:09:49,359
+所以您也许可以看到一些政策表现
+So you can perhaps see some manifestations of policies
+
+179
+00:09:49,360 --> 00:09:53,200
+公司，大学和软件制造商
+that companies and universities and software manufacturers
+
+180
+00:09:53,200 --> 00:09:54,520
+可能已经到位。
+might have in place.
+
+181
+00:09:54,519 --> 00:09:57,309
+但只要说出您的密码在此列表中，就足够了，
+But suffice it to say, if your password is on this list,
+
+182
+00:09:57,309 --> 00:10:00,099
+您今天的讨论的第一要点
+your first takeaway from today's discussion
+
+183
+00:10:00,100 --> 00:10:02,440
+应该更改该密码-
+should be change that password--
+
+184
+00:10:02,440 --> 00:10:04,713
+至少在乎您的帐户时。
+at least if you care about the account.
+
+185
+00:10:04,712 --> 00:10:06,879
+我也会说，我们将回到这一点，
+And I would argue, too, and we'll come back to this,
+
+186
+00:10:06,879 --> 00:10:09,519
+它真的应该考虑到您的决策中
+it really probably should figure into your decision making
+
+187
+00:10:09,519 --> 00:10:10,809
+它是什么类型的帐户。
+what type of account it is.
+
+188
+00:10:10,809 --> 00:10:14,019
+如果您不想再使用某些愚蠢的网站或游戏，
+If it's for some silly website or game that you're never going to use again,
+
+189
+00:10:14,019 --> 00:10:15,249
+也许这没什么大不了的。
+maybe it's not a big deal.
+
+190
+00:10:15,250 --> 00:10:19,000
+如果是您的银行帐户，您的学生记录，与医疗相关的内容，
+If it's your bank account, your student record, something medical related,
+
+191
+00:10:19,000 --> 00:10:22,040
+可能您真的不希望您的密码出现在此列表中。
+probably you really don't want your password on this list.
+
+192
+00:10:22,039 --> 00:10:26,979
+因此，在这里也要考虑我们做出当今所有决策的环境。
+So there, too, consider the context in which we make all of today's decisions.
+
+193
+00:10:26,980 --> 00:10:28,900
+现在，为什么这些密码不好？
+Now, why are these passwords bad?
+
+194
+00:10:28,899 --> 00:10:32,119
+为什么密码本身有潜在风险？
+And why are passwords themselves potentially at risk?
+
+195
+00:10:32,120 --> 00:10:36,130
+因此，计算机科学中的一个术语是蛮力攻击。
+So a term of art in computer science is that of brute force attacks.
+
+196
+00:10:36,129 --> 00:10:38,589
+这就是它所说的。
+And this kind of is what it says.
+
+197
+00:10:38,590 --> 00:10:42,990
+这指的是一个对手-有人想得到你或得到某人-
+This refers to an adversary-- someone who's out to get you or get someone--
+
+198
+00:10:42,990 --> 00:10:50,290
+拥有设备或编写软件，试图仅猜测您的密码。
+has a device or writes software that tries to just guess your password.
+
+199
+00:10:50,289 --> 00:10:53,589
+蛮力攻击意味着如果他们不知道您的密码，
+Brute force attack means that if they don't know your password,
+
+200
+00:10:53,590 --> 00:10:55,990
+他们不只是要尝试随机数。
+they're not just going to try random numbers necessarily.
+
+201
+00:10:55,990 --> 00:10:58,570
+他们将尝试111111。
+They're going to try 111111.
+
+202
+00:10:58,570 --> 00:11:01,420
+然后他们将尝试111112。
+And then they're going to try 111112.
+
+203
+00:11:01,419 --> 00:11:06,579
+然后他们将尝试通过手动将111113键入手机中
+Then they're going to try 111113, either manually, by typing it into the phone
+
+204
+00:11:06,580 --> 00:11:09,970
+他们可能是从您那里偷走的，或者可能是通过编写软件来窃取的，
+that they might have stolen off of you, or maybe by writing software,
+
+205
+00:11:09,970 --> 00:11:12,760
+然后通过笔记本电脑连接该软件
+and then connecting that software via a laptop
+
+206
+00:11:12,759 --> 00:11:17,319
+或台式机通过USB电缆或避雷针等连接到您的手机。
+or desktop to your phone via USB cable or lightning connector or the like.
+
+207
+00:11:17,320 --> 00:11:19,390
+蛮力攻击几乎意味着
+A brute force attack pretty much just means
+
+208
+00:11:19,389 --> 00:11:23,319
+对手不一定了解您-您的名字，
+that the adversary doesn't necessarily know anything about you-- your name,
+
+209
+00:11:23,320 --> 00:11:26,450
+你的生日，你的孩子的名字，没什么其他的。
+your birthday, your children's names, nothing like that.
+
+210
+00:11:26,450 --> 00:11:29,450
+但是他们确实有很多时间或技能。
+But they do have a lot of time or a lot of skill.
+
+211
+00:11:29,450 --> 00:11:32,140
+因此，他们将尝试所有可能的密码。
+And so they're just going to try all possible passwords.
+
+212
+00:11:32,139 --> 00:11:35,619
+我想这种攻击方式令人大开眼界
+And what's eye opening, I think, about this type of attack
+
+213
+00:11:35,620 --> 00:11:37,420
+是已经给了我们机会
+is that it already gives us an opportunity
+
+214
+00:11:37,419 --> 00:11:41,199
+开始思考我们如何保护自己免受攻击？
+to start thinking about how can we protect ourselves against an attack?
+
+215
+00:11:41,200 --> 00:11:45,700
+而现在，您在手机和计算机上的帐户的安全性如何
+And just right now, how secure are your accounts on your phones and computers
+
+216
+00:11:45,700 --> 00:11:47,590
+对抗暴力攻击？
+against brute force attacks?
+
+217
+00:11:47,590 --> 00:11:49,990
+好吧，让我们考虑一下对手如何做到这一点。
+Well, let's consider how an adversary might do this.
+
+218
+00:11:49,990 --> 00:11:52,120
+这是一个愚蠢的YouTube视频。
+This is kind of a silly YouTube video here.
+
+219
+00:11:52,120 --> 00:11:55,420
+但是，让我继续播放此动画，真的，
+But let me go ahead and play this animation, really,
+
+220
+00:11:55,419 --> 00:12:01,629
+该图显示了使用这种小型机械手打字的各种小型机械手
+which shows a small robot of sorts that is typing using this little robotic arm
+
+221
+00:12:01,629 --> 00:12:03,489
+到那里的Android手机上。
+onto an Android phone down there.
+
+222
+00:12:03,490 --> 00:12:04,987
+有一个放大的版本。
+There's a zoomed in version of it.
+
+223
+00:12:04,986 --> 00:12:06,819
+这几乎是蛮力攻击
+And pretty much this is a brute force attack
+
+224
+00:12:06,820 --> 00:12:10,330
+由机器人（对手设计的物理设备）
+by a robot, a physical device that an adversary has designed
+
+225
+00:12:10,330 --> 00:12:12,390
+只需输入所有可能的密码。
+to just type in all possible passcodes.
+
+226
+00:12:12,389 --> 00:12:14,139
+即使视频本身很短，
+And even though the video itself is short,
+
+227
+00:12:14,139 --> 00:12:17,529
+您可以想象对手要过一天，要睡觉。
+you can imagine the adversary going about their day, going to sleep.
+
+228
+00:12:17,529 --> 00:12:20,979
+而且，这件事只会使您的密码一直残酷地被强制使用。
+And this thing just keeps brute forcing its way through your password.
+
+229
+00:12:20,980 --> 00:12:25,060
+所以最终，它可能会很幸运，偶然发现您使用的任何代码
+So eventually, it might get lucky and stumble upon whatever code you
+
+230
+00:12:25,059 --> 00:12:26,769
+确实在使用。
+were indeed using.
+
+231
+00:12:26,769 --> 00:12:30,802
+但是，当然，也可能存在其他威胁。
+But of course, there's probably other threats, too.
+
+232
+00:12:30,802 --> 00:12:31,719
+还有其他威胁。
+There's other threats.
+
+233
+00:12:31,720 --> 00:12:34,900
+实际上，任何服用CS50或CS50x甚至是
+In fact, anyone who's taken CS50 or CS50x or even
+
+234
+00:12:34,899 --> 00:12:38,919
+刚开始的几周，学习了一些C或Python，
+just the first few weeks of it, learning a little bit of C or Python,
+
+235
+00:12:38,919 --> 00:12:41,769
+两者都是通用的编程语言，任何人
+both of which are common programming languages, anyone
+
+236
+00:12:41,769 --> 00:12:44,019
+懂一点编程的人肯定可以
+who knows a little bit about programming can certainly
+
+237
+00:12:44,019 --> 00:12:48,159
+编写模拟该机器人的实际操作的软件。
+write software that simulates what that robot was physically doing.
+
+238
+00:12:48,159 --> 00:12:51,789
+关于软件的事情是，一旦您没有任何活动部件，
+And the thing about software is as soon as you don't have any moving parts,
+
+239
+00:12:51,789 --> 00:12:54,939
+您可以更快，更轻松地完成工作，因为它们全都是电子的。
+you can do things much, much faster because it's all electronic.
+
+240
+00:12:54,940 --> 00:12:56,630
+这根本不是机械的。
+It's not at all mechanical.
+
+241
+00:12:56,629 --> 00:13:00,519
+因此，在这种情况下，如果我要偷走您的手机怎么办
+And so in this case, what if I were to steal your phone off
+
+242
+00:13:00,519 --> 00:13:04,059
+例如，你们中的一些人在我的Mac或PC上编写了一些软件，
+of you, for instance, write some software on my Mac or PC,
+
+243
+00:13:04,059 --> 00:13:06,729
+然后将我的Mac或PC插入手机
+and then plug my Mac or PC into your phone
+
+244
+00:13:06,730 --> 00:13:09,580
+再次使用USB电缆或闪电连接器，
+with, again, a USB cable or a lightning connector,
+
+245
+00:13:09,580 --> 00:13:14,050
+这样我就可以编写一次又一次尝试所有可能的密码的代码？
+such that I could write code that tries all possible passcodes again and again?
+
+246
+00:13:14,049 --> 00:13:16,809
+例如，假设您的手机正在使用-
+For instance, suppose that your phone is using--
+
+247
+00:13:16,809 --> 00:13:21,789
+在iPhone或Android手机上，这并非不常见的默认设置，
+and this is not an uncommon default on iPhones or on Android phones,
+
+248
+00:13:21,789 --> 00:13:23,019
+至少在过去-
+at least in the past--
+
+249
+00:13:23,019 --> 00:13:24,069
+四位数。
+four digits.
+
+250
+00:13:24,070 --> 00:13:26,170
+假设您需要最少选择
+Suppose that you're required to choose minimally
+
+251
+00:13:26,169 --> 00:13:30,519
+密码或密码，在这里是同义词，长度为四位数。
+a passcode or password, synonymous here, that are four digits long.
+
+252
+00:13:30,519 --> 00:13:33,009
+我们说的是十进制数字，所以0到9。
+And we're talking decimal digits, so 0 through 9.
+
+253
+00:13:33,009 --> 00:13:35,349
+因此，您需要0、1、2、3、4、5、6、7、8、9
+So 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, you need
+
+254
+00:13:35,350 --> 00:13:38,170
+以某种模式选择其中四个数字。
+to choose four of those digits in some pattern.
+
+255
+00:13:38,169 --> 00:13:44,229
+那么，有四个四位数长的可能密码？
+Well, how many possible passcodes are there that are four digits long?
+
+256
+00:13:44,230 --> 00:13:48,700
+如果您的密码长度为4位数字，则可以开始考虑安全性
+If your passcode is 4 digits long, you can begin to think about the security
+
+257
+00:13:48,700 --> 00:13:52,900
+您的密码需要多少时间？
+of your passcode in terms of, well, how long would it take an adversary
+
+258
+00:13:52,899 --> 00:13:58,209
+暴力破解我的真实密码（从0000开始），
+to brute force their way to my actual password starting at 0000,
+
+259
+00:13:58,210 --> 00:14:01,135
+一直上升到例如9999。
+going all the way up to, for instance, 9999.
+
+260
+00:14:01,134 --> 00:14:03,009
+好吧，让我继续打开屏幕。
+Well, let me go ahead and open up the screen.
+
+261
+00:14:03,009 --> 00:14:07,329
+如果您从前拉起相同的URL，您将在片刻内看到
+If you pull up that same URL from before, you'll see in just a moment
+
+262
+00:14:07,330 --> 00:14:12,070
+一项民意测验会问你同样的问题，那就是，
+a poll that'll ask you this very same question, that being,
+
+263
+00:14:12,070 --> 00:14:15,338
+可以输入多少个4位数的密码？
+how many 4-digit passcodes are possible?
+
+264
+00:14:15,337 --> 00:14:17,379
+稍后，您会在屏幕上看到它。
+In just a moment, you'll see this on your screen.
+
+265
+00:14:17,379 --> 00:14:19,749
+让我继续进行全屏播放。
+Let me go ahead and full screen it on my end as well.
+
+266
+00:14:19,750 --> 00:14:22,600
+再次转到此处我屏幕上方的URL，
+Go again to the URL that's atop my screen here,
+
+267
+00:14:22,600 --> 00:14:26,770
+如果您之前错过了该网址，或者恰巧关闭了该标签。
+if you missed the URL earlier or happened to close the tab.
+
+268
+00:14:26,769 --> 00:14:31,179
+可以输入多少个4位数的密码？
+How many 4-digit passcodes are possible?
+
+269
+00:14:31,179 --> 00:14:33,909
+可以输入多少个4位数的密码？
+How many 4-digit passcodes are possible?
+
+270
+00:14:33,909 --> 00:14:40,179
+在这里，答案是4或40或9,999或10,000-
+Among the answers here are 4 or 40 or 9,999 or maybe 10,000--
+
+271
+00:14:40,179 --> 00:14:42,939
+还是很好，您不确定。
+or quite fine, too, you're unsure.
+
+272
+00:14:42,940 --> 00:14:50,170
+如果可以的话，继续前进并提出其中一种回应。
+Go ahead and buzz in with one of those responses, if you could.
+
+273
+00:14:50,169 --> 00:14:53,139
+好吧，看来到目前为止我们已经收到了几百个回复。
+All right, looks like we have got a few hundred responses thus far.
+
+274
+00:14:53,139 --> 00:14:56,519
+我们会再给您几秒钟的时间进行嗡嗡声。
+We'll give you a few more seconds to buzz in.
+
+275
+00:14:56,519 --> 00:14:59,159
+让我继续，开始在这里显示结果。
+And let me go ahead and begin to reveal the results here.
+
+276
+00:14:59,159 --> 00:15:03,644
+看来你们当中有很多人，超过60％
+So it looks like quite a few of you, 60-plus%
+
+277
+00:15:03,644 --> 00:15:05,519
+认为这是10,000种可能性。
+think it's 10,000 possibilities.
+
+278
+00:15:05,519 --> 00:15:08,729
+你们中有27％的人认为这是9,999种可能性。
+27% of you think it's 9,999 possibilities.
+
+279
+00:15:08,730 --> 00:15:10,590
+然后其他一些人认为是40或4。
+And then a few others think it's 40 or four.
+
+280
+00:15:10,590 --> 00:15:12,210
+你们中的许多人不确定。
+And a bunch of you are unsure.
+
+281
+00:15:12,210 --> 00:15:14,130
+那么，让我们考虑一下，我们将如何回答
+So let's consider, then, how we would answer
+
+282
+00:15:14,129 --> 00:15:17,669
+这个问题，以便我们有一个心理模型可以自己回答。
+this question so that we have a mental model for answering this on our own.
+
+283
+00:15:17,669 --> 00:15:20,949
+让我继续提出来回答这个问题，
+Let me go ahead and propose that to answer this question,
+
+284
+00:15:20,950 --> 00:15:22,770
+我们只是做一些非常简单的算术。
+we just do some very simple arithmetic.
+
+285
+00:15:22,769 --> 00:15:24,599
+它并不需要变得非常复杂。
+It doesn't need to get very complicated.
+
+286
+00:15:24,600 --> 00:15:28,090
+但是可以通过以下方式来考虑数学。
+But the math could be thought of in the following way.
+
+287
+00:15:28,090 --> 00:15:31,980
+如果我们有一个4位数字的密码，那就是4位数字，每个数字
+If we've got a 4-digit passcode, that's four digits, each of which
+
+288
+00:15:31,980 --> 00:15:33,420
+可以是零到九。
+can be zero through nine.
+
+289
+00:15:33,419 --> 00:15:34,769
+共有10个数字。
+And there's 10 total digits.
+
+290
+00:15:34,769 --> 00:15:37,679
+因此从零到9。
+Therefore zero through 9.
+
+291
+00:15:37,679 --> 00:15:42,489
+对于这四个数字，每个数字有八个九个十个可能的值。
+Eight nine so 10 possible values for each of those four digits.
+
+292
+00:15:42,490 --> 00:15:44,790
+所以如果是这样的话，我认为可以这样说
+So if that's the case, I think it's fair to say
+
+293
+00:15:44,789 --> 00:15:48,479
+第一位数字有10种可能性乘以10种可能性
+that there's 10 possibilities for the first digit times 10 possibilities
+
+294
+00:15:48,480 --> 00:15:51,507
+第二次10次10。
+for the second times 10 times 10.
+
+295
+00:15:51,506 --> 00:15:53,339
+当然，如果将这些全部相乘，
+And of course, if you multiply this all out,
+
+296
+00:15:53,340 --> 00:15:56,680
+答案确实是10,000种可能性。
+the answer was indeed 10,000 possibilities.
+
+297
+00:15:56,679 --> 00:15:59,369
+因此，如果您现在拥有iPhone或Android手机
+So if you have an iPhone or an Android phone right now
+
+298
+00:15:59,370 --> 00:16:03,060
+并且您有一个4位数的密码，您认为没人知道，
+and you've got a 4-digit passcode that you think no one knows,
+
+299
+00:16:03,059 --> 00:16:04,799
+情况很可能如此。
+that may very well be the case.
+
+300
+00:16:04,799 --> 00:16:07,199
+但是您应该担心或考虑，
+But you should worry about or consider, well,
+
+301
+00:16:07,200 --> 00:16:10,740
+如果有一个花哨机器人的朋友将您的手机连接到该手机上会发生什么
+what happens if a friend with a fancy robot connects your phone to that
+
+302
+00:16:10,740 --> 00:16:18,180
+并尝试使用所有可能的值（从0000到9999），或更聪明的方法，
+and just tries all possible values from 0000 to 9999, or smarter still,
+
+303
+00:16:18,179 --> 00:16:21,119
+通过电缆将手机连接到他们的笔记本电脑，
+connects your phone via cable to their laptop,
+
+304
+00:16:21,120 --> 00:16:24,690
+编写软件以生成所有这些可能性？
+writes software to generate all of those possibilities?
+
+305
+00:16:24,690 --> 00:16:28,740
+好吧，有点令人担忧的是，后者并不难
+Well, a little worrisomely, it's not all that hard to do the latter
+
+306
+00:16:28,740 --> 00:16:30,210
+并实际编写代码。
+and to actually write code.
+
+307
+00:16:30,210 --> 00:16:33,450
+所以事实上，让我继续在这里并在自己的Mac上，让我继续
+So in fact, let me go ahead here and on my own Mac, let me go ahead
+
+308
+00:16:33,450 --> 00:16:36,540
+并打开一个程序，让我写
+and open up a program that's going to let me write
+
+309
+00:16:36,539 --> 00:16:39,149
+名为crack.py的文件中的一些代码。
+some code in a file called crack.py.
+
+310
+00:16:39,149 --> 00:16:41,229
+因此，“裂纹”是编程中的一种艺术术语，
+So "crack" is a term of art in programming,
+
+311
+00:16:41,230 --> 00:16:44,790
+这意味着以某种方式强行将您的密码输入密码，
+which means to brute force your way into a password somehow,
+
+312
+00:16:44,789 --> 00:16:47,506
+因此要弄清楚它在算法上是什么。
+so to figure out what it is algorithmically.
+
+313
+00:16:47,506 --> 00:16:50,339
+你们当中的那些人，尤其是从未有过的父母和家庭成员
+Those of you, particularly parents and family members who have never
+
+314
+00:16:50,340 --> 00:16:52,170
+以前看过的任何东西，都很好。
+seen any of this before, totally fine.
+
+315
+00:16:52,169 --> 00:16:53,579
+这对您来说是新的。
+That's new to you.
+
+316
+00:16:53,580 --> 00:16:56,760
+你的儿女和其他人在房间里
+Your sons and daughters and others here in the room
+
+317
+00:16:56,759 --> 00:16:58,439
+几乎看不到这段代码。
+have seen little bit of this code.
+
+318
+00:16:58,440 --> 00:17:01,080
+但是，我们将其简短化，也就是说，实际上
+But we'll keep it short, which is to say that it actually
+
+319
+00:17:01,080 --> 00:17:04,680
+无需花费太多精力来编写残酷的代码
+doesn't take all that much effort to write code that brute
+
+320
+00:17:04,680 --> 00:17:06,496
+在您自己的手机上强行发起攻击。
+forces an attack on your own phone.
+
+321
+00:17:06,496 --> 00:17:09,329
+我要在此处编写的代码是使用一种称为Python的语言，
+And the code I'm going to write here is in a language called Python,
+
+322
+00:17:09,328 --> 00:17:11,078
+这些天很受欢迎。
+which is quite popular these days.
+
+323
+00:17:11,078 --> 00:17:15,449
+我要说的是这样的命令，从字符串导入数字开始，
+And I'm going to say a command like this, from string import digits, which
+
+324
+00:17:15,450 --> 00:17:18,520
+在Python这种编程语言中只是一种聪明的方法，
+is just a clever way in Python, this programming language,
+
+325
+00:17:18,519 --> 00:17:22,289
+只需让我访问所有可能的十进制数字（0到9）即可。
+just give me access to all the possible digits in decimal, 0 through 9.
+
+326
+00:17:22,289 --> 00:17:26,429
+然后我要从一个库中导入一些软件
+And then I'm going to import, so to speak, from a library, some software
+
+327
+00:17:26,430 --> 00:17:29,940
+其他一些聪明人写的东西，叫做产品。
+that some other smart people wrote, something called product.
+
+328
+00:17:29,940 --> 00:17:32,010
+事实证明，用一种编程语言，
+So it turns out, in a programming language,
+
+329
+00:17:32,009 --> 00:17:34,649
+您有很多功能。
+you have lots of functions or functionality.
+
+330
+00:17:34,650 --> 00:17:38,110
+就像在数学世界中一样，您拥有一些函数，例如加法，减法，
+Much like in the world of math, you have functions, like, addition, subtraction,
+
+331
+00:17:38,109 --> 00:17:39,329
+乘法和除法。
+multiplication, and division.
+
+332
+00:17:39,329 --> 00:17:42,509
+在编程世界中，您拥有所有这些功能，
+In the world of programming, you have all of those capabilities,
+
+333
+00:17:42,509 --> 00:17:43,499
+但还有更多。
+but many more.
+
+334
+00:17:43,500 --> 00:17:45,899
+所以我要在这里导入的功能之一
+And so one of the functions I'm importing here
+
+335
+00:17:45,900 --> 00:17:48,090
+是产品的概念，这实际上意味着
+is this notion of a product, which really just means
+
+336
+00:17:48,089 --> 00:17:52,177
+所有可能数字的排列。
+a permutation of all possible digits.
+
+337
+00:17:52,178 --> 00:17:54,720
+现在，我将在编程中使用所谓的循环。
+And now I'm going to use what's called a loop in programming.
+
+338
+00:17:54,720 --> 00:17:57,803
+程序中的循环只是一次又一次地做某事。
+A loop in a program is just something that does something again and again.
+
+339
+00:17:57,803 --> 00:18:00,270
+我将继续讲这个，以获取密码
+And I'm going to go ahead and say this, for passcode
+
+340
+00:18:00,269 --> 00:18:06,659
+输入所有这些数字的乘积，然后重复这些数字总计四次，
+in, the product of all of those digits, and repeat the digits four times total,
+
+341
+00:18:06,660 --> 00:18:09,810
+继续并打印出每个密码。
+go ahead and print out each passcode.
+
+342
+00:18:09,809 --> 00:18:13,439
+让我继续使用某种含糊的语法将其打印出来。
+Let me go ahead and print it out using somewhat cryptic syntax.
+
+343
+00:18:13,440 --> 00:18:17,310
+但这仅仅是因为我要打印出一个列表作为实际字符串。
+But that's only because I'm going to print out a list as an actual string.
+
+344
+00:18:17,309 --> 00:18:20,139
+父母和家庭成员，现在不必担心这意味着什么。
+Parents and family members, don't worry for now what that means.
+
+345
+00:18:20,140 --> 00:18:23,370
+CS50和CS50x的学生，这只是一个聪明的方法
+CS50 and CS50x students, this is just a clever way
+
+346
+00:18:23,369 --> 00:18:26,009
+用几行代码进行迭代
+with a couple of lines of code to iterate over
+
+347
+00:18:26,009 --> 00:18:30,389
+从0到9的所有数字，一次将它们四个组合在一起，
+all of the digits 0 through 9, combine them four at a time,
+
+348
+00:18:30,390 --> 00:18:35,200
+并打印出这四个数字的所有可能排列。
+and print out all possible permutations of those four digits.
+
+349
+00:18:35,200 --> 00:18:38,430
+因此，如果我没有在这里搞砸，我将继续保存我的文件并运行
+So if I didn't screw up here, I'm going to go ahead and save my file and run
+
+350
+00:18:38,430 --> 00:18:42,780
+在crack.py上执行名为python的命令，然后按Enter键
+a command called python on crack.py and hit Enter--
+
+351
+00:18:42,779 --> 00:18:43,784
+繁荣。
+boom.
+
+352
+00:18:43,785 --> 00:18:45,090
+那太快了。
+That was so fast.
+
+353
+00:18:45,089 --> 00:18:46,409
+实际上，让我再做一次。
+In fact, let me do it again.
+
+354
+00:18:46,410 --> 00:18:49,590
+让我清除屏幕，然后重新运行这个crack.py程序-
+Let me clear my screen and rerun this crack.py program--
+
+355
+00:18:49,589 --> 00:18:50,609
+繁荣。
+boom.
+
+356
+00:18:50,609 --> 00:18:53,789
+那就是一台计算机，我的小Mac在这里，
+That's how fast a computer, my little Mac here,
+
+357
+00:18:53,789 --> 00:18:59,039
+可以尝试使用0000到9999之间的所有可能代码。
+can try all possible codes between 0000 and 9999.
+
+358
+00:18:59,039 --> 00:19:01,919
+它之所以如此之快，是因为它们在一瞬间就完成了所有操作。
+And it's so fast because it did them all in the blink of an eye.
+
+359
+00:19:01,920 --> 00:19:04,920
+因此，如果您认为自己的4位数密码使您有所保留
+So if you're thinking that your 4-digit passcode is keeping you somewhat
+
+360
+00:19:04,920 --> 00:19:09,630
+安全，实际上可能不是因为不需要那么多精力
+secure, it probably really isn't because it wouldn't take that much effort
+
+361
+00:19:09,630 --> 00:19:12,360
+也许你家里有人写这样的代码，
+for maybe someone in your household to write code like this,
+
+362
+00:19:12,359 --> 00:19:15,401
+晚上不注意的时候秘密连接到手机，
+connect to your phone secretly at night when you're not paying attention,
+
+363
+00:19:15,402 --> 00:19:18,490
+并可能找出您的代码实际上是什么。
+and figure out, potentially, what your code actually is.
+
+364
+00:19:18,490 --> 00:19:21,535
+那么，有什么比仅使用数字更好的呢？
+So what would be better than using just digits?
+
+365
+00:19:21,535 --> 00:19:22,410
+有什么更好的办法？
+What would be better?
+
+366
+00:19:22,410 --> 00:19:25,118
+好吧，为什么我们不使用字母，英文字母，
+Well, why don't we use letters of the alphabet, English alphabet,
+
+367
+00:19:25,117 --> 00:19:26,309
+为了今天的目的？
+for today's purposes?
+
+368
+00:19:26,309 --> 00:19:31,109
+在英文字母中，字母比数字多。
+And in the English alphabet, we have more letters than we have numbers.
+
+369
+00:19:31,109 --> 00:19:32,874
+那么我们怎么考虑呢？
+So how might we think about this?
+
+370
+00:19:32,875 --> 00:19:34,500
+让我们继续在这里问一个问题。
+Let's go ahead and ask a question here.
+
+371
+00:19:34,500 --> 00:19:36,959
+如果您今天后要更换手机以使用
+If you change your phone after today to use
+
+372
+00:19:36,960 --> 00:19:43,810
+英文字母的四个字母，而不是单独使用数字，
+four letters of the English alphabet instead of using numbers alone,
+
+373
+00:19:43,809 --> 00:19:45,939
+那有多少种可能性？
+how many possibilities are there then?
+
+374
+00:19:45,940 --> 00:19:48,910
+好吧，让我继续在这里提出一个不同的民意调查问题，
+Well, let me go ahead and open up a different poll question here,
+
+375
+00:19:48,910 --> 00:19:54,420
+哪个问这次，可以输入多少个4个字母的密码？
+which asks this time, how many 4-letter passcodes are possible?
+
+376
+00:19:54,420 --> 00:19:56,710
+我们将看到人们对此的想法和答案，
+And we'll see what folks think and answer to this,
+
+377
+00:19:56,710 --> 00:19:58,300
+随着答案开始出现。
+as the answers begin to come in.
+
+378
+00:20:00,880 --> 00:20:02,805
+公平地说，我还没有限定一件事。
+To be fair, I have not qualified one thing.
+
+379
+00:20:02,805 --> 00:20:04,930
+因此，您可能必须做出某些假设。
+So you might have to be making certain assumptions.
+
+380
+00:20:04,930 --> 00:20:07,930
+确实有26个英文字母。
+There are indeed 26 letters of the English alphabet.
+
+381
+00:20:07,930 --> 00:20:10,720
+但是，有大写和小写字母。
+However, there's uppercase and lowercase.
+
+382
+00:20:10,720 --> 00:20:13,300
+因此，如果您允许用户在某种情况下键入
+So if you allow the user to type in something case
+
+383
+00:20:13,299 --> 00:20:16,009
+可以这么说，在某些情况下，
+sensitively, so to speak, where case matters,
+
+384
+00:20:16,009 --> 00:20:19,659
+这四个字符中的每一个都不是26种可能性。
+it's not 26 possibilities for each of those four characters.
+
+385
+00:20:19,660 --> 00:20:22,130
+相反，它有52种可能性。
+It's instead 52 possibilities.
+
+386
+00:20:22,130 --> 00:20:24,940
+看来您占了绝大多数，78％
+So it looks like an overwhelming number of you, 78%
+
+387
+00:20:24,940 --> 00:20:27,790
+认为当有七百万种可能性时
+think there's some seven million possibilities when
+
+388
+00:20:27,789 --> 00:20:29,589
+使用4个字母的密码。
+using 4-letter passcodes.
+
+389
+00:20:29,589 --> 00:20:33,889
+大约11％的人认为52,000个都是密码。
+About 11% of you think that 52,000 are all of the passcodes.
+
+390
+00:20:33,890 --> 00:20:35,570
+因此，让我们继续进行快速数学运算。
+So let's go ahead and do the quick math.
+
+391
+00:20:35,569 --> 00:20:38,319
+同样，它不需要特别复杂的数学运算。
+Again, it doesn't need to be particularly sophisticated, the math.
+
+392
+00:20:38,319 --> 00:20:41,859
+让我这次继续开放，类似的方法
+Let me go ahead and open up this time, similar approach
+
+393
+00:20:41,859 --> 00:20:45,081
+这个问题，如果我们有四个字母，
+to this problem, whereby if we have four letters of the alphabet,
+
+394
+00:20:45,082 --> 00:20:47,290
+并假设大小写敏感，这是公平的，
+and let's assume case sensitivity, which, to be fair,
+
+395
+00:20:47,289 --> 00:20:49,389
+你可能没有假设，好吧，那我想
+you might not have assumed, well, then I think
+
+396
+00:20:49,390 --> 00:20:53,140
+我们有52次机会52次52次
+we have 52 possibilities times 52 times 52 times
+
+397
+00:20:53,140 --> 00:20:57,970
+密码中的四个字母中的每个字母为52。
+52 for each of the four letters in your passcode.
+
+398
+00:20:57,970 --> 00:20:59,860
+如果你乘以它-繁荣-
+And if you multiply that out-- boom--
+
+399
+00:20:59,859 --> 00:21:03,739
+您确实可以获得700万以上的可能性。
+you indeed get seven million plus possibilities.
+
+400
+00:21:03,740 --> 00:21:05,830
+因此，在这里考虑外卖。
+So consider the takeaway here.
+
+401
+00:21:05,829 --> 00:21:10,719
+如果您当前使用的密码是四位数（纯数字），
+If you are currently using a passcode that's four digits, purely numeric,
+
+402
+00:21:10,720 --> 00:21:14,980
+您和一些攻击性黑客之间只有10,000位数
+you have only 10,000 digits between you and some adversary hacking
+
+403
+00:21:14,980 --> 00:21:16,510
+插入您的手机中。
+into your phone potentially.
+
+404
+00:21:16,509 --> 00:21:20,529
+如果您将4位数密码更改为4字母密码，
+If you change your 4-digit passcode to be a 4-letter passcode,
+
+405
+00:21:20,529 --> 00:21:23,979
+那么您就有了700万种可能的密码
+then you've got seven million possible passcodes
+
+406
+00:21:23,980 --> 00:21:25,420
+在你和对手之间。
+between you and the adversary.
+
+407
+00:21:25,420 --> 00:21:26,660
+现在，为什么这样更好？
+Now, why is this better?
+
+408
+00:21:26,660 --> 00:21:29,710
+好吧，再说一次，无论他们使用的是机器人还是代码，
+Well, again, whether they're using a robot or using code,
+
+409
+00:21:29,710 --> 00:21:32,912
+只会花更多时间让他们入侵您的设备。
+it's just going to take them more time to hack into your device.
+
+410
+00:21:32,912 --> 00:21:34,870
+再说一遍，如果要
+And again, at that point, if it's going to take
+
+411
+00:21:34,869 --> 00:21:36,702
+他们那么多的时间，那么多的努力，也许
+them that much time, that much effort, maybe
+
+412
+00:21:36,702 --> 00:21:41,079
+相对于其他人，即使有那么多钱可以入侵您的手机
+even that much money to hack into your phone, you, relative to other people
+
+413
+00:21:41,079 --> 00:21:43,719
+可能确实更安全，因为它可能
+might indeed be more secure because it's probably
+
+414
+00:21:43,720 --> 00:21:46,990
+对手更容易偷别人的电话
+going to be easier for that adversary to go steal someone else's phone
+
+415
+00:21:46,990 --> 00:21:49,000
+并尝试进入那个。
+and try to get into that one instead.
+
+416
+00:21:49,000 --> 00:21:51,819
+好吧，让我们考虑一下这在实际代码中的作用。
+Well, let's consider what this does in actual code.
+
+417
+00:21:51,819 --> 00:21:54,969
+让我回到这里的Mac。
+Let me go back to my Mac here.
+
+418
+00:21:54,970 --> 00:21:58,000
+让我继续打开与以前相同的文件。
+And let me go ahead and open up that same file as before.
+
+419
+00:21:58,000 --> 00:22:00,500
+让我继续进行以下更改。
+And let me go ahead and change something as follows.
+
+420
+00:22:00,500 --> 00:22:04,629
+让我使用不叫数字的字母来代替ASCII字母。
+Instead of using just digits, let me use what I'm going to call ASCII letters.
+
+421
+00:22:04,630 --> 00:22:07,480
+不熟悉CS，ASCII的家庭
+Families who are not familiar with CS, ASCII
+
+422
+00:22:07,480 --> 00:22:11,080
+仅指基本上所有可打印的字母
+just refers to essentially all of the printable letters of the alphabet
+
+423
+00:22:11,079 --> 00:22:15,429
+通常会用英语看到，所以A到Z，大写和小写
+that you would typically see in English, so A through Z, capital and lowercase
+
+424
+00:22:15,430 --> 00:22:15,970
+这里。
+here.
+
+425
+00:22:15,970 --> 00:22:18,345
+我将继续更改我对数字的提及
+And I'm going to go ahead and change my mention of digits
+
+426
+00:22:18,345 --> 00:22:20,300
+这里也是ASCII字母。
+here to be ASCII letters as well.
+
+427
+00:22:20,299 --> 00:22:22,389
+同样，该程序几乎是相同的。
+So again, the program is almost identical.
+
+428
+00:22:22,390 --> 00:22:27,010
+但是它将使用全部52个大写和小写英文字母来代替
+But it's going to use all 52 uppercase and lowercase English letters instead
+
+429
+00:22:27,009 --> 00:22:28,929
+全部10位数字。
+of all 10 digits.
+
+430
+00:22:28,930 --> 00:22:30,350
+让我保存此文件。
+Let me save this file.
+
+431
+00:22:30,349 --> 00:22:33,129
+让我重新运行crack.py的python。
+Let me rerun python of crack.py.
+
+432
+00:22:33,130 --> 00:22:36,910
+这次我实际上有一点时间走到屏幕上
+And this time I actually have a moment to walk over to the screen
+
+433
+00:22:36,910 --> 00:22:40,810
+并指出现在我们刚刚通过小写字母zs。
+and point out now that we're just now through the lower case zs.
+
+434
+00:22:40,809 --> 00:22:42,999
+现在我们正在检查所有可能的密码
+Now we're going through all the possible passcodes
+
+435
+00:22:43,000 --> 00:22:44,530
+以大写字母开头。
+that start with capital letters.
+
+436
+00:22:44,529 --> 00:22:45,999
+它仍然相当快。
+It's still pretty fast.
+
+437
+00:22:46,000 --> 00:22:48,939
+大概10秒钟后完成了什么？
+This is maybe, what, 10 seconds later done?
+
+438
+00:22:48,940 --> 00:22:52,690
+我们从AAAA转到ZZZZ。
+We went from AAAA to ZZZZ.
+
+439
+00:22:52,690 --> 00:22:54,040
+因此，我们提高了标准。
+So we've raised the bar.
+
+440
+00:22:54,039 --> 00:22:58,329
+同样，在这种情况下，我们手机的安全性可以说更高。
+And again, the security of our phone in this case is arguably more.
+
+441
+00:22:58,329 --> 00:23:00,189
+更高，因为现在需要
+It's higher because now it's going to take
+
+442
+00:23:00,190 --> 00:23:04,870
+攻击者需要花费更多的时间或更多的精力才能真正入侵我们的设备。
+the adversary more time or more effort to actually hack into our device.
+
+443
+00:23:04,869 --> 00:23:07,119
+好吧，那么也许让我们考虑另一个问题。
+Well, let's consider, perhaps, another question, then.
+
+444
+00:23:07,119 --> 00:23:11,409
+如果我们进一步将其概括为字符怎么办？
+What if we generalize it further to be characters?
+
+445
+00:23:11,410 --> 00:23:13,277
+你们当中的那些人，也许，
+And those of you among families, perhaps,
+
+446
+00:23:13,277 --> 00:23:15,860
+可能不知道字符和字母之间的区别。
+might not know the distinction between characters and letters.
+
+447
+00:23:15,859 --> 00:23:17,829
+因此，我将其打开到这里的地板上。
+So let me open this up to the floor here.
+
+448
+00:23:17,829 --> 00:23:20,139
+这些天当您注册网站时，
+When you register for a website these days,
+
+449
+00:23:20,140 --> 00:23:22,750
+这有点烦人，因为这些网站通常
+it's somewhat annoying because those websites typically
+
+450
+00:23:22,750 --> 00:23:25,839
+强迫您选择一个好的密码。
+force you to choose a good password.
+
+451
+00:23:25,839 --> 00:23:28,989
+好的密码通常意味着什么？
+And what do they typically mean by good password?
+
+452
+00:23:28,990 --> 00:23:33,130
+这些天，您甚至在网站登录之前通常必须包含什么密码？
+What does your password these days often have to contain before the website even
+
+453
+00:23:33,130 --> 00:23:35,060
+让你继续吗？
+lets you proceed?
+
+454
+00:23:35,059 --> 00:23:36,579
+有什么想法吗？
+Any thoughts?
+
+455
+00:23:36,579 --> 00:23:37,239
+让我们看看。
+And let's see.
+
+456
+00:23:37,240 --> 00:23:38,240
+布莱恩，我们有谁？
+Brian, who do we have?
+
+457
+00:23:38,240 --> 00:23:39,492
+达克斯呢？
+How about Dax?
+
+458
+00:23:39,491 --> 00:23:40,449
+你觉得呢？你有没有什么想法？
+What are your thoughts?
+
+459
+00:23:40,450 --> 00:23:44,245
+DAX：至少八个字符，一个数字和一个大写字母。
+DAX: Eight characters at the very least, number, and a capital.
+
+460
+00:23:44,244 --> 00:23:46,369
+DAVID J. MALAN：至少是数字和字符。
+DAVID J. MALAN: So at least a number and character.
+
+461
+00:23:46,369 --> 00:23:47,259
+因此，将两者结合起来。
+So combine the two.
+
+462
+00:23:47,259 --> 00:23:47,989
+我喜欢。
+I like that.
+
+463
+00:23:47,990 --> 00:23:53,290
+因此，我们有26个，而不是26个，52个或10个
+So instead of 26 or 52 or 10, we instead have, maybe, 62
+
+464
+00:23:53,289 --> 00:23:54,939
+如果我们结合字母和数字。
+if we combine letters and numbers.
+
+465
+00:23:54,940 --> 00:23:56,910
+有关什么网站通常的其他想法-
+Other thoughts on what websites typically--
+
+466
+00:23:56,910 --> 00:23:57,910
+DAX：特殊字符。
+DAX: Special characters.
+
+467
+00:23:57,910 --> 00:23:59,327
+DAVID J. MALAN：-强迫您做？
+DAVID J. MALAN: --force you to do?
+
+468
+00:23:59,326 --> 00:24:02,279
+DAX：特殊字符-星号，主题标签，美元符号。
+DAX: Special characters-- asterisk, hashtag, dollar sign.
+
+469
+00:24:02,279 --> 00:24:05,412
+DAVID J. MALAN：好的，所以是特殊字符或标点符号。
+DAVID J. MALAN: OK, so special characters or punctuation characters.
+
+470
+00:24:05,413 --> 00:24:06,580
+因此，也许这是一个哈希符号。
+So maybe it's a hash symbol.
+
+471
+00:24:06,579 --> 00:24:09,697
+可能是一个感叹号，一个括号，一个逗号，一个句点，
+Maybe it's an exclamation point, a parenthesis, a comma, a period,
+
+472
+00:24:09,698 --> 00:24:11,365
+是的-是的，这些符号。
+something else-- yeah, so these symbols.
+
+473
+00:24:11,365 --> 00:24:13,870
+坦白说，我可能和你一样生气
+And frankly, I get as annoyed as you probably
+
+474
+00:24:13,869 --> 00:24:16,754
+当这些网站使您烦恼时说，不，
+do when these websites annoy you and say, no,
+
+475
+00:24:16,755 --> 00:24:18,130
+您不能使用该密码。
+that you can't use that password.
+
+476
+00:24:18,130 --> 00:24:19,570
+不，您不能使用该密码。
+No, you can't use that password.
+
+477
+00:24:19,569 --> 00:24:21,944
+您需要选择一些很难猜测的东西。
+You need to choose something that's much harder to guess.
+
+478
+00:24:21,944 --> 00:24:26,239
+但是的确，如果我们将标点符号添加到组合中，我认为我们可以做得更好。
+But indeed, if we add punctuation to the mix, I think we can do even better.
+
+479
+00:24:26,240 --> 00:24:29,922
+因此，实际上，字符是任何类型的字符。
+In fact, a character, therefore, is any type of character.
+
+480
+00:24:29,922 --> 00:24:30,880
+也许是标点符号。
+Maybe it's punctuation.
+
+481
+00:24:30,880 --> 00:24:31,713
+也许是一封信。
+Maybe it's a letter.
+
+482
+00:24:31,712 --> 00:24:33,979
+也许是数字，不仅仅只是字母。
+Maybe it's a digit, unlike just letters alone.
+
+483
+00:24:33,980 --> 00:24:36,040
+因此，如果我们有四个字符，事实证明
+So if we have four characters, it turns out
+
+484
+00:24:36,039 --> 00:24:39,669
+通常，至少使用ASCII的CS50学生会知道的系统，
+that typically, at least in ASCII, the system that CS50 students will know,
+
+485
+00:24:39,670 --> 00:24:44,050
+通常使用计算机，每个符号有94种可能性
+computers typically use, there's 94 possibilities for each symbol
+
+486
+00:24:44,049 --> 00:24:47,589
+因为您有10位数字，零到九。
+because you've got 10 digits, zero through nine.
+
+487
+00:24:47,589 --> 00:24:51,339
+您有26个小写字母，26个大写字母-然后
+You've got 26 lowercase letters, 26 uppercase letters-- and then
+
+488
+00:24:51,339 --> 00:24:55,959
+如果您用英文键盘算出它们，则该数字会多出32个字符
+if you count them up on an English keyboard, 32 characters more that
+
+489
+00:24:55,960 --> 00:24:58,690
+代表标点符号，例如散列和感叹号
+represent punctuation, like, hashes and exclamation
+
+490
+00:24:58,690 --> 00:25:00,010
+点，逗号和句点。
+points and commas and periods.
+
+491
+00:25:00,009 --> 00:25:03,079
+因此，如果每种符号都有94种可能性，
+So if you have 94 possibilities for each of those symbols,
+
+492
+00:25:03,079 --> 00:25:08,839
+原来，您总共有7800万个可能的密码。
+it turns out that you then have a total of 78 million possible passcodes.
+
+493
+00:25:08,839 --> 00:25:10,279
+那是相当不错的。
+And that's pretty good.
+
+494
+00:25:10,279 --> 00:25:12,889
+现在我们真的在提高对手的门槛
+Now we're really raising the bar to the adversary
+
+495
+00:25:12,890 --> 00:25:18,140
+因为现在他们不得不浪费更多时间尝试破解您的密码。
+because now they have to waste even more time trying to hack into your passcode.
+
+496
+00:25:18,140 --> 00:25:21,170
+实际上，让我继续进行一些实际代码的模拟。
+And in fact, let me go ahead and simulate that with some actual code.
+
+497
+00:25:21,170 --> 00:25:23,990
+让我继续并打开与以前相同的程序。
+Let me go ahead and open up my same program as before.
+
+498
+00:25:23,990 --> 00:25:27,290
+这次让我继续，不仅导入ASCII字母，
+And this time let me go ahead and import not just ASCII letters,
+
+499
+00:25:27,289 --> 00:25:30,559
+还要是数字，甚至是标点符号。
+but also digits, and also literally, punctuation.
+
+500
+00:25:30,559 --> 00:25:33,199
+我用这种语言编写的代码从字面上称为Python
+The code I'm writing in this language called Python literally
+
+501
+00:25:33,200 --> 00:25:35,600
+使我可以使用所有可打印的标点符号
+gives me access to all printable punctuation
+
+502
+00:25:35,599 --> 00:25:38,239
+通过仅使用第一行代码导入它。
+by just importing it with this first line of code.
+
+503
+00:25:38,240 --> 00:25:41,390
+我只需要在此处更改一行代码即可。
+And I just need to change one line of code down here.
+
+504
+00:25:41,390 --> 00:25:47,930
+我实际上需要说ASCII字母加数字加标点符号。
+I need to actually say ASCII letters plus digits plus punctuation.
+
+505
+00:25:47,930 --> 00:25:52,160
+因此，这是用于联接多个列表的Python速记符号。
+So this is Python shorthand notation for joining multiple lists.
+
+506
+00:25:52,160 --> 00:25:55,580
+您当中的那些CS50学生会知道您可以加入两个列表，也许，
+Those CS50 students among you will know that you can join two lists, perhaps,
+
+507
+00:25:55,579 --> 00:25:57,709
+以这种方式，使用看起来像串联的东西。
+in this way, using what looks like concatenation.
+
+508
+00:25:57,710 --> 00:25:59,940
+但是有了列表，它将它们全部组合在一起。
+But with lists, it combines them all together.
+
+509
+00:25:59,940 --> 00:26:01,760
+但是我仍然要在这里做长度4。
+But I'm still going to do of length 4 here.
+
+510
+00:26:01,759 --> 00:26:03,619
+现在让我继续保存该程序
+Now let me go ahead and save this program
+
+511
+00:26:03,619 --> 00:26:05,989
+并将其作为crack.py的python重新运行。
+and rerun it as python of crack.py.
+
+512
+00:26:05,990 --> 00:26:10,550
+现在，坦率地说，我可以花点时间走到屏幕上
+And now I can frankly take my time walking over to the screen
+
+513
+00:26:10,549 --> 00:26:14,629
+因为现在您在屏幕上看到的是四个可能的符号。
+because now what you're seeing on the screen is four possible symbols.
+
+514
+00:26:14,630 --> 00:26:18,230
+但这包括32个可能的标点符号
+But it's including 32 possible punctuation symbols, which
+
+515
+00:26:18,230 --> 00:26:20,630
+表示此列表更长了，对吧？
+means this list is much longer, right?
+
+516
+00:26:20,630 --> 00:26:22,700
+在故事的这一点上，我们已经
+At this point in the story, we were already
+
+517
+00:26:22,700 --> 00:26:26,280
+通过所有小写字母，直到Z为止。
+through all of the lowercase letters up through Z a moment ago.
+
+518
+00:26:26,279 --> 00:26:32,899
+现在我们只有Ms，Ns，Os，Ps，也就是说，
+Now we're only at the Ms, Ns, Os, Ps, which is to say,
+
+519
+00:26:32,900 --> 00:26:35,480
+如果我的Mac不只是将其打印在屏幕上，
+that if my Mac weren't just printing this on the screen,
+
+520
+00:26:35,480 --> 00:26:38,870
+但是却连接到我偷走的手机上
+but were instead connected to your phone that I stole and somehow
+
+521
+00:26:38,869 --> 00:26:41,989
+将所有这些可能的密码发送到您的手机中，
+sending all of these possible passcodes into your phone,
+
+522
+00:26:41,990 --> 00:26:44,930
+要花很多时间才能真正解决。
+it would be taking this much time to actually solve.
+
+523
+00:26:44,930 --> 00:26:47,630
+现在，公平地说，我们几乎是小写的zs。
+Now, to be fair, we're almost at the lowercase zs.
+
+524
+00:26:47,630 --> 00:26:52,400
+因此，如果我们拖延一两分钟，该程序也将完成。
+So if we stall for a minute or two longer, this program, too, will finish.
+
+525
+00:26:52,400 --> 00:26:57,420
+因此，即使有7800万种可能性也不是那么令人印象深刻。
+So even 78 million possibilities is not all that impressive.
+
+526
+00:26:57,420 --> 00:27:00,810
+因此，我敢说我们应该做得比这更好。
+And so I daresay that we should do even better than this.
+
+527
+00:27:00,809 --> 00:27:05,419
+那么，什么比使用四个字符更好的密码呢？
+So what might be better than four characters for a password?
+
+528
+00:27:05,420 --> 00:27:06,980
+有什么想法或志愿者吗？
+Any thoughts or volunteers?
+
+529
+00:27:06,980 --> 00:27:10,790
+有什么比四个字符更好的密码呢？
+What would be a better password than four characters, where,
+
+530
+00:27:10,789 --> 00:27:16,529
+同样，每个字符是字母，数字还是标点符号？
+again, each character is a letter, a number, or a punctuation symbol?
+
+531
+00:27:16,529 --> 00:27:17,529
+该列表非常好。
+The list is pretty good.
+
+532
+00:27:17,529 --> 00:27:19,237
+但我认为我们可以做得更好，因为即使
+But I think we can do better because even
+
+533
+00:27:19,238 --> 00:27:22,290
+这将在一分钟内完成。
+this will be done in under a minute.
+
+534
+00:27:22,289 --> 00:27:23,849
+是的，对此有想法，狮子座？
+Yeah, thoughts about it, Leo?
+
+535
+00:27:23,849 --> 00:27:25,589
+狮子座：对。
+LEO: Right.
+
+536
+00:27:25,589 --> 00:27:28,309
+使用更长的密码，例如至少八个字符。
+Have a longer password to use, like, at least eight characters.
+
+537
+00:27:28,309 --> 00:27:29,309
+DAVID J. MALAN：完美。
+DAVID J. MALAN: Perfect.
+
+538
+00:27:29,309 --> 00:27:31,267
+因此，请使用至少八个密码来设置更长的密码。
+So have a longer password using at least eight.
+
+539
+00:27:31,268 --> 00:27:33,777
+请注意，我们甚至现在正在查看数字。
+And notice here, we're even now going through the numbers.
+
+540
+00:27:33,777 --> 00:27:35,860
+但是似乎我们已经完成了这些数字。
+But we're almost done, it seems, with the numbers.
+
+541
+00:27:35,859 --> 00:27:37,419
+但是现在我们正在经历标点符号。
+But now we're going through punctuation.
+
+542
+00:27:37,420 --> 00:27:39,837
+但是再说一次，如果我再给它一点时间-我认为
+But again, if I give this a little more time-- and I think
+
+543
+00:27:39,836 --> 00:27:41,017
+我有点太热心了。
+I was a little overzealous.
+
+544
+00:27:41,018 --> 00:27:42,810
+一分钟之内可能不会飞。
+Under a minute probably isn't going to fly.
+
+545
+00:27:42,809 --> 00:27:45,569
+但是可以肯定的是，在课程结束时，这已经完成了。
+But certainly, by the end of class, that will have been done.
+
+546
+00:27:45,569 --> 00:27:48,659
+但是，如果我们做得更好并且使用八个字符怎么办？
+But what if we do a little better and use eight characters?
+
+547
+00:27:48,660 --> 00:27:50,970
+好吧，八个字符将花费更长的时间。
+Well, eight characters is going to take even longer.
+
+548
+00:27:50,970 --> 00:27:54,403
+但是，让我们继续前进，问问所有人这可能需要多长时间。
+But let's go ahead and ask you all how much longer this might take.
+
+549
+00:27:54,403 --> 00:27:56,820
+让我继续提出一个不同的问题，
+Let me go ahead and open up a somewhat different question,
+
+550
+00:27:56,819 --> 00:27:58,299
+但精神上相似。
+but similar in spirit.
+
+551
+00:27:58,299 --> 00:28:01,299
+稍后，您的屏幕上就会出现。
+In just a moment that will appear on your screen.
+
+552
+00:28:01,299 --> 00:28:05,009
+这里的问题将是多少个8字符密码
+And the question here is going to be how many 8-character passcodes are
+
+553
+00:28:05,009 --> 00:28:06,059
+可能的？
+possible?
+
+554
+00:28:06,059 --> 00:28:08,279
+这次我挥手致意。
+And this time I'm waving my hand at it.
+
+555
+00:28:08,279 --> 00:28:11,309
+我什至还没有去做精确的数学运算。
+I didn't even bother doing the math precisely yet.
+
+556
+00:28:11,309 --> 00:28:13,559
+但我建议大约是一百万，
+But I'm proposing that it's roughly a million,
+
+557
+00:28:13,559 --> 00:28:18,089
+10亿，1万亿，4千万，5百万。
+a billion, a trillion, a quadrillion, a quintillion.
+
+558
+00:28:18,089 --> 00:28:20,736
+也许有些人在这里注意到了一种模式。
+Some of you are perhaps noticing a pattern here.
+
+559
+00:28:20,737 --> 00:28:22,320
+然后您就直接赚了五百亿美元。
+And you went straight for quintillion.
+
+560
+00:28:22,319 --> 00:28:24,789
+那酒吧跳得真快。
+That bar jumped up really fast.
+
+561
+00:28:24,789 --> 00:28:26,159
+所以也许你是对的。
+So maybe you're right.
+
+562
+00:28:26,160 --> 00:28:27,480
+好本能，也许。
+Good instincts, perhaps.
+
+563
+00:28:27,480 --> 00:28:29,550
+看来我们正在达到平衡。
+It looks like we're getting equilibrium.
+
+564
+00:28:29,549 --> 00:28:32,189
+你们中大约60％的人认为这是5百万。
+About 60% of you think it's 1 quintillion.
+
+565
+00:28:32,190 --> 00:28:34,350
+你们中有25％的人认为这是万花筒。
+25% of you think it's a quadrillion.
+
+566
+00:28:34,349 --> 00:28:36,599
+然后其他人越来越少。
+And then fewer and fewer for the others.
+
+567
+00:28:36,599 --> 00:28:39,059
+好吧，让我们看看实际的答案是什么。
+Well, let's take a look at what the actual answer is.
+
+568
+00:28:39,059 --> 00:28:42,639
+给我一点时间，在屏幕上实际完成数学运算。
+Give me just a moment to actually do out the math here on my screen.
+
+569
+00:28:42,640 --> 00:28:45,120
+如果我们在这里在屏幕上进行数学运算，
+And if we do out the math on my screen here,
+
+570
+00:28:45,119 --> 00:28:47,759
+我们当然会看到我们需要做更多的数学运算。
+we'll see, of course, that we need to do some more math.
+
+571
+00:28:47,759 --> 00:28:52,619
+我们需要自己做94次八次，而不是四次，
+We need to do 94 times itself eight times instead of just four,
+
+572
+00:28:52,619 --> 00:28:55,349
+Leo建议使用八个可能的符号。
+to Leo's suggestion of using eight possible symbols.
+
+573
+00:28:55,349 --> 00:28:58,019
+如果您执行此操作，则我必须考虑一下。
+And if you do this out, I had to think about this.
+
+574
+00:28:58,019 --> 00:29:02,879
+让我们看看实际上这是数百万，数十亿，数万亿美元，
+This in fact is, let's see, we've got millions, billions, trillions,
+
+575
+00:29:02,880 --> 00:29:04,200
+四千万。
+quadrillions.
+
+576
+00:29:04,200 --> 00:29:04,860
+知道了
+Gotcha.
+
+577
+00:29:04,859 --> 00:29:07,469
+因此，它不是清单上的最大选择。
+So it wasn't the biggest option on the list.
+
+578
+00:29:07,470 --> 00:29:09,810
+答案的确是四方。
+The answer is indeed quadrillion.
+
+579
+00:29:09,809 --> 00:29:12,329
+因此，如果您愿意的话，请达到6万亿
+So 6 quadrillion, if you will.
+
+580
+00:29:12,329 --> 00:29:15,119
+但是-但是-但你们当中的粉丝
+But-- but-- but those of you who are fans
+
+581
+00:29:15,119 --> 00:29:18,764
+有五百亿种可能性，这很漂亮
+of having quintillion possibilities, which is pretty, pretty
+
+582
+00:29:18,765 --> 00:29:21,390
+安全，因为这只会使对手花费更长的时间
+secure because it's just going to take the adversary way longer
+
+583
+00:29:21,390 --> 00:29:26,910
+破解您的密码，好吧，从6万位数开始
+to hack into your password, well, all it takes to go from 6 quadrillion
+
+584
+00:29:26,910 --> 00:29:31,210
+到五百亿个数字只是另外两个字符。
+to some number of quintillion is just two more characters.
+
+585
+00:29:31,210 --> 00:29:35,070
+因此，实际上，如果Leo提出的密码不是8个字符，
+So in fact, if Leo had proposed not an 8-character passcode,
+
+586
+00:29:35,069 --> 00:29:39,299
+但是10个字符的密码，我们实际上将达到5百万。
+but a 10-character passcode, we actually would have hit quintillions.
+
+587
+00:29:39,299 --> 00:29:40,889
+生活变得有趣。
+So life gets interesting.
+
+588
+00:29:40,890 --> 00:29:44,610
+生命越来越安全，时间越来越长，越来越复杂
+Life gets more secure, the longer and longer and more complicated
+
+589
+00:29:44,609 --> 00:29:46,379
+这些密码得到。
+these passcodes get.
+
+590
+00:29:46,380 --> 00:29:49,140
+好的，所以按照逻辑，那么你应该
+All right, so by logic, then, you should all probably
+
+591
+00:29:49,140 --> 00:29:51,210
+密码不是8，而不是10。
+have passcodes that are not eight, not 10.
+
+592
+00:29:51,210 --> 00:29:53,280
+也许他们长20个字符。
+Maybe they're 20 characters long.
+
+593
+00:29:53,279 --> 00:29:55,349
+也许它们长100个字符。
+Maybe they're 100 characters long.
+
+594
+00:29:55,349 --> 00:29:58,919
+但是在这里，我们看到了安全性的另一个主题，即权衡。
+But here we see another theme in security, that of trade-offs.
+
+595
+00:29:58,920 --> 00:30:03,510
+就像，最终一切可能都不会尽可能地安全，
+Like, the end all is probably not to be as secure as possible,
+
+596
+00:30:03,509 --> 00:30:05,849
+但是要尽可能有条件地保证安全
+but to be as secure as possible conditional
+
+597
+00:30:05,849 --> 00:30:08,019
+在您可能有的其他目标上。
+on some other goals you might have.
+
+598
+00:30:08,019 --> 00:30:10,499
+因此，让我问一下，这里的权衡是什么？
+So let me ask this, what's the trade-off here?
+
+599
+00:30:10,500 --> 00:30:15,240
+在使您的密码越来越长，越来越复杂的过程中，
+In making your password longer and longer and more and more complicated,
+
+600
+00:30:15,240 --> 00:30:18,270
+作为人，您要付出什么代价？
+what price do you pay as the human?
+
+601
+00:30:18,269 --> 00:30:19,529
+不利之处是什么？
+What's the downside?
+
+602
+00:30:19,529 --> 00:30:22,349
+在计算机科学中，就像在生活中一样，总是有一个陷阱。
+In computer science, as in life, there's always a catch.
+
+603
+00:30:22,349 --> 00:30:24,069
+总是有代价的。
+There's always a cost.
+
+604
+00:30:24,069 --> 00:30:27,839
+那么，当您使密码越来越安全时，会有什么成本呢？
+So what's the cost when you make your passcode more and more secure?
+
+605
+00:30:27,839 --> 00:30:28,619
+有什么想法吗？
+Any thoughts?
+
+606
+00:30:28,619 --> 00:30:29,322
+让我们看看。
+Let see.
+
+607
+00:30:29,323 --> 00:30:30,240
+我们有谁，布莱恩？
+Who do we have, Brian?
+
+608
+00:30:30,240 --> 00:30:32,190
+到珍妮？
+Over to Jenny?
+
+609
+00:30:32,190 --> 00:30:32,940
+你怎么认为？
+What do you think?
+
+610
+00:30:32,940 --> 00:30:36,480
+珍妮：是的，我觉得对于人类来说这是非常困难的
+JENNY: Yeah, I feel that it is very difficult for a human being
+
+611
+00:30:36,480 --> 00:30:38,100
+记住这么长的密码。
+to remember such a long password.
+
+612
+00:30:38,099 --> 00:30:41,909
+因此，我们甚至将这些长密码存储在系统中的某个位置
+And due to that, we even store those long passwords somewhere in the system
+
+613
+00:30:41,910 --> 00:30:45,267
+本身，这样我们就可以在必须登录系统时使用它。
+itself so that we can use that whenever we have to log in into the system.
+
+614
+00:30:45,267 --> 00:30:47,100
+DAVID J. MALAN：是的，这是一个折衷方案
+DAVID J. MALAN: Yeah, there's this trade-off
+
+615
+00:30:47,099 --> 00:30:48,659
+只记得那些令人毛骨悚然的东西。
+of just remembering the darn things.
+
+616
+00:30:48,660 --> 00:30:49,950
+而您提出了一个完美的观点。
+And you make a perfect point.
+
+617
+00:30:49,950 --> 00:30:54,527
+如果我能再次回到我的肥皂盒，如果你是那些
+If I can get on my soapbox again, if you are among those people who have pretty
+
+618
+00:30:54,527 --> 00:30:57,610
+好的密码，用好的密码，我的意思是，一些数字，一些字母，
+good passwords, and by good passwords, I mean, some numbers, some letters,
+
+619
+00:30:57,609 --> 00:31:02,429
+标点符号，但写在工作显示器上的便利贴上，
+some punctuation, but it's written on a Post-It note on your monitor at work,
+
+620
+00:31:02,430 --> 00:31:06,540
+或者可能是更巧妙地将其写在Microsoft Word文件中
+or maybe it's slightly more cleverly written in a Microsoft Word file
+
+621
+00:31:06,539 --> 00:31:08,909
+在您的硬盘中，或者可能在Google文档中，
+in your hard drive, or maybe it's in a Google Doc,
+
+622
+00:31:08,910 --> 00:31:11,610
+或者甚至在抽屉里的一张纸上-
+or maybe it's even on a piece of paper in your drawer--
+
+623
+00:31:11,609 --> 00:31:14,739
+当然，您只是将自己暴露于其他威胁。
+you're just exposing yourself to other threats, of course.
+
+624
+00:31:14,740 --> 00:31:18,123
+但这也是社会学考虑或政策
+But here, too, is a sociological consideration or just a policy
+
+625
+00:31:18,123 --> 00:31:20,790
+考虑因素，无论您是经营企业还是大学
+consideration, whether you're running a business or a university
+
+626
+00:31:20,789 --> 00:31:23,369
+或只有一个有多个家庭成员的家庭。
+or just a household with multiple family members.
+
+627
+00:31:23,369 --> 00:31:25,139
+您自己的政策应该是什么？
+What should your own policies be?
+
+628
+00:31:25,140 --> 00:31:28,170
+因为可以说这不是詹妮的错，也不是我们的错
+Because arguably it's not Jenny's fault, it's not our fault
+
+629
+00:31:28,170 --> 00:31:31,170
+如果我们要把事情写在纸上
+if we are resorting to writing things down on paper
+
+630
+00:31:31,170 --> 00:31:34,380
+如果我们的密码太难记了。
+if our passwords are so darn hard to remember.
+
+631
+00:31:34,380 --> 00:31:36,870
+而且，我还没有提出建议，
+And moreover, I haven't even made the suggestion yet,
+
+632
+00:31:36,869 --> 00:31:39,149
+但是如果你是生活中的那些人之一
+but if you are one of those people in life
+
+633
+00:31:39,150 --> 00:31:42,510
+谁在多个设备上使用相同的密码
+who is using the same password on multiple devices
+
+634
+00:31:42,509 --> 00:31:46,619
+或在多个网站或多个应用程序上，您表现不佳。
+or on multiple websites or on multiple apps, you are bad.
+
+635
+00:31:46,619 --> 00:31:48,929
+就像，您也在做坏事。
+Like, you are also doing something bad.
+
+636
+00:31:48,930 --> 00:31:49,590
+为什么？
+Why?
+
+637
+00:31:49,589 --> 00:31:52,769
+因为如果这些应用程序或网站中的任何一个遭到破坏
+Because if any one of those apps or websites is compromised
+
+638
+00:31:52,769 --> 00:31:55,079
+不管您是“ iloveyou”，您的密码都将丢失
+and your password gets out, whether it's "iloveyou,"
+
+639
+00:31:55,079 --> 00:31:57,749
+引用unquote，或更复杂的东西，
+quote unquote, or something much more complicated,
+
+640
+00:31:57,750 --> 00:32:01,680
+对手现在要做的就是尝试使用相同的密码
+all an adversary has to do now is try that same password
+
+641
+00:32:01,680 --> 00:32:02,910
+在您的其他帐户上。
+on your other accounts.
+
+642
+00:32:02,910 --> 00:32:06,372
+因此，您只是通过重用密码而使自己面临更多风险。
+And so you're just exposing yourself to more risk by reusing passwords.
+
+643
+00:32:06,372 --> 00:32:08,580
+但是，至于詹妮，我的天哪，它在哪里结束？
+But to Jenny's point here, my God, where does it end?
+
+644
+00:32:08,579 --> 00:32:12,419
+现在，我需要在这个网站上输入一个非常长的随机密码，
+Now I need a really long random password on this website, this one,
+
+645
+00:32:12,420 --> 00:32:14,500
+还有这个，还有这个应用程序，到处都是。
+and this one, and this app, all over the place.
+
+646
+00:32:14,500 --> 00:32:18,299
+我的意思是，老实说，我作为一个人当然不记得所有这些密码。
+I mean, honestly, I as a human certainly can't remember all of those passwords.
+
+647
+00:32:18,299 --> 00:32:21,639
+即使我能做到，我仍然觉得生活中还有更好的事情要记住
+And even if I could, I feel like there's better things in life to be remembering
+
+648
+00:32:21,640 --> 00:32:24,650
+而不是像这样的帐户的密码。
+than passwords for accounts like this.
+
+649
+00:32:24,650 --> 00:32:26,170
+因此，这里肯定有一个折衷方案。
+So there's surely a trade-off here.
+
+650
+00:32:26,170 --> 00:32:30,790
+但同样，我们的目标是以一定的可能性将对手拒之门外，
+But again, the goal is to keep the adversary out with some probability,
+
+651
+00:32:30,789 --> 00:32:33,459
+不一定是绝对的。
+not necessarily out in the absolute.
+
+652
+00:32:33,460 --> 00:32:39,040
+因此，我们还能采取什么措施来防止对手入侵我们的系统
+So what else can we do to prevent the adversary from hacking into our systems
+
+653
+00:32:39,039 --> 00:32:42,879
+这样我就可以拥有更简单，更易记的密码，
+so that I can have a somewhat easier, more memorable passcode,
+
+654
+00:32:42,880 --> 00:32:44,110
+但至少要把它们拒之门外？
+but at least keep them out?
+
+655
+00:32:44,109 --> 00:32:45,859
+好吧，这是您的截图
+Well, here's a screenshot of something you
+
+656
+00:32:45,859 --> 00:32:48,099
+可能是偶然发生的，也许是晚了
+might have done by accident, perhaps late
+
+657
+00:32:48,099 --> 00:32:51,009
+晚上有点昏昏欲睡或有点模糊的眼神，
+at night when a little groggy, or a little blurry-eyed,
+
+658
+00:32:51,009 --> 00:32:54,669
+尝试多次错误输入您的密码。
+trying to type in your password incorrectly too many times.
+
+659
+00:32:54,670 --> 00:32:56,980
+实际上，通过举手示意，有多少人
+In fact, by a show of physical hands, how many people
+
+660
+00:32:56,980 --> 00:33:01,840
+通过输入错误的密码将自己锁定在手机之外
+have locked yourself out of your phone before by typing in the wrong password
+
+661
+00:33:01,839 --> 00:33:02,739
+太多次了？
+too many times?
+
+662
+00:33:02,740 --> 00:33:04,870
+我确实做到了，就像前几天一样。
+I did it, like, literally just the other day.
+
+663
+00:33:04,869 --> 00:33:07,909
+以iPhone为例，它看起来有点像这样。
+And so on iPhone, for instance, it looks a little something like this.
+
+664
+00:33:07,910 --> 00:33:11,660
+如果我们放大图像，请注意提示，请在1分钟内重试。
+And if we zoom in, notice that it's saying, try again in 1 minute.
+
+665
+00:33:11,660 --> 00:33:14,570
+因此，您不必抛弃电话就可以重新开始。
+So you don't have to get rid of the phone and start over.
+
+666
+00:33:14,569 --> 00:33:17,049
+但是iPhone告诉您一分钟后再回来。
+But the iPhone is telling you to come back in a minute.
+
+667
+00:33:17,049 --> 00:33:19,959
+如果我们看一下Android，类似的东西-
+And if we look at, for instance, Android, something similar--
+
+668
+00:33:19,960 --> 00:33:22,300
+当然，您的Android壁纸会有所不同。
+your Android wallpaper will differ, certainly.
+
+669
+00:33:22,299 --> 00:33:25,299
+但是例如在这里，它说了太多尝试。
+But down here, for instance, it says too many attempts.
+
+670
+00:33:25,299 --> 00:33:26,011
+稍后再试。
+Try again later.
+
+671
+00:33:26,011 --> 00:33:28,719
+我的意思是，这有点令人生气，因为如果我拿起手机
+I mean, that's a little infuriating because if I pick up my phone
+
+672
+00:33:28,720 --> 00:33:30,130
+现在，我想现在就进入。
+now, I want to get in now.
+
+673
+00:33:30,130 --> 00:33:31,660
+好吧，什么时候以后呢？
+Well, when the heck is later?
+
+674
+00:33:31,660 --> 00:33:35,600
+撇开这个，这有什么好处呢？
+So putting that aside, what's the takeaway here?
+
+675
+00:33:35,599 --> 00:33:39,004
+为什么选择Apple，为什么选择Google？
+Why are Apple and why are Google doing this?
+
+676
+00:33:39,005 --> 00:33:42,130
+因为我敢打赌大家，如果您曾经将自己锁定在手机之外，
+Because I bet all of you, if you've ever locked yourself out of your phone,
+
+677
+00:33:42,130 --> 00:33:45,280
+在那一刻超级生气，也许没有
+are super annoyed at that moment in time and probably don't
+
+678
+00:33:45,279 --> 00:33:47,279
+感谢苹果或谷歌。
+appreciate Apple or Google.
+
+679
+00:33:47,279 --> 00:33:49,029
+但是他们刚刚拥有的好处是什么
+But what's the upside of what they've just
+
+680
+00:33:49,029 --> 00:33:53,349
+当他们将您锁定在手机之外时完成
+done when they lock you out of your phone for having
+
+681
+00:33:53,349 --> 00:33:56,799
+猜错密码了吗？
+guessed your password incorrectly?
+
+682
+00:33:56,799 --> 00:34:00,459
+为什么这可以说是功能而不是错误，错误？
+Why is this arguably a feature and not a bug, a mistake?
+
+683
+00:34:00,460 --> 00:34:01,090
+山姆？
+Sam?
+
+684
+00:34:01,089 --> 00:34:04,894
+萨姆：是的，它用来减少成功使用蛮力的机会
+SAM: Yeah, it's used to decrease the chances of a successful brute force
+
+685
+00:34:04,894 --> 00:34:05,394
+攻击。
+attack.
+
+686
+00:34:05,394 --> 00:34:08,978
+戴维·J·马兰（David J. MALAN）：那会如何减少这种机会呢？
+DAVID J. MALAN: And how does it decrease the chance of that, would you say?
+
+687
+00:34:08,978 --> 00:34:15,309
+SAM：因为这使攻击者必须在尝试之前进行更多尝试
+SAM: Because it makes the attacker have to commit more tries before they
+
+688
+00:34:15,309 --> 00:34:17,379
+可以成功进入电话。
+can successfully get into the phone.
+
+689
+00:34:17,380 --> 00:34:18,969
+因此，它减少了机会。
+So it decreases the chances.
+
+690
+00:34:18,969 --> 00:34:20,090
+戴维·J·马兰（David J. MALAN）：好的。
+DAVID J. MALAN: Exactly.
+
+691
+00:34:20,090 --> 00:34:22,840
+因此，这是安全性中非常普遍的原则。
+So this is a very common principle in security.
+
+692
+00:34:22,840 --> 00:34:26,590
+前面也指出，这只会使对手放慢脚步。
+And it was pointed out earlier, too, just slow the adversary down.
+
+693
+00:34:26,590 --> 00:34:28,760
+我们不必重新考虑安全问题。
+We don't have to rethink the problem of security.
+
+694
+00:34:28,760 --> 00:34:31,060
+我们不必重新设计密码。
+We don't have to redesign passwords necessarily.
+
+695
+00:34:31,059 --> 00:34:33,218
+但是我们应该使对手更难
+But we should make it harder for the adversary
+
+696
+00:34:33,219 --> 00:34:36,909
+理想情况下登录，而不会让您和我更难登录
+to log in, ideally, without making it harder for you and I to log
+
+697
+00:34:36,909 --> 00:34:37,960
+进入我们自己的设备。
+in to our own devices.
+
+698
+00:34:37,960 --> 00:34:41,650
+因此，请考虑具有四个数字的最简单的密码。
+So consider the simplest passcode that had four digits.
+
+699
+00:34:41,650 --> 00:34:45,010
+一个4位数的密码，有10,000种可能性。
+A 4-digit passcode, there were 10,000 possibilities.
+
+700
+00:34:45,010 --> 00:34:47,980
+一台计算机，一个机器人可以很快地猜出所有这些。
+A computer, a robot could guess all of those pretty quickly.
+
+701
+00:34:47,980 --> 00:34:51,639
+但是如果输入了错误的密码三遍后该怎么办
+But what if after typing in the wrong passcode three times
+
+702
+00:34:51,639 --> 00:34:55,780
+也许是十次，也可能是几次，如果是iPhone或Android，该怎么办
+or maybe ten times, some small number of times, what if the iPhone or Android
+
+703
+00:34:55,780 --> 00:34:59,560
+手机将您锁定了一分钟，就像刚才的iPhone一样？
+phone locks you out for a minute, just like iPhone did a moment ago?
+
+704
+00:34:59,559 --> 00:35:03,039
+好吧，这可能意味着，即使只有10,000种可能性，
+Well, that might mean, even though there's only 10,000 possibilities,
+
+705
+00:35:03,039 --> 00:35:06,039
+可能要花费对手10,000分钟
+maybe it will take the adversary 10,000 minutes
+
+706
+00:35:06,039 --> 00:35:10,819
+跟踪密码，因为它们每次都会变慢
+to track your password because they keep getting slowed down every time
+
+707
+00:35:10,820 --> 00:35:12,070
+他们输入了不正确的密码。
+they type in an incorrect one.
+
+708
+00:35:12,070 --> 00:35:13,403
+也许不是一万。
+And maybe it's not quite 10,000.
+
+709
+00:35:13,402 --> 00:35:15,349
+这就是其中的一些因素。
+It's some factor of that.
+
+710
+00:35:15,349 --> 00:35:17,019
+但是您可以通过这种方式降低它们的速度。
+But you can slow them down in that way.
+
+711
+00:35:17,019 --> 00:35:21,759
+也许您有一个10个字符的密码，其中包含78个四千万位数的可能性。
+Maybe you have a 10-character passcode with 78 quadrillion possibilities.
+
+712
+00:35:21,760 --> 00:35:25,330
+想象一下，电话只会让您减速1秒钟。
+And imagine the phone just slows you down 1 second.
+
+713
+00:35:25,329 --> 00:35:28,119
+也许您每秒只能输入一个密码。
+Maybe you can only type in one passcode per second.
+
+714
+00:35:28,119 --> 00:35:29,679
+听起来挺快的。
+That sounds pretty fast.
+
+715
+00:35:29,679 --> 00:35:33,729
+但是78万亿秒太长了。
+But 78 quadrillion seconds is crazy long.
+
+716
+00:35:33,730 --> 00:35:36,880
+因此，即使是这种减速也可能很好
+And so even that kind of slowdown might very well
+
+717
+00:35:36,880 --> 00:35:39,580
+足以将对手拒之门外。
+be enough to keep the adversary out.
+
+718
+00:35:39,579 --> 00:35:43,397
+因此，如果您实际上没有在任何设备上启用此功能，
+And so if you don't have features like this enabled on, really, any device,
+
+719
+00:35:43,398 --> 00:35:44,440
+你应该找他们。
+you should look for them.
+
+720
+00:35:44,440 --> 00:35:47,860
+幸运的是，如今，它们往往为此进行了预配置。
+Nowadays, thankfully, they tend to come pre-configured for this.
+
+721
+00:35:47,860 --> 00:35:49,810
+但是有一个缺点。
+But there is a downside.
+
+722
+00:35:49,809 --> 00:35:50,996
+有一个缺点。
+There is a downside.
+
+723
+00:35:50,996 --> 00:35:53,079
+您不应该只开启这些防御措施
+You shouldn't just turn on these kinds of defenses
+
+724
+00:35:53,079 --> 00:35:56,799
+盲目的，因为保持此功能的不利之处是什么
+blindly because what's the downside of keeping this feature enabled
+
+725
+00:35:56,800 --> 00:35:59,950
+或保持启用状态-
+or leaving it enabled--
+
+726
+00:35:59,949 --> 00:36:03,969
+这些是相同的事情-或启用它（如果尚未启用）？
+those are the same things-- or enabling it, if it's not already enabled?
+
+727
+00:36:03,969 --> 00:36:06,309
+要明确的是，这里有什么缺点？
+What's the downside here, to be clear?
+
+728
+00:36:06,309 --> 00:36:10,749
+因为我们今天的建议都不会有100％的优势。
+Because none of our advice today will be 100% a win.
+
+729
+00:36:10,750 --> 00:36:11,500
+大卫？
+David?
+
+730
+00:36:11,500 --> 00:36:13,779
+戴维：好吧，如果您忘记了密码，
+DAVID: Well, if you forget your password,
+
+731
+00:36:13,780 --> 00:36:16,780
+这意味着您需要花费更长的时间才能再次访问手机。
+that means it's going to take longer for you to access your phone again.
+
+732
+00:36:16,780 --> 00:36:20,140
+DAVID J. MALAN：是的，这将带您，用户，设备的所有者，
+DAVID J. MALAN: Yeah, it's going to take you, the user, the owner of the device,
+
+733
+00:36:20,139 --> 00:36:21,399
+甚至更长的登录时间。
+even longer to log in.
+
+734
+00:36:21,400 --> 00:36:25,060
+我也承认，我有几次没有一次将自己锁定在自己之外。
+And I'll admit, too, I have on multiple occasions not locked myself out once.
+
+735
+00:36:25,059 --> 00:36:25,977
+然后我变得固执。
+I then got stubborn.
+
+736
+00:36:25,978 --> 00:36:27,520
+而且我认为我的愤怒程度刚刚上升。
+And I think my anger level just rose.
+
+737
+00:36:27,519 --> 00:36:30,639
+因此，我开始更加生气地输入内容，因此犯了更多的错误。
+So I started typing in more angrily, and therefore making more mistakes.
+
+738
+00:36:30,639 --> 00:36:33,069
+苹果和谷歌所做的就是他们拥有
+And what Apple and Google do is they have
+
+739
+00:36:33,070 --> 00:36:35,380
+您可能将其描述为指数补偿，
+what you might describe as exponential backoff, which
+
+740
+00:36:35,380 --> 00:36:38,847
+这是一种奇特的说法，您第一次受到惩罚是一分钟。
+is a fancy way of saying, the first time you get penalized one minute.
+
+741
+00:36:38,847 --> 00:36:40,180
+现在您必须等待一分钟。
+Now you have to wait one minute.
+
+742
+00:36:40,179 --> 00:36:43,029
+如果再次拧紧，则必须等待两分钟。
+If you screw up again, then you have to wait two minutes.
+
+743
+00:36:43,030 --> 00:36:45,023
+如果您再次搞砸了，也许是五分钟。
+If you screw up again, maybe it's five minutes.
+
+744
+00:36:45,023 --> 00:36:45,940
+也许是10分钟。
+Maybe it's 10 minutes.
+
+745
+00:36:45,940 --> 00:36:46,840
+也许一个小时。
+Maybe it's an hour.
+
+746
+00:36:46,840 --> 00:36:49,715
+我发誓，那时候我想把手机扔到整个房间
+And I swear, at that point I wanted to throw my phone across the room
+
+747
+00:36:49,715 --> 00:36:51,700
+因为我无法进入自己的设备。
+because I couldn't get into my own device.
+
+748
+00:36:51,699 --> 00:36:55,839
+在那里，您当然开始牺牲可用性了，对吗？
+And there you start to sacrifice, of course, usability, right?
+
+749
+00:36:55,840 --> 00:37:00,190
+如果我的设备非常安全，甚至连我都无法进入，
+If my device is so secure that even I can't get into it,
+
+750
+00:37:00,190 --> 00:37:02,080
+那真的值得拥有吗？
+then is it really worth having at all?
+
+751
+00:37:02,079 --> 00:37:04,779
+因此，发现拐点是其中的一部分
+And so finding that inflection point is part
+
+752
+00:37:04,780 --> 00:37:07,720
+设计好的安全系统，因为您
+of engineering good secure systems because you
+
+753
+00:37:07,719 --> 00:37:10,149
+必须找到拐点，以便您的用户
+have to find that inflection point so that your users
+
+754
+00:37:10,150 --> 00:37:12,190
+正在使用良好的密码和密码。
+are using good passwords and passcodes.
+
+755
+00:37:12,190 --> 00:37:16,300
+但是，他们不只是将其贴在便利贴上的显示器上
+But they're not just taping them onto the monitor on a Post-It note
+
+756
+00:37:16,300 --> 00:37:19,123
+或一起禁用它们。
+or disabling them all together.
+
+757
+00:37:19,123 --> 00:37:21,040
+好吧，让我在这里停留看看
+All right, let me pause here to see, are there
+
+758
+00:37:21,039 --> 00:37:27,309
+有关密码，密码，暴力破解或此类问题
+any questions about passwords, passcodes, brute forcing or these kinds
+
+759
+00:37:27,309 --> 00:37:30,549
+防御，因为密码可能是
+of defenses, given that passwords are perhaps
+
+760
+00:37:30,550 --> 00:37:33,520
+我们最常见的防御对手
+our most common defense against adversaries
+
+761
+00:37:33,519 --> 00:37:36,879
+访问我们不希望他们使用的硬件和软件？
+accessing hardware and software that we don't want them to?
+
+762
+00:37:36,880 --> 00:37:38,485
+是的，达克斯，有问题吗？
+Yeah, Dax, question?
+
+763
+00:37:38,485 --> 00:37:40,720
+DAX：现在有一个确定的数字
+DAX: Now so there is a definite number we
+
+764
+00:37:40,719 --> 00:37:43,239
+可以计算出4位数字
+can calculate that for 4-digit numbers this is
+
+765
+00:37:43,239 --> 00:37:46,119
+尽可能多的结果。
+the most possible number of outcomes.
+
+766
+00:37:46,119 --> 00:37:47,917
+但是生物识别法呢？
+But what about biometrics?
+
+767
+00:37:47,918 --> 00:37:48,460
+指纹？
+Fingerprints?
+
+768
+00:37:48,460 --> 00:37:49,845
+脸部扫描？
+Face scanning?
+
+769
+00:37:49,844 --> 00:37:51,709
+DAVID J. MALAN：好的，这是一个很好的问题。
+DAVID J. MALAN: Yeah, really good question.
+
+770
+00:37:51,710 --> 00:37:53,950
+那么使用面部扫描进行生物识别又如何呢？
+So what about biometrics, using face scanning?
+
+771
+00:37:53,949 --> 00:37:58,396
+像是，这些天苹果有面部识别码，有时也让我烦恼
+Like, Apple has face ID these days, which also annoys me sometimes
+
+772
+00:37:58,396 --> 00:37:59,979
+如果这还不能完全正确地表达我的意思。
+if it doesn't quite get my face right.
+
+773
+00:37:59,980 --> 00:38:02,230
+或者这些天，如果我们戴着口罩，那是
+Or these days if we're wearing masks, it's
+
+774
+00:38:02,230 --> 00:38:03,910
+气愤地使用这种功能。
+infuriating to use that kind of feature.
+
+775
+00:38:03,909 --> 00:38:07,934
+但也许是概率性的，很少有人拥有完全相同的
+But maybe probabilistically, there are fewer people with exactly
+
+776
+00:38:07,934 --> 00:38:09,559
+你的面部特征比别人强。
+your facial features than someone else.
+
+777
+00:38:09,559 --> 00:38:12,059
+因此，这比选择一些密码更安全。
+And so that would be more secure than picking some passcode.
+
+778
+00:38:12,059 --> 00:38:14,769
+有时您使用指纹或视网膜扫描
+Sometimes you use fingerprints or retinal scans
+
+779
+00:38:14,769 --> 00:38:17,649
+或手指之间的距离，所有这些不同的量度
+or the distance between your fingers, all of these different measures
+
+780
+00:38:17,650 --> 00:38:21,850
+从统计上讲并没有那么独特
+that statistically tend to not so much uniquely
+
+781
+00:38:21,849 --> 00:38:25,507
+识别我们，但足以唯一地识别我们。
+identify us, but uniquely identify us all enough.
+
+782
+00:38:25,507 --> 00:38:26,799
+那里也有威胁。
+And there's threats there, too.
+
+783
+00:38:26,800 --> 00:38:28,508
+例如，我们的前同事
+A former colleague of ours, for instance,
+
+784
+00:38:28,507 --> 00:38:31,089
+有一个双胞胎兄弟，因为苹果的脸蛋
+had a twin brother who because of Apple's face ID
+
+785
+00:38:31,090 --> 00:38:34,330
+现在可以从桌子上拿起手机进入他的手机
+was now able to get into his phone by just picking it up off of the table
+
+786
+00:38:34,329 --> 00:38:36,979
+因为作为双胞胎，他们看上去都太相似了。
+because as twins, they both looked all too similar.
+
+787
+00:38:36,980 --> 00:38:39,580
+因此，也有缺点和优点。
+So there's downsides and upsides there, too.
+
+788
+00:38:39,579 --> 00:38:42,069
+但是生物识别技术也可以帮助解决问题，
+But biometrics can also help things so that it's
+
+789
+00:38:42,070 --> 00:38:45,130
+一直存在于您身上的因素，而不是某些因素，
+a factor you have on you always and not something,
+
+790
+00:38:45,130 --> 00:38:48,010
+例如，您只需要记住。
+for instance, that you just only have to remember.
+
+791
+00:38:48,010 --> 00:38:51,520
+实际上，对于计算机科学家来说，这是一个完美的选择
+And in fact, that's a perfect segue to what computer scientists
+
+792
+00:38:51,519 --> 00:38:54,216
+调用两因素身份验证。
+call two-factor authentication.
+
+793
+00:38:54,217 --> 00:38:56,050
+在安全世界中，安全人员会
+In the security world, security people would
+
+794
+00:38:56,050 --> 00:39:01,070
+称我们使用的密码是一个因素
+call the passwords we're using one factor, and something
+
+795
+00:39:01,070 --> 00:39:03,380
+就像生物识别一样，第二个因素。
+like biometrics, a second factor.
+
+796
+00:39:03,380 --> 00:39:06,350
+实际上，两因素身份验证意味着一种防御机制
+And indeed, two-factor authentication means a defense mechanism
+
+797
+00:39:06,349 --> 00:39:09,049
+对抗不仅仅依赖某事的对手
+against the adversaries that doesn't rely just on something
+
+798
+00:39:09,050 --> 00:39:10,970
+您知道，例如密码。
+you know, like, a password.
+
+799
+00:39:10,969 --> 00:39:14,539
+它还依赖于您通常拥有的东西，例如，
+It also relies on something typically that you have, like,
+
+800
+00:39:14,539 --> 00:39:18,569
+手，手指，眼睛或脸等
+a hand or fingers or eyes or face or the like,
+
+801
+00:39:18,570 --> 00:39:21,980
+这样即使有人泄露了您的密码
+so that even if someone compromises your password
+
+802
+00:39:21,980 --> 00:39:25,490
+并将其从以前使用过的数据库中下载到某个地方，
+and downloads it somewhere from a database where you've used it before,
+
+803
+00:39:25,489 --> 00:39:28,489
+他们不一定能接触到您的眼睛和手
+they don't necessarily have access to your eyes and your hands
+
+804
+00:39:28,489 --> 00:39:31,499
+以及您的脸庞等，除非他们对您有身体上的帮助。
+and your face and the like, unless they have physical access to you.
+
+805
+00:39:31,500 --> 00:39:33,680
+因此，它只是缩小了威胁的范围。
+So it just narrows the scope of the threats.
+
+806
+00:39:33,679 --> 00:39:35,899
+但是还有其他形式的两因素身份验证。
+But there's other forms of two-factor authentication.
+
+807
+00:39:35,900 --> 00:39:38,718
+例如，如果现在听起来很熟悉，也许
+For instance, if this sounds familiar now, and maybe
+
+808
+00:39:38,717 --> 00:39:40,759
+您甚至不称其为两因素身份验证。
+you don't even call it two-factor authentication.
+
+809
+00:39:40,760 --> 00:39:43,970
+通常称为两步身份验证。
+It's often called two-step authentication.
+
+810
+00:39:43,969 --> 00:39:47,209
+通过举手示意，谁拥有一个或多个账户，
+By a show of physical hands, who has one or more accounts that
+
+811
+00:39:47,210 --> 00:39:51,000
+使用两个因素而不是一个？
+uses two factors instead of just one?
+
+812
+00:39:51,000 --> 00:39:54,350
+是的，在这里也很高兴看到这么多手举起。
+Yeah, so here, too, it's good to see so many hands going up.
+
+813
+00:39:54,349 --> 00:39:58,369
+但是，如果您不使用两因素身份验证
+But if you do not use two-factor authentication
+
+814
+00:39:58,369 --> 00:40:03,169
+用于诸如您的电子邮件帐户，银行帐户或经纪人之类的事情
+for things like your email account or your bank accounts or your brokerage
+
+815
+00:40:03,170 --> 00:40:06,830
+帐户或您的健康医疗帐户，
+accounts or your health medical accounts,
+
+816
+00:40:06,829 --> 00:40:09,109
+您确实应该开始考虑这样做。
+you really should start considering doing so.
+
+817
+00:40:09,110 --> 00:40:10,880
+而且通常采用什么形式？
+And what form does this typically take?
+
+818
+00:40:10,880 --> 00:40:12,963
+好吧，例如，让我在这里显示一个屏幕截图。
+Well, let me show a screenshot here, for instance.
+
+819
+00:40:12,963 --> 00:40:14,930
+即使您只有一个简单的Gmail帐户
+Even if you just have a simple Gmail account
+
+820
+00:40:14,929 --> 00:40:17,569
+您用于工作或个人用途的
+that you use for work or for personal use,
+
+821
+00:40:17,570 --> 00:40:20,480
+您可以启用Google所谓的两步验证，即
+you can enable what Google calls two-step verification, which
+
+822
+00:40:20,480 --> 00:40:22,360
+是双重身份验证。
+is two-factor authentication.
+
+823
+00:40:22,360 --> 00:40:24,860
+以及登录Gmail时会提示您的内容
+And what you'll be prompted for when logging into your Gmail
+
+824
+00:40:24,860 --> 00:40:29,250
+帐户（如果启用），不仅是您的用户名和密码，
+account if you enable this is not only your username and your password,
+
+825
+00:40:29,250 --> 00:40:31,070
+也是一个6位数的代码。
+but also a 6-digit code.
+
+826
+00:40:31,070 --> 00:40:33,710
+六位数听起来并不长。
+And six digits doesn't sound terribly long.
+
+827
+00:40:33,710 --> 00:40:36,620
+但是在这种情况下，这些技术通常的工作方式
+But in this case, the way these technologies typically work
+
+828
+00:40:36,619 --> 00:40:42,199
+是通过电子邮件或短信向您发送一次6位数代码
+is that you are sent that 6-digit code once via email or via text message
+
+829
+00:40:42,199 --> 00:40:46,009
+或通过您在手机或其他设备上安装的特殊应用
+or via special app that you install on your phone or some other device
+
+830
+00:40:46,010 --> 00:40:48,170
+这样只有您有该代码。
+so that only you have that code.
+
+831
+00:40:48,170 --> 00:40:50,060
+只有您拥有该设备。
+Only you have that device.
+
+832
+00:40:50,059 --> 00:40:51,799
+因此，只有您知道该代码。
+And therefore, only you know that code.
+
+833
+00:40:51,800 --> 00:40:54,380
+而且更好的是，这些代码会过期。
+And better yet, these codes expire.
+
+834
+00:40:54,380 --> 00:40:57,770
+因此，即使某些对手拦截了它或看到您在键入它
+So even if some adversary intercepts it or sees you typing it
+
+835
+00:40:57,769 --> 00:41:00,559
+在您的肩膀上，您只能使用一次这些代码，
+in over your shoulder, you can only use these codes once,
+
+836
+00:41:00,559 --> 00:41:02,749
+这使它们比密码更好
+which makes them even better than passwords
+
+837
+00:41:02,750 --> 00:41:06,680
+单独使用，因为它们在单次使用后会过期。
+alone because they expire after single time use.
+
+838
+00:41:06,679 --> 00:41:08,449
+因此，现在再考虑-
+And so consider now, again--
+
+839
+00:41:08,449 --> 00:41:10,399
+我不能强调这一点-如果您
+and I can't emphasize this enough-- if you
+
+840
+00:41:10,400 --> 00:41:13,242
+同样，您拥有自己的银行帐户的年龄，
+are of the age where you have your own bank accounts, again,
+
+841
+00:41:13,242 --> 00:41:15,200
+经纪账户，任何与医学有关的，
+brokerage accounts, anything medically related,
+
+842
+00:41:15,199 --> 00:41:17,599
+您发现特别重要或个人的任何事物，
+anything that you find especially important or personal,
+
+843
+00:41:17,599 --> 00:41:21,829
+例如您自己的电子邮件或聊天帐户，如果您仅使用密码，
+like, your own email or chat accounts, if you're only using a password,
+
+844
+00:41:21,829 --> 00:41:24,919
+截止到今天，您已经拥有数学工具
+you now as of today already have the mathematical tools
+
+845
+00:41:24,920 --> 00:41:28,010
+我敢说，心智模型要弄清楚
+and the mental model, I daresay, to figure out just
+
+846
+00:41:28,010 --> 00:41:32,780
+有人可以轻易地破坏您的帐户并获取您的信息的难易程度
+how easily someone could compromise your account and get into your information
+
+847
+00:41:32,780 --> 00:41:35,637
+并拿走您的钱或阅读您的电子邮件等。
+and take your money or read your emails or the like.
+
+848
+00:41:35,637 --> 00:41:38,720
+因此，您可以通过提出更好的，更长的时间来改善这种情况，
+So you can improve that situation by just coming up with a better, longer,
+
+849
+00:41:38,719 --> 00:41:42,409
+您会以某种方式记住或记住的更多随机密码，
+more random password that you remember or memorize in some way,
+
+850
+00:41:42,409 --> 00:41:46,819
+或另外，通过启用第二个因素，使您缩小
+or additionally, by enabling the second factor so that you narrow
+
+851
+00:41:46,820 --> 00:41:52,710
+结果对您构成威胁的威胁数量。
+the number of threats that are dangerous to you as a result.
+
+852
+00:41:52,710 --> 00:41:55,112
+如此说来，通过两因素身份验证，
+So with that said, too, with two-factor authentication,
+
+853
+00:41:55,112 --> 00:41:57,320
+还有另一件事可以让您发挥作用
+there's another thing you can bring into play when it
+
+854
+00:41:57,320 --> 00:41:59,810
+来管理您的所有密码。
+comes to managing all your passwords.
+
+855
+00:41:59,809 --> 00:42:03,229
+我曾暗示过使用Microsoft Word或便利贴。
+I alluded to using Microsoft Word before or a Post-It note.
+
+856
+00:42:03,230 --> 00:42:05,970
+也有对此的软件解决方案。
+There are software solutions to this, too.
+
+857
+00:42:05,969 --> 00:42:09,319
+因此，我们今天想提出另一项抗辩供您考虑
+So another defense we would like to offer up for your consideration today
+
+858
+00:42:09,320 --> 00:42:11,510
+通常称为密码管理器。
+is what's generally called a password manager.
+
+859
+00:42:11,510 --> 00:42:14,645
+这是一款免费的软件，您也可以付费购买，
+This is a piece of software, either for free or that you pay for,
+
+860
+00:42:14,644 --> 00:42:17,299
+对于您的手机，笔记本电脑或台式机，
+for your phone or your laptop or desktop, that
+
+861
+00:42:17,300 --> 00:42:19,160
+从字面上管理您的密码。
+literally manages your passwords.
+
+862
+00:42:19,159 --> 00:42:23,749
+以最简单的形式，将其视为电子表格，但这是“安全的”，
+In its simplest form, think of it like a spreadsheet, but that's "secure,"
+
+863
+00:42:23,750 --> 00:42:25,669
+在您自己的计算机上引用unquote。
+quote unquote, on your own computer.
+
+864
+00:42:25,670 --> 00:42:28,970
+也就是说，这些密码管理器-这是两个流行的密码管理器。
+That is, these password managers-- and here's two popular ones.
+
+865
+00:42:28,969 --> 00:42:33,482
+onepassword.com是一种流行的工具。 lastpass.com是另一个。
+onepassword.com is one popular tool. lastpass.com is another one.
+
+866
+00:42:33,483 --> 00:42:35,150
+还有其他人，如果您在Google周围搜索。
+And there's others if you google around.
+
+867
+00:42:35,150 --> 00:42:37,970
+但是，我将一如既往地阅读评论或获得第二意见。
+But I would, as always, read up on reviews or get second opinions.
+
+868
+00:42:37,969 --> 00:42:40,159
+不要仅仅看我们提出的建议。
+Don't just take at face value what we propose.
+
+869
+00:42:40,159 --> 00:42:42,619
+但是这些密码管理器是您可以使用的程序
+But these password managers are programs that you
+
+870
+00:42:42,619 --> 00:42:45,919
+输入您的用户名和密码。
+type your usernames and passwords into.
+
+871
+00:42:45,920 --> 00:42:52,040
+然后将它们全部保存在一个主密码后面，
+And then you save them all behind one master password, one password that's
+
+872
+00:42:52,039 --> 00:42:54,649
+真的很长，希望真的很随机
+really long, hopefully, really random with lots
+
+873
+00:42:54,650 --> 00:42:56,210
+数字，字母和符号的集合。
+of numbers and letters and symbols.
+
+874
+00:42:56,210 --> 00:43:00,710
+但是您只需要记住一个主密码即可。
+But all you have to remember is that one main password.
+
+875
+00:43:00,710 --> 00:43:04,040
+然后通过在Mac或PC或手机中输入该密码，
+And by entering that password into your Mac or PC or phone,
+
+876
+00:43:04,039 --> 00:43:06,229
+然后，您可以解锁所有其他帐户。
+you then unlock all of your other accounts.
+
+877
+00:43:06,230 --> 00:43:09,920
+然后，您可以复制并粘贴您实际帐户的用户名
+And you can then just copy and paste your actual accounts' usernames
+
+878
+00:43:09,920 --> 00:43:10,725
+和密码。
+and passwords.
+
+879
+00:43:10,724 --> 00:43:12,849
+或者这些程序也为您提供键盘快捷键。
+Or these programs also give you keyboard shortcuts.
+
+880
+00:43:12,849 --> 00:43:16,429
+所以您按下键盘命令，瞧，您会自动
+So you hit a keyboard command, and voila, you're automatically
+
+881
+00:43:16,429 --> 00:43:17,419
+登录网站。
+logged into websites.
+
+882
+00:43:17,420 --> 00:43:20,000
+您不必复制/粘贴或手动转录它们。
+You don't have to copy/paste or manually transcribe them.
+
+883
+00:43:20,000 --> 00:43:21,860
+那么到今天，这意味着什么呢？
+So to this day, what does this mean?
+
+884
+00:43:21,860 --> 00:43:24,230
+对于我来说，我使用这些密码管理器之一。
+For me, I use one of these password managers.
+
+885
+00:43:24,230 --> 00:43:25,980
+我的大多数同事也这样做。
+And most of my colleagues do as well.
+
+886
+00:43:25,980 --> 00:43:29,660
+我们很多人，大多数人甚至都不知道密码
+Many of us, most of us, don't even know the passwords
+
+887
+00:43:29,659 --> 00:43:32,959
+我们用于各种网站或应用程序等。
+we use for various websites or apps or the like.
+
+888
+00:43:32,960 --> 00:43:33,590
+为什么？
+Why?
+
+889
+00:43:33,590 --> 00:43:35,780
+因为我们现在相信密码管理器
+Because we now trust that the password manager
+
+890
+00:43:35,780 --> 00:43:39,710
+只需单击一个按钮，就可以生成一个很长的随机密码
+can, with the click of a button, generate a really long random password
+
+891
+00:43:39,710 --> 00:43:41,870
+有很多数字，数字和标点符号。
+with lots of numbers, digits, and punctuation.
+
+892
+00:43:41,869 --> 00:43:44,509
+然后它将为我记住它。
+And then it will remember it for me.
+
+893
+00:43:44,510 --> 00:43:47,870
+我只需要记住一个主要的密码是
+And I just have to remember that one main password that's
+
+894
+00:43:47,869 --> 00:43:50,429
+保护所有其他人。
+protecting all of those others.
+
+895
+00:43:50,429 --> 00:43:54,889
+这样很好，因为我现在可以练习我一直在讲的东西。
+So that's good in that now I can practice what I've been preaching.
+
+896
+00:43:54,889 --> 00:43:58,329
+但是有一个缺点。
+But there is a downside.
+
+897
+00:43:58,329 --> 00:44:01,419
+我正面临新的风险或脆弱性。
+I'm exposing myself to a new risk or vulnerability.
+
+898
+00:44:01,420 --> 00:44:03,760
+也就是说，这里的权衡是什么？
+That is to say, what's the trade-off here?
+
+899
+00:44:03,760 --> 00:44:07,360
+为什么你不必在今天的课后刚跑完，
+Why should you not necessarily just run off after today's class,
+
+900
+00:44:07,360 --> 00:44:11,260
+下载并安装密码管理器，然后开始使用它
+download and install a password manager, and start using it
+
+901
+00:44:11,260 --> 00:44:13,990
+首先没有一点想法。
+without a little bit of thought first.
+
+902
+00:44:13,989 --> 00:44:17,079
+不利之处可能是什么？
+What's the downside, perhaps?
+
+903
+00:44:17,079 --> 00:44:23,579
+是的，如果我说对了，请转到Lexlene？
+Yeah, over to Lexlene if I'm saying it right?
+
+904
+00:44:23,579 --> 00:44:30,389
+LEXLENE：是的，如果有人破解了您的密码管理器密码，
+LEXLENE: Yeah, if someone cracks your password manager password,
+
+905
+00:44:30,389 --> 00:44:32,839
+那么他们就可以访问您的所有密码。
+then they have access to all your passwords.
+
+906
+00:44:32,840 --> 00:44:35,893
+DAVID J. MALAN：是的，所以这实际上取决于这里所面临的威胁，
+DAVID J. MALAN: Yeah, so really depends on what the threat here is,
+
+907
+00:44:35,893 --> 00:44:37,310
+或您最担心的是什么。
+or what you're most worried about.
+
+908
+00:44:37,309 --> 00:44:39,349
+如果有人妥协，猜测，弄清楚
+If someone compromises, guesses, figures out
+
+909
+00:44:39,349 --> 00:44:41,969
+您的主要密码可以保护所有其他密码，
+your main password that protects all of the others,
+
+910
+00:44:41,969 --> 00:44:44,569
+现在您只需一次将所有帐户交给他们。
+now you've just handed them all of your accounts at once.
+
+911
+00:44:44,570 --> 00:44:46,590
+这是一个巨大的权衡。
+And that's a massive trade-off.
+
+912
+00:44:46,590 --> 00:44:48,980
+但是，如果您再次考虑替代方案，
+However, if you again consider the alternative,
+
+913
+00:44:48,980 --> 00:44:53,090
+拿出大的随机密码，然后全部记住或全部记住
+coming up with big random passwords and then memorizing them all, or somewhat
+
+914
+00:44:53,090 --> 00:44:55,010
+愚蠢地将它们写下在便利贴上
+foolishly, writing them down on a Post-It note
+
+915
+00:44:55,010 --> 00:44:56,843
+并把它放在显示器上
+and putting it on your monitor, the question
+
+916
+00:44:56,842 --> 00:45:02,449
+这不是做事的正确方法，
+shouldn't be is this the right way to do things,
+
+917
+00:45:02,449 --> 00:45:05,701
+但实际上，相对而言，这是一种更好的做事方式吗？
+but really, relatively speaking, is this a better way to do things?
+
+918
+00:45:05,702 --> 00:45:07,910
+因此，您总是容易受到某些风险的影响。
+So you're always going to be vulnerable to some risk.
+
+919
+00:45:07,909 --> 00:45:09,589
+您担心哪些风险？
+Which of those risks do you worry about?
+
+920
+00:45:09,590 --> 00:45:12,380
+也许您可以通过减轻这种担忧
+And maybe you can mitigate that concern by maybe
+
+921
+00:45:12,380 --> 00:45:15,920
+您可以为密码管理员写下您的主密码
+you could write down your main password for your password manager
+
+922
+00:45:15,920 --> 00:45:20,390
+并可能将其放入物理保险库或防火柜等中
+and maybe put it in a physical vault or a fire locker or the like
+
+923
+00:45:20,389 --> 00:45:23,259
+别人很少有机会接触到的机会，
+that with very low probability someone else would get access to,
+
+924
+00:45:23,260 --> 00:45:25,010
+除非他们物理攻击该设备，
+unless they physically attack that device,
+
+925
+00:45:25,010 --> 00:45:27,960
+或将其隐藏在书架上的书本之类的地方。
+or hide it somewhere in a book on your shelf or the like.
+
+926
+00:45:27,960 --> 00:45:29,510
+所以是的，它很脆弱。
+So that yes, it's vulnerable.
+
+927
+00:45:29,510 --> 00:45:33,140
+但是有人发现它的几率可能相对较低。
+But the odds that someone finds it might just be relatively low.
+
+928
+00:45:33,139 --> 00:45:35,629
+但这又是主题，要弄清楚
+But again, this is the theme, figuring out
+
+929
+00:45:35,630 --> 00:45:39,170
+您的帐户和证券类型的正确余额是多少
+what the right balance is for your accounts and the type of security
+
+930
+00:45:39,170 --> 00:45:42,140
+您想要实现的目标。
+that you want to aspire to achieve.
+
+931
+00:45:42,139 --> 00:45:43,889
+好吧，让我们考虑其他一些防御措施。
+Well, let's consider a few other defenses.
+
+932
+00:45:43,889 --> 00:45:46,931
+我们会在最后留下一些时间来询问有关特定工具的问题
+And we'll leave time at the very end for questions about particular tools
+
+933
+00:45:46,931 --> 00:45:47,631
+和技术。
+and techniques.
+
+934
+00:45:47,632 --> 00:45:49,340
+我们可以建立的另一个构建基块是什么
+What's another building block that we can
+
+935
+00:45:49,340 --> 00:45:52,310
+在网上保护自己方面承担责任吗？
+bring to bear when it comes to protecting ourselves online?
+
+936
+00:45:52,309 --> 00:45:55,849
+因此，加密-CS50的学生将再次知道加密是指
+So encryption-- CS50 students will know that encryption refers, again,
+
+937
+00:45:55,849 --> 00:46:01,009
+扰乱信息，使数据看起来像是随机数据，
+to the scrambling of information, making data look like it's random data,
+
+938
+00:46:01,010 --> 00:46:05,000
+但是通过使用所谓的密钥（通常是只有您自己的密钥）进行加密
+but by encrypting it with what's called the key, typically, a key that only you
+
+939
+00:46:05,000 --> 00:46:06,889
+和接收者以某种方式知道。
+and the recipient somehow know.
+
+940
+00:46:06,889 --> 00:46:10,069
+加密往往是我们许多问题的解决方案。
+Encryption tends to be the solution to a lot of our problems.
+
+941
+00:46:10,070 --> 00:46:12,650
+实际上，这些密码管理器通常
+And indeed, these password managers typically
+
+942
+00:46:12,650 --> 00:46:17,150
+进一步加密您的数据，以便即使有人窃取了您的Mac和PC
+additionally encrypt your data so that even someone who steals your Mac and PC
+
+943
+00:46:17,150 --> 00:46:19,370
+不能只是打开程序并查看它。
+can't just open up the program and see it.
+
+944
+00:46:19,369 --> 00:46:21,619
+所有的数据也同样被加密。
+All of the data, too, is similarly encrypted.
+
+945
+00:46:21,619 --> 00:46:26,029
+你们中的许多人已经受到社会的训练或适应，至少要看
+Many of you have already been trained or conditioned by society to at least look
+
+946
+00:46:26,030 --> 00:46:30,815
+为或希望或认可https：//。
+for or hope for or recognize https://.
+
+947
+00:46:30,815 --> 00:46:32,425
+s表示安全。
+The s means secure.
+
+948
+00:46:32,425 --> 00:46:34,550
+那往往是一件好事，因为这意味着
+That just tends to be a good thing because it means
+
+949
+00:46:34,550 --> 00:46:36,290
+您正在访问的网站是安全的。
+a website you're visiting is secure.
+
+950
+00:46:36,289 --> 00:46:39,829
+它是加密的，而不是http，它是加密的
+It's encrypted, as opposed to just http, which
+
+951
+00:46:39,829 --> 00:46:43,619
+就在几年前变得更加普遍，并且完全未加密。
+was much more common just a few years ago and is completely unencrypted.
+
+952
+00:46:43,619 --> 00:46:48,259
+也就是说，如果您访问的网址中仅包含http的网站，
+So that is to say if you visit a website that says just http in the URL, anyone
+
+953
+00:46:48,260 --> 00:46:51,960
+从理论上讲，您和该网站之间可以进行监听，
+between you and that website theoretically can be listening in,
+
+954
+00:46:51,960 --> 00:46:55,460
+可以这么说，在您的流量中，零点和来回的零。
+so to speak, on your traffic, the zeros and ones going back and forth.
+
+955
+00:46:55,460 --> 00:46:57,410
+任何人都可以看到您正在访问的页面。
+Anyone can see what pages you're visiting.
+
+956
+00:46:57,409 --> 00:47:00,259
+如果您在国外访问敏感材料，
+If you're in some foreign country visiting sensitive materials,
+
+957
+00:47:00,260 --> 00:47:02,840
+政府可以知道您正在访问哪些网站
+the government could know what websites you're visiting
+
+958
+00:47:02,840 --> 00:47:05,400
+以及您正在阅读的内容。
+and what content, for instance, you're reading.
+
+959
+00:47:05,400 --> 00:47:07,940
+https变得更难了。
+https makes that much harder.
+
+960
+00:47:07,940 --> 00:47:09,080
+不是100％。
+It's not 100%.
+
+961
+00:47:09,079 --> 00:47:10,939
+仍然有可能发生攻击。
+There are attacks still that are possible.
+
+962
+00:47:10,940 --> 00:47:12,800
+但同样，它只是提高了标准。
+But again, it just raises the bar.
+
+963
+00:47:12,800 --> 00:47:15,667
+但是还有另一种技术正在越来越多
+But there's another technique that's increasingly
+
+964
+00:47:15,666 --> 00:47:18,499
+在媒体上进行讨论，并且您应该熟悉这些内容，
+being discussed in the media, and with which you should be familiar,
+
+965
+00:47:18,500 --> 00:47:20,689
+被称为端到端加密。
+known as end-to-end encryption.
+
+966
+00:47:20,690 --> 00:47:24,890
+端到端加密意味着当您使用第三方服务时，
+End-to-end encryption means that when you're using a third-party service,
+
+967
+00:47:24,889 --> 00:47:27,979
+通常，无论是聊天服务，视频会议
+typically, whether it's a chat service, a video conferencing
+
+968
+00:47:27,980 --> 00:47:30,320
+服务或类似服务，您不仅在加密
+service or the like, you're not just encrypting
+
+969
+00:47:30,320 --> 00:47:33,590
+您之间的流量，零和一
+your traffic, the zeros and ones, between you
+
+970
+00:47:33,590 --> 00:47:39,020
+Google，您和Microsoft，您和Amazon或其他一些第三方。
+and Google, you and Microsoft, you and Amazon, or some other third-party.
+
+971
+00:47:39,019 --> 00:47:43,309
+您正在加密您和与之交谈的人之间的数据。
+You are encrypting your data between you and the person you're talking to.
+
+972
+00:47:43,309 --> 00:47:46,579
+因此，例如WhatsApp，即流行的消息传递工具，
+So WhatsApp, for instance, the popular messaging tool,
+
+973
+00:47:46,579 --> 00:47:48,139
+早期具有此功能。
+early on had this feature.
+
+974
+00:47:48,139 --> 00:47:50,669
+如今还有许多其他聊天程序也有它，
+And many other chat programs nowadays have it as well,
+
+975
+00:47:50,670 --> 00:47:54,805
+包括iMessage，Signal和Telegram等。
+including iMessage and Signal and Telegram and the like.
+
+976
+00:47:54,804 --> 00:47:56,929
+端到端加密意味着即使您
+End-to-end encryption means that even though you're
+
+977
+00:47:56,929 --> 00:48:01,519
+使用第三方服务，您可能会或可能不会信任的公司，
+using a third-party service, a company that you may or may not trust,
+
+978
+00:48:01,519 --> 00:48:06,049
+您的交流是在您和对方之间进行的
+your communications are communicated between you and the person
+
+979
+00:48:06,050 --> 00:48:08,190
+与您交谈的人。
+with whom you're speaking.
+
+980
+00:48:08,190 --> 00:48:12,260
+中间的公司，他们的服务器，即使您的数据正在通过
+The company in between, their servers, even though your data is going through
+
+981
+00:48:12,260 --> 00:48:15,530
+他们的服务器无法解密该信息。
+their servers, cannot decrypt that information.
+
+982
+00:48:15,530 --> 00:48:18,232
+他们看不到原始格式的信息。
+They cannot see the information in its raw form.
+
+983
+00:48:18,231 --> 00:48:19,189
+所以这是一件好事。
+So that's a good thing.
+
+984
+00:48:21,760 --> 00:48:23,140
+因此，WhatsApp也可以做到这一点。
+So WhatsApp does this, too.
+
+985
+00:48:23,139 --> 00:48:28,099
+Zoom类至少在最近才这样做。
+Zoom kind of does this, at least, only recently does this.
+
+986
+00:48:28,099 --> 00:48:31,029
+以Zoom为例，例如我们目前正在使用的技术，
+So Zoom, for instance, the technology that we are all using right now,
+
+987
+00:48:31,030 --> 00:48:33,580
+实际上花了一些时间，对了，几个月
+actually took some flak, rightly so, some months
+
+988
+00:48:33,579 --> 00:48:36,699
+回想一下，当我回想起他们网站上的营销文献时，
+back, when in their marketing literature on their website, as I recall,
+
+989
+00:48:36,699 --> 00:48:40,509
+广告宣传Zoom提供端到端加密，
+advertised Zoom as offering end-to-end encryption, which
+
+990
+00:48:40,510 --> 00:48:43,750
+是错误的，因为端到端加密的意思是，
+was false because what end-to-end encryption means is,
+
+991
+00:48:43,750 --> 00:48:47,620
+正如我所描述的，在您和您与之交流的人之间。
+as I described it, between you and the person with whom you're communicating.
+
+992
+00:48:47,619 --> 00:48:50,889
+但是当时的营销文献是
+But the marketing literature at the time was
+
+993
+00:48:50,889 --> 00:48:53,409
+指的是你们之间的端到端加密
+referring to end-to-end encryption between you
+
+994
+00:48:53,409 --> 00:48:57,429
+和Zoom，这不是安全研究人员或计算机科学家所需要的
+and Zoom, which is not what security researchers or computer scientists
+
+995
+00:48:57,429 --> 00:49:00,969
+或一般而言，技术人员都会将端到端加密定义为。
+or technologists in general would define end-to-end encryption as.
+
+996
+00:49:00,969 --> 00:49:03,129
+因此，他们为此采取了一些措施，这是正确的。
+And so they took some flak for that, rightly so.
+
+997
+00:49:03,130 --> 00:49:05,650
+他们已经开始了，不过最近几周开始推广
+They've begun, though, in recent weeks, rolling out
+
+998
+00:49:05,650 --> 00:49:08,140
+实际的端到端加密。
+actual end-to-end encryption.
+
+999
+00:49:08,139 --> 00:49:10,269
+我们现在不使用它。
+We are not using it right now.
+
+1000
+00:49:10,269 --> 00:49:12,879
+实际上，这使某些功能难以使用。
+It actually makes certain features harder to use.
+
+1001
+00:49:12,880 --> 00:49:14,530
+因此，这也是一个折衷方案。
+So there, too, there's a trade-off.
+
+1002
+00:49:14,530 --> 00:49:17,590
+但总的来说，如果您是最亲密或最私密的人
+But generally speaking, if you're having the most intimate or private
+
+1003
+00:49:17,590 --> 00:49:22,150
+或与人沟通的个人，财务或医疗方面的信息，
+or personal or financial or medical of communications with people,
+
+1004
+00:49:22,150 --> 00:49:27,010
+这是您应该开始寻找，聆听和期待的另一个功能
+this is another feature you should start to look for and listen for and expect
+
+1005
+00:49:27,010 --> 00:49:28,810
+您正在使用的工具。
+of the tools that you're using.
+
+1006
+00:49:28,809 --> 00:49:32,439
+特别是在涉及各国的审查制度时
+And especially when it comes to censorship in various countries
+
+1007
+00:49:32,440 --> 00:49:35,290
+和社区，这是一种软件
+and communities, this is the kind of software
+
+1008
+00:49:35,289 --> 00:49:37,329
+越来越多地受到政府的攻击
+that's increasingly under attack by governments
+
+1009
+00:49:37,329 --> 00:49:42,729
+因为他们经常想要借壳，所以美国的国家安全局（NSA）或联邦调查局（FBI）
+because they often want backdoor so that the USA's NSA or FBI
+
+1010
+00:49:42,730 --> 00:49:45,130
+或其他实体可以参与这些交流。
+or some other entity can get into these communications.
+
+1011
+00:49:45,130 --> 00:49:47,650
+从好的方面讲，这变得更加困难，
+That's made much more difficult, in a good way,
+
+1012
+00:49:47,650 --> 00:49:53,170
+通过使用端到端加密来确保您的通信确实安全。
+by using end-to-end encryption so that your communications are indeed secure.
+
+1013
+00:49:53,170 --> 00:49:56,757
+好吧，在我们最后的时刻，让我们最终专注于Zoom，
+Well, in our final moments together, let's focus ultimately on Zoom,
+
+1014
+00:49:56,757 --> 00:49:58,090
+我们正在使用的技术。
+the very technology we're using.
+
+1015
+00:49:58,090 --> 00:49:59,950
+因为他们拍了一些战利品
+Because they've taken some flak, certainly
+
+1016
+00:49:59,949 --> 00:50:02,824
+除了您可能从未听说过的端到端加密之外，
+beyond end-to-end encryption, which you might not have even heard of,
+
+1017
+00:50:02,824 --> 00:50:04,209
+就像没有安全感一样。
+as just being insecure.
+
+1018
+00:50:04,210 --> 00:50:06,640
+还有很多学校系统，很多用户
+And a lot of school systems, a lot of users
+
+1019
+00:50:06,639 --> 00:50:09,679
+由于这个原因，几个月前决定停止使用Zoom，
+decided some months ago to stop using Zoom for this reason,
+
+1020
+00:50:09,679 --> 00:50:12,039
+即使他们的业务仍在蓬勃发展。
+even though their business is still booming.
+
+1021
+00:50:12,039 --> 00:50:13,629
+那么Zoom安全吗？
+So is Zoom secure?
+
+1022
+00:50:13,630 --> 00:50:15,640
+让我们问这个小组的最后一个问题
+Let's ask one final question of the group
+
+1023
+00:50:15,639 --> 00:50:19,689
+在这里，请记住，我们现在刚刚花了一个小时来讨论
+here, keeping in mind that we've now just spent the past hour discussing
+
+1024
+00:50:19,690 --> 00:50:21,250
+安全主题。
+topics of security.
+
+1025
+00:50:21,250 --> 00:50:23,990
+让我继续在这里问最后一个问题，
+Let me go ahead and ask this final question here,
+
+1026
+00:50:23,989 --> 00:50:26,919
+一会儿就会出现在您的屏幕上。
+which will appear on your screen in just a moment.
+
+1027
+00:50:26,920 --> 00:50:32,450
+很简单，缩放安全吗？
+It is quite simply, is Zoom secure?
+
+1028
+00:50:32,449 --> 00:50:34,859
+好吧，让我们看看响应是如何进入的。
+All right, let's see how the responses are coming in.
+
+1029
+00:50:34,860 --> 00:50:41,690
+我看到55％否，16％是，28％（不确定）。
+I'm seeing 55% no, 16% yes, 28%, unsure.
+
+1030
+00:50:41,690 --> 00:50:43,070
+所以在那里合理传播。
+So a reasonable spread there.
+
+1031
+00:50:43,070 --> 00:50:44,780
+让我们在这里发表一些意见。
+Let's take a couple of comments here.
+
+1032
+00:50:44,780 --> 00:50:50,120
+在那些认为Zoom是安全的人中，为什么您认为它是安全的？
+Among those of you who think Zoom is secure, why do you think it's secure?
+
+1033
+00:50:50,119 --> 00:50:54,079
+任何人都愿意举起虚拟手，以便我们可以致电给您，
+Would anyone be comfortable raising a virtual hand so we can call on you,
+
+1034
+00:50:54,079 --> 00:50:58,489
+或在聊天中评论为什么您认为Zoom安全可靠？
+or maybe commenting in the chat as to why you think Zoom is secure?
+
+1035
+00:50:58,489 --> 00:51:01,639
+让我们看看，Sam，怎么样？
+Let's see, over to, how about, Sam?
+
+1036
+00:51:01,639 --> 00:51:02,389
+你怎么认为？
+What do you think?
+
+1037
+00:51:02,389 --> 00:51:07,759
+SAM：两天前，Zoom为所有用户提供了端到端加密。
+SAM: Two days ago, Zoom offered end-to-end encryption to all the users.
+
+1038
+00:51:07,760 --> 00:51:10,730
+DAVID J. MALAN：是的，事实上，那是及时的。
+DAVID J. MALAN: Yeah, so it was, in fact, that timely.
+
+1039
+00:51:10,730 --> 00:51:12,497
+Zoom开始试行，
+Zoom began rolling out, on a trial basis,
+
+1040
+00:51:12,496 --> 00:51:14,579
+本质上是所有用户的端到端加密。
+essentially, end-to-end encryption with all users.
+
+1041
+00:51:14,579 --> 00:51:18,289
+因此，如果您正在使用它，并且-这也是关键-
+So if you are using that, and-- and this is key, too--
+
+1042
+00:51:18,289 --> 00:51:22,309
+Zoom正确地实现了这个概念，
+and Zoom has implemented that concept correctly,
+
+1043
+00:51:22,309 --> 00:51:24,919
+然后，是的，也许Zoom在某种意义上是安全的
+then, yes, maybe Zoom is secure in the sense
+
+1044
+00:51:24,920 --> 00:51:27,470
+您与其他人的视频对话
+that your video conversation with someone else
+
+1045
+00:51:27,469 --> 00:51:29,959
+实际上，您和他们之间是私人的。
+is in fact private between you and them.
+
+1046
+00:51:29,960 --> 00:51:34,370
+话虽如此，如果您在咖啡店或图书馆，至少
+With that said, if you're in a coffee shop or in a library, at least
+
+1047
+00:51:34,369 --> 00:51:37,579
+在更健康的时代，有人在看望或聆听
+in healthier times, and someone's looking over or listening
+
+1048
+00:51:37,579 --> 00:51:41,079
+在您的对话中，可以说甚至是技术也不安全。
+in on your conversation, arguably even that technology is not secure.
+
+1049
+00:51:41,079 --> 00:51:42,829
+您可以想象还有其他威胁。
+You can imagine there being other threats.
+
+1050
+00:51:42,829 --> 00:51:47,569
+也许您不小心受到了某种病毒的攻击
+Maybe you have accidentally been vulnerable to a virus, some kind
+
+1051
+00:51:47,570 --> 00:51:49,067
+您自己的计算机上的威胁。
+of threat on your own computer.
+
+1052
+00:51:49,067 --> 00:51:50,900
+即使，是的，您的数据也已加密
+And even though, yes, your data is encrypted
+
+1053
+00:51:50,900 --> 00:51:53,480
+在你和另一个人之间
+between you and that other person, that doesn't
+
+1054
+00:51:53,480 --> 00:51:56,420
+表示您的个人Mac上没有运行恶意软件
+mean there's not malicious software running on your own personal Mac
+
+1055
+00:51:56,420 --> 00:51:59,630
+或PC或其他人的计算机，记录所有内容
+or PC or the other person's, recording everything
+
+1056
+00:51:59,630 --> 00:52:02,750
+您说并将其上传到某些第三方对手。
+you say and uploading it to some third-party adversary.
+
+1057
+00:52:02,750 --> 00:52:06,950
+因此，无论何时问或回答有关安全性的问题，
+So there, too, whenever you ask or answer questions about security,
+
+1058
+00:52:06,949 --> 00:52:09,799
+考虑到这些资格，
+take into account those kinds of qualifications,
+
+1059
+00:52:09,800 --> 00:52:14,383
+这些条件，因为安全永远不应该
+those conditionals, because security should never
+
+1060
+00:52:14,382 --> 00:52:15,799
+在真空中进行讨论。
+be discussed, really, in a vacuum.
+
+1061
+00:52:15,800 --> 00:52:19,550
+因此，那些谁说不，我认为我们可以提出更多的理由。
+So those of you who said no, I think we could come up with even more reasons.
+
+1062
+00:52:19,550 --> 00:52:23,000
+但是至少让我消除一些，因为我确实认为有些弱点
+But at least let me dispel just a few because I do think some of the flak
+
+1063
+00:52:23,000 --> 00:52:26,299
+Zoom被夸大了，因为那些批评并没有真正
+Zoom took was overstated because those criticizing didn't really
+
+1064
+00:52:26,300 --> 00:52:29,860
+了解在媒体上吹捧的一些问题。
+understand some of the issues that were being touted in the media.
+
+1065
+00:52:29,860 --> 00:52:36,050
+例如，今天你们所有人要登录此会议，
+So for instance, all of you today, to log into this meeting, for instance,
+
+1066
+00:52:36,050 --> 00:52:38,810
+跟随一个URL（很可能是通过电子邮件发送给您）
+followed a URL, most likely, that you had been emailed
+
+1067
+00:52:38,809 --> 00:52:40,159
+或您在屏幕上看到的内容。
+or that you saw on your screen.
+
+1068
+00:52:40,159 --> 00:52:44,629
+该URL可能看起来像这样-https：//，
+And that URL probably looked a little something like this-- https://,
+
+1069
+00:52:44,630 --> 00:52:48,620
+zoom.us或类似的东西，再加上一个数字，这是很好的
+which is good, zoom.us or something like that, followed by a number,
+
+1070
+00:52:48,619 --> 00:52:49,699
+会议ID--
+the meeting ID--
+
+1071
+00:52:49,699 --> 00:52:52,249
+例如5551112222。
+for instance, 5551112222.
+
+1072
+00:52:52,250 --> 00:52:55,560
+但这对今天的会议来说是一个不同的数字。
+But it was a different number for today's meeting.
+
+1073
+00:52:55,559 --> 00:52:58,969
+因此，如果您在注册后收到此URL，它是否安全？
+So if you received this URL after registering, is it secure?
+
+1074
+00:52:58,969 --> 00:53:02,869
+好吧，即使现在你们所有人都已经注册了，
+Well, even though all of you here right now have presumably registered,
+
+1075
+00:53:02,869 --> 00:53:05,749
+从技术上讲，没有什么可以阻止你们中的任何一个
+technically there was nothing stopping any of you
+
+1076
+00:53:05,750 --> 00:53:10,820
+通过发短信，通过电子邮件或DM方式发送相同的URL
+from texting or emailing or DMing this same URL
+
+1077
+00:53:10,820 --> 00:53:12,290
+互联网上的其他任何人。
+to anyone else on the internet.
+
+1078
+00:53:12,289 --> 00:53:14,789
+因此，他们可能无需注册即可加入。
+And they could therefore join, perhaps, without registering.
+
+1079
+00:53:14,789 --> 00:53:17,719
+因此，也许这是一种威胁，但Zoom通常会向您发送
+So maybe that's a threat, though, Zoom typically sends you
+
+1080
+00:53:17,719 --> 00:53:21,769
+注册时不是这样简单的URL，而是更长的URL。
+not a URL that's as simple as this when you register, but a longer one, indeed.
+
+1081
+00:53:21,769 --> 00:53:24,019
+还有一些URL的详细信息，
+And there's another detail that some URLs have,
+
+1082
+00:53:24,019 --> 00:53:25,879
+也可能看起来像这样-
+too, which might look like this--
+
+1083
+00:53:25,880 --> 00:53:29,058
+末尾有一个问号，密码为pwd，
+a question mark at the end, and pwd for password,
+
+1084
+00:53:29,057 --> 00:53:30,349
+然后输入某种密码。
+and then some kind of password.
+
+1085
+00:53:30,349 --> 00:53:33,289
+确实，您今天点击的网址看起来有点像这样，
+And indeed, the URLs you clicked today looked a little more like that,
+
+1086
+00:53:33,289 --> 00:53:37,129
+仍然有所不同，因为它们是特殊的注册URL。
+still different because they were special registration URLs.
+
+1087
+00:53:37,130 --> 00:53:40,670
+但是在这里，如果您的URL拥有此密码，现在您
+But here, if your URL has this password, now you
+
+1088
+00:53:40,670 --> 00:53:43,280
+需要同时知道会议ID和密码
+need to know both the meeting ID and the password
+
+1089
+00:53:43,280 --> 00:53:45,555
+为了参加那个特定的Zoom会议。
+in order to join that particular Zoom meeting.
+
+1090
+00:53:45,554 --> 00:53:48,679
+如果您不参加大型课程，例如我们今天参加这次会议，
+And if you're not running big classes, like we are today with this meeting,
+
+1091
+00:53:48,679 --> 00:53:51,979
+而是您要举行一对一或更小规模的会议，
+but rather you're having one-on-one or smaller scale meetings,
+
+1092
+00:53:51,980 --> 00:53:56,480
+通常，您正在接收或生成如下所示的URL，
+typically you are receiving or generating a URL that looks like this,
+
+1093
+00:53:56,480 --> 00:53:59,570
+或更好的是，看起来像这样
+or better yet, that looks like this, so that it
+
+1094
+00:53:59,570 --> 00:54:02,660
+对手仅仅猜测会议ID是不够的。
+doesn't suffice for an adversary to just guess the meeting ID.
+
+1095
+00:54:02,659 --> 00:54:04,669
+这就是早期发生的事情。
+And that's what was happening early on.
+
+1096
+00:54:04,670 --> 00:54:07,520
+缩放通常不需要人
+Zoom typically did not require that people
+
+1097
+00:54:07,519 --> 00:54:10,819
+选择他们的会议密码，这意味着你们之间唯一的事情
+choose passwords for their meetings, which meant the only thing between you
+
+1098
+00:54:10,820 --> 00:54:14,090
+和一些对手Zoombomb轰炸您，可以说是骇客
+and some adversary Zoombombing you, so to speak, hacking
+
+1099
+00:54:14,090 --> 00:54:17,130
+进入您的会议，他们只需要猜测会议ID。
+into your meeting, which they just had to guess the meeting ID.
+
+1100
+00:54:17,130 --> 00:54:19,580
+我们已经看到花了我大约1分钟的时间
+And we've seen already it took me, what, like 1 minute,
+
+1101
+00:54:19,579 --> 00:54:22,309
+30秒写一个Python程序
+30 seconds to write a Python program that
+
+1102
+00:54:22,309 --> 00:54:26,779
+只是生成了所有可能的长度为4或8的数字。
+just generated all possible numbers of length four or eight or whatever.
+
+1103
+00:54:26,780 --> 00:54:29,570
+所以有太多空闲时间的人正在写作
+So people with too much free time are writing
+
+1104
+00:54:29,570 --> 00:54:32,330
+仅尝试所有可能的URL的代码。
+code that just tries all possible URLs.
+
+1105
+00:54:32,329 --> 00:54:35,239
+因此，如果您曾经被炸弹袭击，也许那是
+And so if you've ever been Zoombombed, maybe that's
+
+1106
+00:54:35,239 --> 00:54:38,119
+因为某人与该不该共享的人共享了该URL。
+because someone shared the URL with someone they shouldn't have.
+
+1107
+00:54:38,119 --> 00:54:42,139
+或者也许有一定编程经验或只是运气好的人
+Or maybe someone with a bit of programming experience or just luck
+
+1108
+00:54:42,139 --> 00:54:43,879
+猜到了您的会议ID。
+guessed your meeting ID.
+
+1109
+00:54:43,880 --> 00:54:47,330
+坦白说，从某种意义上说，这是一个功能
+So this was a feature in the sense that, honestly,
+
+1110
+00:54:47,329 --> 00:54:50,269
+不得不输入会议ID和密码只是很烦人。
+having to type in a meeting ID and a password is just annoying.
+
+1111
+00:54:50,269 --> 00:54:52,829
+它开始损害系统的可用性。
+It starts to hurt the usability of the system.
+
+1112
+00:54:52,829 --> 00:54:55,069
+在企业界，很多人
+And a lot of people in the corporate world,
+
+1113
+00:54:55,070 --> 00:54:58,130
+他们会选择另一种产品，如果另一种产品更容易
+they're going to choose another product if another product is easier
+
+1114
+00:54:58,130 --> 00:54:59,870
+开始视频会议。
+to start the video conference with.
+
+1115
+00:54:59,869 --> 00:55:02,299
+因此可以说，这是Zoom的有意识决定。
+So arguably, it was a conscious decision on Zoom's part.
+
+1116
+00:55:02,300 --> 00:55:04,092
+现在大学和公司已经开始
+Now universities and companies have started
+
+1117
+00:55:04,092 --> 00:55:07,175
+需要此功能或称为等候室的其他功能，其中一些人
+requiring this or another feature called a waiting room, which some of you
+
+1118
+00:55:07,175 --> 00:55:08,510
+可能今天经历过。
+might have experienced today.
+
+1119
+00:55:08,510 --> 00:55:12,680
+但这又再次提高了攻击系统的门槛。
+But that just, again, raises the bar to someone attacking the system.
+
+1120
+00:55:12,679 --> 00:55:14,209
+那么Zoom安全吗？
+So is Zoom secure?
+
+1121
+00:55:14,210 --> 00:55:15,440
+是的，没有。
+Yes and no.
+
+1122
+00:55:15,440 --> 00:55:17,660
+确实应该考虑一下，
+It really should be considered not in a vacuum,
+
+1123
+00:55:17,659 --> 00:55:21,109
+但在担心哪种威胁的背景下
+but in the context of what kinds of threats are you worried about
+
+1124
+00:55:21,110 --> 00:55:25,400
+您愿意采取什么样的防御措施？
+and what kinds of defenses are you willing to put up?
+
+1125
+00:55:25,400 --> 00:55:31,040
+因此，就像在现实世界中一样，您可能拥有自己的房屋或公寓
+So just like in the real world, you might have your own home or apartment
+
+1126
+00:55:31,039 --> 00:55:36,839
+或类似物品，窗户上可能有锁，螺栓和杆。
+or the like, on which you might have locks and bolts and bars on the window.
+
+1127
+00:55:36,840 --> 00:55:39,240
+在某个时候，如果您需要五分钟才能解锁
+At some point, if it takes you five minutes to unlock
+
+1128
+00:55:39,239 --> 00:55:41,939
+门上的每把锁只是为了进入你的家，
+every lock on your door just to get into your home,
+
+1129
+00:55:41,940 --> 00:55:44,160
+它可能更安全，但是您可能
+it might be much more secure, but you're probably
+
+1130
+00:55:44,159 --> 00:55:47,279
+不会享受回家的乐趣，因为它需要很长时间才能进入。
+not going to enjoy going home because it takes that long to get in.
+
+1131
+00:55:47,280 --> 00:55:50,310
+您可能会在窗户上放一些横杆，以保持该人的身体安全，
+And you might put bars on the window to keep that person physically out,
+
+1132
+00:55:50,309 --> 00:55:52,379
+但看起来不会特别好。
+but it's not going to look particularly nice.
+
+1133
+00:55:52,380 --> 00:55:54,797
+并没有阻止他们前进的脚步。
+And there's nothing stopping them from going one floor up.
+
+1134
+00:55:54,797 --> 00:55:56,580
+因此，也存在这种权衡。
+So there, too, there's this trade-off.
+
+1135
+00:55:56,579 --> 00:55:59,129
+因此，在外卖中，我们希望从今天起
+And so among the takeaways, we hope, from today, are
+
+1136
+00:55:59,130 --> 00:56:01,260
+一，只是更好的思考过程
+one, just better thought processes when it
+
+1137
+00:56:01,260 --> 00:56:04,530
+谈到您的手机或计算机意味着什么
+comes to what does it mean for your phone or your computer
+
+1138
+00:56:04,530 --> 00:56:06,573
+或您的房屋，以确保安全，
+or your homes for that matter to be secure,
+
+1139
+00:56:06,572 --> 00:56:09,239
+并认识到总会有一些权衡。
+and to recognize that there's always going to be some trade-off.
+
+1140
+00:56:09,239 --> 00:56:12,459
+我们最终会鼓励您提出这类问题。
+And we would encourage you, ultimately, to ask these kinds of questions.
+
+1141
+00:56:12,460 --> 00:56:16,210
+如果有任何公司，任何应用程序，任何网站只是在其网站上说，
+If any company, if any app, if any website just says on their website,
+
+1142
+00:56:16,210 --> 00:56:18,690
+“我们很安全”，这是胡说八道。
+"we are secure," that's nonsense.
+
+1143
+00:56:18,690 --> 00:56:22,410
+在您开始提出问题之前，这本身并没有任何意义，例如，
+That means nothing in and of itself until you start asking questions, like,
+
+1144
+00:56:22,409 --> 00:56:25,889
+您要保护什么？如何保护？
+what are you secure against, and how?
+
+1145
+00:56:25,889 --> 00:56:27,759
+好，非常感谢您在这里加入我们。
+Well, thank you so much for joining us here.
+
+1146
+00:56:27,760 --> 00:56:28,890
+让我们正式包装在这里。
+Let's officially wrap here.
+
+1147
+00:56:28,889 --> 00:56:32,249
+但是我们欢迎人们多待一段时间
+But folks are welcome to stick around for some more time
+
+1148
+00:56:32,250 --> 00:56:34,720
+如果您想在小组中提问。
+if you'd like to ask questions in the group.
+
+1149
+00:56:34,719 --> 00:56:37,499
+但是，如果您必须起飞，请随时出发。
+But if you have to take off, please feel free to head out.
+
+1150
+00:56:37,500 --> 00:56:39,649
+[音乐播放]
+[MUSIC PLAYING]
+

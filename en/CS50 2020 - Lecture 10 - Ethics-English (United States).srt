@@ -1,0 +1,7862 @@
+1
+00:00:00,000 --> 00:00:00,500
+
+
+2
+00:00:00,500 --> 00:00:02,970
+[MUSIC PLAYING]
+
+3
+00:00:02,970 --> 00:00:48,432
+
+
+4
+00:00:48,432 --> 00:00:49,390
+DAVID MALAN: All right.
+
+5
+00:00:49,390 --> 00:00:51,050
+This is CS50.
+
+6
+00:00:51,049 --> 00:00:52,929
+And this is the end.
+
+7
+00:00:52,929 --> 00:00:55,599
+All that remains here on out
+is really your final projects.
+
+8
+00:00:55,600 --> 00:00:57,835
+And we cannot wait to
+see what you create.
+
+9
+00:00:57,835 --> 00:01:00,460
+Today what we thought we would
+do is take a bit of a look back,
+
+10
+00:01:00,460 --> 00:01:03,400
+but also we'll look forward
+so that you know exactly where
+
+11
+00:01:03,399 --> 00:01:06,549
+and what you can do beyond CS50 itself.
+
+12
+00:01:06,549 --> 00:01:08,649
+But first a word of thanks.
+
+13
+00:01:08,650 --> 00:01:11,200
+We are, of course, here
+in the Loeb Drama Center
+
+14
+00:01:11,200 --> 00:01:14,380
+with The American Repertory Theater,
+who have been our amazing hosts
+
+15
+00:01:14,379 --> 00:01:15,459
+this whole semester.
+
+16
+00:01:15,459 --> 00:01:20,259
+And truly, they have breathed new life,
+new lights, new animation, new sounds
+
+17
+00:01:20,260 --> 00:01:21,100
+into CS50.
+
+18
+00:01:21,099 --> 00:01:23,349
+And we are so grateful to
+have had such a privilege
+
+19
+00:01:23,349 --> 00:01:27,039
+to work with the amazingly
+talented team here to indeed bring
+
+20
+00:01:27,040 --> 00:01:30,460
+this whole stage to life and evolve
+it over the course of the semester.
+
+21
+00:01:30,459 --> 00:01:32,289
+And then, of course,
+there's CS50'S team.
+
+22
+00:01:32,290 --> 00:01:34,360
+And though I'm the
+only one here on stage
+
+23
+00:01:34,359 --> 00:01:37,299
+with everyone else spread
+quite far apart this semester,
+
+24
+00:01:37,299 --> 00:01:42,219
+it would not be without CS50's team
+that we have the videos that we have,
+
+25
+00:01:42,219 --> 00:01:44,499
+the technology that we
+have, and all of the visuals
+
+26
+00:01:44,500 --> 00:01:47,169
+that supplement, hopefully,
+everything that you yourselves
+
+27
+00:01:47,170 --> 00:01:48,500
+have been doing hands on.
+
+28
+00:01:48,500 --> 00:01:53,820
+So thank you truly to both teams for
+having made this semester all possible.
+
+29
+00:01:53,819 --> 00:01:57,189
+These are suffice it to say, among
+the more unusual and difficult times.
+
+30
+00:01:57,189 --> 00:02:00,519
+And we hope, if you're watching this
+now live, or in some time from now,
+
+31
+00:02:00,519 --> 00:02:02,809
+that this finds everyone
+healthy and well.
+
+32
+00:02:02,810 --> 00:02:05,050
+And that, indeed, we have
+helped you find your way
+
+33
+00:02:05,049 --> 00:02:08,538
+along this path of
+learning something new.
+
+34
+00:02:08,538 --> 00:02:10,989
+Of course, there's more
+folks even than that
+
+35
+00:02:10,990 --> 00:02:13,160
+behind the scenes, CS50'S whole team.
+
+36
+00:02:13,159 --> 00:02:15,429
+And when I look out on the
+crowd here, really, there
+
+37
+00:02:15,430 --> 00:02:16,650
+is no crowd here in person.
+
+38
+00:02:16,650 --> 00:02:19,150
+And if you've wondered what it
+looks like behind the scenes,
+
+39
+00:02:19,150 --> 00:02:21,790
+pictured here is a
+photograph of exactly what
+
+40
+00:02:21,789 --> 00:02:24,399
+it is I am seeing when we
+hold each of these classes.
+
+41
+00:02:24,400 --> 00:02:27,100
+And indeed, if we Zoom in, when
+we're having these conversations
+
+42
+00:02:27,099 --> 00:02:30,279
+or answering or asking
+questions, it really is just us
+
+43
+00:02:30,280 --> 00:02:31,960
+and some TV screens here this year.
+
+44
+00:02:31,960 --> 00:02:35,320
+But we do look forward to
+all reuniting before long.
+
+45
+00:02:35,319 --> 00:02:37,939
+Now behind the scenes, there's
+indeed this whole team.
+
+46
+00:02:37,939 --> 00:02:40,569
+In fact, pictured here are
+just most of, but not even
+
+47
+00:02:40,569 --> 00:02:44,439
+all, CS50'S teaching Fellows, teaching
+assistants, and course assistants,
+
+48
+00:02:44,439 --> 00:02:48,519
+both at Harvard and at Yale, without
+whom this semester would also not
+
+49
+00:02:48,520 --> 00:02:49,028
+be possible.
+
+50
+00:02:49,027 --> 00:02:51,819
+Because they are, indeed, the
+backbone of and the support structure
+
+51
+00:02:51,819 --> 00:02:53,889
+for getting everyone
+ultimately to the finish
+
+52
+00:02:53,889 --> 00:02:56,259
+line with problem sets, labs, and more.
+
+53
+00:02:56,259 --> 00:02:59,739
+But it's worth noting
+that we are all fallible.
+
+54
+00:02:59,740 --> 00:03:02,050
+And, indeed, I'm told it's
+fairly instructive when
+
+55
+00:03:02,050 --> 00:03:05,950
+I do something completely wrong, or
+get a little befuddled here on stage
+
+56
+00:03:05,949 --> 00:03:09,009
+and can't quite figure out
+why my own code isn't working,
+
+57
+00:03:09,009 --> 00:03:11,799
+or can't quite answer a
+question off the top of my head.
+
+58
+00:03:11,800 --> 00:03:13,862
+This all happens,
+certainly, to all of us.
+
+59
+00:03:13,861 --> 00:03:15,819
+So even if you are feeling
+here, toward the end
+
+60
+00:03:15,819 --> 00:03:17,949
+of the semester, that not
+everything quite clicked
+
+61
+00:03:17,949 --> 00:03:20,829
+and you're still struggling sometimes
+to find that bug in your code,
+
+62
+00:03:20,830 --> 00:03:23,860
+or you're still googling or searching
+for some answer to some smaller
+
+63
+00:03:23,860 --> 00:03:27,280
+technical problem, rest assured,
+or take comfort in knowing,
+
+64
+00:03:27,280 --> 00:03:29,900
+that that is never
+really going to go away.
+
+65
+00:03:29,900 --> 00:03:32,740
+And in fact, to reinforce that,
+besides all of the mistakes
+
+66
+00:03:32,740 --> 00:03:36,250
+I here have made on stage, we thought
+we would share a little bit of a clip,
+
+67
+00:03:36,250 --> 00:03:40,089
+some bloopers if you will, from when the
+teaching staff some weeks ago prepared
+
+68
+00:03:40,090 --> 00:03:45,477
+that passing of TCP/IP packets on video,
+which worked out wonderfully well,
+
+69
+00:03:45,477 --> 00:03:47,560
+where folks were passing
+up, down, left and right.
+
+70
+00:03:47,560 --> 00:03:50,290
+The goal of which was to
+get three TCP/IP packets
+
+71
+00:03:50,289 --> 00:03:52,209
+from the bottom
+right-hand corner of Zoom
+
+72
+00:03:52,210 --> 00:03:53,948
+to the top left-hand corner of Zoom.
+
+73
+00:03:53,948 --> 00:03:56,740
+But we thought we would give you
+a glimpse of what actually went on
+
+74
+00:03:56,740 --> 00:03:58,990
+behind the scenes and just
+how many takes it took us
+
+75
+00:03:58,990 --> 00:04:00,970
+to get even that demonstration right.
+
+76
+00:04:00,969 --> 00:04:03,699
+I give you some of CS50'S team.
+
+77
+00:04:03,699 --> 00:04:04,599
+[VIDEO PLAYBACK]
+
+78
+00:04:04,599 --> 00:04:06,399
+- There we go.
+
+79
+00:04:06,400 --> 00:04:07,262
+Buffering.
+
+80
+00:04:07,262 --> 00:04:08,620
+OK.
+
+81
+00:04:08,620 --> 00:04:09,818
+Josh?
+
+82
+00:04:09,818 --> 00:04:11,803
+- Hi.
+
+83
+00:04:11,802 --> 00:04:14,049
+- Helen, oh!
+
+84
+00:04:14,050 --> 00:04:17,858
+[LAUGHTER]
+
+85
+00:04:17,858 --> 00:04:18,899
+- [INAUDIBLE].
+
+86
+00:04:18,899 --> 00:04:19,839
+No, wait.
+
+87
+00:04:19,838 --> 00:04:25,809
+
+
+88
+00:04:25,810 --> 00:04:26,860
+That was amazing, Josh.
+
+89
+00:04:26,860 --> 00:04:30,636
+
+
+90
+00:04:30,636 --> 00:04:34,164
+Um, Sophie?
+
+91
+00:04:34,163 --> 00:04:39,129
+[LAUGHTER]
+
+92
+00:04:39,129 --> 00:04:41,639
+Amazing.
+
+93
+00:04:41,639 --> 00:04:43,489
+That was perfect.
+
+94
+00:04:43,490 --> 00:04:44,532
+Moni?
+
+95
+00:04:44,531 --> 00:04:47,249
+[LAUGHTER]
+
+96
+00:04:47,250 --> 00:04:49,110
+I think I--
+
+97
+00:04:49,110 --> 00:04:52,220
+- [INAUDIBLE].
+
+98
+00:04:52,220 --> 00:04:53,338
+- Amazing.
+
+99
+00:04:53,338 --> 00:04:53,838
+- Guy?
+
+100
+00:04:53,838 --> 00:04:57,970
+
+
+101
+00:04:57,970 --> 00:04:59,050
+That was amazing.
+
+102
+00:04:59,050 --> 00:04:59,775
+Thank you all.
+
+103
+00:04:59,774 --> 00:05:00,809
+- So good!
+
+104
+00:05:00,810 --> 00:05:01,676
+[APPLAUSE]
+
+105
+00:05:01,675 --> 00:05:03,409
+[END PLAYBACK]
+
+106
+00:05:03,410 --> 00:05:06,870
+DAVID MALAN: So suffice it to say,
+computer science is hard for all of us.
+
+107
+00:05:06,870 --> 00:05:08,510
+And so some of these feelings,
+some of these frustrations
+
+108
+00:05:08,509 --> 00:05:09,634
+are never going to go away.
+
+109
+00:05:09,634 --> 00:05:12,536
+But hopefully you have, indeed,
+all the more tools in your toolkit,
+
+110
+00:05:12,536 --> 00:05:14,369
+all the more of a
+foundation now to build on
+
+111
+00:05:14,370 --> 00:05:18,290
+so that you can take comfort in being a
+little uncomfortable as you forge ahead
+
+112
+00:05:18,290 --> 00:05:20,270
+and solve new problems,
+learn new languages,
+
+113
+00:05:20,269 --> 00:05:22,489
+and ultimately pick up
+new ideas and skills.
+
+114
+00:05:22,490 --> 00:05:25,528
+But remember, for CS50
+alone, what ultimately
+
+115
+00:05:25,528 --> 00:05:27,320
+matters in this course
+is not so much where
+
+116
+00:05:27,319 --> 00:05:29,899
+you end up relative to your
+classmates, but where you end
+
+117
+00:05:29,899 --> 00:05:32,359
+up relative to yourself when you began.
+
+118
+00:05:32,360 --> 00:05:35,390
+And consider, it wasn't all
+that long ago that you began.
+
+119
+00:05:35,389 --> 00:05:38,179
+In fact, just some weeks
+ago was this perhaps,
+
+120
+00:05:38,180 --> 00:05:40,640
+the biggest of your problems
+in CS50, just trying
+
+121
+00:05:40,639 --> 00:05:42,949
+to figure out how to get
+the pyramid to align right,
+
+122
+00:05:42,949 --> 00:05:44,779
+whether you did the less
+comfortable version or the more
+
+123
+00:05:44,779 --> 00:05:47,389
+comfortable version, figuring
+out how to print spaces,
+
+124
+00:05:47,389 --> 00:05:50,749
+how to shift the pyramid over and the
+like, figuring out how to nest loops,
+
+125
+00:05:50,750 --> 00:05:54,140
+let alone getting all of the
+semicolons and compilation steps right.
+
+126
+00:05:54,139 --> 00:05:56,689
+And then, fast forward
+to just a week or two ago
+
+127
+00:05:56,689 --> 00:05:59,599
+when you built your very
+own web application, one
+
+128
+00:05:59,600 --> 00:06:03,350
+that used a third party API and
+pulled in nearly real time data
+
+129
+00:06:03,350 --> 00:06:06,800
+and generated views for the
+user, had a controller governing
+
+130
+00:06:06,800 --> 00:06:09,813
+with the model exactly all of the
+data you were reading and writing
+
+131
+00:06:09,812 --> 00:06:10,354
+and the like.
+
+132
+00:06:10,355 --> 00:06:15,432
+Like, that is a huge way to have gone
+over the course of just a few months.
+
+133
+00:06:15,432 --> 00:06:16,640
+So take comfort in that, too.
+
+134
+00:06:16,639 --> 00:06:18,556
+Especially as you dive
+into your final project
+
+135
+00:06:18,557 --> 00:06:21,680
+and might bump up against
+some more walls, those, too,
+
+136
+00:06:21,680 --> 00:06:24,470
+will you ultimately push through.
+
+137
+00:06:24,470 --> 00:06:27,380
+So what have we focused on over
+the course of this semester?
+
+138
+00:06:27,379 --> 00:06:30,549
+A lot of the times we've spent time
+talking about and doing programming.
+
+139
+00:06:30,550 --> 00:06:33,050
+But really, we'd like to think
+it's some of the higher level
+
+140
+00:06:33,050 --> 00:06:36,650
+ideas and the takeaways
+that are what last you
+
+141
+00:06:36,649 --> 00:06:39,199
+far longer than the
+particulars of these languages.
+
+142
+00:06:39,199 --> 00:06:42,679
+Whether it's Scratch or C or
+Python or JavaScript or SQL,
+
+143
+00:06:42,680 --> 00:06:46,340
+or any of the other practical tools
+that we looked at, all of those
+
+144
+00:06:46,339 --> 00:06:49,339
+are eventually in some form
+going to be out of date.
+
+145
+00:06:49,339 --> 00:06:52,159
+Or they might remain with
+us is older languages,
+
+146
+00:06:52,160 --> 00:06:54,745
+but newer and better
+things will come along.
+
+147
+00:06:54,745 --> 00:06:57,120
+And what we hope, then, is
+that over the past few months,
+
+148
+00:06:57,120 --> 00:07:01,430
+you've walked away with the fundamentals
+and sort of a foundation on which you
+
+149
+00:07:01,430 --> 00:07:04,280
+can bootstrap yourself to learn
+new things as they come out
+
+150
+00:07:04,279 --> 00:07:07,969
+and really reduce new things
+to their basic building blocks,
+
+151
+00:07:07,970 --> 00:07:11,300
+the puzzle pieces with which we
+began, first principles from which you
+
+152
+00:07:11,300 --> 00:07:14,880
+can infer how some new system,
+some new piece of hardware,
+
+153
+00:07:14,879 --> 00:07:17,179
+how some new language must surely work.
+
+154
+00:07:17,180 --> 00:07:20,360
+Because underneath the hood, at the
+end of the day, it's still going to be,
+
+155
+00:07:20,360 --> 00:07:23,160
+for some time, just 0's and 1's.
+
+156
+00:07:23,160 --> 00:07:26,510
+And so we introduced in Week 0,
+recall, computational thinking,
+
+157
+00:07:26,509 --> 00:07:29,989
+encouraging you to think more
+methodically, more algorithmically.
+
+158
+00:07:29,990 --> 00:07:33,530
+But really, computational thinking is
+just a computer scientist's incarnation
+
+159
+00:07:33,529 --> 00:07:36,289
+of what we might otherwise think
+of as just critical thinking.
+
+160
+00:07:36,290 --> 00:07:39,290
+This process is taking
+as input information
+
+161
+00:07:39,290 --> 00:07:41,810
+and producing as output some solution.
+
+162
+00:07:41,810 --> 00:07:45,050
+And in between there, of course, are
+our algorithms, the black box that's
+
+163
+00:07:45,050 --> 00:07:48,360
+doing something interesting and perhaps
+difficult. But at the end of the day,
+
+164
+00:07:48,360 --> 00:07:49,370
+this is problem solving.
+
+165
+00:07:49,370 --> 00:07:52,460
+And this isn't going anywhere,
+irrespective of the languages
+
+166
+00:07:52,459 --> 00:07:56,279
+that you use or pick up or even
+forget somewhere along the way.
+
+167
+00:07:56,279 --> 00:08:00,199
+And indeed, today, too, whether this
+is input and output in binary form,
+
+168
+00:08:00,199 --> 00:08:03,929
+or it's just information and
+decisions or facts and conclusions,
+
+169
+00:08:03,930 --> 00:08:06,620
+this process of taking
+input and producing
+
+170
+00:08:06,620 --> 00:08:09,500
+as output correct answers,
+correct conclusions,
+
+171
+00:08:09,500 --> 00:08:12,259
+correct decisions is hopefully
+going to be with you far
+
+172
+00:08:12,259 --> 00:08:15,139
+longer than the
+particulars of C or Python
+
+173
+00:08:15,139 --> 00:08:19,549
+or any of the more hands-on skills
+that we've spent time on this term.
+
+174
+00:08:19,550 --> 00:08:21,530
+And recall, too, that
+at least within CS50,
+
+175
+00:08:21,529 --> 00:08:27,499
+the tools with which we propose that you
+evaluate the quality of your approach
+
+176
+00:08:27,500 --> 00:08:30,740
+to problem solving are these
+three axes, the first and foremost
+
+177
+00:08:30,740 --> 00:08:32,090
+of which is surely correctness.
+
+178
+00:08:32,090 --> 00:08:35,640
+Because if it doesn't work, what's the
+point of it all in the first place?
+
+179
+00:08:35,639 --> 00:08:39,678
+So getting your code, your algorithm,
+your process from input to output
+
+180
+00:08:39,678 --> 00:08:41,899
+to be correct is certainly paramount.
+
+181
+00:08:41,899 --> 00:08:44,269
+But after that comes
+questions of design.
+
+182
+00:08:44,269 --> 00:08:46,729
+If you actually want to
+build more complex systems,
+
+183
+00:08:46,730 --> 00:08:49,670
+or solve more sophisticated
+problems, you really
+
+184
+00:08:49,669 --> 00:08:53,359
+do want to design your solutions
+to those problems cleanly.
+
+185
+00:08:53,360 --> 00:08:55,520
+You don't want them to
+be slow or inefficient.
+
+186
+00:08:55,519 --> 00:08:57,649
+You don't want them to
+be a mess in real terms.
+
+187
+00:08:57,649 --> 00:09:00,169
+You don't want your code to
+be completely undecipherable.
+
+188
+00:09:00,169 --> 00:09:03,829
+Because that's just going to hamper you
+longer term to using those same tools,
+
+189
+00:09:03,830 --> 00:09:05,970
+those same libraries to
+solve more interesting,
+
+190
+00:09:05,970 --> 00:09:07,340
+more sophisticated problems.
+
+191
+00:09:07,340 --> 00:09:09,560
+And it's surely going to
+make it harder to interface
+
+192
+00:09:09,559 --> 00:09:12,659
+with other people, other
+collaborators, and other systems.
+
+193
+00:09:12,659 --> 00:09:15,719
+And indeed along those lines,
+is style still important?
+
+194
+00:09:15,720 --> 00:09:18,470
+It's perhaps the third
+in this trio for us.
+
+195
+00:09:18,470 --> 00:09:22,160
+But it's the aesthetics of your code,
+and the indentation in the variables
+
+196
+00:09:22,159 --> 00:09:26,234
+and all that, much like you might
+convey in our human language,
+
+197
+00:09:26,235 --> 00:09:28,610
+put your best foot forward
+with punctuation and the like.
+
+198
+00:09:28,610 --> 00:09:31,127
+It just helps other
+people understand you.
+
+199
+00:09:31,126 --> 00:09:33,709
+And indeed, even though we spent
+a lot of our time interacting
+
+200
+00:09:33,710 --> 00:09:36,505
+with computers, in a course like
+this, at the end of the day,
+
+201
+00:09:36,504 --> 00:09:37,879
+you're really just communicating.
+
+202
+00:09:37,879 --> 00:09:41,029
+And whether you're communicating
+to a machine or to another human,
+
+203
+00:09:41,029 --> 00:09:44,119
+doing that cleanly and in a
+way that helps your ideas,
+
+204
+00:09:44,120 --> 00:09:48,380
+your solutions, become adopted
+is surely no less important
+
+205
+00:09:48,379 --> 00:09:50,709
+than some of these other ideas as well.
+
+206
+00:09:50,710 --> 00:09:52,460
+But what about other
+basic building blocks
+
+207
+00:09:52,460 --> 00:09:55,610
+that transcend the particular
+languages and pieces that we did?
+
+208
+00:09:55,610 --> 00:09:59,300
+Well, abstraction, this idea of
+taking fairly complicated ideas
+
+209
+00:09:59,299 --> 00:10:03,099
+and simplifying them so you don't
+have to worry about the lower level
+
+210
+00:10:03,100 --> 00:10:06,400
+implementation details, you
+can focus only on the solution
+
+211
+00:10:06,399 --> 00:10:09,939
+that that puzzle piece or that
+building block actually provides.
+
+212
+00:10:09,940 --> 00:10:12,220
+And abstraction is everywhere around us.
+
+213
+00:10:12,220 --> 00:10:15,850
+Certainly in code, we saw functions
+like get_string as an abstraction.
+
+214
+00:10:15,850 --> 00:10:16,690
+I don't know.
+
+215
+00:10:16,690 --> 00:10:18,790
+I don't really remember
+exactly how get_string
+
+216
+00:10:18,789 --> 00:10:21,219
+is implemented underneath the
+hood, let alone a function
+
+217
+00:10:21,220 --> 00:10:23,170
+that comes with C, like printf.
+
+218
+00:10:23,169 --> 00:10:24,217
+But I know that it works.
+
+219
+00:10:24,217 --> 00:10:25,509
+And I know that it takes input.
+
+220
+00:10:25,509 --> 00:10:26,919
+I know that it produces output.
+
+221
+00:10:26,919 --> 00:10:29,979
+And I can therefore build my
+own ideas, my own software,
+
+222
+00:10:29,980 --> 00:10:34,090
+on top of that building block,
+abstracting away those particulars.
+
+223
+00:10:34,090 --> 00:10:37,570
+And in the real world,
+too, we abstract things--
+
+224
+00:10:37,570 --> 00:10:42,070
+we abstract away things all of the
+time, taking a complex idea or a process
+
+225
+00:10:42,070 --> 00:10:43,870
+and assume that that will be done.
+
+226
+00:10:43,870 --> 00:10:45,200
+Someone else might do that.
+
+227
+00:10:45,200 --> 00:10:48,070
+And I can therefore build on
+the output of that process,
+
+228
+00:10:48,070 --> 00:10:51,700
+even if I am myself am no expert
+in the underlying implementation
+
+229
+00:10:51,700 --> 00:10:53,240
+details thereof.
+
+230
+00:10:53,240 --> 00:10:55,570
+But then there's
+precision, this other idea
+
+231
+00:10:55,570 --> 00:10:58,030
+where it's super important,
+certainly when writing code,
+
+232
+00:10:58,029 --> 00:11:02,139
+but also when talking to another human,
+to be precise and make super clear
+
+233
+00:11:02,139 --> 00:11:03,489
+what you mean.
+
+234
+00:11:03,490 --> 00:11:07,030
+And to consider the corner
+cases, to consider the inputs
+
+235
+00:11:07,029 --> 00:11:09,759
+that you might not otherwise
+expect, but might nonetheless
+
+236
+00:11:09,759 --> 00:11:13,809
+happen so that you don't err and
+have some unexpected behavior, as we
+
+237
+00:11:13,809 --> 00:11:15,999
+certainly did more than
+once in actual code.
+
+238
+00:11:16,000 --> 00:11:18,100
+And sometimes,
+abstractions and precisions
+
+239
+00:11:18,100 --> 00:11:19,665
+are kind of at odds with one another.
+
+240
+00:11:19,664 --> 00:11:21,789
+Because abstraction would
+sort of have you think at
+
+241
+00:11:21,789 --> 00:11:25,197
+and talk at a fairly high
+level, whereas precision
+
+242
+00:11:25,197 --> 00:11:27,489
+would suggest that you really
+should get into the weeds
+
+243
+00:11:27,490 --> 00:11:31,450
+and really go step by step by step
+when it comes to giving someone
+
+244
+00:11:31,450 --> 00:11:33,490
+else or a computer instructions.
+
+245
+00:11:33,490 --> 00:11:36,010
+And we thought we would
+bring this to life, perhaps,
+
+246
+00:11:36,009 --> 00:11:37,629
+with a couple of examples.
+
+247
+00:11:37,629 --> 00:11:40,629
+And we thought we would try to involve
+as many people as we can in this,
+
+248
+00:11:40,629 --> 00:11:43,419
+albeit from afar, by having
+everyone, if you can,
+
+249
+00:11:43,419 --> 00:11:45,871
+take out a piece of paper
+and a pen or pencil.
+
+250
+00:11:45,871 --> 00:11:47,829
+It's OK if you don't
+quite have that available.
+
+251
+00:11:47,830 --> 00:11:49,955
+You can do this on a
+computer, too, if you'd rather
+
+252
+00:11:49,955 --> 00:11:53,390
+draw on a notepad or a tablet, or
+something like that totally fine.
+
+253
+00:11:53,389 --> 00:11:56,349
+But ideally, taking out now something
+with which to draw and something
+
+254
+00:11:56,350 --> 00:11:57,940
+to draw on.
+
+255
+00:11:57,940 --> 00:12:00,700
+We're going to go ahead and
+try to apply some principles
+
+256
+00:12:00,700 --> 00:12:03,950
+of computational thinking and
+see just how helpful or hurtful
+
+257
+00:12:03,950 --> 00:12:09,680
+it is to use abstraction or
+precision at one level or another.
+
+258
+00:12:09,679 --> 00:12:12,249
+So I think to do this,
+Brian, we're going to need
+
+259
+00:12:12,250 --> 00:12:14,740
+a helping hand from the audience.
+
+260
+00:12:14,740 --> 00:12:17,650
+I think we're going
+to need for one person
+
+261
+00:12:17,649 --> 00:12:22,569
+out there to volunteer to
+write instructions verbally
+
+262
+00:12:22,570 --> 00:12:23,593
+for everyone else.
+
+263
+00:12:23,592 --> 00:12:25,509
+We're going to treat
+everyone in the audience,
+
+264
+00:12:25,509 --> 00:12:27,639
+or really, n minus 1
+people in the audience
+
+265
+00:12:27,639 --> 00:12:30,339
+as the computers today who
+are going to be programmed.
+
+266
+00:12:30,340 --> 00:12:33,850
+And we need one human
+volunteer to be the programmer.
+
+267
+00:12:33,850 --> 00:12:36,550
+And that programmer
+is going to be Daniel.
+
+268
+00:12:36,549 --> 00:12:38,739
+So Daniel, thank you for volunteering.
+
+269
+00:12:38,740 --> 00:12:42,280
+Brian, could we go ahead and share
+with Daniel, and only Daniel,
+
+270
+00:12:42,279 --> 00:12:46,162
+a picture of something that
+we want everyone else to draw?
+
+271
+00:12:46,163 --> 00:12:48,580
+So Daniel, what you should see
+on your screen in a moment,
+
+272
+00:12:48,580 --> 00:12:50,122
+if you haven't already, is a picture.
+
+273
+00:12:50,121 --> 00:12:51,879
+Don't tell anyone else what it is.
+
+274
+00:12:51,879 --> 00:12:54,999
+You may use any words in
+a moment that you want.
+
+275
+00:12:55,000 --> 00:12:57,653
+You should not use your hands
+or any gestures like that.
+
+276
+00:12:57,653 --> 00:13:00,070
+But the goal is going to be
+to write an algorithm verbally
+
+277
+00:13:00,070 --> 00:13:02,200
+for everyone else in
+the room, step by step,
+
+278
+00:13:02,200 --> 00:13:05,530
+so that ideally they
+draw what it is you see.
+
+279
+00:13:05,529 --> 00:13:08,799
+And you can say anything you want,
+but just no physical gestures.
+
+280
+00:13:08,799 --> 00:13:10,419
+Does that make sense?
+
+281
+00:13:10,419 --> 00:13:10,959
+- Got it.
+
+282
+00:13:10,960 --> 00:13:13,043
+And do you want to say a
+little bit about yourself
+
+283
+00:13:13,043 --> 00:13:14,727
+first to the group before we begin?
+
+284
+00:13:14,726 --> 00:13:15,309
+STUDENT: Sure.
+
+285
+00:13:15,309 --> 00:13:16,149
+My name's Daniel.
+
+286
+00:13:16,149 --> 00:13:20,589
+I'm from Ezra Stiles
+College at Yale University.
+
+287
+00:13:20,590 --> 00:13:22,915
+And I really CS50 this semester.
+
+288
+00:13:22,914 --> 00:13:24,039
+DAVID MALAN: Oh, wonderful.
+
+289
+00:13:24,039 --> 00:13:25,599
+Thank you for volunteering.
+
+290
+00:13:25,600 --> 00:13:29,290
+And let's go ahead and have
+everyone else with their paper
+
+291
+00:13:29,289 --> 00:13:30,639
+and pencil or pen ready.
+
+292
+00:13:30,639 --> 00:13:33,649
+Daniel, what should be the first
+thing everyone does, step one.
+
+293
+00:13:33,649 --> 00:13:34,149
+STUDENT: OK.
+
+294
+00:13:34,149 --> 00:13:38,679
+So the first thing we're
+going to draw is a hexagon.
+
+295
+00:13:38,679 --> 00:13:40,779
+So it's a regular hexagon.
+
+296
+00:13:40,779 --> 00:13:50,827
+And we're going to make sure that we
+draw it so that one of the vertices
+
+297
+00:13:50,827 --> 00:13:53,369
+is on the very bottom of the
+hexagon, and one of the vertices
+
+298
+00:13:53,370 --> 00:13:55,990
+is at the very top of the hexagon.
+
+299
+00:13:55,990 --> 00:13:58,210
+So one side is not laying flat.
+
+300
+00:13:58,210 --> 00:13:58,958
+You're doing--
+
+301
+00:13:58,957 --> 00:14:00,249
+DAVID MALAN: Wup, dut, dut dut.
+
+302
+00:14:00,250 --> 00:14:01,119
+No hand gestures.
+
+303
+00:14:01,120 --> 00:14:02,287
+STUDENT: No hands, no hands.
+
+304
+00:14:02,287 --> 00:14:03,400
+Right.
+
+305
+00:14:03,399 --> 00:14:06,939
+One vertice at the very top, one
+vertice is at the very bottom.
+
+306
+00:14:06,940 --> 00:14:10,850
+And you've got your other
+four vertices on the sides.
+
+307
+00:14:10,850 --> 00:14:13,870
+So once you've got your
+hexagon, your next step
+
+308
+00:14:13,870 --> 00:14:18,580
+is going to be find your
+midpoint of the hexagon.
+
+309
+00:14:18,580 --> 00:14:20,740
+And so once you've found
+your midpoint, you're
+
+310
+00:14:20,740 --> 00:14:26,080
+going to draw three lines from
+a vertices to that midpoint.
+
+311
+00:14:26,080 --> 00:14:29,440
+The vertices that you're
+going to choose to draw from
+
+312
+00:14:29,440 --> 00:14:37,510
+are the very bottom to the midpoint and
+then from the midpoint to the vertices
+
+313
+00:14:37,509 --> 00:14:42,141
+that are on the left and
+right of the top vertices.
+
+314
+00:14:42,142 --> 00:14:43,100
+DAVID MALAN: All right.
+
+315
+00:14:43,100 --> 00:14:46,720
+Any final instructions?
+
+316
+00:14:46,720 --> 00:14:48,858
+STUDENT: I think, hopefully,
+that should be it.
+
+317
+00:14:48,857 --> 00:14:49,899
+DAVID MALAN: [INAUDIBLE].
+
+318
+00:14:49,899 --> 00:14:51,669
+Those were very long steps one and two.
+
+319
+00:14:51,669 --> 00:14:53,229
+But yes.
+
+320
+00:14:53,230 --> 00:14:55,690
+All right, well, let's
+go ahead and reveal.
+
+321
+00:14:55,690 --> 00:14:57,310
+This will be a little bit of a hack.
+
+322
+00:14:57,309 --> 00:14:59,889
+But if anyone everyone
+is comfortable picking up
+
+323
+00:14:59,889 --> 00:15:02,309
+their piece of paper or
+their tablet and holding it
+
+324
+00:15:02,309 --> 00:15:07,979
+in front of their Zoom camera
+steadily for five or 10 seconds,
+
+325
+00:15:07,980 --> 00:15:11,100
+we'll see exactly what
+everyone has drawn.
+
+326
+00:15:11,100 --> 00:15:13,950
+If you go into gallery view, you'll
+be able to see everyone else.
+
+327
+00:15:13,950 --> 00:15:17,220
+Daniel, hopefully you're
+seeing some familiar pictures?
+
+328
+00:15:17,220 --> 00:15:19,940
+I think we definitely have range.
+
+329
+00:15:19,940 --> 00:15:22,547
+Are you seeing one or more that
+match what you had in mind?
+
+330
+00:15:22,547 --> 00:15:23,130
+STUDENT: Yeah.
+
+331
+00:15:23,129 --> 00:15:24,209
+They all look pretty good.
+
+332
+00:15:24,210 --> 00:15:24,900
+DAVID MALAN: They all?
+
+333
+00:15:24,899 --> 00:15:25,899
+All right, so good.
+
+334
+00:15:25,899 --> 00:15:28,019
+Let me go ahead, then,
+and share on my screen
+
+335
+00:15:28,019 --> 00:15:31,189
+in just a moment what it
+is Daniel was describing.
+
+336
+00:15:31,190 --> 00:15:34,260
+So what Brian had shared with
+Daniel in advance was this picture
+
+337
+00:15:34,259 --> 00:15:38,489
+here, which I dare say is a cube.
+
+338
+00:15:38,490 --> 00:15:42,360
+But indeed, it's composed of a
+hexagon and then the additional lines
+
+339
+00:15:42,360 --> 00:15:43,410
+that Daniel described.
+
+340
+00:15:43,409 --> 00:15:47,669
+And Daniel, I did happen to see, maybe
+on pages two and three of the Zoom
+
+341
+00:15:47,669 --> 00:15:52,589
+window, there were definitely
+some that weren't quite cubes.
+
+342
+00:15:52,590 --> 00:15:57,330
+What was going through your
+mind as to how you approached
+
+343
+00:15:57,330 --> 00:15:59,420
+the algorithm that you provided?
+
+344
+00:15:59,419 --> 00:16:02,249
+STUDENT: I wanted to--
+
+345
+00:16:02,250 --> 00:16:05,040
+to me, the first thing that
+went through my head was a cube.
+
+346
+00:16:05,039 --> 00:16:08,039
+But I knew that there's so
+many ways to draw a cube.
+
+347
+00:16:08,039 --> 00:16:09,979
+I didn't want to describe it as a cube.
+
+348
+00:16:09,980 --> 00:16:11,730
+Because if I said just
+draw a cube, I knew
+
+349
+00:16:11,730 --> 00:16:13,990
+that we would get tons
+of different results.
+
+350
+00:16:13,990 --> 00:16:16,260
+So I wanted to be as clear as possible.
+
+351
+00:16:16,259 --> 00:16:21,029
+And I knew that if I could describe
+it in sort of a mathematical way,
+
+352
+00:16:21,029 --> 00:16:23,504
+describing it with a
+hexagon and describing it
+
+353
+00:16:23,504 --> 00:16:27,689
+with the vertices in the midpoint,
+that hopefully more people would
+
+354
+00:16:27,690 --> 00:16:29,790
+be able to draw a precise shape.
+
+355
+00:16:29,789 --> 00:16:30,539
+DAVID MALAN: Yeah.
+
+356
+00:16:30,539 --> 00:16:31,349
+Really well said.
+
+357
+00:16:31,350 --> 00:16:33,420
+Now if we had everyone's
+volume on, odd are,
+
+358
+00:16:33,419 --> 00:16:35,519
+you'd hear a bit of
+chuckling now, perhaps,
+
+359
+00:16:35,519 --> 00:16:37,382
+or maybe a little bit of awkwardness.
+
+360
+00:16:37,383 --> 00:16:40,050
+And I daresay not all of the
+pictures quite turned out that way,
+
+361
+00:16:40,049 --> 00:16:43,109
+but that's a perfect example of where
+maybe abstractions can kind of get us
+
+362
+00:16:43,110 --> 00:16:43,652
+into trouble.
+
+363
+00:16:43,652 --> 00:16:47,190
+Because if Daniel had just said,
+draw a cube, right, some of you
+
+364
+00:16:47,190 --> 00:16:48,833
+might start drawing immediately a cube.
+
+365
+00:16:48,832 --> 00:16:51,999
+But many of you would have a question,
+well, what should the orientation be?
+
+366
+00:16:52,000 --> 00:16:52,900
+What should the size be?
+
+367
+00:16:52,899 --> 00:16:53,819
+What should the position be?
+
+368
+00:16:53,820 --> 00:16:56,350
+And so there, precision
+becomes increasingly important.
+
+369
+00:16:56,350 --> 00:16:58,562
+But the more precise it
+gets, odds are some of you
+
+370
+00:16:58,562 --> 00:17:01,770
+just kind of got overwhelmed with the
+amount of detail and sort of lost track
+
+371
+00:17:01,769 --> 00:17:04,439
+where your pen or pencil was
+supposed to be at one point
+
+372
+00:17:04,440 --> 00:17:07,190
+because you were operating
+at a much lower level.
+
+373
+00:17:07,190 --> 00:17:08,910
+So there's this tension, then.
+
+374
+00:17:08,910 --> 00:17:11,410
+But I think we did get some
+of you to that finish line.
+
+375
+00:17:11,410 --> 00:17:13,530
+Let's see if we can't now take
+the pressure off of all of you,
+
+376
+00:17:13,529 --> 00:17:15,404
+and thank you to Daniel,
+in particular, let's
+
+377
+00:17:15,404 --> 00:17:19,034
+see if we can't now have all of you
+collectively program me, if you will.
+
+378
+00:17:19,035 --> 00:17:21,160
+So I'm going to go ahead
+and pull up my screen here
+
+379
+00:17:21,160 --> 00:17:25,900
+where I have the ability to draw with
+my mouse and cursor on my screen here.
+
+380
+00:17:25,900 --> 00:17:29,190
+And Brian, if you don't mind,
+could you share with everyone
+
+381
+00:17:29,190 --> 00:17:34,560
+else a picture that I promise
+I have not seen in advance.
+
+382
+00:17:34,559 --> 00:17:35,889
+So we will see how this goes.
+
+383
+00:17:35,890 --> 00:17:38,280
+So I'm the only one right
+now in the Zoom room
+
+384
+00:17:38,279 --> 00:17:39,989
+that has not seen this picture.
+
+385
+00:17:39,990 --> 00:17:42,930
+But Brian has gone and provided
+only you all with the URL.
+
+386
+00:17:42,930 --> 00:17:44,640
+So pull that up on your screen.
+
+387
+00:17:44,640 --> 00:17:47,760
+And then, Brian, if we could perhaps
+iteratively call on some volunteers.
+
+388
+00:17:47,759 --> 00:17:52,476
+Why don't I try to draw what
+people tell me to do, step by step?
+
+389
+00:17:52,477 --> 00:17:53,310
+BRIAN YU: All right.
+
+390
+00:17:53,309 --> 00:17:54,329
+David has not seen this.
+
+391
+00:17:54,329 --> 00:17:56,759
+I just picked this out,
+like, five minutes ago.
+
+392
+00:17:56,759 --> 00:17:59,676
+And you're all going to raise your
+hand if you want to give him, like,
+
+393
+00:17:59,676 --> 00:18:01,559
+one instruction for what to do next.
+
+394
+00:18:01,559 --> 00:18:03,779
+And let's start with George.
+
+395
+00:18:03,779 --> 00:18:06,569
+STUDENT: So you're going
+to start by drawing
+
+396
+00:18:06,569 --> 00:18:09,592
+a circle near the top of the screen.
+
+397
+00:18:09,593 --> 00:18:10,260
+DAVID MALAN: OK.
+
+398
+00:18:10,259 --> 00:18:11,969
+A circle near the top of the screen.
+
+399
+00:18:11,970 --> 00:18:15,100
+And let me make clear, I have no
+delete abilities on the computer.
+
+400
+00:18:15,099 --> 00:18:16,649
+So once I commit, we're in.
+
+401
+00:18:16,650 --> 00:18:20,940
+So drawing a circle near
+the top of the screen.
+
+402
+00:18:20,940 --> 00:18:21,720
+OK.
+
+403
+00:18:21,720 --> 00:18:22,710
+Thank you, George.
+
+404
+00:18:22,710 --> 00:18:23,820
+Brian, step two?
+
+405
+00:18:23,819 --> 00:18:25,749
+BRIAN YU: All right,
+let's go to Sophia next.
+
+406
+00:18:25,750 --> 00:18:32,799
+STUDENT: Then, in the very center of the
+screen, door a black, filled in circle,
+
+407
+00:18:32,799 --> 00:18:36,232
+which is approximately a tenth of
+the size of the circle at the top.
+
+408
+00:18:36,232 --> 00:18:36,899
+DAVID MALAN: OK.
+
+409
+00:18:36,900 --> 00:18:41,710
+A black, filled in circle, I
+heard, that's a tenth of the size.
+
+410
+00:18:41,710 --> 00:18:46,580
+So I'm going to do something like this,
+and then just kind of shade it in.
+
+411
+00:18:46,579 --> 00:18:48,109
+All right, thank you, Sophia.
+
+412
+00:18:48,109 --> 00:18:48,799
+Step three?
+
+413
+00:18:48,799 --> 00:18:50,269
+BRIAN YU: Let's go to Santiago.
+
+414
+00:18:50,269 --> 00:18:55,289
+STUDENT: You're going
+to draw another circle.
+
+415
+00:18:55,289 --> 00:18:57,439
+But it's not actually
+going to be a circle,
+
+416
+00:18:57,440 --> 00:19:04,190
+it's more of an ellipse, that's going
+to be bigger than the first one.
+
+417
+00:19:04,190 --> 00:19:05,610
+So it's going to be in the middle.
+
+418
+00:19:05,609 --> 00:19:08,359
+And it's going to enclose
+that filled in circle
+
+419
+00:19:08,359 --> 00:19:10,722
+and leave some room in the bottom.
+
+420
+00:19:10,722 --> 00:19:11,389
+DAVID MALAN: OK.
+
+421
+00:19:11,390 --> 00:19:12,182
+So it's an ellipse.
+
+422
+00:19:12,182 --> 00:19:14,670
+It's bigger than the first circle.
+
+423
+00:19:14,670 --> 00:19:18,320
+But it encloses the smaller one?
+
+424
+00:19:18,319 --> 00:19:20,104
+All right, so I heard kind of this.
+
+425
+00:19:20,105 --> 00:19:23,560
+
+
+426
+00:19:23,559 --> 00:19:26,259
+OK.
+
+427
+00:19:26,259 --> 00:19:27,909
+Step 4?
+
+428
+00:19:27,910 --> 00:19:30,280
+STUDENT: Under that
+smaller ellipse, you're
+
+429
+00:19:30,279 --> 00:19:35,109
+going to want to draw a
+bigger circle underneath it
+
+430
+00:19:35,109 --> 00:19:38,019
+and act as if the circle is
+going through that ellipse,
+
+431
+00:19:38,019 --> 00:19:41,319
+but don't actually show the
+lines going through the ellipse.
+
+432
+00:19:41,319 --> 00:19:44,589
+So that is, we draw a bigger circle
+underneath, but without having
+
+433
+00:19:44,589 --> 00:19:46,239
+the lines go through.
+
+434
+00:19:46,240 --> 00:19:50,250
+It looks like it will kind of
+be going through the edge of it.
+
+435
+00:19:50,250 --> 00:19:51,270
+DAVID MALAN: OK.
+
+436
+00:19:51,269 --> 00:20:01,849
+I'm a little worried here, but
+what I heard was like this, maybe?
+
+437
+00:20:01,849 --> 00:20:03,619
+Step five?
+
+438
+00:20:03,619 --> 00:20:07,189
+BRIAN YU: All right, let's
+go to [INAUDIBLE] next.
+
+439
+00:20:07,190 --> 00:20:11,060
+STUDENT: So in that
+kind of middle ellipse,
+
+440
+00:20:11,059 --> 00:20:14,001
+you know, like, when kids
+act like they're an airplane,
+
+441
+00:20:14,001 --> 00:20:15,709
+and then they make,
+like, airplane noise,
+
+442
+00:20:15,710 --> 00:20:17,627
+then they do that weird
+thing with their arms?
+
+443
+00:20:17,626 --> 00:20:18,829
+DAVID MALAN: Uh huh.
+
+444
+00:20:18,829 --> 00:20:21,889
+STUDENT: So draw those kind of,
+like, arms in that middle ellipse,
+
+445
+00:20:21,890 --> 00:20:24,152
+coming out of the big middle ellipse.
+
+446
+00:20:24,152 --> 00:20:25,610
+DAVID MALAN: In the middle ellipse?
+
+447
+00:20:25,609 --> 00:20:28,009
+This lower one?
+
+448
+00:20:28,009 --> 00:20:29,959
+STUDENT: The one outside of it.
+
+449
+00:20:29,960 --> 00:20:32,720
+DAVID MALAN: Oh, this big ellipse?
+
+450
+00:20:32,720 --> 00:20:34,050
+STUDENT: Yeah, the outer bound.
+
+451
+00:20:34,049 --> 00:20:34,549
+Yeah.
+
+452
+00:20:34,549 --> 00:20:37,882
+DAVID MALAN: All right, so I should draw
+some hands like a kid would have when--
+
+453
+00:20:37,883 --> 00:20:42,400
+
+
+454
+00:20:42,400 --> 00:20:43,570
+OK.
+
+455
+00:20:43,569 --> 00:20:45,526
+I'm not sure this is going to end well.
+
+456
+00:20:45,527 --> 00:20:46,360
+BRIAN YU: All right.
+
+457
+00:20:46,359 --> 00:20:49,179
+We need some more volunteers
+to help David finish this.
+
+458
+00:20:49,180 --> 00:20:51,420
+Let's go to Gabrielle.
+
+459
+00:20:51,420 --> 00:20:52,590
+STUDENT: OK.
+
+460
+00:20:52,589 --> 00:20:55,146
+Try to draw a--
+
+461
+00:20:55,146 --> 00:20:56,771
+DAVID MALAN: Try is the operative word.
+
+462
+00:20:56,771 --> 00:20:58,499
+[LAUGHTER]
+
+463
+00:20:58,500 --> 00:21:00,344
+STUDENT: You've got a
+bigger ellipse that's
+
+464
+00:21:00,345 --> 00:21:04,110
+at the very bottom, that's bigger
+than both the top and middle one,
+
+465
+00:21:04,109 --> 00:21:07,619
+but showing no overlapping lines
+between the middle one and the one
+
+466
+00:21:07,619 --> 00:21:08,579
+that you're trying.
+
+467
+00:21:08,579 --> 00:21:10,439
+DAVID MALAN: So show
+no overlapping lines.
+
+468
+00:21:10,440 --> 00:21:12,460
+So I heard an even bigger ellipse.
+
+469
+00:21:12,460 --> 00:21:14,640
+So, like, oops, sorry.
+
+470
+00:21:14,640 --> 00:21:15,540
+This?
+
+471
+00:21:15,539 --> 00:21:16,709
+OK?
+
+472
+00:21:16,710 --> 00:21:17,550
+STUDENT: Good job.
+
+473
+00:21:17,549 --> 00:21:18,149
+DAVID MALAN: Thank you.
+
+474
+00:21:18,150 --> 00:21:18,570
+OK.
+
+475
+00:21:18,569 --> 00:21:18,869
+Good.
+
+476
+00:21:18,869 --> 00:21:20,609
+Keep the positive reinforcement coming.
+
+477
+00:21:20,609 --> 00:21:21,861
+Final couple steps?
+
+478
+00:21:21,862 --> 00:21:22,695
+BRIAN YU: All right.
+
+479
+00:21:22,694 --> 00:21:23,636
+[? Ika? ?]
+
+480
+00:21:23,636 --> 00:21:25,469
+STUDENT: One other step
+you would have to do
+
+481
+00:21:25,470 --> 00:21:30,840
+is draw a small, filled in circle,
+slightly smaller than the one
+
+482
+00:21:30,839 --> 00:21:34,229
+you already drew, right in
+the center of the first circle
+
+483
+00:21:34,230 --> 00:21:35,883
+you drew right at the top.
+
+484
+00:21:35,883 --> 00:21:36,550
+DAVID MALAN: OK.
+
+485
+00:21:36,549 --> 00:21:38,216
+Right in the center of the first circle.
+
+486
+00:21:38,217 --> 00:21:38,820
+OK.
+
+487
+00:21:38,819 --> 00:21:41,159
+And I think this is starting
+to take shape for me.
+
+488
+00:21:41,160 --> 00:21:44,013
+And I regret some of
+my earlier decisions.
+
+489
+00:21:44,012 --> 00:21:46,929
+BRIAN YU: [INAUDIBLE],, you want to
+provide an additional instruction?
+
+490
+00:21:46,930 --> 00:21:49,472
+STUDENT: Another circle in
+between the last one you just drew
+
+491
+00:21:49,471 --> 00:21:53,519
+and in between the
+edge of the circle, so
+
+492
+00:21:53,519 --> 00:21:56,489
+to the left of that circle you're
+going to draw another circle.
+
+493
+00:21:56,490 --> 00:21:59,550
+DAVID MALAN: To the left of this circle?
+
+494
+00:21:59,549 --> 00:22:00,389
+STUDENT: Mhm.
+
+495
+00:22:00,390 --> 00:22:01,057
+DAVID MALAN: OK.
+
+496
+00:22:01,057 --> 00:22:03,380
+
+
+497
+00:22:03,380 --> 00:22:05,150
+BRIAN YU: And Ryan?
+
+498
+00:22:05,150 --> 00:22:08,730
+STUDENT: Underneath, you're going
+to want to repeat the same process,
+
+499
+00:22:08,730 --> 00:22:10,850
+except draw a circle on the right side.
+
+500
+00:22:10,849 --> 00:22:12,279
+DAVID MALAN: OK.
+
+501
+00:22:12,279 --> 00:22:13,257
+Little loop.
+
+502
+00:22:13,258 --> 00:22:15,800
+BRIAN YU: I think we've got
+maybe one or two more steps left.
+
+503
+00:22:15,799 --> 00:22:17,199
+Let's go back to Sophia.
+
+504
+00:22:17,200 --> 00:22:22,130
+STUDENT: Underneath the filled in
+circle, that's in the middle ellipse,
+
+505
+00:22:22,130 --> 00:22:25,360
+you want to draw two
+replicas of that circle
+
+506
+00:22:25,359 --> 00:22:28,629
+below the original one
+in the middle ellipse.
+
+507
+00:22:28,630 --> 00:22:33,310
+DAVID MALAN: In the middle
+ellipse, so here, OK.
+
+508
+00:22:33,309 --> 00:22:35,529
+I think I know what this is.
+
+509
+00:22:35,529 --> 00:22:37,869
+BRIAN YU: And Jason, how
+about one last instruction?
+
+510
+00:22:37,869 --> 00:22:39,609
+DAVID MALAN: All right.
+
+511
+00:22:39,609 --> 00:22:42,099
+STUDENT: Underneath,
+in the top most circle,
+
+512
+00:22:42,099 --> 00:22:46,839
+under the three, so the row of
+three circles, draw a wide V,
+
+513
+00:22:46,839 --> 00:22:48,849
+sort of shaped with two straight lines.
+
+514
+00:22:48,849 --> 00:22:51,999
+DAVID MALAN: A wide V
+with two straight lines.
+
+515
+00:22:52,000 --> 00:22:52,750
+OK.
+
+516
+00:22:52,750 --> 00:22:54,930
+That part, I think, I nailed.
+
+517
+00:22:54,930 --> 00:22:57,640
+Shall I switch over and reveal?
+
+518
+00:22:57,640 --> 00:23:00,130
+So this is the URL I believe
+all of you were given.
+
+519
+00:23:00,130 --> 00:23:01,510
+I have not visited it yet.
+
+520
+00:23:01,509 --> 00:23:04,779
+But if I go and visit this now.
+
+521
+00:23:04,779 --> 00:23:06,909
+Hey, that's not all that bad.
+
+522
+00:23:06,910 --> 00:23:09,245
+All right, I definitely took
+a detour partway through.
+
+523
+00:23:09,244 --> 00:23:10,369
+But here's another example.
+
+524
+00:23:10,369 --> 00:23:13,839
+Had you just started with draw
+a snowman as follows, like,
+
+525
+00:23:13,839 --> 00:23:16,599
+that might have helped orient
+me, truthfully, similar in spirit
+
+526
+00:23:16,599 --> 00:23:20,196
+to Daniel's design that would have
+given you a mental model of what I,
+
+527
+00:23:20,196 --> 00:23:23,029
+or given me a mental model of what
+it is I should have been drawing.
+
+528
+00:23:23,029 --> 00:23:25,089
+So here, too, abstraction is hard.
+
+529
+00:23:25,089 --> 00:23:28,839
+And even precision is hard and
+figuring out the right level of detail
+
+530
+00:23:28,839 --> 00:23:32,229
+to operate at is kind of part of
+the process of problem solving.
+
+531
+00:23:32,230 --> 00:23:34,780
+Though, now that I look at it,
+that's actually not half bad.
+
+532
+00:23:34,779 --> 00:23:36,821
+Like, I definitely did
+the wrong thing over here.
+
+533
+00:23:36,821 --> 00:23:40,389
+But very well done to all
+of our volunteers online.
+
+534
+00:23:40,390 --> 00:23:43,060
+So remember these kinds
+of details when you're
+
+535
+00:23:43,059 --> 00:23:46,177
+trying to explain some process to
+someone, when you're giving someone
+
+536
+00:23:46,178 --> 00:23:48,970
+instructions, even if it's for
+something mundane in the real world,
+
+537
+00:23:48,970 --> 00:23:53,470
+like going to run errands or pick up
+supplies at the market, being precise
+
+538
+00:23:53,470 --> 00:23:56,830
+is certainly important, but the more
+precision you provide, the much easier
+
+539
+00:23:56,829 --> 00:23:59,869
+it is for the person to
+get lost in those weeds.
+
+540
+00:23:59,869 --> 00:24:05,029
+And so sometimes a higher level list of
+details is all that someone might need.
+
+541
+00:24:05,029 --> 00:24:07,946
+So now that you have this ability
+to program and to do things
+
+542
+00:24:07,946 --> 00:24:10,029
+that we've shown you in
+lectures and problem sets,
+
+543
+00:24:10,029 --> 00:24:11,799
+and indeed, have the
+ability to figure out
+
+544
+00:24:11,799 --> 00:24:13,869
+how to do things that we
+haven't even shown you,
+
+545
+00:24:13,869 --> 00:24:17,349
+we wanted to take a moment to consider
+just whether you should do those things
+
+546
+00:24:17,349 --> 00:24:19,219
+and, if you should,
+how you should do them.
+
+547
+00:24:19,220 --> 00:24:21,970
+But beyond just answering these
+questions with your own instincts,
+
+548
+00:24:21,970 --> 00:24:24,012
+we thought we would invite
+some of our colleagues
+
+549
+00:24:24,011 --> 00:24:27,279
+from the Philosophy department to
+propose a more formal framework,
+
+550
+00:24:27,279 --> 00:24:29,739
+a thought process by which
+we can approach problems
+
+551
+00:24:29,740 --> 00:24:32,050
+when it comes to technology
+and the writing of code
+
+552
+00:24:32,049 --> 00:24:36,079
+to help us decide, ultimately,
+just because I can code something,
+
+553
+00:24:36,079 --> 00:24:39,819
+should I, and if so, indeed,
+how should I do that?
+
+554
+00:24:39,819 --> 00:24:43,089
+So allow me to introduce our colleagues
+from the Philosophy department, Meica
+
+555
+00:24:43,089 --> 00:24:45,609
+Magnani and also Susan Kennedy.
+
+556
+00:24:45,609 --> 00:24:46,599
+Meica?
+
+557
+00:24:46,599 --> 00:24:47,589
+MEICA MAGNANI: So hi.
+
+558
+00:24:47,589 --> 00:24:48,999
+I'm Meica Magnani.
+
+559
+00:24:49,000 --> 00:24:52,689
+I am a philosophy postdoc with
+the Embedded Ethics Program
+
+560
+00:24:52,690 --> 00:24:53,380
+here at Harvard.
+
+561
+00:24:53,380 --> 00:24:54,130
+SUSAN KENNEDY: Hi.
+
+562
+00:24:54,130 --> 00:24:54,910
+I'm Susan Kennedy.
+
+563
+00:24:54,910 --> 00:24:59,020
+And I'm also a philosophy postdoc with
+the Embedded Ethics Program at Harvard.
+
+564
+00:24:59,019 --> 00:25:01,039
+MEICA MAGNANI: And
+before we get started,
+
+565
+00:25:01,039 --> 00:25:03,859
+I'll just say a few things about
+the Embedded Ethics Program.
+
+566
+00:25:03,859 --> 00:25:08,379
+So we are an interdisciplinary
+team of philosophers and computer
+
+567
+00:25:08,380 --> 00:25:12,250
+scientists working together to integrate
+ethics into the computer science
+
+568
+00:25:12,250 --> 00:25:13,570
+curriculum.
+
+569
+00:25:13,569 --> 00:25:17,919
+The idea behind this approach is
+to embed tools of ethical reasoning
+
+570
+00:25:17,920 --> 00:25:21,040
+into computer science
+courses themselves.
+
+571
+00:25:21,039 --> 00:25:25,539
+The reason for this is that when making
+decisions about the design, deployment,
+
+572
+00:25:25,539 --> 00:25:30,129
+or development of a piece of technology,
+one is, whether or not one realizes it,
+
+573
+00:25:30,130 --> 00:25:31,990
+making ethical decisions.
+
+574
+00:25:31,990 --> 00:25:35,210
+That is, making decisions which
+stand to have social, political,
+
+575
+00:25:35,210 --> 00:25:36,612
+or human impact.
+
+576
+00:25:36,612 --> 00:25:39,070
+At Harvard, we think it's
+important for computer scientists
+
+577
+00:25:39,069 --> 00:25:42,729
+to be equipped with tools for
+thinking through these implications.
+
+578
+00:25:42,730 --> 00:25:45,730
+SUSAN KENNEDY: Technology holds a
+lot of power and influence over us.
+
+579
+00:25:45,730 --> 00:25:49,938
+And that means, by extension, that the
+people who design technology do, too.
+
+580
+00:25:49,938 --> 00:25:52,480
+Now that you're starting to
+think about what responsibilities
+
+581
+00:25:52,480 --> 00:25:54,940
+you might have as computer
+scientists, so you
+
+582
+00:25:54,940 --> 00:25:58,570
+can avoid notable mishaps,
+like face mash, for instance,
+
+583
+00:25:58,569 --> 00:26:01,959
+we're going to turn your attention to
+the topic of social media platforms
+
+584
+00:26:01,960 --> 00:26:04,420
+and how they affect the
+distribution of and engagement
+
+585
+00:26:04,420 --> 00:26:07,010
+with news and information.
+
+586
+00:26:07,009 --> 00:26:09,259
+It would seem that this
+topic is especially relevant
+
+587
+00:26:09,259 --> 00:26:13,369
+now, given the recent US presidential
+election, where political content has
+
+588
+00:26:13,369 --> 00:26:17,119
+been dominating the internet and
+television broadcasts and controversy
+
+589
+00:26:17,119 --> 00:26:19,879
+has played out on social
+media, garnering attention
+
+590
+00:26:19,880 --> 00:26:21,930
+from around the world.
+
+591
+00:26:21,930 --> 00:26:24,840
+Undoubtedly, technology has
+completely revolutionized
+
+592
+00:26:24,839 --> 00:26:28,739
+the way information and news is
+both disseminated and consumed.
+
+593
+00:26:28,740 --> 00:26:32,370
+Instead of a paper boy shouting, get
+your news here on the street corner,
+
+594
+00:26:32,369 --> 00:26:34,589
+just about everyone uses
+the internet to stay up
+
+595
+00:26:34,589 --> 00:26:39,249
+to date with what's happening, not
+just locally, but around the world.
+
+596
+00:26:39,250 --> 00:26:42,790
+And in the past few years, social
+media platforms, in particular,
+
+597
+00:26:42,789 --> 00:26:46,239
+have started to play a huge role
+in how people access, share,
+
+598
+00:26:46,240 --> 00:26:48,460
+and engage with information.
+
+599
+00:26:48,460 --> 00:26:52,630
+For instance, research
+shows that 44% of US adults
+
+600
+00:26:52,630 --> 00:26:55,850
+report getting the news from Facebook.
+
+601
+00:26:55,849 --> 00:26:58,849
+It's safe to say a lot has
+changed in recent years,
+
+602
+00:26:58,849 --> 00:27:01,229
+owing to developments in technology.
+
+603
+00:27:01,230 --> 00:27:05,030
+And this matters when we consider
+what's at stake, namely, the ability
+
+604
+00:27:05,029 --> 00:27:07,009
+for the public to
+engage in discourse that
+
+605
+00:27:07,009 --> 00:27:09,949
+supports a well-functioning democracy.
+
+606
+00:27:09,950 --> 00:27:13,280
+So I'll first present you a brief
+overview of where we came from
+
+607
+00:27:13,279 --> 00:27:16,429
+and where we are now, owing
+to technological developments
+
+608
+00:27:16,430 --> 00:27:20,220
+and then consider what challenges
+we're faced with today.
+
+609
+00:27:20,220 --> 00:27:22,530
+Before the internet,
+news and information
+
+610
+00:27:22,529 --> 00:27:26,669
+was almost entirely in the hands of a
+few major broadcast stations and print
+
+611
+00:27:26,670 --> 00:27:31,020
+media outlets, otherwise known
+as the mass media sphere.
+
+612
+00:27:31,019 --> 00:27:34,109
+Since a few organizations were
+responsible for disseminating
+
+613
+00:27:34,109 --> 00:27:37,229
+all the news, information
+was essentially
+
+614
+00:27:37,230 --> 00:27:40,110
+filtered through a narrow
+lens or narrow aperture
+
+615
+00:27:40,109 --> 00:27:44,079
+from organizations to
+a wide public audience.
+
+616
+00:27:44,079 --> 00:27:46,899
+The journalists who are responsible
+for researching and writing
+
+617
+00:27:46,900 --> 00:27:51,680
+the content for these organizations
+all shared a professional ethos.
+
+618
+00:27:51,680 --> 00:27:55,520
+They were concerned with truth,
+representation of social groups,
+
+619
+00:27:55,519 --> 00:28:00,399
+creating a forum for criticism,
+clarifying public values,
+
+620
+00:28:00,400 --> 00:28:03,190
+and offering comprehensive coverage.
+
+621
+00:28:03,190 --> 00:28:05,380
+And notably, since
+the aim was to produce
+
+622
+00:28:05,380 --> 00:28:07,720
+content that appealed
+to a wide audience,
+
+623
+00:28:07,720 --> 00:28:12,810
+there was less polarization and
+extremist commentary than we see today.
+
+624
+00:28:12,809 --> 00:28:15,269
+But the journalists
+responsible for news coverage
+
+625
+00:28:15,269 --> 00:28:17,739
+were very uniform in a lot of ways.
+
+626
+00:28:17,740 --> 00:28:22,380
+There were relatively affluent,
+highly educated, mostly white, male,
+
+627
+00:28:22,380 --> 00:28:24,040
+and so forth.
+
+628
+00:28:24,039 --> 00:28:28,169
+And this had effects on the coverage
+of racial politics, economic policy,
+
+629
+00:28:28,170 --> 00:28:31,660
+and views about the role
+of the US in the world.
+
+630
+00:28:31,660 --> 00:28:34,720
+Moreover, there were seldom
+opportunities for the audience
+
+631
+00:28:34,720 --> 00:28:37,810
+to respond, to develop
+new themes or topics,
+
+632
+00:28:37,809 --> 00:28:41,109
+or level criticism against
+the mass media sphere.
+
+633
+00:28:41,109 --> 00:28:43,209
+There weren't any likes
+and comment sections
+
+634
+00:28:43,210 --> 00:28:46,270
+for the newspaper or
+television broadcasts.
+
+635
+00:28:46,269 --> 00:28:49,569
+If you didn't like it, well, tough luck.
+
+636
+00:28:49,569 --> 00:28:51,639
+This all started to
+change in recent years,
+
+637
+00:28:51,640 --> 00:28:56,290
+as news coverage not only moved online,
+but onto social media platforms.
+
+638
+00:28:56,289 --> 00:28:59,829
+We now live in a digitally
+networked public sphere.
+
+639
+00:28:59,829 --> 00:29:03,069
+So instead of having a narrow
+aperture of communications,
+
+640
+00:29:03,069 --> 00:29:06,939
+or just a few organizations to
+disseminate information to the public,
+
+641
+00:29:06,940 --> 00:29:10,600
+we now have a digital sphere with a
+wide aperture, where lots of people
+
+642
+00:29:10,599 --> 00:29:13,169
+can share news and information.
+
+643
+00:29:13,170 --> 00:29:15,450
+More specifically,
+the sources of content
+
+644
+00:29:15,450 --> 00:29:19,140
+are not just organizations and the
+professional journalists they employed,
+
+645
+00:29:19,140 --> 00:29:22,920
+but the public and particularly,
+social media users.
+
+646
+00:29:22,920 --> 00:29:26,010
+Anyone can tweet or post
+on Facebook, and anyone
+
+647
+00:29:26,009 --> 00:29:28,589
+can read those tweets and posts.
+
+648
+00:29:28,589 --> 00:29:30,629
+It's not only resulted
+in greater diversity
+
+649
+00:29:30,630 --> 00:29:34,250
+of content, but greater
+access to information as well.
+
+650
+00:29:34,250 --> 00:29:36,899
+If you want to follow the news,
+there are a ton of options
+
+651
+00:29:36,900 --> 00:29:41,500
+and free places online you can
+access with just a few mouse clicks.
+
+652
+00:29:41,500 --> 00:29:43,990
+These prospects of increased
+diversity and access
+
+653
+00:29:43,990 --> 00:29:47,230
+are what led many people to believe
+that the digital sphere held
+
+654
+00:29:47,230 --> 00:29:49,990
+great promise for improving
+the public discourse that
+
+655
+00:29:49,990 --> 00:29:52,540
+supports a well-functioning democracy.
+
+656
+00:29:52,539 --> 00:29:55,459
+And in some ways, this has been true.
+
+657
+00:29:55,460 --> 00:29:57,930
+For example, thanks to
+Twitter and Facebook,
+
+658
+00:29:57,930 --> 00:30:00,560
+we saw the mobilization of
+social justice movements,
+
+659
+00:30:00,559 --> 00:30:03,439
+like Me, Too and Black Lives Matter.
+
+660
+00:30:03,440 --> 00:30:05,780
+And the increased
+diversity of perspectives
+
+661
+00:30:05,779 --> 00:30:08,929
+made it possible for individual
+researchers and scientists
+
+662
+00:30:08,930 --> 00:30:12,350
+to weigh in on the CDC'S
+claims about coronavirus.
+
+663
+00:30:12,349 --> 00:30:16,159
+So while the CDC did not initially
+say coronavirus was characterized
+
+664
+00:30:16,160 --> 00:30:19,363
+by airborne transmission,
+leading to community spread,
+
+665
+00:30:19,363 --> 00:30:21,530
+they ended up revising their
+stance after scientists
+
+666
+00:30:21,529 --> 00:30:25,699
+took to Twitter with evidence
+proving that this was the case.
+
+667
+00:30:25,700 --> 00:30:28,260
+While the digital sphere has
+brought about some improvements,
+
+668
+00:30:28,259 --> 00:30:32,679
+it's also exacerbated some problems
+and created new challenges.
+
+669
+00:30:32,680 --> 00:30:37,120
+For example, since anyone can create
+content, fact checking and monitoring
+
+670
+00:30:37,119 --> 00:30:39,454
+have become much more
+difficult. People are
+
+671
+00:30:39,454 --> 00:30:42,579
+left to fend for themselves when it
+comes to figuring out whether something
+
+672
+00:30:42,579 --> 00:30:45,389
+they read online is trustworthy.
+
+673
+00:30:45,390 --> 00:30:48,240
+We've also seen increased
+personalization with respect
+
+674
+00:30:48,240 --> 00:30:51,600
+to news and information,
+where specific content could
+
+675
+00:30:51,599 --> 00:30:54,869
+be targeted to specific users
+by the means of curated news
+
+676
+00:30:54,869 --> 00:30:58,259
+feeds on social media and
+cable news stations cropping up
+
+677
+00:30:58,259 --> 00:31:02,309
+that take a particular angle
+on the news that they cover.
+
+678
+00:31:02,309 --> 00:31:03,509
+This is significant.
+
+679
+00:31:03,509 --> 00:31:06,659
+Because we end up with a
+somewhat paradoxical effect.
+
+680
+00:31:06,660 --> 00:31:09,720
+Despite a greater diversity in
+the content that's available,
+
+681
+00:31:09,720 --> 00:31:12,390
+there's less diversity in the
+news and information people
+
+682
+00:31:12,390 --> 00:31:16,650
+actually end up consuming, with the
+personalization of information having
+
+683
+00:31:16,650 --> 00:31:19,110
+a tendency to reinforce
+a person's viewpoints,
+
+684
+00:31:19,109 --> 00:31:22,069
+rather than challenge or broaden them.
+
+685
+00:31:22,069 --> 00:31:25,149
+Additionally, in the absence
+of centralized sources of news,
+
+686
+00:31:25,150 --> 00:31:29,650
+we've also seen different aims expressed
+by those creating and sharing content.
+
+687
+00:31:29,650 --> 00:31:33,550
+Some have bypassed a concern for truth
+in an effort to garner more views
+
+688
+00:31:33,549 --> 00:31:37,539
+and likes with extremist
+content or fake news.
+
+689
+00:31:37,539 --> 00:31:39,819
+And fake news became a
+huge issue around the time
+
+690
+00:31:39,819 --> 00:31:43,269
+of the 2016 presidential
+election, as there were concerns
+
+691
+00:31:43,269 --> 00:31:46,329
+that the massive spread of
+misinformation on social media
+
+692
+00:31:46,329 --> 00:31:50,589
+could influence or sway
+individuals political views.
+
+693
+00:31:50,589 --> 00:31:53,379
+While the spread of misinformation
+has always been an issue,
+
+694
+00:31:53,380 --> 00:31:56,740
+it's truly been exacerbated
+by the digital public sphere,
+
+695
+00:31:56,740 --> 00:32:00,910
+with social media platforms essentially
+pouring gasoline on the fire.
+
+696
+00:32:00,910 --> 00:32:04,210
+The dissemination of fake
+news explodes on social media
+
+697
+00:32:04,210 --> 00:32:07,810
+because the structure of digital
+environments, from likes to retweets,
+
+698
+00:32:07,809 --> 00:32:10,899
+allows a single post on
+fake news to go viral,
+
+699
+00:32:10,900 --> 00:32:13,570
+reaching the screens of
+millions around the world.
+
+700
+00:32:13,569 --> 00:32:16,689
+And there are serious worries about
+how fake news has played a role
+
+701
+00:32:16,690 --> 00:32:20,200
+in amplifying political polarization.
+
+702
+00:32:20,200 --> 00:32:23,350
+So while technology has made
+possible unique advantages,
+
+703
+00:32:23,349 --> 00:32:26,079
+it's also brought on unique challenges.
+
+704
+00:32:26,079 --> 00:32:28,419
+One major question that
+we're faced with now
+
+705
+00:32:28,420 --> 00:32:32,800
+is figuring out how content should be
+regulated on social media platforms,
+
+706
+00:32:32,799 --> 00:32:34,269
+if at all.
+
+707
+00:32:34,269 --> 00:32:37,179
+Given the scale of the problem,
+some might be skeptical,
+
+708
+00:32:37,180 --> 00:32:40,760
+believing that any form of content
+regulation would be impossible.
+
+709
+00:32:40,759 --> 00:32:43,659
+There's just too many people posting
+online to fact check them all.
+
+710
+00:32:43,660 --> 00:32:46,990
+And fake news spreads so quickly,
+it's hard to stop before it's already
+
+711
+00:32:46,990 --> 00:32:49,280
+reached a huge audience.
+
+712
+00:32:49,279 --> 00:32:51,259
+There's also worries
+that attempts to regulate
+
+713
+00:32:51,259 --> 00:32:54,739
+content could end up becoming a
+form of censorship that violates
+
+714
+00:32:54,740 --> 00:32:57,380
+the right to freedom of speech.
+
+715
+00:32:57,380 --> 00:33:00,020
+But some people are more
+optimistic about the possibilities
+
+716
+00:33:00,019 --> 00:33:03,619
+of designing social media platforms
+in a way that promotes and preserves
+
+717
+00:33:03,619 --> 00:33:05,299
+democracy.
+
+718
+00:33:05,299 --> 00:33:08,509
+In particular, there's a possibility
+that with responsibly designed
+
+719
+00:33:08,509 --> 00:33:11,299
+algorithms and user
+interface choices, we
+
+720
+00:33:11,299 --> 00:33:13,309
+might be able to slow
+the spread of fake news
+
+721
+00:33:13,309 --> 00:33:17,149
+and more generally improve the ways
+information is disseminated and engaged
+
+722
+00:33:17,150 --> 00:33:19,410
+with on social media.
+
+723
+00:33:19,410 --> 00:33:23,340
+For example, some people believe
+that companies like Facebook, Twitter
+
+724
+00:33:23,339 --> 00:33:26,339
+and YouTube have a responsibility
+to regulate content
+
+725
+00:33:26,339 --> 00:33:29,459
+because of the enormous
+influence they have over us.
+
+726
+00:33:29,460 --> 00:33:33,300
+In particular, it's thought that social
+media platforms have a responsibility
+
+727
+00:33:33,299 --> 00:33:37,139
+to police fake news and reduce the
+power of data driven algorithms that
+
+728
+00:33:37,140 --> 00:33:40,590
+personalize the user experience,
+even if doing these things
+
+729
+00:33:40,589 --> 00:33:42,959
+would come at the cost
+of user engagement,
+
+730
+00:33:42,960 --> 00:33:48,330
+resulting in less time spent on the
+platform and less advertising revenue.
+
+731
+00:33:48,329 --> 00:33:50,369
+It's clear that the path
+going forward in terms
+
+732
+00:33:50,369 --> 00:33:54,629
+of content regulation on social media
+platforms is going to be tricky.
+
+733
+00:33:54,630 --> 00:33:57,600
+Whether or not we promote
+democratic ideals or undermine
+
+734
+00:33:57,599 --> 00:34:01,669
+them will come down to the
+particular design choices we make.
+
+735
+00:34:01,670 --> 00:34:04,070
+In order to use technology
+to create solutions
+
+736
+00:34:04,069 --> 00:34:06,319
+to the problems we're
+facing today, we'll
+
+737
+00:34:06,319 --> 00:34:08,968
+need to make informed
+decisions about design choices.
+
+738
+00:34:08,969 --> 00:34:12,620
+And this requires some critical
+thinking about ethics and philosophy
+
+739
+00:34:12,619 --> 00:34:15,129
+to figure out the best way to do this.
+
+740
+00:34:15,130 --> 00:34:17,815
+But we're hoping that students
+like you, taking CS50,
+
+741
+00:34:17,815 --> 00:34:21,594
+can harness your creativity, technical
+knowledge, and ethical reasoning
+
+742
+00:34:21,594 --> 00:34:25,703
+to design technology
+in a responsible way.
+
+743
+00:34:25,702 --> 00:34:27,619
+So I'm now going to pass
+things over to Meica,
+
+744
+00:34:27,619 --> 00:34:30,399
+who will tell you about some
+philosophical concepts that'll
+
+745
+00:34:30,400 --> 00:34:32,679
+help you think proactively
+about particular design
+
+746
+00:34:32,679 --> 00:34:36,550
+choices and algorithmic tools that
+can be implemented to structure
+
+747
+00:34:36,550 --> 00:34:40,960
+social media platforms in a way that
+promotes democratic public discourse.
+
+748
+00:34:40,960 --> 00:34:43,420
+MEICA MAGNANI: In Democracy
+and The Digital Public Sphere,
+
+749
+00:34:43,420 --> 00:34:46,900
+an article which offers a fantastic
+diagnosis of our situation,
+
+750
+00:34:46,900 --> 00:34:49,000
+and from which Susan and
+I are drawing heavily
+
+751
+00:34:49,000 --> 00:34:53,080
+upon for this lecture, the authors
+Joshua Cohen and Archon Fung,
+
+752
+00:34:53,079 --> 00:34:56,408
+tell us that the bloom
+is off the digital rose.
+
+753
+00:34:56,409 --> 00:34:58,840
+As Susan was describing,
+we had such high hopes
+
+754
+00:34:58,840 --> 00:35:02,200
+for the democratizing potential
+of social media and the internet.
+
+755
+00:35:02,199 --> 00:35:05,739
+But now we face an environment
+in which fake news runs rampant,
+
+756
+00:35:05,739 --> 00:35:08,379
+citizens appear to be
+dramatically polarized,
+
+757
+00:35:08,380 --> 00:35:11,020
+information swirls in
+its own isolated bubbles,
+
+758
+00:35:11,019 --> 00:35:14,139
+and hate speech reaches
+appalling levels of vitriol.
+
+759
+00:35:14,139 --> 00:35:17,439
+All of which stand to threaten,
+or so people speculate,
+
+760
+00:35:17,440 --> 00:35:20,290
+the conditions required
+for an effective democracy.
+
+761
+00:35:20,289 --> 00:35:23,499
+So the following questions
+arise, in what ways
+
+762
+00:35:23,500 --> 00:35:25,720
+are the conditions of
+democracy threatened?
+
+763
+00:35:25,719 --> 00:35:27,579
+What can or should be done about it?
+
+764
+00:35:27,579 --> 00:35:29,919
+Is the structure of our
+technology responsible?
+
+765
+00:35:29,920 --> 00:35:33,610
+Or is it just us, as human
+beings, creating these problems?
+
+766
+00:35:33,610 --> 00:35:35,830
+In this module, we're
+focusing specifically
+
+767
+00:35:35,829 --> 00:35:38,139
+on the issue of content regulation.
+
+768
+00:35:38,139 --> 00:35:40,959
+Social media companies like
+Twitter, Facebook, and YouTube
+
+769
+00:35:40,960 --> 00:35:44,200
+are now all in the game of trying to
+address these problems through platform
+
+770
+00:35:44,199 --> 00:35:45,969
+design and features.
+
+771
+00:35:45,969 --> 00:35:49,749
+From one angle then, they are acting
+in the service of protecting democracy
+
+772
+00:35:49,750 --> 00:35:52,959
+by trying to get control over
+the spread of misinformation,
+
+773
+00:35:52,960 --> 00:35:56,530
+the amplification of hate speech,
+and the deepening of polarization.
+
+774
+00:35:56,530 --> 00:35:58,810
+However, from another
+angle, they're stepping in
+
+775
+00:35:58,809 --> 00:36:01,219
+to shape the distribution
+of information.
+
+776
+00:36:01,219 --> 00:36:03,519
+And depending on the
+particular design choices,
+
+777
+00:36:03,519 --> 00:36:05,559
+might be set to be
+regulating or silencing
+
+778
+00:36:05,559 --> 00:36:09,309
+speech, which of course, is at
+odds with democratic commitments
+
+779
+00:36:09,309 --> 00:36:11,589
+to free speech and discourse.
+
+780
+00:36:11,590 --> 00:36:14,170
+The point of this module,
+then, is to give you some tools
+
+781
+00:36:14,170 --> 00:36:18,040
+to think through these issues,
+tools for understanding the problem,
+
+782
+00:36:18,039 --> 00:36:22,509
+diagnosing the sources of the
+problem, and brainstorming solutions.
+
+783
+00:36:22,510 --> 00:36:24,640
+In the remaining 10 or
+15 minutes, I'm going
+
+784
+00:36:24,639 --> 00:36:27,079
+to provide an overview
+of the main tools which
+
+785
+00:36:27,079 --> 00:36:29,199
+you will find detailed in the readings.
+
+786
+00:36:29,199 --> 00:36:33,349
+They are also the tools you will be
+asked to analyze in this week's lab.
+
+787
+00:36:33,349 --> 00:36:35,619
+So first then, we need to
+think clearly about what
+
+788
+00:36:35,619 --> 00:36:37,869
+is required for a healthy democracy.
+
+789
+00:36:37,869 --> 00:36:42,039
+If we're going to be making claims
+about how tech threatens democracy,
+
+790
+00:36:42,039 --> 00:36:46,749
+we better understand A, what a democracy
+is, and B, what sort of conditions
+
+791
+00:36:46,750 --> 00:36:50,860
+support democracy, such that those
+conditions could come under threat.
+
+792
+00:36:50,860 --> 00:36:54,610
+In their article, Archon Fung, who
+is a professor in political science
+
+793
+00:36:54,610 --> 00:36:58,900
+here at Harvard, and Joshua Cohen, who
+is a political philosopher now working
+
+794
+00:36:58,900 --> 00:37:03,800
+with the faculty at Apple University,
+provide us with these tools.
+
+795
+00:37:03,800 --> 00:37:06,070
+So behind the idea of
+democracy is an ideal
+
+796
+00:37:06,070 --> 00:37:08,170
+of what political society should be.
+
+797
+00:37:08,170 --> 00:37:11,810
+Fung and Cohen reduce this
+ideal to three elements.
+
+798
+00:37:11,809 --> 00:37:15,609
+First, the idea of a
+democratic society, a society
+
+799
+00:37:15,610 --> 00:37:19,982
+in which the political culture
+views individuals as free and equal.
+
+800
+00:37:19,981 --> 00:37:21,939
+Even though it is likely
+that these people have
+
+801
+00:37:21,940 --> 00:37:25,900
+different interests, identities,
+and systems of belief, as citizens,
+
+802
+00:37:25,900 --> 00:37:30,040
+they are committed to arriving m through
+reflection and discourse, principles
+
+803
+00:37:30,039 --> 00:37:33,039
+that will enable them to work together
+while respecting their freedom
+
+804
+00:37:33,039 --> 00:37:35,039
+and equality.
+
+805
+00:37:35,039 --> 00:37:38,399
+Second is the idea of a
+democratic political regime, which
+
+806
+00:37:38,400 --> 00:37:42,060
+is characterized by regular
+elections, rights of participation,
+
+807
+00:37:42,059 --> 00:37:44,159
+along with associative
+and expressive rights
+
+808
+00:37:44,159 --> 00:37:48,219
+that make participation
+both informed and effective.
+
+809
+00:37:48,219 --> 00:37:52,029
+Third and lastly is the idea
+of a deliberative democracy,
+
+810
+00:37:52,030 --> 00:37:54,130
+according to which
+political discussion should
+
+811
+00:37:54,130 --> 00:37:56,620
+appeal to reasons that are
+suitable for cooperation
+
+812
+00:37:56,619 --> 00:38:00,069
+amongst free and equal persons.
+
+813
+00:38:00,070 --> 00:38:04,330
+So in justifying a policy, you cannot
+appeal to, say, your own religion,
+
+814
+00:38:04,329 --> 00:38:07,659
+given that others do not
+necessarily hold those same beliefs.
+
+815
+00:38:07,659 --> 00:38:10,899
+You can appeal to the notion of,
+say, religious freedom, but not
+
+816
+00:38:10,900 --> 00:38:14,990
+the particular beliefs contained
+within the religion itself.
+
+817
+00:38:14,989 --> 00:38:17,439
+So democracy, then,
+is basically an ideal
+
+818
+00:38:17,440 --> 00:38:20,920
+that we govern ourselves by collective
+decision making, decision making that
+
+819
+00:38:20,920 --> 00:38:23,200
+respects our freedom and equality.
+
+820
+00:38:23,199 --> 00:38:26,979
+This decision making consists not only
+of the formal procedures of voting,
+
+821
+00:38:26,980 --> 00:38:31,750
+elections, and legislation, it is also
+informed by the informal public sphere,
+
+822
+00:38:31,750 --> 00:38:35,140
+that is, citizens identifying
+problems and concerns,
+
+823
+00:38:35,139 --> 00:38:38,889
+discussing and debating problems,
+expressing opinions, challenging
+
+824
+00:38:38,889 --> 00:38:41,589
+viewpoints, and
+organizing around causes.
+
+825
+00:38:41,590 --> 00:38:45,850
+This is an absolutely critical part of
+the democratic decision-making process.
+
+826
+00:38:45,849 --> 00:38:51,009
+It is where we, as the public,
+form, test, disperse, exchange,
+
+827
+00:38:51,010 --> 00:38:53,290
+challenge, and revise our views.
+
+828
+00:38:53,289 --> 00:38:56,079
+The flow of information,
+along with user engagement
+
+829
+00:38:56,079 --> 00:38:58,509
+on Facebook, YouTube,
+and Twitter, are all part
+
+830
+00:38:58,510 --> 00:39:01,740
+of this informal public sphere.
+
+831
+00:39:01,739 --> 00:39:03,839
+In order that individuals
+can participate
+
+832
+00:39:03,840 --> 00:39:07,200
+as free and equal citizens in
+this arena of public discourse,
+
+833
+00:39:07,199 --> 00:39:10,139
+Cohen and Fung lay out a set
+of rights and opportunities
+
+834
+00:39:10,139 --> 00:39:12,929
+that a well-functioning
+democracy will require.
+
+835
+00:39:12,929 --> 00:39:15,899
+And these are the tools
+of analysis on offer.
+
+836
+00:39:15,900 --> 00:39:18,030
+So first, rights.
+
+837
+00:39:18,030 --> 00:39:20,610
+"As citizens of a
+democracy, we have rights
+
+838
+00:39:20,610 --> 00:39:24,930
+to basic liberties, liberties
+of expression and association.
+
+839
+00:39:24,929 --> 00:39:27,089
+The right to expressive
+liberty is important
+
+840
+00:39:27,090 --> 00:39:29,160
+not only for the freedom
+of the individual,
+
+841
+00:39:29,159 --> 00:39:33,519
+so that he or she will not be censored,
+but also for democracy itself.
+
+842
+00:39:33,519 --> 00:39:37,409
+It enables citizens to bring their
+ideas into conversation with one another
+
+843
+00:39:37,409 --> 00:39:41,249
+and to criticize and hold accountable
+those who exercise power."
+
+844
+00:39:41,250 --> 00:39:44,700
+Second is the opportunity
+for expression.
+
+845
+00:39:44,699 --> 00:39:47,039
+"Not only should we be
+free of censorship, but
+
+846
+00:39:47,039 --> 00:39:50,939
+we should have fair opportunity to
+participate in public discussion.
+
+847
+00:39:50,940 --> 00:39:53,190
+It shouldn't be the case
+that because someone is, say,
+
+848
+00:39:53,190 --> 00:39:58,260
+wealthier or more powerful, that they
+have more opportunity to participate."
+
+849
+00:39:58,260 --> 00:40:00,390
+Third is access.
+
+850
+00:40:00,389 --> 00:40:03,149
+"Each person should have
+good and equal access
+
+851
+00:40:03,150 --> 00:40:06,540
+to quality and reliable
+information on public matters.
+
+852
+00:40:06,539 --> 00:40:08,639
+That is, if we make
+the effort, we should
+
+853
+00:40:08,639 --> 00:40:10,689
+be able to acquire this information.
+
+854
+00:40:10,690 --> 00:40:16,200
+Effective participation in decision
+making requires being informed."
+
+855
+00:40:16,199 --> 00:40:18,539
+Fourth is diversity.
+
+856
+00:40:18,539 --> 00:40:23,069
+"Each person should have good and equal
+chances to hear a wide range of views.
+
+857
+00:40:23,070 --> 00:40:25,440
+We need access to competing
+views in order to have
+
+858
+00:40:25,440 --> 00:40:28,410
+a more informed and reasoned position"
+
+859
+00:40:28,409 --> 00:40:31,619
+And lastly, number five,
+communicative power.
+
+860
+00:40:31,619 --> 00:40:35,879
+"Citizens should have good and equal
+chances to explore interests and ideas
+
+861
+00:40:35,880 --> 00:40:37,570
+in association with others.
+
+862
+00:40:37,570 --> 00:40:40,710
+And through these associations,
+to develop new concerns that
+
+863
+00:40:40,710 --> 00:40:44,120
+might challenge the mainstream view."
+
+864
+00:40:44,119 --> 00:40:47,359
+These rights and opportunities
+together provide critical conditions
+
+865
+00:40:47,360 --> 00:40:50,360
+for enabling participation
+in public discussion.
+
+866
+00:40:50,360 --> 00:40:53,120
+They might seem like a lot
+to keep track of initially,
+
+867
+00:40:53,119 --> 00:40:56,419
+but if we're going to think through
+how social media threatens democracy,
+
+868
+00:40:56,420 --> 00:41:00,210
+and more concretely, how platform design
+might promote or hinder democracy,
+
+869
+00:41:00,210 --> 00:41:01,910
+these are valuable tools.
+
+870
+00:41:01,909 --> 00:41:04,699
+We can use, say, the
+access condition, the idea
+
+871
+00:41:04,699 --> 00:41:07,279
+that we should all have access
+to reliable information,
+
+872
+00:41:07,280 --> 00:41:09,470
+as a lens of analysis.
+
+873
+00:41:09,469 --> 00:41:11,839
+Does our platform prevent
+certain groups or users
+
+874
+00:41:11,840 --> 00:41:14,270
+from accessing reliable information?
+
+875
+00:41:14,269 --> 00:41:17,269
+Or we can use the diversity
+condition, the idea
+
+876
+00:41:17,269 --> 00:41:20,179
+that we should all have access to
+a plurality of conflicting views
+
+877
+00:41:20,179 --> 00:41:22,019
+as a lens of analysis.
+
+878
+00:41:22,019 --> 00:41:25,639
+So for example, we might ask
+ourselves, does our platform
+
+879
+00:41:25,639 --> 00:41:28,879
+create a filter bubble in which
+individuals are no longer confronted
+
+880
+00:41:28,880 --> 00:41:31,610
+with opposing views?
+
+881
+00:41:31,610 --> 00:41:34,100
+In addition to understanding
+what conditions support
+
+882
+00:41:34,099 --> 00:41:38,689
+a democratic society, we also need
+to understand the purported problems
+
+883
+00:41:38,690 --> 00:41:42,010
+before we can propose
+effective interventions.
+
+884
+00:41:42,010 --> 00:41:43,720
+Consider fake news.
+
+885
+00:41:43,719 --> 00:41:47,079
+Why are people so gullible
+when it comes to fake news?
+
+886
+00:41:47,079 --> 00:41:51,489
+Why do they often repost without
+proper critical assessment?
+
+887
+00:41:51,489 --> 00:41:54,489
+Regina Rini, in the reading,
+proposes that in order
+
+888
+00:41:54,489 --> 00:41:56,619
+to understand the
+phenomenon of fake news,
+
+889
+00:41:56,619 --> 00:41:59,779
+we should think about it
+as a form of testimony.
+
+890
+00:41:59,780 --> 00:42:01,780
+When another person shares
+information with you,
+
+891
+00:42:01,780 --> 00:42:04,310
+you typically take it to be true.
+
+892
+00:42:04,309 --> 00:42:07,239
+This is because of the norms
+governing our practice of testimony.
+
+893
+00:42:07,239 --> 00:42:09,939
+When you assert something,
+passing it on to others,
+
+894
+00:42:09,940 --> 00:42:12,580
+you typically take
+responsibility for its truth.
+
+895
+00:42:12,579 --> 00:42:15,159
+It is assumed that you have
+either acquired evidence
+
+896
+00:42:15,159 --> 00:42:18,459
+for yourself or you've received
+this information from a source
+
+897
+00:42:18,460 --> 00:42:20,440
+that you deem reliable.
+
+898
+00:42:20,440 --> 00:42:23,710
+Most of our knowledge about the
+world comes through this practice.
+
+899
+00:42:23,710 --> 00:42:27,280
+We could not possibly acquire
+evidence for all the beliefs we hold.
+
+900
+00:42:27,280 --> 00:42:31,860
+So we often have to rely on sources
+we deem and hope to be credible.
+
+901
+00:42:31,860 --> 00:42:36,690
+But social media, Rini points out,
+has unsettled testimonial norms.
+
+902
+00:42:36,690 --> 00:42:41,670
+When someone posts a piece of news,
+we seem to hold two conflicting views.
+
+903
+00:42:41,670 --> 00:42:44,730
+On the one hand, we see it
+as an active endorsement.
+
+904
+00:42:44,730 --> 00:42:48,660
+The person posting has taken
+some degree of responsibility
+
+905
+00:42:48,659 --> 00:42:51,209
+for the accuracy of their
+post, the same way one
+
+906
+00:42:51,210 --> 00:42:54,480
+would before passing on
+information in a conversation.
+
+907
+00:42:54,480 --> 00:42:57,240
+On the other hand,
+though, it's just a share.
+
+908
+00:42:57,239 --> 00:43:00,479
+We see this attitude coming through
+when Donald Trump, called out
+
+909
+00:43:00,480 --> 00:43:06,060
+on one of his questionable tweets,
+retorts with, eh, it's just a tweet.
+
+910
+00:43:06,059 --> 00:43:09,089
+To fight fake news,
+then, Rini argues that we
+
+911
+00:43:09,090 --> 00:43:13,440
+need to stabilize social media's norms
+of testimony so that, as she says,
+
+912
+00:43:13,440 --> 00:43:15,870
+the same norms that keep
+us honest over cocktails
+
+913
+00:43:15,869 --> 00:43:18,149
+will keep us honest in our posts.
+
+914
+00:43:18,150 --> 00:43:20,340
+We need people to be
+held accountable for,
+
+915
+00:43:20,340 --> 00:43:22,920
+or to have a sense of
+responsibility, for the information
+
+916
+00:43:22,920 --> 00:43:24,840
+that they share with others.
+
+917
+00:43:24,840 --> 00:43:29,650
+Her concrete proposal, give
+users a credibility score.
+
+918
+00:43:29,650 --> 00:43:33,300
+So in practice, this would be an
+amendment to Facebook's system,
+
+919
+00:43:33,300 --> 00:43:35,910
+using independent fact
+checking organizations,
+
+920
+00:43:35,909 --> 00:43:41,459
+Facebook flags problematic news and
+warns users before they repost it.
+
+921
+00:43:41,460 --> 00:43:44,280
+When a user tries to post
+something that has been identified
+
+922
+00:43:44,280 --> 00:43:47,760
+as false or misleading, a pop up
+appears that explains the problem
+
+923
+00:43:47,760 --> 00:43:49,930
+and identifies the original source.
+
+924
+00:43:49,929 --> 00:43:51,929
+It then asks the user to
+confirm that they would
+
+925
+00:43:51,929 --> 00:43:54,619
+like to continue with their repost.
+
+926
+00:43:54,619 --> 00:43:57,689
+A user's credibility
+score, for Rini, would
+
+927
+00:43:57,690 --> 00:44:00,450
+depend on how often they
+choose to ignore these warnings
+
+928
+00:44:00,449 --> 00:44:02,819
+and pass on misleading information.
+
+929
+00:44:02,820 --> 00:44:05,220
+Quote, "a green dot by
+the user's name could
+
+930
+00:44:05,219 --> 00:44:08,819
+indicate that the user hasn't
+chosen to share much disputed news.
+
+931
+00:44:08,820 --> 00:44:11,250
+A yellow dot could indicate
+that they do it sometimes.
+
+932
+00:44:11,250 --> 00:44:13,350
+And a red could indicate
+that they do it often."
+
+933
+00:44:13,349 --> 00:44:14,669
+Unquote.
+
+934
+00:44:14,670 --> 00:44:16,710
+The idea, then, is that
+a credibility score
+
+935
+00:44:16,710 --> 00:44:18,960
+would incentivize users
+to take responsibility
+
+936
+00:44:18,960 --> 00:44:22,470
+for what they share and would also give
+others a sense of their reliability
+
+937
+00:44:22,469 --> 00:44:24,689
+as sources.
+
+938
+00:44:24,690 --> 00:44:27,540
+So Rini comes up with this
+solution through a careful analysis
+
+939
+00:44:27,539 --> 00:44:30,239
+of why we are so gullible to fake news.
+
+940
+00:44:30,239 --> 00:44:33,089
+I will leave it up to you
+to consider this proposal
+
+941
+00:44:33,090 --> 00:44:35,730
+in light of the various rights
+and opportunities required
+
+942
+00:44:35,730 --> 00:44:38,010
+for a democratic public sphere.
+
+943
+00:44:38,010 --> 00:44:41,190
+Does Rini's proposal violate or
+threaten freedom of expression?
+
+944
+00:44:41,190 --> 00:44:45,000
+Does it promote or hinder our access
+to reliable information, our access
+
+945
+00:44:45,000 --> 00:44:48,299
+to diversity of views, or
+does it promote or hinder
+
+946
+00:44:48,300 --> 00:44:50,190
+our communicative power?
+
+947
+00:44:50,190 --> 00:44:51,990
+It is these sorts of
+questions that we hope
+
+948
+00:44:51,989 --> 00:44:54,031
+that you will start to
+ask yourself when thinking
+
+949
+00:44:54,032 --> 00:44:56,760
+through the following sorts of issues.
+
+950
+00:44:56,760 --> 00:45:00,520
+What problems do fake news, hate
+speech, polarization, et cetera
+
+951
+00:45:00,519 --> 00:45:02,549
+pose to democracy?
+
+952
+00:45:02,550 --> 00:45:05,830
+How successful are various attempts
+by companies like Twitter, YouTube,
+
+953
+00:45:05,829 --> 00:45:08,369
+and Facebook to address these problems?
+
+954
+00:45:08,369 --> 00:45:11,399
+And how might particular design
+features of social media platforms
+
+955
+00:45:11,400 --> 00:45:15,180
+promote or hinder these particular
+rights and opportunities?
+
+956
+00:45:15,179 --> 00:45:18,749
+Whether as a future computer
+scientist, a tech industry leader,
+
+957
+00:45:18,750 --> 00:45:22,950
+or just as a user of these technologies,
+we hope asking these sorts of questions
+
+958
+00:45:22,949 --> 00:45:25,782
+will help you navigate these tricky
+issues with a more critical eye.
+
+959
+00:45:25,782 --> 00:45:28,866
+SUSAN KENNEDY: We're really looking
+forward to the sorts of design choices
+
+960
+00:45:28,867 --> 00:45:30,850
+that you'll be making in the future.
+
+961
+00:45:30,849 --> 00:45:31,199
+MEICA MAGNANI: Great.
+
+962
+00:45:31,199 --> 00:45:32,866
+Thanks so much for having us here today.
+
+963
+00:45:32,867 --> 00:45:36,052
+And best of luck to everybody.
+
+964
+00:45:36,052 --> 00:45:39,010
+DAVID MALAN: Well, thank you so much
+to Susan and Meica for joining us.
+
+965
+00:45:39,010 --> 00:45:41,510
+Indeed, in this coming week's
+lab, we'll have an opportunity
+
+966
+00:45:41,510 --> 00:45:44,050
+to consider some of these issues
+in the context of some very
+
+967
+00:45:44,050 --> 00:45:46,730
+specific real world scenarios.
+
+968
+00:45:46,730 --> 00:45:49,690
+So we now thought we would take
+a look forward at what you can do
+
+969
+00:45:49,690 --> 00:45:52,300
+and how you can do it
+after CS50 when it comes
+
+970
+00:45:52,300 --> 00:45:56,530
+to the more practical side of things
+beyond computational thinking alone.
+
+971
+00:45:56,530 --> 00:45:58,910
+So programming, of
+course, for many of you,
+
+972
+00:45:58,909 --> 00:46:02,126
+this will be by design the only
+computer science or programming course
+
+973
+00:46:02,126 --> 00:46:02,709
+that you take.
+
+974
+00:46:02,710 --> 00:46:04,030
+And that's certainly OK.
+
+975
+00:46:04,030 --> 00:46:06,130
+Indeed, we hope that you'll
+be able now to return
+
+976
+00:46:06,130 --> 00:46:09,970
+to your own domains of interest in the
+arts and humanities, social sciences,
+
+977
+00:46:09,969 --> 00:46:13,839
+or sciences and actually be able to
+have a concrete set of practical skills
+
+978
+00:46:13,840 --> 00:46:16,630
+be it in Python or C or any of
+the other technical languages
+
+979
+00:46:16,630 --> 00:46:20,470
+we looked at and can actually solve
+problems in your own preferred domain.
+
+980
+00:46:20,469 --> 00:46:23,139
+And if you're interested in
+learning more about computer science
+
+981
+00:46:23,139 --> 00:46:25,329
+itself and moving on
+in that world, we hope
+
+982
+00:46:25,329 --> 00:46:27,399
+that you'll walk away
+with a solid foundation
+
+983
+00:46:27,400 --> 00:46:32,800
+for further theoretical and systematic
+explorations of this particular field.
+
+984
+00:46:32,800 --> 00:46:34,720
+But very practically
+speaking, we hope now
+
+985
+00:46:34,719 --> 00:46:38,229
+that you can not only program,
+but also ask questions better,
+
+986
+00:46:38,230 --> 00:46:41,240
+whether that's in the technical
+world or even in just the real world.
+
+987
+00:46:41,239 --> 00:46:44,809
+Odds are, if you've ever asked a
+question on CS50's discussion forums,
+
+988
+00:46:44,809 --> 00:46:48,039
+the teaching fellows or I might have
+very well responded with questions
+
+989
+00:46:48,039 --> 00:46:49,209
+asking you to clarify.
+
+990
+00:46:49,210 --> 00:46:52,090
+Or better yet, you would have
+provided us, in anticipation,
+
+991
+00:46:52,090 --> 00:46:55,000
+with answers to all of the
+questions that we might have.
+
+992
+00:46:55,000 --> 00:46:56,949
+And if you've noticed
+on Ed, we deliberately
+
+993
+00:46:56,949 --> 00:46:59,229
+have this sort of
+template via which you're
+
+994
+00:46:59,230 --> 00:47:02,242
+coaxed to answer, well, what are
+the symptoms that you are seeing?
+
+995
+00:47:02,242 --> 00:47:04,450
+What's the error message
+that you're struggling with?
+
+996
+00:47:04,449 --> 00:47:06,669
+What steps have you tried
+to resolve the problem?
+
+997
+00:47:06,670 --> 00:47:09,295
+Because if we imagine in the real
+world, even just reaching out
+
+998
+00:47:09,295 --> 00:47:11,860
+to some random company's
+customer service line,
+
+999
+00:47:11,860 --> 00:47:14,450
+those are exactly the kinds
+of questions that someone else
+
+1000
+00:47:14,449 --> 00:47:16,449
+is going to have to ask
+you to better understand
+
+1001
+00:47:16,449 --> 00:47:18,709
+a problem from your own perspective.
+
+1002
+00:47:18,710 --> 00:47:22,270
+And so we would encourage you to think
+about, as you emerge from CS50 itself,
+
+1003
+00:47:22,269 --> 00:47:24,549
+just how to ask better
+questions of people.
+
+1004
+00:47:24,550 --> 00:47:26,420
+If you've got more
+information than they,
+
+1005
+00:47:26,420 --> 00:47:29,950
+how can you succinctly but correctly
+convey that information to them
+
+1006
+00:47:29,949 --> 00:47:32,709
+so that they can help
+you more efficiently.
+
+1007
+00:47:32,710 --> 00:47:34,120
+But also, finding answers.
+
+1008
+00:47:34,119 --> 00:47:39,969
+Like, we absolutely understand that many
+of CS50's weeks, all of CS50's weeks,
+
+1009
+00:47:39,969 --> 00:47:42,117
+maybe, have been quite the frustration.
+
+1010
+00:47:42,117 --> 00:47:45,159
+Because you quite often feel like,
+well, we didn't cover that in lecture.
+
+1011
+00:47:45,159 --> 00:47:46,719
+Or I didn't see that in section.
+
+1012
+00:47:46,719 --> 00:47:48,279
+And I see some noddings of the head.
+
+1013
+00:47:48,280 --> 00:47:49,690
+So this seems to be the case.
+
+1014
+00:47:49,690 --> 00:47:52,870
+And much as I would love to
+reassure otherwise, like,
+
+1015
+00:47:52,869 --> 00:47:54,579
+that was very much the intent.
+
+1016
+00:47:54,579 --> 00:47:57,789
+Because the last of the training
+wheels of any course like this
+
+1017
+00:47:57,789 --> 00:47:59,639
+now really do officially come off.
+
+1018
+00:47:59,639 --> 00:48:01,389
+And in the coming
+weeks, while we'll still
+
+1019
+00:48:01,389 --> 00:48:03,781
+be with you to lend a
+hand with final projects
+
+1020
+00:48:03,782 --> 00:48:05,740
+and answer questions
+along those lines, there's
+
+1021
+00:48:05,739 --> 00:48:09,969
+of course no specification for the final
+project telling you exactly what to do,
+
+1022
+00:48:09,969 --> 00:48:12,779
+or in what language to do
+it, or what libraries to use.
+
+1023
+00:48:12,780 --> 00:48:14,530
+Undoubtedly, in the
+coming weeks, you will
+
+1024
+00:48:14,530 --> 00:48:16,870
+run into error messages you
+haven't even seen before.
+
+1025
+00:48:16,869 --> 00:48:20,379
+And frankly, maybe I, maybe Brian,
+maybe the teaching assistants,
+
+1026
+00:48:20,380 --> 00:48:23,260
+and the course assistants haven't
+even seen those errors before.
+
+1027
+00:48:23,260 --> 00:48:26,470
+But the goal, of course, is to get
+you over those hurdles in a way
+
+1028
+00:48:26,469 --> 00:48:29,049
+that you can figure out how to
+do those things on your own.
+
+1029
+00:48:29,050 --> 00:48:32,380
+And so when it comes to just using
+the internet, be it Google, or Stack
+
+1030
+00:48:32,380 --> 00:48:34,360
+Overflow, or interacting
+with other humans,
+
+1031
+00:48:34,360 --> 00:48:37,870
+just finding answers when it
+comes to the world of programming
+
+1032
+00:48:37,869 --> 00:48:41,799
+or really just the world of
+problem solving more generally,
+
+1033
+00:48:41,800 --> 00:48:44,450
+we hope that is actually
+a lasting skill.
+
+1034
+00:48:44,449 --> 00:48:48,039
+And we hope that you've been able to
+do that with admittedly frustration,
+
+1035
+00:48:48,039 --> 00:48:51,319
+but with the safety net of the course
+underneath you all these months.
+
+1036
+00:48:51,320 --> 00:48:55,180
+But here on out, we hope you'll be more
+comfortable, again, being uncomfortable
+
+1037
+00:48:55,179 --> 00:48:56,971
+as you figure out new things.
+
+1038
+00:48:56,972 --> 00:48:58,930
+And part of that is just
+reading documentation.
+
+1039
+00:48:58,929 --> 00:49:02,439
+And here, too, this is a frustration
+that may very well never go away.
+
+1040
+00:49:02,440 --> 00:49:06,430
+Like, some documentation out there for
+certain languages or libraries, just
+
+1041
+00:49:06,429 --> 00:49:07,149
+isn't good.
+
+1042
+00:49:07,150 --> 00:49:10,630
+It was written by people
+that just don't think
+
+1043
+00:49:10,630 --> 00:49:14,780
+like you or I do, don't think with the
+same form of empathy as you might hope.
+
+1044
+00:49:14,780 --> 00:49:18,100
+And therefore, it's written at a
+very low level of technical detail,
+
+1045
+00:49:18,099 --> 00:49:20,469
+and they don't just tell you
+what does the function do.
+
+1046
+00:49:20,469 --> 00:49:23,139
+Or conversely, it's written at
+such a high level that, my God,
+
+1047
+00:49:23,139 --> 00:49:25,989
+you have to start looking at
+the source code of the library
+
+1048
+00:49:25,989 --> 00:49:27,669
+to even figure out how to use it.
+
+1049
+00:49:27,670 --> 00:49:29,770
+And you will see both extremes.
+
+1050
+00:49:29,769 --> 00:49:33,279
+But getting comfortable with reading
+things like Python's documentation,
+
+1051
+00:49:33,280 --> 00:49:36,670
+like some API's documentation is
+just going to empower you, we hope,
+
+1052
+00:49:36,670 --> 00:49:39,070
+all the more to just
+do much cooler things
+
+1053
+00:49:39,070 --> 00:49:42,910
+and solve more powerful problems
+on your own, ultimately.
+
+1054
+00:49:42,909 --> 00:49:46,029
+And then lastly, and this is perhaps
+the biggest one, teaching you
+
+1055
+00:49:46,030 --> 00:49:47,860
+how to teach yourself new languages.
+
+1056
+00:49:47,860 --> 00:49:51,250
+There is a reason we didn't
+spend that much time on Python.
+
+1057
+00:49:51,250 --> 00:49:53,680
+And we spent even less
+time on JavaScript.
+
+1058
+00:49:53,679 --> 00:49:55,839
+And about an equal
+amount of time on SQL.
+
+1059
+00:49:55,840 --> 00:49:58,603
+We spent a number of
+weeks on C, not because C
+
+1060
+00:49:58,603 --> 00:50:00,520
+is more important than
+any of those languages,
+
+1061
+00:50:00,519 --> 00:50:02,739
+but because along the way,
+many of you, most of you
+
+1062
+00:50:02,739 --> 00:50:04,749
+were just learning programming itself.
+
+1063
+00:50:04,750 --> 00:50:08,319
+And even as the language has changed
+and evolved as the course went on,
+
+1064
+00:50:08,320 --> 00:50:09,520
+the ideas didn't go away.
+
+1065
+00:50:09,519 --> 00:50:12,399
+There were still functions, and
+conditions, and loops, and even
+
+1066
+00:50:12,400 --> 00:50:13,550
+events by terms.
+
+1067
+00:50:13,550 --> 00:50:16,690
+And, again, so we hope that you
+walk away from a class like this
+
+1068
+00:50:16,690 --> 00:50:19,450
+not thinking that, oh, I
+learned how to program in C.
+
+1069
+00:50:19,449 --> 00:50:21,489
+Or oh, I learned how
+to program in Python.
+
+1070
+00:50:21,489 --> 00:50:24,609
+Because none of us have been
+experts at those things yet.
+
+1071
+00:50:24,610 --> 00:50:28,390
+But you certainly are now more
+expert at just being a programmer
+
+1072
+00:50:28,389 --> 00:50:31,359
+and figuring out what holes you need
+to fill in in your knowledge, what
+
+1073
+00:50:31,360 --> 00:50:33,740
+gaps you need to fill
+in order to figure out,
+
+1074
+00:50:33,739 --> 00:50:36,879
+oh, what is the syntax for this
+same approach in this language
+
+1075
+00:50:36,880 --> 00:50:38,738
+as I've already seen in another.
+
+1076
+00:50:38,737 --> 00:50:41,529
+And that's, indeed, why we compared
+so many of these languages side
+
+1077
+00:50:41,530 --> 00:50:45,640
+by side to just reinforce that
+the ideas are no different, even
+
+1078
+00:50:45,639 --> 00:50:49,796
+though the syntax is going to require
+a bunch of Googling, a bunch of asking.
+
+1079
+00:50:49,797 --> 00:50:52,630
+And that, too, is something we hope
+you'll be able to do on your own
+
+1080
+00:50:52,630 --> 00:50:56,832
+as the next and best thing comes
+along well after these languages.
+
+1081
+00:50:56,831 --> 00:50:58,539
+Well, speaking of
+training wheels, you're
+
+1082
+00:50:58,539 --> 00:51:02,409
+welcome and encouraged to keep using
+CS50 IDE for your final project.
+
+1083
+00:51:02,409 --> 00:51:05,509
+And heck, you can use it even after
+that for other courses or projects.
+
+1084
+00:51:05,510 --> 00:51:08,260
+But at the end of the day, this,
+too, is probably a training wheel
+
+1085
+00:51:08,260 --> 00:51:10,360
+that you should take off for yourself.
+
+1086
+00:51:10,360 --> 00:51:14,720
+The IDE is designed to be representative
+of a real world programming
+
+1087
+00:51:14,719 --> 00:51:15,219
+environment.
+
+1088
+00:51:15,219 --> 00:51:17,619
+But we definitely did a
+lot of things for you.
+
+1089
+00:51:17,619 --> 00:51:20,391
+We installed all the
+libraries you might need over
+
+1090
+00:51:20,391 --> 00:51:21,849
+the course of the semester for you.
+
+1091
+00:51:21,849 --> 00:51:24,579
+We've got these nice commands
+that end in the number 50.
+
+1092
+00:51:24,579 --> 00:51:27,677
+Those don't tend to exist in the real
+world when you're at your first job,
+
+1093
+00:51:27,677 --> 00:51:29,469
+or you're going back
+to your own department
+
+1094
+00:51:29,469 --> 00:51:31,209
+and solving some
+problem in code, there's
+
+1095
+00:51:31,210 --> 00:51:32,937
+not going to be a help50 longer term.
+
+1096
+00:51:32,936 --> 00:51:35,769
+And so what we thought we would do,
+too, is spend just a few minutes
+
+1097
+00:51:35,769 --> 00:51:38,889
+giving you a sense of what are
+some of the more industry standard
+
+1098
+00:51:38,889 --> 00:51:42,009
+tools that you should consider
+using, playing with, perhaps
+
+1099
+00:51:42,010 --> 00:51:45,820
+over break or in the months to come,
+so that you know exactly how to do
+
+1100
+00:51:45,820 --> 00:51:48,880
+the same kinds of things you did
+this term, but on your own Mac
+
+1101
+00:51:48,880 --> 00:51:51,380
+or PC or some other device.
+
+1102
+00:51:51,380 --> 00:51:55,870
+So for instance, if you would like to
+install a set of command line tools
+
+1103
+00:51:55,869 --> 00:51:59,199
+on your Mac or PC, turns out
+some of them are already there.
+
+1104
+00:51:59,199 --> 00:52:01,509
+Indeed, I mentioned at
+one point that Mac OS
+
+1105
+00:52:01,510 --> 00:52:05,170
+has under its applications folder
+utility's terminal a terminal window.
+
+1106
+00:52:05,170 --> 00:52:07,180
+And Windows has an analog as well.
+
+1107
+00:52:07,179 --> 00:52:10,809
+But there's other commands that don't
+necessarily come with your Mac or PC,
+
+1108
+00:52:10,809 --> 00:52:13,899
+for instance, a compiler
+for C or some other tools.
+
+1109
+00:52:13,900 --> 00:52:17,650
+And so we would encourage you to visit
+URLs like these on your Mac or PC,
+
+1110
+00:52:17,650 --> 00:52:21,490
+respectively, if you'd like to just
+install more of the command line tools
+
+1111
+00:52:21,489 --> 00:52:26,119
+that you saw and used in
+CS50 in your own environment.
+
+1112
+00:52:26,119 --> 00:52:29,379
+Another tool we would recommend
+that you read up on, or in this case
+
+1113
+00:52:29,380 --> 00:52:31,650
+watch, a video by Brian, is Git.
+
+1114
+00:52:31,650 --> 00:52:35,410
+Git is an example of version
+control, a fundamental building
+
+1115
+00:52:35,409 --> 00:52:38,649
+block of any good software
+practice these days.
+
+1116
+00:52:38,650 --> 00:52:42,460
+We kind of use Git in CS50, but
+we hide this detail from you.
+
+1117
+00:52:42,460 --> 00:52:46,465
+Any time you have run check50 or
+submit50, we underneath the hood,
+
+1118
+00:52:46,465 --> 00:52:51,230
+have been running an open source command
+called Git, which pushes your code,
+
+1119
+00:52:51,230 --> 00:52:54,550
+in this case from CS50 IDE to
+GitHub.com, which is just one
+
+1120
+00:52:54,550 --> 00:52:56,980
+of several popular
+websites via which you
+
+1121
+00:52:56,980 --> 00:53:00,400
+can host code, share code, collaborate
+on code, run automated tests,
+
+1122
+00:53:00,400 --> 00:53:01,220
+and the like.
+
+1123
+00:53:01,219 --> 00:53:05,019
+But Git itself can be used to
+put an end to the convention
+
+1124
+00:53:05,019 --> 00:53:08,472
+that you probably have, even with things
+like Microsoft Word or Google Docs,
+
+1125
+00:53:08,472 --> 00:53:11,139
+where when you want to save
+something or another copy of a file,
+
+1126
+00:53:11,139 --> 00:53:14,019
+maybe you just changed the
+end of the file name to 2,
+
+1127
+00:53:14,019 --> 00:53:16,719
+and then the next time to 3, or to 4.
+
+1128
+00:53:16,719 --> 00:53:19,567
+Or maybe you do dash Sunday
+night, dash Monday morning.
+
+1129
+00:53:19,568 --> 00:53:21,610
+I mean, I'm still guilty
+of this sometimes when I
+
+1130
+00:53:21,610 --> 00:53:22,960
+want to version my files.
+
+1131
+00:53:22,960 --> 00:53:24,770
+There are better ways to do that.
+
+1132
+00:53:24,769 --> 00:53:26,769
+And so if you find
+yourself in the future,
+
+1133
+00:53:26,769 --> 00:53:29,649
+doing something that you think
+there's got to be a better way,
+
+1134
+00:53:29,650 --> 00:53:33,007
+Git is an example of one
+of those better ways.
+
+1135
+00:53:33,007 --> 00:53:34,840
+And if you watch this
+particular video, read
+
+1136
+00:53:34,840 --> 00:53:38,950
+up a bit more, it will help you not only
+maintain multiple versions, in essence,
+
+1137
+00:53:38,949 --> 00:53:42,009
+backups of your own code, it
+will also empower you ultimately
+
+1138
+00:53:42,010 --> 00:53:44,230
+to collaborate with others.
+
+1139
+00:53:44,230 --> 00:53:46,390
+As for text editors,
+the tool that you might
+
+1140
+00:53:46,389 --> 00:53:50,224
+use to actually write code, perhaps
+one of the latest and greatest and most
+
+1141
+00:53:50,224 --> 00:53:52,599
+popular out there these days
+is something called VS Code.
+
+1142
+00:53:52,599 --> 00:53:56,259
+This is an open source tool that you
+can download on your own Mac and PCs.
+
+1143
+00:53:56,260 --> 00:53:58,840
+Increasingly, it's available
+on the web as well.
+
+1144
+00:53:58,840 --> 00:54:02,170
+But this is one of the most popular
+tools, certainly, out there today.
+
+1145
+00:54:02,170 --> 00:54:03,410
+But it's just a text editor.
+
+1146
+00:54:03,409 --> 00:54:06,699
+And there are absolutely alternatives
+to each and every one of these tools
+
+1147
+00:54:06,699 --> 00:54:09,351
+that you're certainly welcome
+to take a look at as well.
+
+1148
+00:54:09,351 --> 00:54:11,559
+Well, if you're interested
+in the web side of things,
+
+1149
+00:54:11,559 --> 00:54:14,199
+and you want to host a website,
+like a static website, just
+
+1150
+00:54:14,199 --> 00:54:17,559
+your own personal homepage,
+GitHub pages is a thing.
+
+1151
+00:54:17,559 --> 00:54:18,699
+Netlify is a thing.
+
+1152
+00:54:18,699 --> 00:54:21,799
+And dot dot dot, there are so
+many other web hosts out there,
+
+1153
+00:54:21,800 --> 00:54:24,640
+many of which offer
+free or student level
+
+1154
+00:54:24,639 --> 00:54:28,239
+accounts so that they don't
+necessarily need to even cost anything.
+
+1155
+00:54:28,239 --> 00:54:30,009
+But static is different from dynamic.
+
+1156
+00:54:30,010 --> 00:54:33,370
+And if you actually want to host a
+web application that actually takes
+
+1157
+00:54:33,369 --> 00:54:35,559
+user input, stores things
+in a database, does
+
+1158
+00:54:35,559 --> 00:54:37,649
+more interesting things
+than a static website,
+
+1159
+00:54:37,650 --> 00:54:40,150
+you might want to use something
+called Heroku, which is just
+
+1160
+00:54:40,150 --> 00:54:43,930
+a popular third party service that also
+has a free entry level account that you
+
+1161
+00:54:43,929 --> 00:54:46,029
+can use to start playing
+with, quite commonly used
+
+1162
+00:54:46,030 --> 00:54:47,560
+by students for final projects.
+
+1163
+00:54:47,559 --> 00:54:50,629
+And then there's other providers
+out there, bigger cloud providers,
+
+1164
+00:54:50,630 --> 00:54:52,888
+so to speak, like Amazon,
+and Microsoft, and Google,
+
+1165
+00:54:52,887 --> 00:54:55,179
+for which the learning curve's
+perhaps a little higher.
+
+1166
+00:54:55,179 --> 00:54:58,539
+But they, too, are really good
+typically about providing discounts
+
+1167
+00:54:58,539 --> 00:55:01,689
+or free accounts for
+student uses as well.
+
+1168
+00:55:01,690 --> 00:55:04,180
+How to stay abreast of
+topics in technology.
+
+1169
+00:55:04,179 --> 00:55:07,179
+We focus, of course, in a class
+like this really on fundamentals.
+
+1170
+00:55:07,179 --> 00:55:10,599
+But you're not going to be able to pick
+up the news in any form down the road
+
+1171
+00:55:10,599 --> 00:55:12,789
+and not see something
+that's technology related.
+
+1172
+00:55:12,789 --> 00:55:15,849
+And if you'd just like to keep
+your fingers on the pulse of things
+
+1173
+00:55:15,849 --> 00:55:18,939
+in the tech world more generally,
+here's just a few places
+
+1174
+00:55:18,940 --> 00:55:21,010
+that you might enjoy staying abreast of.
+
+1175
+00:55:21,010 --> 00:55:24,285
+So Reddit has a couple of different
+communities, or subreddit, specifically
+
+1176
+00:55:24,284 --> 00:55:26,409
+about programming, both
+for experienced programmers
+
+1177
+00:55:26,409 --> 00:55:28,034
+and those of us who are still learning.
+
+1178
+00:55:28,034 --> 00:55:29,784
+Stack Overflow, of
+course, you've probably
+
+1179
+00:55:29,784 --> 00:55:32,379
+used to solve small problems
+over the course of the past term.
+
+1180
+00:55:32,380 --> 00:55:34,610
+Server Fault is similar
+in spirit to that,
+
+1181
+00:55:34,610 --> 00:55:38,770
+but it's focused more on administration,
+Linux-type stuff as well.
+
+1182
+00:55:38,769 --> 00:55:41,717
+Techcrunch is a popular place, not
+just for consumer-focused news,
+
+1183
+00:55:41,717 --> 00:55:43,759
+but just really anything
+that's trending in tech.
+
+1184
+00:55:43,760 --> 00:55:47,650
+And then a website called Hacker
+News on YCombinator's site
+
+1185
+00:55:47,650 --> 00:55:49,982
+that also is a place to just
+glance at once in a while
+
+1186
+00:55:49,981 --> 00:55:52,689
+because you'll see the latest and
+greatest libraries or something
+
+1187
+00:55:52,690 --> 00:55:53,770
+that's quite nascent.
+
+1188
+00:55:53,769 --> 00:55:56,229
+So if in general you just want
+to get a sense of what's new
+
+1189
+00:55:56,230 --> 00:55:58,150
+and what's trending out there
+in the tech world, things
+
+1190
+00:55:58,150 --> 00:56:00,442
+that you should just be aware
+of even if you don't care
+
+1191
+00:56:00,442 --> 00:56:02,860
+to get into the weeds of
+doing those things hands on,
+
+1192
+00:56:02,860 --> 00:56:06,740
+these are all good sites and
+surely others out there as well.
+
+1193
+00:56:06,739 --> 00:56:10,179
+And then, CS50, of course, has its
+own online community, some of which
+
+1194
+00:56:10,179 --> 00:56:13,419
+some of you have been part for some
+time, in high school or even prior.
+
+1195
+00:56:13,420 --> 00:56:15,700
+Please feel free to keep in
+touch with us in some way,
+
+1196
+00:56:15,699 --> 00:56:17,949
+or give back a little something
+to your successors who
+
+1197
+00:56:17,949 --> 00:56:20,139
+might take this or another
+course down the road
+
+1198
+00:56:20,139 --> 00:56:23,289
+and participate not only in asking
+questions in these communities here,
+
+1199
+00:56:23,289 --> 00:56:27,469
+but also in answering
+others' questions as well.
+
+1200
+00:56:27,469 --> 00:56:30,099
+So we thought we would do a
+little less of the talking
+
+1201
+00:56:30,099 --> 00:56:34,789
+now and turn things around for a sort
+of final community activity together.
+
+1202
+00:56:34,789 --> 00:56:37,319
+Thanks to many of you who
+have contributed questions
+
+1203
+00:56:37,320 --> 00:56:38,570
+over the past couple of weeks.
+
+1204
+00:56:38,570 --> 00:56:41,950
+Thanks to Brian, we thought we'd
+put together a CS50 quiz show
+
+1205
+00:56:41,949 --> 00:56:43,959
+on which to end this final lecture.
+
+1206
+00:56:43,960 --> 00:56:47,200
+These are questions written by
+you, by the staff, by Brian.
+
+1207
+00:56:47,199 --> 00:56:49,899
+And it'll be an opportunity
+for everyone to buzz in
+
+1208
+00:56:49,900 --> 00:56:54,250
+with their answers to some 20 questions
+that we have prepared in advance.
+
+1209
+00:56:54,250 --> 00:56:55,639
+Time is of the essence.
+
+1210
+00:56:55,639 --> 00:56:59,059
+So your score will be higher
+if you buzz in more quickly.
+
+1211
+00:56:59,059 --> 00:57:01,149
+So it's important not
+only to be correct,
+
+1212
+00:57:01,150 --> 00:57:04,820
+but also to be fast for
+this particular one as well.
+
+1213
+00:57:04,820 --> 00:57:08,060
+And in just a moment, I'm going
+to go ahead and share my screen.
+
+1214
+00:57:08,059 --> 00:57:12,249
+And, again, we'll have some 20
+questions here, all of them drawn from,
+
+1215
+00:57:12,250 --> 00:57:14,529
+inspired by CS50 in some form.
+
+1216
+00:57:14,530 --> 00:57:18,640
+And after each question, depending on
+how many people get it right or wrong,
+
+1217
+00:57:18,639 --> 00:57:21,969
+we'll take a moment to at least
+explain where it is you went right
+
+1218
+00:57:21,969 --> 00:57:23,919
+or where it is you went wrong.
+
+1219
+00:57:23,920 --> 00:57:24,700
+All right, Brian.
+
+1220
+00:57:24,699 --> 00:57:26,171
+Ready on your end?
+
+1221
+00:57:26,172 --> 00:57:27,380
+BRIAN YU: We are ready to go.
+
+1222
+00:57:27,380 --> 00:57:29,880
+DAVID MALAN: All right, well,
+let's go ahead and take a look
+
+1223
+00:57:29,880 --> 00:57:31,150
+with the first question here.
+
+1224
+00:57:31,150 --> 00:57:35,860
+What are the steps for compiling
+source code into machine code?
+
+1225
+00:57:35,860 --> 00:57:38,290
+Preprocessing, compiling,
+assembling, and linking?
+
+1226
+00:57:38,289 --> 00:57:40,809
+Writing, compiling,
+debugging, and testing?
+
+1227
+00:57:40,809 --> 00:57:43,269
+Processing, creating,
+asserting, and clang?
+
+1228
+00:57:43,269 --> 00:57:45,409
+Or make?
+
+1229
+00:57:45,409 --> 00:57:49,309
+Go ahead and buzz in on your
+phone or laptop or desktop,
+
+1230
+00:57:49,309 --> 00:57:51,499
+using that same URL that Brian provided.
+
+1231
+00:57:51,500 --> 00:57:55,040
+You've got 20 seconds for each
+question, two of which now remain.
+
+1232
+00:57:55,039 --> 00:57:55,969
+That's it for time.
+
+1233
+00:57:55,969 --> 00:57:58,094
+Let's go ahead and take a
+look at the results here.
+
+1234
+00:57:58,094 --> 00:58:01,999
+It looks like 70% of you said
+preprocessing, compiling, assembling,
+
+1235
+00:58:02,000 --> 00:58:02,750
+and linking.
+
+1236
+00:58:02,750 --> 00:58:04,987
+Brian, would you like to
+tell us if that's right?
+
+1237
+00:58:04,987 --> 00:58:05,570
+BRIAN YU: Yes.
+
+1238
+00:58:05,570 --> 00:58:06,800
+That is the correct answer.
+
+1239
+00:58:06,800 --> 00:58:10,010
+Preprocessing first, compiling,
+assembling, and linking, all of that
+
+1240
+00:58:10,010 --> 00:58:11,440
+is behind the scenes.
+
+1241
+00:58:11,440 --> 00:58:13,940
+So you don't necessarily think
+about every time you compile.
+
+1242
+00:58:13,940 --> 00:58:15,590
+But those are, indeed, the steps.
+
+1243
+00:58:15,590 --> 00:58:18,245
+DAVID MALAN: And to be fair,
+make is arguably an abstraction
+
+1244
+00:58:18,244 --> 00:58:20,869
+for all of that insofar as it
+just kicks off the whole process.
+
+1245
+00:58:20,869 --> 00:58:24,169
+But I think a little more precisely,
+an answer to steps would be,
+
+1246
+00:58:24,170 --> 00:58:25,543
+indeed, those four things there.
+
+1247
+00:58:25,543 --> 00:58:27,710
+All right, let's take a
+look at the scoreboard here.
+
+1248
+00:58:27,710 --> 00:58:29,418
+We have a whole number
+of guest accounts.
+
+1249
+00:58:29,418 --> 00:58:33,500
+Guest number 200 is in the lead, but
+tied with several other guests here.
+
+1250
+00:58:33,500 --> 00:58:36,240
+So those of you with 1,000
+points buzzed in really quickly.
+
+1251
+00:58:36,239 --> 00:58:37,909
+So again time is of the essence.
+
+1252
+00:58:37,909 --> 00:58:42,559
+Next question, what is the
+runtime of binary search?
+
+1253
+00:58:42,559 --> 00:58:47,329
+Is it O of 1, O of log n,
+O of n, or O of n squared?
+
+1254
+00:58:47,329 --> 00:58:52,699
+15 seconds remain, the
+runtime of binary search.
+
+1255
+00:58:52,699 --> 00:58:55,279
+Recall, this was one of the
+first algorithms we looked at.
+
+1256
+00:58:55,280 --> 00:58:57,350
+It was first incarnated
+with a phone book,
+
+1257
+00:58:57,349 --> 00:59:00,499
+even if we didn't call
+it that by name early on.
+
+1258
+00:59:00,500 --> 00:59:02,779
+Brian, let's take a look at the results.
+
+1259
+00:59:02,780 --> 00:59:05,690
+Looks like 61% of you say log n.
+
+1260
+00:59:05,690 --> 00:59:06,840
+Brian?
+
+1261
+00:59:06,840 --> 00:59:08,670
+BRIAN YU: Log n is the correct answer.
+
+1262
+00:59:08,670 --> 00:59:10,040
+If you remember that
+phone book, the question
+
+1263
+00:59:10,039 --> 00:59:11,899
+really came down to
+how many times can we
+
+1264
+00:59:11,900 --> 00:59:13,940
+divide that phone book
+and half again and again
+
+1265
+00:59:13,940 --> 00:59:16,590
+and again, until we get
+down to just one page.
+
+1266
+00:59:16,590 --> 00:59:20,120
+And that turns out to be log of n if
+three are n pages in the phone book.
+
+1267
+00:59:20,119 --> 00:59:23,239
+DAVID MALAN: Indeed, and sort of pro
+tip moving forward in life, any time
+
+1268
+00:59:23,239 --> 00:59:26,149
+you see something happening in
+half and half and half and half,
+
+1269
+00:59:26,150 --> 00:59:28,670
+odds are there's going to
+be an algorithm involved
+
+1270
+00:59:28,670 --> 00:59:31,070
+somewhere in the analysis thereof.
+
+1271
+00:59:31,070 --> 00:59:34,710
+All right, next leaderboard here,
+guest 200 slipped down a little bit.
+
+1272
+00:59:34,710 --> 00:59:39,200
+But we have a whole bunch of people tied
+in first place for 2,000 points now.
+
+1273
+00:59:39,199 --> 00:59:42,499
+Next question, which of
+these animals was the first
+
+1274
+00:59:42,500 --> 00:59:45,620
+to be mentioned in a CS50 lecture?
+
+1275
+00:59:45,619 --> 00:59:50,249
+Llama, python, duck, cat.
+
+1276
+00:59:50,250 --> 00:59:52,750
+15 seconds remain.
+
+1277
+00:59:52,750 --> 00:59:57,929
+Which was mentioned
+first in a CS50 lecture?
+
+1278
+00:59:57,929 --> 00:59:59,909
+And let's see the results.
+
+1279
+00:59:59,909 --> 01:00:04,499
+Looks like cat just barely
+eked out duck with 51%.
+
+1280
+01:00:04,500 --> 01:00:05,177
+Brian?
+
+1281
+01:00:05,177 --> 01:00:07,260
+BRIAN YU: And cat is, in
+fact, the correct answer.
+
+1282
+01:00:07,260 --> 01:00:10,520
+Llamas showed up in Lab 1, but
+they were not mentioned in lecture.
+
+1283
+01:00:10,519 --> 01:00:12,269
+The duck didn't show
+up until a little bit
+
+1284
+01:00:12,269 --> 01:00:13,889
+later when we talked about debugging.
+
+1285
+01:00:13,889 --> 01:00:17,279
+And Python was briefly mentioned
+at the end of the lecture.
+
+1286
+01:00:17,280 --> 01:00:19,590
+But it was after we introduced
+ourselves to Scratch.
+
+1287
+01:00:19,590 --> 01:00:22,350
+And the main character in
+Scratch is, of course, the cat.
+
+1288
+01:00:22,349 --> 01:00:25,599
+DAVID MALAN: All right, we're probably
+going to see a bit of spread here soon.
+
+1289
+01:00:25,599 --> 01:00:27,851
+We have a whole bunch of
+people with 3,000, though.
+
+1290
+01:00:27,851 --> 01:00:29,309
+But the names are starting to vary.
+
+1291
+01:00:29,309 --> 01:00:30,989
+Let's move on to the next question.
+
+1292
+01:00:30,989 --> 01:00:34,919
+Every time you malloc memory,
+you must also be sure to--
+
+1293
+01:00:34,920 --> 01:00:39,690
+realloc, return, free, or exit?
+
+1294
+01:00:39,690 --> 01:00:44,310
+Every time you malloc memory, you
+should also be sure to realloc,
+
+1295
+01:00:44,309 --> 01:00:48,269
+return, free, or exit?
+
+1296
+01:00:48,269 --> 01:00:51,419
+Recall that malloc was the source
+of a lot of segmentation faults
+
+1297
+01:00:51,420 --> 01:00:52,230
+mid-semester.
+
+1298
+01:00:52,230 --> 01:00:55,950
+The responses now are 78% said free.
+
+1299
+01:00:55,949 --> 01:00:57,041
+Brian, do you concur?
+
+1300
+01:00:57,041 --> 01:00:58,499
+BRIAN YU: And they are all correct.
+
+1301
+01:00:58,500 --> 01:01:01,541
+Whenever you malloc memory, ask the
+computer for some memory dynamically.
+
+1302
+01:01:01,541 --> 01:01:04,249
+When you're done with it, you
+should give it back to the computer
+
+1303
+01:01:04,250 --> 01:01:05,010
+by calling free.
+
+1304
+01:01:05,010 --> 01:01:06,927
+DAVID MALAN: Indeed, and
+Brian, as a teachable
+
+1305
+01:01:06,927 --> 01:01:10,140
+moment, why is it that we never had a
+call free forget_string, which we now
+
+1306
+01:01:10,139 --> 01:01:12,089
+know underneath the
+hood is using something
+
+1307
+01:01:12,090 --> 01:01:14,070
+like malloc to allocate memory?
+
+1308
+01:01:14,070 --> 01:01:16,500
+BRIAN YU: So get_string was
+a function in CS50's library.
+
+1309
+01:01:16,500 --> 01:01:19,890
+And CS50's library takes care of that
+memory management process for you.
+
+1310
+01:01:19,889 --> 01:01:23,069
+So you didn't have to worry about
+freeing all of that memory yourself.
+
+1311
+01:01:23,070 --> 01:01:26,250
+DAVID MALAN: Indeed, but anytime
+you call malloc, you must call free.
+
+1312
+01:01:26,250 --> 01:01:28,439
+All right, the leaderboard
+here looks like we have
+
+1313
+01:01:28,440 --> 01:01:30,840
+guest 600 still in the lead with 4,000.
+
+1314
+01:01:30,840 --> 01:01:31,860
+Next question.
+
+1315
+01:01:31,860 --> 01:01:34,550
+What is a race condition?
+
+1316
+01:01:34,550 --> 01:01:37,040
+When conditions are nice out for racing?
+
+1317
+01:01:37,039 --> 01:01:40,669
+When two things happen at the same
+time and produce an unexpected result?
+
+1318
+01:01:40,670 --> 01:01:43,170
+When a line of code is
+executed too quickly?
+
+1319
+01:01:43,170 --> 01:01:45,830
+When a line of code is
+executed too slowly?
+
+1320
+01:01:45,829 --> 01:01:49,129
+What is a race condition?
+
+1321
+01:01:49,130 --> 01:01:50,850
+Ah, things just escalated quickly.
+
+1322
+01:01:50,849 --> 01:01:54,589
+But you'll recall this came
+up in the context of SQL.
+
+1323
+01:01:54,590 --> 01:01:57,020
+And databases, 0 seconds, let's see.
+
+1324
+01:01:57,019 --> 01:02:00,169
+85% said when two things
+happen at the same time
+
+1325
+01:02:00,170 --> 01:02:02,138
+and produce an unexpected result. Brian?
+
+1326
+01:02:02,137 --> 01:02:03,679
+BRIAN YU: That is the correct answer.
+
+1327
+01:02:03,679 --> 01:02:06,649
+I appreciate that at least 1% of
+people said when conditions outside
+
+1328
+01:02:06,650 --> 01:02:07,640
+are nice for racing.
+
+1329
+01:02:07,639 --> 01:02:10,077
+But in the context of
+computer science, at least,
+
+1330
+01:02:10,077 --> 01:02:13,369
+when two things happen at the same time
+and could produce an unexpected result,
+
+1331
+01:02:13,369 --> 01:02:15,679
+that is what we would refer
+to as a race condition.
+
+1332
+01:02:15,679 --> 01:02:17,329
+DAVID MALAN: Indeed, recall
+that's how Brian and I ended up
+
+1333
+01:02:17,329 --> 01:02:18,972
+with too much milk in the refrigerator.
+
+1334
+01:02:18,972 --> 01:02:21,139
+Because we both inspected
+the state of that variable
+
+1335
+01:02:21,139 --> 01:02:22,954
+at essentially the same time.
+
+1336
+01:02:22,954 --> 01:02:24,329
+All right, the leader board here.
+
+1337
+01:02:24,329 --> 01:02:26,629
+Now we have a whole bunch
+of people with 5,000 points.
+
+1338
+01:02:26,630 --> 01:02:27,590
+Let's move on.
+
+1339
+01:02:27,590 --> 01:02:32,660
+Does zooming in on a photo let you
+enhance it to generate more detail?
+
+1340
+01:02:32,659 --> 01:02:35,209
+Yes, just like in CSI.
+
+1341
+01:02:35,210 --> 01:02:39,370
+No, a photo only has a
+certain amount of detail.
+
+1342
+01:02:39,369 --> 01:02:45,119
+Does zooming in on a photo let you
+enhance it to generate more detail?
+
+1343
+01:02:45,119 --> 01:02:48,389
+And I will admit, I was watching
+some show recently and thought of you
+
+1344
+01:02:48,389 --> 01:02:50,339
+all when they literally said, enhance.
+
+1345
+01:02:50,340 --> 01:02:52,490
+All right, 0 seconds.
+
+1346
+01:02:52,489 --> 01:02:56,969
+Looks like 93% of you said, no, a photo
+only has a certain amount of detail.
+
+1347
+01:02:56,969 --> 01:02:59,009
+7% of you said yes, just like in CSI.
+
+1348
+01:02:59,010 --> 01:03:01,290
+Brian, can you help
+us reconcile the two?
+
+1349
+01:03:01,289 --> 01:03:03,479
+BRIAN YU: The 93%, in
+this case, are correct.
+
+1350
+01:03:03,480 --> 01:03:05,800
+A photo only has a
+certain number of pixels.
+
+1351
+01:03:05,800 --> 01:03:08,100
+And if you keep zooming
+in on one pixel, you're
+
+1352
+01:03:08,099 --> 01:03:10,469
+not going to be able to
+generate additional detail that
+
+1353
+01:03:10,469 --> 01:03:11,527
+wasn't there before.
+
+1354
+01:03:11,527 --> 01:03:14,069
+DAVID MALAN: And to be fair,
+that's kind of sort of changing.
+
+1355
+01:03:14,070 --> 01:03:15,840
+Or at least the answer is
+getting a little harder nowadays
+
+1356
+01:03:15,840 --> 01:03:18,450
+with machine learning or
+artificial intelligence,
+
+1357
+01:03:18,449 --> 01:03:21,209
+where algorithms sort of
+figure out what level of detail
+
+1358
+01:03:21,210 --> 01:03:22,750
+could or should be there.
+
+1359
+01:03:22,750 --> 01:03:24,810
+But that really is just
+statistical inference,
+
+1360
+01:03:24,809 --> 01:03:27,809
+that is not actually recovering
+information that was ever stored
+
+1361
+01:03:27,809 --> 01:03:29,819
+on the camera or some other device.
+
+1362
+01:03:29,820 --> 01:03:34,290
+All right, the leaderboard now is at
+6,000 points with these folks tied.
+
+1363
+01:03:34,289 --> 01:03:38,669
+Which of the following is not a
+characteristic of a good hash function?
+
+1364
+01:03:38,670 --> 01:03:44,280
+Deterministic output, randomness,
+uniform distribution, efficiency.
+
+1365
+01:03:44,280 --> 01:03:45,780
+Things just got real again.
+
+1366
+01:03:45,780 --> 01:03:50,160
+Which of the following is not a
+characteristic of a good hash function?
+
+1367
+01:03:50,159 --> 01:03:54,599
+Recall we used hash functions
+in the context of hash tables
+
+1368
+01:03:54,599 --> 01:03:57,069
+when talking about data structures.
+
+1369
+01:03:57,070 --> 01:03:57,570
+All right?
+
+1370
+01:03:57,570 --> 01:03:58,770
+One second.
+
+1371
+01:03:58,769 --> 01:04:00,929
+The answers are more spread this time.
+
+1372
+01:04:00,929 --> 01:04:03,269
+62% don't like randomness.
+
+1373
+01:04:03,269 --> 01:04:04,171
+Brian, should they?
+
+1374
+01:04:04,172 --> 01:04:05,880
+BRIAN YU: And that is
+the correct answer.
+
+1375
+01:04:05,880 --> 01:04:08,670
+Randomness is not a characteristic
+of a good hash function.
+
+1376
+01:04:08,670 --> 01:04:10,650
+You want your hash
+function to always give you
+
+1377
+01:04:10,650 --> 01:04:12,330
+the same output given the same input.
+
+1378
+01:04:12,329 --> 01:04:15,149
+That way you can rely on
+whatever the output of it is.
+
+1379
+01:04:15,150 --> 01:04:17,290
+If it's random, it's
+going to be hard to use.
+
+1380
+01:04:17,289 --> 01:04:19,122
+DAVID MALAN: Indeed,
+consider a spellchecker
+
+1381
+01:04:19,123 --> 01:04:20,550
+that randomly says yes or no.
+
+1382
+01:04:20,550 --> 01:04:23,250
+This is a word, probably
+not a property you want.
+
+1383
+01:04:23,250 --> 01:04:26,430
+All right, the leaderboard now, we're
+eking our way up to 7,000 points,
+
+1384
+01:04:26,429 --> 01:04:28,589
+but finally starting to see some spread.
+
+1385
+01:04:28,590 --> 01:04:31,260
+So a few of you haven't been
+quite quick or correct enough.
+
+1386
+01:04:31,260 --> 01:04:34,140
+Next question, what does FIFO stand for?
+
+1387
+01:04:34,139 --> 01:04:35,549
+FIFO.
+
+1388
+01:04:35,550 --> 01:04:40,620
+Is it a common dog's name, your
+credit score, first in, first out,
+
+1389
+01:04:40,619 --> 01:04:43,579
+function input, file output?
+
+1390
+01:04:43,579 --> 01:04:46,699
+What does FIFO stand for?
+
+1391
+01:04:46,699 --> 01:04:49,219
+I'll be curious to see the spread here.
+
+1392
+01:04:49,219 --> 01:04:50,329
+Let's see.
+
+1393
+01:04:50,329 --> 01:04:52,189
+80% of you said first in, first out.
+
+1394
+01:04:52,190 --> 01:04:52,777
+Brian?
+
+1395
+01:04:52,777 --> 01:04:53,860
+BRIAN YU: That is correct.
+
+1396
+01:04:53,860 --> 01:04:56,090
+And that was what we
+were using to describe
+
+1397
+01:04:56,090 --> 01:04:58,490
+what would be called like a queue,
+where the first thing in the queue
+
+1398
+01:04:58,489 --> 01:05:00,447
+is the first thing that
+comes out of the queue.
+
+1399
+01:05:00,447 --> 01:05:02,442
+So it obeys that FIFO ordering.
+
+1400
+01:05:02,443 --> 01:05:04,610
+DAVID MALAN: Indeed, let's
+see the leaderboard here.
+
+1401
+01:05:04,610 --> 01:05:07,880
+All right, we have some 8,000s,
+but more in the 7,000 range.
+
+1402
+01:05:07,880 --> 01:05:09,860
+Next up is a more colorful question.
+
+1403
+01:05:09,860 --> 01:05:13,760
+Which of the following would
+represent pink using RGB values?
+
+1404
+01:05:13,760 --> 01:05:15,980
+And I'll let you read these on your own.
+
+1405
+01:05:15,980 --> 01:05:19,730
+And surely, there's some Googling
+happening behind the scenes now.
+
+1406
+01:05:19,730 --> 01:05:21,050
+But that's OK.
+
+1407
+01:05:21,050 --> 01:05:22,430
+In fact, Google is pretty smart.
+
+1408
+01:05:22,429 --> 01:05:24,859
+If you type in a hexadecimal
+code, it might even
+
+1409
+01:05:24,860 --> 01:05:28,017
+show you a little color wheel or swatch.
+
+1410
+01:05:28,016 --> 01:05:29,849
+All right, let's take
+a look at the results.
+
+1411
+01:05:29,849 --> 01:05:33,589
+Looks like 55% of you said ffd0e0.
+
+1412
+01:05:33,590 --> 01:05:34,370
+Brian?
+
+1413
+01:05:34,369 --> 01:05:35,669
+BRIAN YU: And that is correct.
+
+1414
+01:05:35,670 --> 01:05:38,450
+So those RGB values are
+like six different values,
+
+1415
+01:05:38,449 --> 01:05:42,437
+where each two correspond to one
+color, two for red, two for green,
+
+1416
+01:05:42,438 --> 01:05:42,980
+two for blue.
+
+1417
+01:05:42,980 --> 01:05:44,300
+This is all in hexadecimal.
+
+1418
+01:05:44,300 --> 01:05:46,668
+And pink would be a lot of each of them.
+
+1419
+01:05:46,668 --> 01:05:48,710
+Because it's very close
+to white, which is, like,
+
+1420
+01:05:48,710 --> 01:05:50,360
+all red, all green, and all blue.
+
+1421
+01:05:50,360 --> 01:05:52,740
+But it's more red than
+it is green and blue.
+
+1422
+01:05:52,739 --> 01:05:58,129
+And so that one, ffd0e0, is a lot
+of red, a little bit less green,
+
+1423
+01:05:58,130 --> 01:05:59,460
+and a little bit less blue.
+
+1424
+01:05:59,460 --> 01:06:00,080
+DAVID MALAN: Indeed.
+
+1425
+01:06:00,079 --> 01:06:01,787
+All right, let's see
+where we're at here.
+
+1426
+01:06:01,788 --> 01:06:03,560
+We're now up to-- interesting.
+
+1427
+01:06:03,559 --> 01:06:05,299
+No one has a perfect score anymore.
+
+1428
+01:06:05,300 --> 01:06:09,800
+But guest 200 is still in the lead
+with just shy of 9,000 points.
+
+1429
+01:06:09,800 --> 01:06:12,330
+In C, which of the following
+lines of code allocates
+
+1430
+01:06:12,329 --> 01:06:17,089
+enough memory for a
+copy of the string s?
+
+1431
+01:06:17,090 --> 01:06:19,160
+I'll let you read these.
+
+1432
+01:06:19,159 --> 01:06:21,679
+In C, which of the following
+lines of code allocates
+
+1433
+01:06:21,679 --> 01:06:25,969
+enough memory for a
+copy of the string s?
+
+1434
+01:06:25,969 --> 01:06:28,249
+Bunch of viable choices
+here, it would seem.
+
+1435
+01:06:28,250 --> 01:06:31,129
+And time, let's take
+a look at the results.
+
+1436
+01:06:31,130 --> 01:06:34,880
+Looks like 46% said malloc of size s.
+
+1437
+01:06:34,880 --> 01:06:39,110
+But Brian, 33% said malloc
+of strlen of s plus 1.
+
+1438
+01:06:39,110 --> 01:06:40,490
+Who is right?
+
+1439
+01:06:40,489 --> 01:06:43,609
+BRIAN YU: And in this case, the
+minority, the 33% are correct here.
+
+1440
+01:06:43,610 --> 01:06:46,940
+Malloc, remember, takes as its
+argument the number of bytes of memory
+
+1441
+01:06:46,940 --> 01:06:48,080
+that you want to allocate.
+
+1442
+01:06:48,079 --> 01:06:50,849
+And if you have a string and you want
+to figure out how many bytes you need,
+
+1443
+01:06:50,849 --> 01:06:52,599
+first thing you need
+to know is figure out
+
+1444
+01:06:52,599 --> 01:06:54,679
+how long is that string.
+strlen will tell you
+
+1445
+01:06:54,679 --> 01:06:56,689
+how many characters are in that string.
+
+1446
+01:06:56,690 --> 01:07:00,050
+But you do need one additional byte,
+because at the end of every string,
+
+1447
+01:07:00,050 --> 01:07:01,880
+we have that null terminating character.
+
+1448
+01:07:01,880 --> 01:07:03,680
+And we need one byte of memory for that.
+
+1449
+01:07:03,679 --> 01:07:07,039
+So strlen of s will give you
+the length of the string plus 1.
+
+1450
+01:07:07,039 --> 01:07:09,169
+That's how many bytes
+you need for memory.
+
+1451
+01:07:09,170 --> 01:07:09,590
+DAVID MALAN: Indeed.
+
+1452
+01:07:09,590 --> 01:07:11,007
+And see, you get nothing for free.
+
+1453
+01:07:11,007 --> 01:07:12,830
+Anything you want you
+need to do yourself.
+
+1454
+01:07:12,829 --> 01:07:15,739
+And indeed, the plus 1 is
+a problem for you to solve.
+
+1455
+01:07:15,739 --> 01:07:19,579
+The distribution now, guest
+200 still in the lead with just
+
+1456
+01:07:19,579 --> 01:07:20,899
+shy of 10,000 points.
+
+1457
+01:07:20,900 --> 01:07:22,010
+That was question 10.
+
+1458
+01:07:22,010 --> 01:07:23,750
+We're in the second half of the game.
+
+1459
+01:07:23,750 --> 01:07:26,930
+How should you organize
+your clothes to be cool?
+
+1460
+01:07:26,929 --> 01:07:28,099
+This is number 11.
+
+1461
+01:07:28,099 --> 01:07:32,119
+Stack, queue, dictionary, binary tree.
+
+1462
+01:07:32,119 --> 01:07:35,839
+How should you organize
+your clothes to be cool?
+
+1463
+01:07:35,840 --> 01:07:39,830
+You might recall Jack and
+Lou, who taught us this one.
+
+1464
+01:07:39,829 --> 01:07:41,739
+Two seconds remain.
+
+1465
+01:07:41,739 --> 01:07:44,999
+And it looks like 48% said queue, Brian.
+
+1466
+01:07:45,000 --> 01:07:46,250
+BRIAN YU: And that is correct.
+
+1467
+01:07:46,250 --> 01:07:48,560
+So from that video with
+Jack and Lou, there
+
+1468
+01:07:48,559 --> 01:07:50,441
+were different ways of
+organizing the clues.
+
+1469
+01:07:50,442 --> 01:07:52,150
+But the conclusion of
+that video was, you
+
+1470
+01:07:52,150 --> 01:07:53,830
+want to put your clothes in a queue.
+
+1471
+01:07:53,829 --> 01:07:56,289
+So that after you're done with one,
+you put it at the end of the queue.
+
+1472
+01:07:56,289 --> 01:07:59,469
+And you use something else before you
+go back to the one you already wore.
+
+1473
+01:07:59,469 --> 01:08:00,069
+DAVID MALAN: Indeed.
+
+1474
+01:08:00,070 --> 01:08:00,570
+All right.
+
+1475
+01:08:00,570 --> 01:08:03,040
+And the leaderboard now, looks
+like guest 10 broke 10,000.
+
+1476
+01:08:03,039 --> 01:08:04,629
+But so did a bunch of other people.
+
+1477
+01:08:04,630 --> 01:08:07,540
+Next question, what is
+a segmentation fault?
+
+1478
+01:08:07,539 --> 01:08:10,059
+When a computer runs out of
+memory, when our program tries
+
+1479
+01:08:10,059 --> 01:08:13,479
+to read an empty file, when a program
+tries to access memory that it
+
+1480
+01:08:13,480 --> 01:08:16,620
+shouldn't, when an earthquake happens.
+
+1481
+01:08:16,619 --> 01:08:19,608
+Looks like a lot of these
+could be pretty close.
+
+1482
+01:08:19,609 --> 01:08:21,260
+Two seconds.
+
+1483
+01:08:21,260 --> 01:08:22,963
+And let's see.
+
+1484
+01:08:22,962 --> 01:08:26,129
+Looks like 80% said when a program tries
+to access memory that it shouldn't.
+
+1485
+01:08:26,130 --> 01:08:26,810
+Brian?
+
+1486
+01:08:26,810 --> 01:08:28,160
+BRIAN YU: That is the correct answer.
+
+1487
+01:08:28,159 --> 01:08:30,076
+Segmentation fault can
+happen if you're trying
+
+1488
+01:08:30,077 --> 01:08:33,790
+to touch memory that you're not supposed
+to have access to inside of a program.
+
+1489
+01:08:33,789 --> 01:08:35,539
+DAVID MALAN: And for
+the 13% of people who
+
+1490
+01:08:35,539 --> 01:08:38,926
+said when a computer runs out of memory,
+why is that not quite the answer here?
+
+1491
+01:08:38,926 --> 01:08:41,009
+BRIAN YU: So the computer
+could run out of memory.
+
+1492
+01:08:41,010 --> 01:08:43,640
+Where when you call malloc,
+malloc might return null,
+
+1493
+01:08:43,640 --> 01:08:46,040
+because there's no available
+memory to allocate.
+
+1494
+01:08:46,039 --> 01:08:48,706
+But as long as you check for that,
+and we try and encourage you,
+
+1495
+01:08:48,707 --> 01:08:52,100
+whenever you're mallocing memory, to
+check to see if the value you get back
+
+1496
+01:08:52,100 --> 01:08:52,760
+is null.
+
+1497
+01:08:52,760 --> 01:08:54,805
+That can help you to avoid
+those types of errors.
+
+1498
+01:08:54,805 --> 01:08:56,930
+DAVID MALAN: So let's take
+a look at the board now.
+
+1499
+01:08:56,930 --> 01:08:59,569
+11,000 something for guest 200.
+
+1500
+01:08:59,569 --> 01:09:01,670
+Let's now proceed with this question.
+
+1501
+01:09:01,670 --> 01:09:05,689
+Which of the following types of
+overflow can result from recursion
+
+1502
+01:09:05,689 --> 01:09:07,340
+without a base case?
+
+1503
+01:09:07,340 --> 01:09:13,359
+Heap overflow, integer overflow,
+stack overflow, buffer overflow.
+
+1504
+01:09:13,359 --> 01:09:16,370
+And all forms of
+overflow, indeed, came up.
+
+1505
+01:09:16,369 --> 01:09:19,509
+One of them is also, of course,
+the name of a popular website.
+
+1506
+01:09:19,510 --> 01:09:21,580
+But all of these are actual things.
+
+1507
+01:09:21,579 --> 01:09:23,659
+But which is correct?
+
+1508
+01:09:23,659 --> 01:09:25,148
+All right, let's see the results.
+
+1509
+01:09:25,149 --> 01:09:29,319
+Looks like 61%, 60% went
+with stack overflow.
+
+1510
+01:09:29,319 --> 01:09:29,990
+Brian?
+
+1511
+01:09:29,989 --> 01:09:31,239
+BRIAN YU: And that is correct.
+
+1512
+01:09:31,239 --> 01:09:34,597
+Every time you call a function, you
+end up getting a little bit of memory
+
+1513
+01:09:34,597 --> 01:09:35,889
+on the stack for that function.
+
+1514
+01:09:35,890 --> 01:09:38,515
+And if you keep calling that
+function recursively over and over
+
+1515
+01:09:38,515 --> 01:09:40,960
+and never stop, because
+there's no base case,
+
+1516
+01:09:40,960 --> 01:09:42,460
+then you can run out of stack space.
+
+1517
+01:09:42,460 --> 01:09:43,997
+And we call that a stack overflow.
+
+1518
+01:09:43,997 --> 01:09:44,830
+DAVID MALAN: Indeed.
+
+1519
+01:09:44,829 --> 01:09:46,659
+All right, let's see
+the leaderboard now.
+
+1520
+01:09:46,659 --> 01:09:48,969
+Guest 200, still the one to beat.
+
+1521
+01:09:48,970 --> 01:09:52,149
+But guest 216 is not too far behind.
+
+1522
+01:09:52,149 --> 01:09:53,020
+Next question.
+
+1523
+01:09:53,020 --> 01:09:55,630
+In the town of Fiftyville,
+what were the names
+
+1524
+01:09:55,630 --> 01:09:59,680
+of the three people who witnessed
+the rubber duck robbery?
+
+1525
+01:09:59,680 --> 01:10:01,720
+I'll let you read these.
+
+1526
+01:10:01,720 --> 01:10:04,660
+In the town of Fiftyville, what
+were the names of the three people
+
+1527
+01:10:04,659 --> 01:10:06,429
+who witnessed the rubber duck robbery.
+
+1528
+01:10:06,430 --> 01:10:10,810
+A new problem this year, recall that
+he disappeared altogether from the IDE
+
+1529
+01:10:10,810 --> 01:10:11,770
+for that week.
+
+1530
+01:10:11,770 --> 01:10:13,540
+All right, let's see the results.
+
+1531
+01:10:13,539 --> 01:10:15,459
+Brian, this one is close.
+
+1532
+01:10:15,460 --> 01:10:17,875
+33% said Ruth, Eugene, and Raymond.
+
+1533
+01:10:17,875 --> 01:10:20,000
+BRIAN YU: And Ruth, Eugene,
+and Raymond is correct.
+
+1534
+01:10:20,000 --> 01:10:22,083
+They've got more responses
+than any of the others.
+
+1535
+01:10:22,082 --> 01:10:22,929
+It was tricky.
+
+1536
+01:10:22,930 --> 01:10:24,430
+But yeah, that's the correct answer.
+
+1537
+01:10:24,430 --> 01:10:26,500
+There wasn't a whole lot
+of reason behind the names.
+
+1538
+01:10:26,500 --> 01:10:28,300
+I put a lot of thought
+into the story itself.
+
+1539
+01:10:28,300 --> 01:10:29,500
+But not a lot of thought to the names.
+
+1540
+01:10:29,500 --> 01:10:31,629
+Those were kind of
+just randomly selected.
+
+1541
+01:10:31,630 --> 01:10:33,767
+But those were the
+names of the witnesses.
+
+1542
+01:10:33,766 --> 01:10:34,599
+DAVID MALAN: Indeed.
+
+1543
+01:10:34,600 --> 01:10:38,380
+And the leaderboard now, we still
+have guest 200 is the one to beat.
+
+1544
+01:10:38,380 --> 01:10:39,530
+This is question 15.
+
+1545
+01:10:39,529 --> 01:10:42,279
+So we are nearing the end,
+still chance to pull ahead.
+
+1546
+01:10:42,279 --> 01:10:46,179
+Which of these command line programs
+checks your code for memory leaks?
+
+1547
+01:10:46,180 --> 01:10:50,110
+Valgrind, clang, mkdir, make.
+
+1548
+01:10:50,109 --> 01:10:53,859
+Notice that none of these have 50 on
+it, which means these are all real world
+
+1549
+01:10:53,859 --> 01:10:56,949
+commands that you would continue
+to see on your own Mac or PC
+
+1550
+01:10:56,949 --> 01:10:59,799
+or some future Linux system.
+
+1551
+01:10:59,800 --> 01:11:02,380
+And let's see the results.
+
+1552
+01:11:02,380 --> 01:11:05,020
+Here we have valgrind,
+the clear winner, 78%.
+
+1553
+01:11:05,020 --> 01:11:05,560
+Brian?
+
+1554
+01:11:05,560 --> 01:11:06,760
+BRIAN YU: And that's the correct answer.
+
+1555
+01:11:06,760 --> 01:11:09,302
+That's the program you can use
+in order to check your program
+
+1556
+01:11:09,301 --> 01:11:11,379
+to see if you have any
+memory leaks, to see
+
+1557
+01:11:11,380 --> 01:11:14,890
+if you're touching memory you shouldn't,
+if you're forgetting to free something.
+
+1558
+01:11:14,890 --> 01:11:16,100
+Valgrind is useful for all of that.
+
+1559
+01:11:16,100 --> 01:11:19,030
+DAVID MALAN: And if I may, I feel like
+5% of you are just messing with us now.
+
+1560
+01:11:19,029 --> 01:11:20,319
+Hopefully, but we shall see.
+
+1561
+01:11:20,319 --> 01:11:22,299
+All right, last five questions to go.
+
+1562
+01:11:22,300 --> 01:11:26,210
+After taking a look at the leaderboard
+now, guest 200's still up at the top.
+
+1563
+01:11:26,210 --> 01:11:30,130
+Which of the following
+exists in C, but not Python.
+
+1564
+01:11:30,130 --> 01:11:32,800
+Boolean expressions,
+do-while loops, recursive
+
+1565
+01:11:32,800 --> 01:11:35,740
+functions, floating-point numbers.
+
+1566
+01:11:35,739 --> 01:11:40,449
+Which of the following
+exists in C, but not Python?
+
+1567
+01:11:40,449 --> 01:11:44,739
+An interesting comparison between two
+languages that goes beyond syntax.
+
+1568
+01:11:44,739 --> 01:11:45,579
+All right.
+
+1569
+01:11:45,579 --> 01:11:46,329
+Time's up.
+
+1570
+01:11:46,329 --> 01:11:47,589
+Let's take a look.
+
+1571
+01:11:47,590 --> 01:11:50,380
+Looks like 68% went with do-while loops.
+
+1572
+01:11:50,380 --> 01:11:51,160
+Brian?
+
+1573
+01:11:51,159 --> 01:11:52,359
+BRIAN YU: That is correct.
+
+1574
+01:11:52,359 --> 01:11:53,559
+Python has for loops.
+
+1575
+01:11:53,560 --> 01:11:54,910
+Python has while loops.
+
+1576
+01:11:54,909 --> 01:11:57,729
+But it doesn't have do-while
+loops in the same way that C does.
+
+1577
+01:11:57,729 --> 01:12:00,189
+You'd have to find some other
+way of trying to achieve
+
+1578
+01:12:00,189 --> 01:12:01,809
+that same kind of logical idea.
+
+1579
+01:12:01,810 --> 01:12:02,200
+DAVID MALAN: Indeed.
+
+1580
+01:12:02,199 --> 01:12:04,407
+And Brian, what was the
+approach that we took when we
+
+1581
+01:12:04,408 --> 01:12:06,010
+tried to recreate that some weeks ago?
+
+1582
+01:12:06,010 --> 01:12:06,250
+BRIAN YU: Yeah.
+
+1583
+01:12:06,250 --> 01:12:09,069
+So one approach to it is having
+an infinite loop, while true,
+
+1584
+01:12:09,069 --> 01:12:10,779
+that will just always repeat.
+
+1585
+01:12:10,779 --> 01:12:13,719
+And then when you reach a point
+where you can exit the loop,
+
+1586
+01:12:13,720 --> 01:12:16,000
+you can use the command
+break to get out of the loop
+
+1587
+01:12:16,000 --> 01:12:17,627
+and move on to the rest of the program.
+
+1588
+01:12:17,627 --> 01:12:18,460
+DAVID MALAN: Indeed.
+
+1589
+01:12:18,460 --> 01:12:20,210
+All right, let's take
+a look at the board.
+
+1590
+01:12:20,210 --> 01:12:25,810
+Guest 200 still now at 15,938, but
+still a few close folks behind.
+
+1591
+01:12:25,810 --> 01:12:30,310
+What HTTP request method should you
+use when sending private information
+
+1592
+01:12:30,310 --> 01:12:31,600
+like a password?
+
+1593
+01:12:31,600 --> 01:12:35,200
+GET, POST, SELECT, or TEXT?
+
+1594
+01:12:35,199 --> 01:12:37,899
+Which HTTP request method
+should use when sending
+
+1595
+01:12:37,899 --> 01:12:41,859
+private information like a password?
+
+1596
+01:12:41,859 --> 01:12:43,509
+Take a look at the results.
+
+1597
+01:12:43,510 --> 01:12:44,290
+All right.
+
+1598
+01:12:44,289 --> 01:12:48,547
+And the distribution is a lot
+of people said POST, Brian, 74%
+
+1599
+01:12:48,547 --> 01:12:49,839
+BRIAN YU: And they are correct.
+
+1600
+01:12:49,840 --> 01:12:52,007
+Yeah, if it was a get
+request, then you would end up
+
+1601
+01:12:52,006 --> 01:12:54,789
+with sensitive information
+inside the URL that might show up
+
+1602
+01:12:54,789 --> 01:12:56,694
+in your browsing history, for example.
+
+1603
+01:12:56,694 --> 01:12:59,599
+So to be secure, you want to
+be sure to use the POST request
+
+1604
+01:12:59,600 --> 01:13:00,850
+method for that type of stuff.
+
+1605
+01:13:00,850 --> 01:13:02,410
+DAVID MALAN: And to be
+clear, don't do this.
+
+1606
+01:13:02,409 --> 01:13:04,309
+Get is possible, and
+we saw how to do that.
+
+1607
+01:13:04,310 --> 01:13:07,420
+But of course, that then ends up in
+your history and other exposed places.
+
+1608
+01:13:07,420 --> 01:13:10,550
+SELECT and TEXT were not HTTP verbs.
+
+1609
+01:13:10,550 --> 01:13:12,010
+So POST is indeed spot on.
+
+1610
+01:13:12,010 --> 01:13:14,140
+All right, only three questions remain.
+
+1611
+01:13:14,140 --> 01:13:17,830
+Guest 200 is still the one to
+beat, followed by guest 216.
+
+1612
+01:13:17,829 --> 01:13:22,869
+What data structure allows for constant
+time look up for words in a dictionary?
+
+1613
+01:13:22,869 --> 01:13:28,329
+A linked list, a binary search
+tree, an array, or a trie?
+
+1614
+01:13:28,329 --> 01:13:30,729
+Recall that a dictionary
+was an abstract data
+
+1615
+01:13:30,729 --> 01:13:33,879
+type, insofar as you could
+implement it in different ways.
+
+1616
+01:13:33,880 --> 01:13:37,000
+But to get constant time
+look up, you might want
+
+1617
+01:13:37,000 --> 01:13:40,779
+to use one of these over the others.
+
+1618
+01:13:40,779 --> 01:13:42,569
+Let's see the results.
+
+1619
+01:13:42,569 --> 01:13:43,799
+Interesting.
+
+1620
+01:13:43,800 --> 01:13:45,870
+Brian, 32% said trie.
+
+1621
+01:13:45,869 --> 01:13:47,009
+Can you help us out here?
+
+1622
+01:13:47,010 --> 01:13:47,310
+BRIAN YU: Yeah.
+
+1623
+01:13:47,310 --> 01:13:48,602
+The trie is the correct answer.
+
+1624
+01:13:48,601 --> 01:13:52,019
+For all of the others, the linked list,
+the binary search tree, and the array,
+
+1625
+01:13:52,020 --> 01:13:54,220
+as you have more and more
+words in the dictionary,
+
+1626
+01:13:54,220 --> 01:13:56,580
+it's going to take longer
+and longer to find a word,
+
+1627
+01:13:56,579 --> 01:13:58,649
+as you have to either
+linear search through it
+
+1628
+01:13:58,649 --> 01:14:02,339
+or you have to go down through various
+nodes in the binary search tree.
+
+1629
+01:14:02,340 --> 01:14:05,580
+The trie on the other hand, it only
+depends upon the length of the word
+
+1630
+01:14:05,579 --> 01:14:06,539
+that you're looking up.
+
+1631
+01:14:06,539 --> 01:14:08,969
+It doesn't matter how many
+words are in the dictionary.
+
+1632
+01:14:08,970 --> 01:14:12,090
+You just follow one node for each
+letter in the word you're looking up.
+
+1633
+01:14:12,090 --> 01:14:14,490
+And you'll find that
+word in constant time.
+
+1634
+01:14:14,489 --> 01:14:17,439
+DAVID MALAN: And Brian, if constant
+time, Big O of 1 is so good,
+
+1635
+01:14:17,439 --> 01:14:19,106
+why not use tries, then, for everything?
+
+1636
+01:14:19,106 --> 01:14:21,272
+BRIAN YU: Well, there are
+trade offs for everything.
+
+1637
+01:14:21,273 --> 01:14:23,640
+The trie gives you
+theoretically constant time.
+
+1638
+01:14:23,640 --> 01:14:25,440
+But one of the big trade offs is memory.
+
+1639
+01:14:25,439 --> 01:14:27,569
+That tries end up using
+much more memory to be
+
+1640
+01:14:27,569 --> 01:14:31,296
+able to store a dictionary than many
+of those other data structures would.
+
+1641
+01:14:31,296 --> 01:14:32,129
+DAVID MALAN: Indeed.
+
+1642
+01:14:32,130 --> 01:14:33,450
+Let's look at the results.
+
+1643
+01:14:33,449 --> 01:14:35,399
+And guest 200 still at the lead.
+
+1644
+01:14:35,399 --> 01:14:38,309
+But guest 752 is now
+nipping at their heels.
+
+1645
+01:14:38,310 --> 01:14:40,500
+We have two final questions.
+
+1646
+01:14:40,500 --> 01:14:42,899
+And speed, again, does matter.
+
+1647
+01:14:42,899 --> 01:14:44,979
+What is a cookie?
+
+1648
+01:14:44,979 --> 01:14:48,729
+Data used to identify your computer
+to websites, a delicious snack,
+
+1649
+01:14:48,729 --> 01:14:53,139
+both of the above, or none of the above.
+
+1650
+01:14:53,140 --> 01:14:54,310
+This is a tough one, Brian.
+
+1651
+01:14:54,310 --> 01:14:56,950
+Especially if there's
+only one right answer.
+
+1652
+01:14:56,949 --> 01:14:58,659
+We might see a bit more of a split.
+
+1653
+01:14:58,659 --> 01:15:00,229
+Which of these is a cookie?
+
+1654
+01:15:00,229 --> 01:15:02,589
+All right, let's see the results.
+
+1655
+01:15:02,590 --> 01:15:05,530
+Data used to identify your
+computer to websites with 60%.
+
+1656
+01:15:05,529 --> 01:15:07,299
+Both of the above was 35%.
+
+1657
+01:15:07,300 --> 01:15:09,340
+Only 2% of you like cookies alone.
+
+1658
+01:15:09,340 --> 01:15:10,215
+Brian?
+
+1659
+01:15:10,215 --> 01:15:12,340
+BRIAN YU: Both of the above
+was the correct answer.
+
+1660
+01:15:12,340 --> 01:15:15,465
+I'll remind that all of these questions
+were written originally by students
+
+1661
+01:15:15,465 --> 01:15:18,490
+and the answer choice of students
+selected as the correct one was
+
+1662
+01:15:18,489 --> 01:15:19,451
+both of the above.
+
+1663
+01:15:19,452 --> 01:15:20,410
+DAVID MALAN: All right.
+
+1664
+01:15:20,409 --> 01:15:24,399
+And now the second to last leaderboard,
+Guest 200 is still in the lead.
+
+1665
+01:15:24,399 --> 01:15:26,769
+But there's been some variance
+toward the bottom there.
+
+1666
+01:15:26,770 --> 01:15:30,580
+Very last question of CS50 itself.
+
+1667
+01:15:30,579 --> 01:15:34,329
+What's your comfort level now?
+
+1668
+01:15:34,329 --> 01:15:39,559
+And we'll let you decide
+among these answers, too.
+
+1669
+01:15:39,560 --> 01:15:40,760
+All right.
+
+1670
+01:15:40,760 --> 01:15:41,720
+Answers are all in.
+
+1671
+01:15:41,720 --> 01:15:43,520
+Let's take a look at the distribution.
+
+1672
+01:15:43,520 --> 01:15:47,360
+Looks like 43% of you said you're
+among more of those more comfortable.
+
+1673
+01:15:47,359 --> 01:15:49,609
+24% of you went with the second.
+
+1674
+01:15:49,609 --> 01:15:52,479
+19%, very fascinating
+distribution from top to bottom.
+
+1675
+01:15:52,479 --> 01:15:55,639
+But the point is that you are all
+indeed now officially inducted
+
+1676
+01:15:55,640 --> 01:15:57,410
+into those more comfortable.
+
+1677
+01:15:57,409 --> 01:15:59,299
+Thank you so much for
+joining us in CS50.
+
+1678
+01:15:59,300 --> 01:16:01,610
+We cannot wait to see
+your final projects.
+
+1679
+01:16:01,609 --> 01:16:03,109
+This, then, is the end.
+
+1680
+01:16:03,109 --> 01:16:04,489
+And this was CS50.
+
+1681
+01:16:04,489 --> 01:16:14,089
+
+
+1682
+01:16:14,090 --> 01:16:17,440
+[MUSIC PLAYING]
+
+1683
+01:16:17,439 --> 01:17:12,999
+
+

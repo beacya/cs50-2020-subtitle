@@ -1,0 +1,8365 @@
+1
+00:00:00,500 --> 00:00:02,970
+[音乐响起--字幕精校中--By Persisan]
+[MUSIC PLAYING]
+
+2
+00:00:48,432 --> 00:00:49,390
+戴维·马兰：好的。
+DAVID MALAN: All right.
+
+3
+00:00:49,390 --> 00:00:51,050
+这是CS50。
+This is CS50.
+
+4
+00:00:51,049 --> 00:00:52,929
+到此为止。
+And this is the end.
+
+5
+00:00:52,929 --> 00:00:55,599
+剩下的实际上就是您的最终项目。
+All that remains here on out is really your final projects.
+
+6
+00:00:55,600 --> 00:00:57,835
+我们迫不及待想看到您创建的内容。
+And we cannot wait to see what you create.
+
+7
+00:00:57,835 --> 00:01:00,460
+今天，我们认为我们会做的是回顾一下，
+Today what we thought we would do is take a bit of a look back,
+
+8
+00:01:00,460 --> 00:01:03,400
+但我们也很期待，以便您确切地知道
+but also we'll look forward so that you know exactly where
+
+9
+00:01:03,399 --> 00:01:06,549
+以及CS50本身以外的其他功能。
+and what you can do beyond CS50 itself.
+
+10
+00:01:06,549 --> 00:01:08,649
+但是首先要感谢。
+But first a word of thanks.
+
+11
+00:01:08,650 --> 00:01:11,200
+我们当然在勒布戏剧中心
+We are, of course, here in the Loeb Drama Center
+
+12
+00:01:11,200 --> 00:01:14,380
+与《美国话剧团》合作
+with The American Repertory Theater, who have been our amazing hosts
+
+13
+00:01:14,379 --> 00:01:15,459
+这整个学期。
+this whole semester.
+
+14
+00:01:15,459 --> 00:01:20,259
+的确，他们呼吸了新的生活，新的灯光，新的动画，新的声音
+And truly, they have breathed new life, new lights, new animation, new sounds
+
+15
+00:01:20,260 --> 00:01:21,100
+进入CS50。
+into CS50.
+
+16
+00:01:21,099 --> 00:01:23,349
+我们非常感激能有这样的特权
+And we are so grateful to have had such a privilege
+
+17
+00:01:23,349 --> 00:01:27,039
+与这里的才华横溢的团队合作，确实带来了
+to work with the amazingly talented team here to indeed bring
+
+18
+00:01:27,040 --> 00:01:30,460
+整个生命阶段，并在整个学期中逐步发展。
+this whole stage to life and evolve it over the course of the semester.
+
+19
+00:01:30,459 --> 00:01:32,289
+当然，还有CS50的团队。
+And then, of course, there's CS50'S team.
+
+20
+00:01:32,290 --> 00:01:34,360
+虽然我是舞台上唯一的一个
+And though I'm the only one here on stage
+
+21
+00:01:34,359 --> 00:01:37,299
+这个学期其他人分散得很远，
+with everyone else spread quite far apart this semester,
+
+22
+00:01:37,299 --> 00:01:42,219
+没有CS50的团队，我们就拥有了我们拥有的视频，
+it would not be without CS50's team that we have the videos that we have,
+
+23
+00:01:42,219 --> 00:01:44,499
+我们拥有的技术以及所有视觉效果
+the technology that we have, and all of the visuals
+
+24
+00:01:44,500 --> 00:01:47,169
+希望补充一下您自己拥有的一切
+that supplement, hopefully, everything that you yourselves
+
+25
+00:01:47,170 --> 00:01:48,500
+一直在动手。
+have been doing hands on.
+
+26
+00:01:48,500 --> 00:01:53,820
+因此，非常感谢两个团队使本学期成为可能。
+So thank you truly to both teams for having made this semester all possible.
+
+27
+00:01:53,819 --> 00:01:57,189
+可以说，在更加不寻常和困难的时期中，这些就足够了。
+These are suffice it to say, among the more unusual and difficult times.
+
+28
+00:01:57,189 --> 00:02:00,519
+我们希望，如果您现在正在观看直播，或者从现在开始的某个时间，
+And we hope, if you're watching this now live, or in some time from now,
+
+29
+00:02:00,519 --> 00:02:02,809
+这样可以使每个人都身体健康。
+that this finds everyone healthy and well.
+
+30
+00:02:02,810 --> 00:02:05,050
+的确，我们已经帮助您找到了自己的出路
+And that, indeed, we have helped you find your way
+
+31
+00:02:05,049 --> 00:02:08,538
+沿着这条学习新事物的道路前进。
+along this path of learning something new.
+
+32
+00:02:08,538 --> 00:02:10,989
+当然，还有更多的人
+Of course, there's more folks even than that
+
+33
+00:02:10,990 --> 00:02:13,160
+在幕后，CS50的整个团队。
+behind the scenes, CS50'S whole team.
+
+34
+00:02:13,159 --> 00:02:15,429
+当我看着这里的人群时，真的，那里
+And when I look out on the crowd here, really, there
+
+35
+00:02:15,430 --> 00:02:16,650
+没有人在这里。
+is no crowd here in person.
+
+36
+00:02:16,650 --> 00:02:19,150
+如果您想知道幕后的样子，
+And if you've wondered what it looks like behind the scenes,
+
+37
+00:02:19,150 --> 00:02:21,790
+这张照片是什么的照片
+pictured here is a photograph of exactly what
+
+38
+00:02:21,789 --> 00:02:24,399
+我正在看到我们何时举行这些课程中的每一个。
+it is I am seeing when we hold each of these classes.
+
+39
+00:02:24,400 --> 00:02:27,100
+确实，如果我们进行放大，那么当我们进行这些对话时
+And indeed, if we Zoom in, when we're having these conversations
+
+40
+00:02:27,099 --> 00:02:30,279
+或回答或问问题，这真的只是我们
+or answering or asking questions, it really is just us
+
+41
+00:02:30,280 --> 00:02:31,960
+和今年的一些电视屏幕。
+and some TV screens here this year.
+
+42
+00:02:31,960 --> 00:02:35,320
+但是，我们确实希望不久以后能团聚。
+But we do look forward to all reuniting before long.
+
+43
+00:02:35,319 --> 00:02:37,939
+现在幕后，确实有整个团队。
+Now behind the scenes, there's indeed this whole team.
+
+44
+00:02:37,939 --> 00:02:40,569
+实际上，这里的图片只是其中的大部分，甚至没有
+In fact, pictured here are just most of, but not even
+
+45
+00:02:40,569 --> 00:02:44,439
+所有，CS50的教学人员，助教和课程助手，
+all, CS50'S teaching Fellows, teaching assistants, and course assistants,
+
+46
+00:02:44,439 --> 00:02:48,519
+无论是在哈佛还是在耶鲁，没有他们，这个学期也不会
+both at Harvard and at Yale, without whom this semester would also not
+
+47
+00:02:48,520 --> 00:02:49,028
+可能的。
+be possible.
+
+48
+00:02:49,027 --> 00:02:51,819
+因为它们确实是支撑结构的支柱和支撑结构
+Because they are, indeed, the backbone of and the support structure
+
+49
+00:02:51,819 --> 00:02:53,889
+让每个人最终完成
+for getting everyone ultimately to the finish
+
+50
+00:02:53,889 --> 00:02:56,259
+与问题集，实验室等保持一致。
+line with problem sets, labs, and more.
+
+51
+00:02:56,259 --> 00:02:59,739
+但值得注意的是，我们所有人都容易犯错误。
+But it's worth noting that we are all fallible.
+
+52
+00:02:59,740 --> 00:03:02,050
+而且，的确，我被告知这在什么时候具有启发性
+And, indeed, I'm told it's fairly instructive when
+
+53
+00:03:02,050 --> 00:03:05,950
+我做错了什么，或者在舞台上有些困惑
+I do something completely wrong, or get a little befuddled here on stage
+
+54
+00:03:05,949 --> 00:03:09,009
+并且无法弄清楚为什么我自己的代码无法正常工作，
+and can't quite figure out why my own code isn't working,
+
+55
+00:03:09,009 --> 00:03:11,799
+还是不能完全回答我的问题。
+or can't quite answer a question off the top of my head.
+
+56
+00:03:11,800 --> 00:03:13,862
+这一切当然发生在我们所有人身上。
+This all happens, certainly, to all of us.
+
+57
+00:03:13,861 --> 00:03:15,819
+因此，即使您在这里感觉到最后
+So even if you are feeling here, toward the end
+
+58
+00:03:15,819 --> 00:03:17,949
+在学期中，并不是所有事物都被点击了
+of the semester, that not everything quite clicked
+
+59
+00:03:17,949 --> 00:03:20,829
+而且有时您仍在努力在代码中找到该错误，
+and you're still struggling sometimes to find that bug in your code,
+
+60
+00:03:20,830 --> 00:03:23,860
+还是您仍在搜寻或寻找一些较小的答案
+or you're still googling or searching for some answer to some smaller
+
+61
+00:03:23,860 --> 00:03:27,280
+技术问题，请放心，或者在了解情况时感到放心，
+technical problem, rest assured, or take comfort in knowing,
+
+62
+00:03:27,280 --> 00:03:29,900
+那永远不会消失。
+that that is never really going to go away.
+
+63
+00:03:29,900 --> 00:03:32,740
+实际上，除了所有错误之外，还要加强这一点
+And in fact, to reinforce that, besides all of the mistakes
+
+64
+00:03:32,740 --> 00:03:36,250
+我在这里做了舞台，我们以为我们会分享一些片段，
+I here have made on stage, we thought we would share a little bit of a clip,
+
+65
+00:03:36,250 --> 00:03:40,089
+如果您愿意的话，从几周前教员准备时开始
+some bloopers if you will, from when the teaching staff some weeks ago prepared
+
+66
+00:03:40,090 --> 00:03:45,477
+在视频上传递TCP / IP数据包的效果非常好，
+that passing of TCP/IP packets on video, which worked out wonderfully well,
+
+67
+00:03:45,477 --> 00:03:47,560
+人们在上，下，左，右走过的地方。
+where folks were passing up, down, left and right.
+
+68
+00:03:47,560 --> 00:03:50,290
+目的是获得三个TCP / IP数据包
+The goal of which was to get three TCP/IP packets
+
+69
+00:03:50,289 --> 00:03:52,209
+从Zoom的右下角开始
+from the bottom right-hand corner of Zoom
+
+70
+00:03:52,210 --> 00:03:53,948
+缩放的左上角。
+to the top left-hand corner of Zoom.
+
+71
+00:03:53,948 --> 00:03:56,740
+但是我们认为我们可以让您一窥到底发生了什么
+But we thought we would give you a glimpse of what actually went on
+
+72
+00:03:56,740 --> 00:03:58,990
+在幕后，花了多少时间才带走了我们
+behind the scenes and just how many takes it took us
+
+73
+00:03:58,990 --> 00:04:00,970
+甚至使演示正确。
+to get even that demonstration right.
+
+74
+00:04:00,969 --> 00:04:03,699
+我给您一些CS50的团队。
+I give you some of CS50'S team.
+
+75
+00:04:03,699 --> 00:04:04,599
+[视频回放]
+[VIDEO PLAYBACK]
+
+76
+00:04:04,599 --> 00:04:06,399
+-我们去。
+- There we go.
+
+77
+00:04:06,400 --> 00:04:07,262
+缓冲。
+Buffering.
+
+78
+00:04:07,262 --> 00:04:08,620
+好的。
+OK.
+
+79
+00:04:08,620 --> 00:04:09,818
+乔希？
+Josh?
+
+80
+00:04:09,818 --> 00:04:11,803
+- 你好。
+- Hi.
+
+81
+00:04:11,802 --> 00:04:14,049
+-海伦，哦！
+- Helen, oh!
+
+82
+00:04:14,050 --> 00:04:17,858
+[笑声]
+[LAUGHTER]
+
+83
+00:04:17,858 --> 00:04:18,899
+-[听不清]。
+- [INAUDIBLE].
+
+84
+00:04:18,899 --> 00:04:19,839
+不，等等
+No, wait.
+
+85
+00:04:25,810 --> 00:04:26,860
+太好了，乔希。
+That was amazing, Josh.
+
+86
+00:04:30,636 --> 00:04:34,164
+嗯，索菲？
+Um, Sophie?
+
+87
+00:04:34,163 --> 00:04:39,129
+[笑声]
+[LAUGHTER]
+
+88
+00:04:39,129 --> 00:04:41,639
+惊人的。
+Amazing.
+
+89
+00:04:41,639 --> 00:04:43,489
+那太完美了。
+That was perfect.
+
+90
+00:04:43,490 --> 00:04:44,532
+莫妮
+Moni?
+
+91
+00:04:44,531 --> 00:04:47,249
+[笑声]
+[LAUGHTER]
+
+92
+00:04:47,250 --> 00:04:49,110
+我想我 -
+I think I--
+
+93
+00:04:49,110 --> 00:04:52,220
+-[听不清]。
+- [INAUDIBLE].
+
+94
+00:04:52,220 --> 00:04:53,338
+- 惊人的。
+- Amazing.
+
+95
+00:04:53,338 --> 00:04:53,838
+-家伙？
+- Guy?
+
+96
+00:04:57,970 --> 00:04:59,050
+那太精彩了。
+That was amazing.
+
+97
+00:04:59,050 --> 00:04:59,775
+谢谢你们。
+Thank you all.
+
+98
+00:04:59,774 --> 00:05:00,809
+- 超好的！
+- So good!
+
+99
+00:05:00,810 --> 00:05:01,676
+[掌声]
+[APPLAUSE]
+
+100
+00:05:01,675 --> 00:05:03,409
+[结束播放]
+[END PLAYBACK]
+
+101
+00:05:03,410 --> 00:05:06,870
+DAVID MALAN：可以这么说，计算机科学对我们所有人来说都很困难。
+DAVID MALAN: So suffice it to say, computer science is hard for all of us.
+
+102
+00:05:06,870 --> 00:05:08,510
+因此，有些感觉，一些挫败感
+And so some of these feelings, some of these frustrations
+
+103
+00:05:08,509 --> 00:05:09,634
+永远不会消失。
+are never going to go away.
+
+104
+00:05:09,634 --> 00:05:12,536
+但希望您确实拥有工具包中的所有其他工具，
+But hopefully you have, indeed, all the more tools in your toolkit,
+
+105
+00:05:12,536 --> 00:05:14,369
+现在更多的基础可以建立
+all the more of a foundation now to build on
+
+106
+00:05:14,370 --> 00:05:18,290
+这样您就可以在向前迈进时感到不舒服
+so that you can take comfort in being a little uncomfortable as you forge ahead
+
+107
+00:05:18,290 --> 00:05:20,270
+并解决新问题，学习新语言，
+and solve new problems, learn new languages,
+
+108
+00:05:20,269 --> 00:05:22,489
+并最终获得新的想法和技能。
+and ultimately pick up new ideas and skills.
+
+109
+00:05:22,490 --> 00:05:25,528
+但是请记住，仅对于CS50，最终会发生什么
+But remember, for CS50 alone, what ultimately
+
+110
+00:05:25,528 --> 00:05:27,320
+在这门课程中重要的不是什么
+matters in this course is not so much where
+
+111
+00:05:27,319 --> 00:05:29,899
+你最终会和你的同学有关，但是你最终会在哪里
+you end up relative to your classmates, but where you end
+
+112
+00:05:29,899 --> 00:05:32,359
+开始时相对于您自己。
+up relative to yourself when you began.
+
+113
+00:05:32,360 --> 00:05:35,390
+考虑一下，这不是很早以前就开始的。
+And consider, it wasn't all that long ago that you began.
+
+114
+00:05:35,389 --> 00:05:38,179
+实际上，也许在几周前，
+In fact, just some weeks ago was this perhaps,
+
+115
+00:05:38,180 --> 00:05:40,640
+您在CS50中遇到的最大问题，只是尝试
+the biggest of your problems in CS50, just trying
+
+116
+00:05:40,639 --> 00:05:42,949
+弄清楚如何使金字塔正确对齐，
+to figure out how to get the pyramid to align right,
+
+117
+00:05:42,949 --> 00:05:44,779
+不管您使用的是舒适度较低的版本还是更多
+whether you did the less comfortable version or the more
+
+118
+00:05:44,779 --> 00:05:47,389
+舒适的版本，弄清楚如何打印空间，
+comfortable version, figuring out how to print spaces,
+
+119
+00:05:47,389 --> 00:05:50,749
+如何将金字塔等移开，弄清楚如何嵌套循环，
+how to shift the pyramid over and the like, figuring out how to nest loops,
+
+120
+00:05:50,750 --> 00:05:54,140
+更不用说正确处理所有分号和编译步骤了。
+let alone getting all of the semicolons and compilation steps right.
+
+121
+00:05:54,139 --> 00:05:56,689
+然后，快进一两周前
+And then, fast forward to just a week or two ago
+
+122
+00:05:56,689 --> 00:05:59,599
+当您构建自己的Web应用程序时，
+when you built your very own web application, one
+
+123
+00:05:59,600 --> 00:06:03,350
+使用第三方API并提取了几乎实时的数据
+that used a third party API and pulled in nearly real time data
+
+124
+00:06:03,350 --> 00:06:06,800
+并为用户生成视图，并有一个控制器来控制
+and generated views for the user, had a controller governing
+
+125
+00:06:06,800 --> 00:06:09,813
+与模型完全一样，您正在读取和写入的所有数据
+with the model exactly all of the data you were reading and writing
+
+126
+00:06:09,812 --> 00:06:10,354
+等等。
+and the like.
+
+127
+00:06:10,355 --> 00:06:15,432
+就像，这是过去几个月的巨大方法。
+Like, that is a huge way to have gone over the course of just a few months.
+
+128
+00:06:15,432 --> 00:06:16,640
+因此，也要对此感到安慰。
+So take comfort in that, too.
+
+129
+00:06:16,639 --> 00:06:18,556
+尤其是当您进入最终项目时
+Especially as you dive into your final project
+
+130
+00:06:18,557 --> 00:06:21,680
+可能还会撞到更多的墙
+and might bump up against some more walls, those, too,
+
+131
+00:06:21,680 --> 00:06:24,470
+您最终会完成吗？
+will you ultimately push through.
+
+132
+00:06:24,470 --> 00:06:27,380
+那么，在本学期的课程中，我们专注于什么？
+So what have we focused on over the course of this semester?
+
+133
+00:06:27,379 --> 00:06:30,549
+很多时候我们都花时间谈论和进行编程。
+A lot of the times we've spent time talking about and doing programming.
+
+134
+00:06:30,550 --> 00:06:33,050
+但实际上，我们想认为这是更高层次的
+But really, we'd like to think it's some of the higher level
+
+135
+00:06:33,050 --> 00:06:36,650
+想法和外卖是最后的你
+ideas and the takeaways that are what last you
+
+136
+00:06:36,649 --> 00:06:39,199
+远远长于这些语言的细节。
+far longer than the particulars of these languages.
+
+137
+00:06:39,199 --> 00:06:42,679
+无论是Scratch还是C，Python，JavaScript或SQL，
+Whether it's Scratch or C or Python or JavaScript or SQL,
+
+138
+00:06:42,680 --> 00:06:46,340
+或我们研究过的任何其他实用工具，所有这些
+or any of the other practical tools that we looked at, all of those
+
+139
+00:06:46,339 --> 00:06:49,339
+最终会以某种形式过时。
+are eventually in some form going to be out of date.
+
+140
+00:06:49,339 --> 00:06:52,159
+否则他们可能会留在我们这里，是较老的语言
+Or they might remain with us is older languages,
+
+141
+00:06:52,160 --> 00:06:54,745
+但是会出现更新更好的事情。
+but newer and better things will come along.
+
+142
+00:06:54,745 --> 00:06:57,120
+那么，我们希望在过去的几个月中，
+And what we hope, then, is that over the past few months,
+
+143
+00:06:57,120 --> 00:07:01,430
+您已经摆脱了基础知识和诸如此类的基础
+you've walked away with the fundamentals and sort of a foundation on which you
+
+144
+00:07:01,430 --> 00:07:04,280
+可以引导自己学习新事物，因为它们会不断涌现
+can bootstrap yourself to learn new things as they come out
+
+145
+00:07:04,279 --> 00:07:07,969
+并真正将新事物减少到其基本组成部分，
+and really reduce new things to their basic building blocks,
+
+146
+00:07:07,970 --> 00:07:11,300
+我们开始的拼图，您从中获得的第一原则
+the puzzle pieces with which we began, first principles from which you
+
+147
+00:07:11,300 --> 00:07:14,880
+可以推断出一些新系统，新硬件的方式，
+can infer how some new system, some new piece of hardware,
+
+148
+00:07:14,879 --> 00:07:17,179
+某种新语言必须如何工作。
+how some new language must surely work.
+
+149
+00:07:17,180 --> 00:07:20,360
+因为在引擎盖下，到最后还是要这样，
+Because underneath the hood, at the end of the day, it's still going to be,
+
+150
+00:07:20,360 --> 00:07:23,160
+在一段时间内，只有0和1。
+for some time, just 0's and 1's.
+
+151
+00:07:23,160 --> 00:07:26,510
+因此，我们在第0周介绍了回忆，计算思维，
+And so we introduced in Week 0, recall, computational thinking,
+
+152
+00:07:26,509 --> 00:07:29,989
+鼓励您更系统，更算法地思考。
+encouraging you to think more methodically, more algorithmically.
+
+153
+00:07:29,990 --> 00:07:33,530
+但是实际上，计算思维只是计算机科学家的化身
+But really, computational thinking is just a computer scientist's incarnation
+
+154
+00:07:33,529 --> 00:07:36,289
+我们可能认为只是批判性思维的东西。
+of what we might otherwise think of as just critical thinking.
+
+155
+00:07:36,290 --> 00:07:39,290
+该过程作为输入信息
+This process is taking as input information
+
+156
+00:07:39,290 --> 00:07:41,810
+并产生一些解决方案。
+and producing as output some solution.
+
+157
+00:07:41,810 --> 00:07:45,050
+在这两者之间，当然是我们的算法，
+And in between there, of course, are our algorithms, the black box that's
+
+158
+00:07:45,050 --> 00:07:48,360
+做一些有趣的事情，也许很难。但是最终
+doing something interesting and perhaps difficult. But at the end of the day,
+
+159
+00:07:48,360 --> 00:07:49,370
+这是解决问题的方法。
+this is problem solving.
+
+160
+00:07:49,370 --> 00:07:52,460
+不管使用哪种语言，这都行不通
+And this isn't going anywhere, irrespective of the languages
+
+161
+00:07:52,459 --> 00:07:56,279
+您在使用过程中使用或拿起甚至忘记的地方。
+that you use or pick up or even forget somewhere along the way.
+
+162
+00:07:56,279 --> 00:08:00,199
+的确，今天，无论是输入还是输出都是二进制形式，
+And indeed, today, too, whether this is input and output in binary form,
+
+163
+00:08:00,199 --> 00:08:03,929
+或仅仅是信息和决定或事实和结论，
+or it's just information and decisions or facts and conclusions,
+
+164
+00:08:03,930 --> 00:08:06,620
+输入和生产的过程
+this process of taking input and producing
+
+165
+00:08:06,620 --> 00:08:09,500
+作为输出正确答案，正确结论，
+as output correct answers, correct conclusions,
+
+166
+00:08:09,500 --> 00:08:12,259
+正确的决定有望与您同在
+correct decisions is hopefully going to be with you far
+
+167
+00:08:12,259 --> 00:08:15,139
+比C或Python的详细信息长
+longer than the particulars of C or Python
+
+168
+00:08:15,139 --> 00:08:19,549
+或我们在本学期中花费了更多的动手技能。
+or any of the more hands-on skills that we've spent time on this term.
+
+169
+00:08:19,550 --> 00:08:21,530
+还记得，至少在CS50中，
+And recall, too, that at least within CS50,
+
+170
+00:08:21,529 --> 00:08:27,499
+我们建议您使用的工具评估方法的质量
+the tools with which we propose that you evaluate the quality of your approach
+
+171
+00:08:27,500 --> 00:08:30,740
+解决问题的方法是这三个轴，第一个也是最重要的
+to problem solving are these three axes, the first and foremost
+
+172
+00:08:30,740 --> 00:08:32,090
+其中肯定是正确的。
+of which is surely correctness.
+
+173
+00:08:32,090 --> 00:08:35,640
+因为如果它不起作用，那么这首先意味着什么？
+Because if it doesn't work, what's the point of it all in the first place?
+
+174
+00:08:35,639 --> 00:08:39,678
+因此，从输入到输出获取代码，算法和过程
+So getting your code, your algorithm, your process from input to output
+
+175
+00:08:39,678 --> 00:08:41,899
+正确无疑是最重要的。
+to be correct is certainly paramount.
+
+176
+00:08:41,899 --> 00:08:44,269
+但是，随之而来的是设计问题。
+But after that comes questions of design.
+
+177
+00:08:44,269 --> 00:08:46,729
+如果您确实想构建更复杂的系统，
+If you actually want to build more complex systems,
+
+178
+00:08:46,730 --> 00:08:49,670
+或解决更复杂的问题，您真的
+or solve more sophisticated problems, you really
+
+179
+00:08:49,669 --> 00:08:53,359
+确实希望为这些问题设计干净的解决方案。
+do want to design your solutions to those problems cleanly.
+
+180
+00:08:53,360 --> 00:08:55,520
+您不希望它们变慢或效率低下。
+You don't want them to be slow or inefficient.
+
+181
+00:08:55,519 --> 00:08:57,649
+您不希望它们实际造成混乱。
+You don't want them to be a mess in real terms.
+
+182
+00:08:57,649 --> 00:09:00,169
+您不希望您的代码是完全无法理解的。
+You don't want your code to be completely undecipherable.
+
+183
+00:09:00,169 --> 00:09:03,829
+因为这只会妨碍您长期使用这些相同的工具，
+Because that's just going to hamper you longer term to using those same tools,
+
+184
+00:09:03,830 --> 00:09:05,970
+那些相同的库来解决更有趣的事情，
+those same libraries to solve more interesting,
+
+185
+00:09:05,970 --> 00:09:07,340
+更复杂的问题。
+more sophisticated problems.
+
+186
+00:09:07,340 --> 00:09:09,560
+而且肯定会增加接口的难度
+And it's surely going to make it harder to interface
+
+187
+00:09:09,559 --> 00:09:12,659
+与其他人，其他协作者和其他系统。
+with other people, other collaborators, and other systems.
+
+188
+00:09:12,659 --> 00:09:15,719
+确实，按照这些思路，风格仍然重要吗？
+And indeed along those lines, is style still important?
+
+189
+00:09:15,720 --> 00:09:18,470
+对于我们来说，这可能是三重奏中的第三次了。
+It's perhaps the third in this trio for us.
+
+190
+00:09:18,470 --> 00:09:22,160
+但这是代码的美感，以及变量的缩进
+But it's the aesthetics of your code, and the indentation in the variables
+
+191
+00:09:22,159 --> 00:09:26,234
+所有这些，就像您可能用我们的人类语言传达的那样，
+and all that, much like you might convey in our human language,
+
+192
+00:09:26,235 --> 00:09:28,610
+标点符号之类的东西使您的脚步向前。
+put your best foot forward with punctuation and the like.
+
+193
+00:09:28,610 --> 00:09:31,127
+它只会帮助其他人了解您。
+It just helps other people understand you.
+
+194
+00:09:31,126 --> 00:09:33,709
+实际上，即使我们花费了大量时间进行互动
+And indeed, even though we spent a lot of our time interacting
+
+195
+00:09:33,710 --> 00:09:36,505
+在一天的结束过程中，通过计算机进行类似的操作，
+with computers, in a course like this, at the end of the day,
+
+196
+00:09:36,504 --> 00:09:37,879
+你真的只是在交流。
+you're really just communicating.
+
+197
+00:09:37,879 --> 00:09:41,029
+无论您是要与机器还是与其他人交流，
+And whether you're communicating to a machine or to another human,
+
+198
+00:09:41,029 --> 00:09:44,119
+干净利落地以有助于您的想法的方式进行操作，
+doing that cleanly and in a way that helps your ideas,
+
+199
+00:09:44,120 --> 00:09:48,380
+您采用的解决方案肯定同样重要
+your solutions, become adopted is surely no less important
+
+200
+00:09:48,379 --> 00:09:50,709
+比其他一些想法要好。
+than some of these other ideas as well.
+
+201
+00:09:50,710 --> 00:09:52,460
+但是其他基本构件呢？
+But what about other basic building blocks
+
+202
+00:09:52,460 --> 00:09:55,610
+超越了我们所做的特定语言和片段？
+that transcend the particular languages and pieces that we did?
+
+203
+00:09:55,610 --> 00:09:59,300
+好吧，抽象，这个采用相当复杂的想法的想法
+Well, abstraction, this idea of taking fairly complicated ideas
+
+204
+00:09:59,299 --> 00:10:03,099
+并简化它们，因此您不必担心较低的级别
+and simplifying them so you don't have to worry about the lower level
+
+205
+00:10:03,100 --> 00:10:06,400
+实施细节，您只能专注于解决方案
+implementation details, you can focus only on the solution
+
+206
+00:10:06,399 --> 00:10:09,939
+该拼图或该构建块实际提供的内容。
+that that puzzle piece or that building block actually provides.
+
+207
+00:10:09,940 --> 00:10:12,220
+抽象无处不在。
+And abstraction is everywhere around us.
+
+208
+00:10:12,220 --> 00:10:15,850
+当然，在代码中，我们将get_string之类的功能视为一种抽象。
+Certainly in code, we saw functions like get_string as an abstraction.
+
+209
+00:10:15,850 --> 00:10:16,690
+我不知道。
+I don't know.
+
+210
+00:10:16,690 --> 00:10:18,790
+我真的不记得确切的get_string
+I don't really remember exactly how get_string
+
+211
+00:10:18,789 --> 00:10:21,219
+在引擎盖下实现，更不用说功能了
+is implemented underneath the hood, let alone a function
+
+212
+00:10:21,220 --> 00:10:23,170
+C附带的功能，例如printf。
+that comes with C, like printf.
+
+213
+00:10:23,169 --> 00:10:24,217
+但我知道它有效。
+But I know that it works.
+
+214
+00:10:24,217 --> 00:10:25,509
+而且我知道这需要输入。
+And I know that it takes input.
+
+215
+00:10:25,509 --> 00:10:26,919
+我知道它会产生输出。
+I know that it produces output.
+
+216
+00:10:26,919 --> 00:10:29,979
+因此，我可以建立自己的想法，自己的软件，
+And I can therefore build my own ideas, my own software,
+
+217
+00:10:29,980 --> 00:10:34,090
+在该构建块的顶部，抽象出这些细节。
+on top of that building block, abstracting away those particulars.
+
+218
+00:10:34,090 --> 00:10:37,570
+在现实世界中，我们也将事物抽象化-
+And in the real world, too, we abstract things--
+
+219
+00:10:37,570 --> 00:10:42,070
+我们始终采用复杂的想法或流程来抽象事物
+we abstract away things all of the time, taking a complex idea or a process
+
+220
+00:10:42,070 --> 00:10:43,870
+并假设可以做到。
+and assume that that will be done.
+
+221
+00:10:43,870 --> 00:10:45,200
+可能有人这样做。
+Someone else might do that.
+
+222
+00:10:45,200 --> 00:10:48,070
+因此，我可以基于该过程的输出，
+And I can therefore build on the output of that process,
+
+223
+00:10:48,070 --> 00:10:51,700
+即使我自己也不是基础实施方面的专家
+even if I am myself am no expert in the underlying implementation
+
+224
+00:10:51,700 --> 00:10:53,240
+细节。
+details thereof.
+
+225
+00:10:53,240 --> 00:10:55,570
+但是，还有一个精确度，另一个想法
+But then there's precision, this other idea
+
+226
+00:10:55,570 --> 00:10:58,030
+非常重要的地方，当然在编写代码时，
+where it's super important, certainly when writing code,
+
+227
+00:10:58,029 --> 00:11:02,139
+而且当与另一个人交谈时，要精确并清楚地说明
+but also when talking to another human, to be precise and make super clear
+
+228
+00:11:02,139 --> 00:11:03,489
+你是什么意思。
+what you mean.
+
+229
+00:11:03,490 --> 00:11:07,030
+并考虑极端情况，考虑输入
+And to consider the corner cases, to consider the inputs
+
+230
+00:11:07,029 --> 00:11:09,759
+您可能不会期望的，但仍然可能
+that you might not otherwise expect, but might nonetheless
+
+231
+00:11:09,759 --> 00:11:13,809
+发生，以便您不会犯错，并有一些意外的行为，因为我们
+happen so that you don't err and have some unexpected behavior, as we
+
+232
+00:11:13,809 --> 00:11:15,999
+当然在实际代码中做过不止一次。
+certainly did more than once in actual code.
+
+233
+00:11:16,000 --> 00:11:18,100
+有时，抽象和精度
+And sometimes, abstractions and precisions
+
+234
+00:11:18,100 --> 00:11:19,665
+彼此有点矛盾。
+are kind of at odds with one another.
+
+235
+00:11:19,664 --> 00:11:21,789
+因为抽象会让您想一想
+Because abstraction would sort of have you think at
+
+236
+00:11:21,789 --> 00:11:25,197
+并在相当高的水平上交谈，而精确
+and talk at a fairly high level, whereas precision
+
+237
+00:11:25,197 --> 00:11:27,489
+会建议你真的应该进入杂草
+would suggest that you really should get into the weeds
+
+238
+00:11:27,490 --> 00:11:31,450
+真的要一步一步地去给某人
+and really go step by step by step when it comes to giving someone
+
+239
+00:11:31,450 --> 00:11:33,490
+其他或计算机指令。
+else or a computer instructions.
+
+240
+00:11:33,490 --> 00:11:36,010
+而且我们认为我们可以将其变为现实，
+And we thought we would bring this to life, perhaps,
+
+241
+00:11:36,009 --> 00:11:37,629
+举几个例子。
+with a couple of examples.
+
+242
+00:11:37,629 --> 00:11:40,629
+我们认为我们会尽力让尽可能多的人参与进来，
+And we thought we would try to involve as many people as we can in this,
+
+243
+00:11:40,629 --> 00:11:43,419
+尽管很远，但如果可以的话，请所有人参加，
+albeit from afar, by having everyone, if you can,
+
+244
+00:11:43,419 --> 00:11:45,871
+拿出一张纸和一支钢笔或一支铅笔。
+take out a piece of paper and a pen or pencil.
+
+245
+00:11:45,871 --> 00:11:47,829
+如果您还没有足够的可用的话，也可以。
+It's OK if you don't quite have that available.
+
+246
+00:11:47,830 --> 00:11:49,955
+如果您愿意，也可以在计算机上执行此操作
+You can do this on a computer, too, if you'd rather
+
+247
+00:11:49,955 --> 00:11:53,390
+在记事本或平板电脑上画画，或类似的东西都可以。
+draw on a notepad or a tablet, or something like that totally fine.
+
+248
+00:11:53,389 --> 00:11:56,349
+但理想情况下，现在取出要绘画的东西和一些东西
+But ideally, taking out now something with which to draw and something
+
+249
+00:11:56,350 --> 00:11:57,940
+依靠。
+to draw on.
+
+250
+00:11:57,940 --> 00:12:00,700
+我们将继续尝试并应用一些原则
+We're going to go ahead and try to apply some principles
+
+251
+00:12:00,700 --> 00:12:03,950
+计算思维，看看有多有用或有多伤害
+of computational thinking and see just how helpful or hurtful
+
+252
+00:12:03,950 --> 00:12:09,680
+它是在一个或另一个级别上使用抽象或精度。
+it is to use abstraction or precision at one level or another.
+
+253
+00:12:09,679 --> 00:12:12,249
+所以我想做到这一点，布莱恩，我们将需要
+So I think to do this, Brian, we're going to need
+
+254
+00:12:12,250 --> 00:12:14,740
+观众的帮助。
+a helping hand from the audience.
+
+255
+00:12:14,740 --> 00:12:17,650
+我认为我们需要一个人
+I think we're going to need for one person
+
+256
+00:12:17,649 --> 00:12:22,569
+到外面去自愿写口头指示
+out there to volunteer to write instructions verbally
+
+257
+00:12:22,570 --> 00:12:23,593
+给其他人。
+for everyone else.
+
+258
+00:12:23,592 --> 00:12:25,509
+我们将对待观众中的每个人，
+We're going to treat everyone in the audience,
+
+259
+00:12:25,509 --> 00:12:27,639
+或实际上，听众中的n减去1个人
+or really, n minus 1 people in the audience
+
+260
+00:12:27,639 --> 00:12:30,339
+就像今天将要编程的计算机一样。
+as the computers today who are going to be programmed.
+
+261
+00:12:30,340 --> 00:12:33,850
+我们需要一名人类志愿者来当程序员。
+And we need one human volunteer to be the programmer.
+
+262
+00:12:33,850 --> 00:12:36,550
+那位程序员将是Daniel。
+And that programmer is going to be Daniel.
+
+263
+00:12:36,549 --> 00:12:38,739
+Daniel，谢谢您的自愿。
+So Daniel, thank you for volunteering.
+
+264
+00:12:38,740 --> 00:12:42,280
+布赖恩，我们可以继续与丹尼尔分享，只有丹尼尔，
+Brian, could we go ahead and share with Daniel, and only Daniel,
+
+265
+00:12:42,279 --> 00:12:46,162
+我们希望其他人画的东西的图片？
+a picture of something that we want everyone else to draw?
+
+266
+00:12:46,163 --> 00:12:48,580
+Daniel，您稍后应该在屏幕上看到的内容，
+So Daniel, what you should see on your screen in a moment,
+
+267
+00:12:48,580 --> 00:12:50,122
+如果还没有的话，是一张照片。
+if you haven't already, is a picture.
+
+268
+00:12:50,121 --> 00:12:51,879
+不要告诉别人这是什么。
+Don't tell anyone else what it is.
+
+269
+00:12:51,879 --> 00:12:54,999
+您可以随时使用任何单词。
+You may use any words in a moment that you want.
+
+270
+00:12:55,000 --> 00:12:57,653
+请勿使用双手或类似手势。
+You should not use your hands or any gestures like that.
+
+271
+00:12:57,653 --> 00:13:00,070
+但是目标是口头写一个算法
+But the goal is going to be to write an algorithm verbally
+
+272
+00:13:00,070 --> 00:13:02,200
+对于房间中的其他每个人，一步一步地，
+for everyone else in the room, step by step,
+
+273
+00:13:02,200 --> 00:13:05,530
+因此理想情况下他们会画出您所看到的内容。
+so that ideally they draw what it is you see.
+
+274
+00:13:05,529 --> 00:13:08,799
+您可以说任何您想说的，但不能说任何肢体动作。
+And you can say anything you want, but just no physical gestures.
+
+275
+00:13:08,799 --> 00:13:10,419
+那有意义吗？
+Does that make sense?
+
+276
+00:13:10,419 --> 00:13:10,959
+- 知道了。
+- Got it.
+
+277
+00:13:10,960 --> 00:13:13,043
+你想谈谈你自己吗
+And do you want to say a little bit about yourself
+
+278
+00:13:13,043 --> 00:13:14,727
+在开始之前先进入小组？
+first to the group before we begin?
+
+279
+00:13:14,726 --> 00:13:15,309
+学生：好的。
+STUDENT: Sure.
+
+280
+00:13:15,309 --> 00:13:16,149
+我叫丹尼尔。
+My name's Daniel.
+
+281
+00:13:16,149 --> 00:13:20,589
+我来自耶鲁大学Ezra Stiles College。
+I'm from Ezra Stiles College at Yale University.
+
+282
+00:13:20,590 --> 00:13:22,915
+这个学期我真的是CS50。
+And I really CS50 this semester.
+
+283
+00:13:22,914 --> 00:13:24,039
+大卫·马兰：哦，太好了。
+DAVID MALAN: Oh, wonderful.
+
+284
+00:13:24,039 --> 00:13:25,599
+感谢您的志愿服务。
+Thank you for volunteering.
+
+285
+00:13:25,600 --> 00:13:29,290
+让我们继续前进，让其他人拥有他们的论文
+And let's go ahead and have everyone else with their paper
+
+286
+00:13:29,289 --> 00:13:30,639
+和铅笔或钢笔准备好了。
+and pencil or pen ready.
+
+287
+00:13:30,639 --> 00:13:33,649
+丹尼尔（Daniel），每个人要做的第一件事就是第一步。
+Daniel, what should be the first thing everyone does, step one.
+
+288
+00:13:33,649 --> 00:13:34,149
+学生：好的。
+STUDENT: OK.
+
+289
+00:13:34,149 --> 00:13:38,679
+因此，我们要绘制的第一件事是六角形。
+So the first thing we're going to draw is a hexagon.
+
+290
+00:13:38,679 --> 00:13:40,779
+因此，它是规则的六边形。
+So it's a regular hexagon.
+
+291
+00:13:40,779 --> 00:13:50,827
+并且我们将确保绘制它，以便其中一个顶点
+And we're going to make sure that we draw it so that one of the vertices
+
+292
+00:13:50,827 --> 00:13:53,369
+在六边形的最底部，并且其中一个顶点
+is on the very bottom of the hexagon, and one of the vertices
+
+293
+00:13:53,370 --> 00:13:55,990
+在六边形的顶部。
+is at the very top of the hexagon.
+
+294
+00:13:55,990 --> 00:13:58,210
+因此，一侧没有平放。
+So one side is not laying flat.
+
+295
+00:13:58,210 --> 00:13:58,958
+你正在做的 -
+You're doing--
+
+296
+00:13:58,957 --> 00:14:00,249
+大卫·马兰：哇，该死，该死。
+DAVID MALAN: Wup, dut, dut dut.
+
+297
+00:14:00,250 --> 00:14:01,119
+没有手势。
+No hand gestures.
+
+298
+00:14:01,120 --> 00:14:02,287
+学生：没有手，没有手。
+STUDENT: No hands, no hands.
+
+299
+00:14:02,287 --> 00:14:03,400
+正确的。
+Right.
+
+300
+00:14:03,399 --> 00:14:06,939
+一个顶点在最顶部，一个顶点在最底部。
+One vertice at the very top, one vertice is at the very bottom.
+
+301
+00:14:06,940 --> 00:14:10,850
+而且您的侧面还有其他四个顶点。
+And you've got your other four vertices on the sides.
+
+302
+00:14:10,850 --> 00:14:13,870
+所以一旦有了六角形，下一步
+So once you've got your hexagon, your next step
+
+303
+00:14:13,870 --> 00:14:18,580
+将会找到您的六边形的中点。
+is going to be find your midpoint of the hexagon.
+
+304
+00:14:18,580 --> 00:14:20,740
+因此，一旦找到中点，您就可以
+And so once you've found your midpoint, you're
+
+305
+00:14:20,740 --> 00:14:26,080
+从顶点到该中点画三条线。
+going to draw three lines from a vertices to that midpoint.
+
+306
+00:14:26,080 --> 00:14:29,440
+您要选择绘制的顶点
+The vertices that you're going to choose to draw from
+
+307
+00:14:29,440 --> 00:14:37,510
+从最底端到中点，然后从中点到顶点
+are the very bottom to the midpoint and then from the midpoint to the vertices
+
+308
+00:14:37,509 --> 00:14:42,141
+在顶部顶点的左侧和右侧。
+that are on the left and right of the top vertices.
+
+309
+00:14:42,142 --> 00:14:43,100
+戴维·马兰：好的。
+DAVID MALAN: All right.
+
+310
+00:14:43,100 --> 00:14:46,720
+还有任何最终指示吗？
+Any final instructions?
+
+311
+00:14:46,720 --> 00:14:48,858
+学生：我认为，应该是这样。
+STUDENT: I think, hopefully, that should be it.
+
+312
+00:14:48,857 --> 00:14:49,899
+大卫·马兰：[音频不清晰]。
+DAVID MALAN: [INAUDIBLE].
+
+313
+00:14:49,899 --> 00:14:51,669
+这些是很长的第一步和第二步。
+Those were very long steps one and two.
+
+314
+00:14:51,669 --> 00:14:53,229
+但是，是的。
+But yes.
+
+315
+00:14:53,230 --> 00:14:55,690
+好吧，让我们继续揭示一下。
+All right, well, let's go ahead and reveal.
+
+316
+00:14:55,690 --> 00:14:57,310
+这将是一点点黑客。
+This will be a little bit of a hack.
+
+317
+00:14:57,309 --> 00:14:59,889
+但是，如果有人，每个人都乐于接受
+But if anyone everyone is comfortable picking up
+
+318
+00:14:59,889 --> 00:15:02,309
+他们的纸或平板电脑，并握住它
+their piece of paper or their tablet and holding it
+
+319
+00:15:02,309 --> 00:15:07,979
+在他们的Zoom相机前稳稳地摆放5或10秒，
+in front of their Zoom camera steadily for five or 10 seconds,
+
+320
+00:15:07,980 --> 00:15:11,100
+我们将确切地看到每个人都画了什么。
+we'll see exactly what everyone has drawn.
+
+321
+00:15:11,100 --> 00:15:13,950
+如果进入图库视图，您将可以看到其他所有人。
+If you go into gallery view, you'll be able to see everyone else.
+
+322
+00:15:13,950 --> 00:15:17,220
+丹尼尔，希望您能看到一些熟悉的图片？
+Daniel, hopefully you're seeing some familiar pictures?
+
+323
+00:15:17,220 --> 00:15:19,940
+我认为我们一定有范围。
+I think we definitely have range.
+
+324
+00:15:19,940 --> 00:15:22,547
+您是否看到一个或多个与您的想法相符的东西？
+Are you seeing one or more that match what you had in mind?
+
+325
+00:15:22,547 --> 00:15:23,130
+学生：是的。
+STUDENT: Yeah.
+
+326
+00:15:23,129 --> 00:15:24,209
+它们看起来都不错。
+They all look pretty good.
+
+327
+00:15:24,210 --> 00:15:24,900
+戴维·马兰：所有人？
+DAVID MALAN: They all?
+
+328
+00:15:24,899 --> 00:15:25,899
+好吧，很好。
+All right, so good.
+
+329
+00:15:25,899 --> 00:15:28,019
+那么，让我继续，然后在屏幕上分享
+Let me go ahead, then, and share on my screen
+
+330
+00:15:28,019 --> 00:15:31,189
+丹尼尔刚才描述了什么。
+in just a moment what it is Daniel was describing.
+
+331
+00:15:31,190 --> 00:15:34,260
+因此，布莱恩事先与丹尼尔分享的是这张照片
+So what Brian had shared with Daniel in advance was this picture
+
+332
+00:15:34,259 --> 00:15:38,489
+在这里，我敢说是一个立方体。
+here, which I dare say is a cube.
+
+333
+00:15:38,490 --> 00:15:42,360
+但实际上，它是由一个六边形然后是附加的线组成的
+But indeed, it's composed of a hexagon and then the additional lines
+
+334
+00:15:42,360 --> 00:15:43,410
+丹尼尔描述的。
+that Daniel described.
+
+335
+00:15:43,409 --> 00:15:47,669
+丹尼尔（Daniel），我确实碰巧看到了，也许是在《缩放》的第二页和第三页上
+And Daniel, I did happen to see, maybe on pages two and three of the Zoom
+
+336
+00:15:47,669 --> 00:15:52,589
+窗口中，肯定有一些不完全是立方体。
+window, there were definitely some that weren't quite cubes.
+
+337
+00:15:52,590 --> 00:15:57,330
+您如何对待自己的想法
+What was going through your mind as to how you approached
+
+338
+00:15:57,330 --> 00:15:59,420
+您提供的算法？
+the algorithm that you provided?
+
+339
+00:15:59,419 --> 00:16:02,249
+学生：我想-
+STUDENT: I wanted to--
+
+340
+00:16:02,250 --> 00:16:05,040
+对我来说，穿过我的头的第一件事是一个立方体。
+to me, the first thing that went through my head was a cube.
+
+341
+00:16:05,039 --> 00:16:08,039
+但是我知道有很多方法可以绘制一个立方体。
+But I knew that there's so many ways to draw a cube.
+
+342
+00:16:08,039 --> 00:16:09,979
+我不想将其描述为一个多维数据集。
+I didn't want to describe it as a cube.
+
+343
+00:16:09,980 --> 00:16:11,730
+因为如果我说只是画一个立方体，我知道
+Because if I said just draw a cube, I knew
+
+344
+00:16:11,730 --> 00:16:13,990
+我们会得到很多不同的结果。
+that we would get tons of different results.
+
+345
+00:16:13,990 --> 00:16:16,260
+所以我想尽可能清楚。
+So I wanted to be as clear as possible.
+
+346
+00:16:16,259 --> 00:16:21,029
+我知道，如果我可以用某种数学方式来描述它，
+And I knew that if I could describe it in sort of a mathematical way,
+
+347
+00:16:21,029 --> 00:16:23,504
+用六角形描述它并描述它
+describing it with a hexagon and describing it
+
+348
+00:16:23,504 --> 00:16:27,689
+顶点在中点，希望会有更多的人
+with the vertices in the midpoint, that hopefully more people would
+
+349
+00:16:27,690 --> 00:16:29,790
+能够绘制精确的形状。
+be able to draw a precise shape.
+
+350
+00:16:29,789 --> 00:16:30,539
+戴维·马兰：是的。
+DAVID MALAN: Yeah.
+
+351
+00:16:30,539 --> 00:16:31,349
+说的真好。
+Really well said.
+
+352
+00:16:31,350 --> 00:16:33,420
+现在，如果我们每个人的音量都很大，那么奇怪的是，
+Now if we had everyone's volume on, odd are,
+
+353
+00:16:33,419 --> 00:16:35,519
+您现在可能会听到一些咯咯的笑声，
+you'd hear a bit of chuckling now, perhaps,
+
+354
+00:16:35,519 --> 00:16:37,382
+或有点尴尬。
+or maybe a little bit of awkwardness.
+
+355
+00:16:37,383 --> 00:16:40,050
+我敢说并不是所有的照片都是那样的，
+And I daresay not all of the pictures quite turned out that way,
+
+356
+00:16:40,049 --> 00:16:43,109
+但这是一个完美的例子，说明抽象也许可以帮助我们
+but that's a perfect example of where maybe abstractions can kind of get us
+
+357
+00:16:43,110 --> 00:16:43,652
+陷入麻烦。
+into trouble.
+
+358
+00:16:43,652 --> 00:16:47,190
+因为如果丹尼尔刚才说的，画一个立方体，对，你们中的一些人
+Because if Daniel had just said, draw a cube, right, some of you
+
+359
+00:16:47,190 --> 00:16:48,833
+可能会立即开始绘制一个立方体。
+might start drawing immediately a cube.
+
+360
+00:16:48,832 --> 00:16:51,999
+但是你们中的许多人都会有一个问题，那么方向应该是什么？
+But many of you would have a question, well, what should the orientation be?
+
+361
+00:16:52,000 --> 00:16:52,900
+大小应该是多少？
+What should the size be?
+
+362
+00:16:52,899 --> 00:16:53,819
+职位应该是什么？
+What should the position be?
+
+363
+00:16:53,820 --> 00:16:56,350
+因此，精确度变得越来越重要。
+And so there, precision becomes increasingly important.
+
+364
+00:16:56,350 --> 00:16:58,562
+但越精确，你们中的几率就越大
+But the more precise it gets, odds are some of you
+
+365
+00:16:58,562 --> 00:17:01,770
+只是数量的细节和某种迷失的方向不知所措
+just kind of got overwhelmed with the amount of detail and sort of lost track
+
+366
+00:17:01,769 --> 00:17:04,439
+你的笔或铅笔应该在某一点
+where your pen or pencil was supposed to be at one point
+
+367
+00:17:04,440 --> 00:17:07,190
+因为您的工作水平要低得多。
+because you were operating at a much lower level.
+
+368
+00:17:07,190 --> 00:17:08,910
+那么，就有这种紧张感了。
+So there's this tension, then.
+
+369
+00:17:08,910 --> 00:17:11,410
+但是我认为我们确实使你们中的一些人达到了终点线。
+But I think we did get some of you to that finish line.
+
+370
+00:17:11,410 --> 00:17:13,530
+让我们看看我们现在是否无法减轻所有人的压力，
+Let's see if we can't now take the pressure off of all of you,
+
+371
+00:17:13,529 --> 00:17:15,404
+并特别感谢Daniel，让我们
+and thank you to Daniel, in particular, let's
+
+372
+00:17:15,404 --> 00:17:19,034
+看看我们现在是否不能让你们所有人一起编程给我，如果可以的话。
+see if we can't now have all of you collectively program me, if you will.
+
+373
+00:17:19,035 --> 00:17:21,160
+所以我要继续在这里拉起我的屏幕
+So I'm going to go ahead and pull up my screen here
+
+374
+00:17:21,160 --> 00:17:25,900
+在这里，我可以在屏幕上用鼠标和光标进行绘制。
+where I have the ability to draw with my mouse and cursor on my screen here.
+
+375
+00:17:25,900 --> 00:17:29,190
+而Brian，如果您不介意，可以与所有人分享
+And Brian, if you don't mind, could you share with everyone
+
+376
+00:17:29,190 --> 00:17:34,560
+否则，我保证我不会提前看过的照片。
+else a picture that I promise I have not seen in advance.
+
+377
+00:17:34,559 --> 00:17:35,889
+因此，我们将看到情况如何。
+So we will see how this goes.
+
+378
+00:17:35,890 --> 00:17:38,280
+所以我是Zoom室中唯一的一个
+So I'm the only one right now in the Zoom room
+
+379
+00:17:38,279 --> 00:17:39,989
+尚未看到这张照片。
+that has not seen this picture.
+
+380
+00:17:39,990 --> 00:17:42,930
+但是Brian离开了，只向所有人提供了URL。
+But Brian has gone and provided only you all with the URL.
+
+381
+00:17:42,930 --> 00:17:44,640
+因此，将其拉到屏幕上。
+So pull that up on your screen.
+
+382
+00:17:44,640 --> 00:17:47,760
+然后，布莱恩，如果我们可以反复呼吁一些志愿者的话。
+And then, Brian, if we could perhaps iteratively call on some volunteers.
+
+383
+00:17:47,759 --> 00:17:52,476
+我为什么不尝试一步一步地画出别人告诉我的事情？
+Why don't I try to draw what people tell me to do, step by step?
+
+384
+00:17:52,477 --> 00:17:53,310
+布莱恩·于：好的。
+BRIAN YU: All right.
+
+385
+00:17:53,309 --> 00:17:54,329
+大卫没有看到这一点。
+David has not seen this.
+
+386
+00:17:54,329 --> 00:17:56,759
+我只是在五分钟前选择了这个。
+I just picked this out, like, five minutes ago.
+
+387
+00:17:56,759 --> 00:17:59,676
+如果你想给他举手，所有人都会举手，例如，
+And you're all going to raise your hand if you want to give him, like,
+
+388
+00:17:59,676 --> 00:18:01,559
+下一步操作的一条指令。
+one instruction for what to do next.
+
+389
+00:18:01,559 --> 00:18:03,779
+让我们从乔治开始。
+And let's start with George.
+
+390
+00:18:03,779 --> 00:18:06,569
+学生：所以您将从绘画开始
+STUDENT: So you're going to start by drawing
+
+391
+00:18:06,569 --> 00:18:09,592
+屏幕顶部附近的圆圈。
+a circle near the top of the screen.
+
+392
+00:18:09,593 --> 00:18:10,260
+戴维·马兰：好的。
+DAVID MALAN: OK.
+
+393
+00:18:10,259 --> 00:18:11,969
+屏幕顶部附近的圆圈。
+A circle near the top of the screen.
+
+394
+00:18:11,970 --> 00:18:15,100
+让我说清楚，我在计算机上没有删除功能。
+And let me make clear, I have no delete abilities on the computer.
+
+395
+00:18:15,099 --> 00:18:16,649
+所以一旦我提交，我们就进入了。
+So once I commit, we're in.
+
+396
+00:18:16,650 --> 00:18:20,940
+因此，在屏幕顶部附近画一个圆。
+So drawing a circle near the top of the screen.
+
+397
+00:18:20,940 --> 00:18:21,720
+好的。
+OK.
+
+398
+00:18:21,720 --> 00:18:22,710
+谢谢你，乔治。
+Thank you, George.
+
+399
+00:18:22,710 --> 00:18:23,820
+Brian，第二步？
+Brian, step two?
+
+400
+00:18:23,819 --> 00:18:25,749
+布莱恩·于：好，接下来我们去索菲亚。
+BRIAN YU: All right, let's go to Sophia next.
+
+401
+00:18:25,750 --> 00:18:32,799
+学生：然后，在屏幕的正中央，用黑色圆圈填充门，
+STUDENT: Then, in the very center of the screen, door a black, filled in circle,
+
+402
+00:18:32,799 --> 00:18:36,232
+这大约是顶部圆圈的十分之一。
+which is approximately a tenth of the size of the circle at the top.
+
+403
+00:18:36,232 --> 00:18:36,899
+戴维·马兰：好的。
+DAVID MALAN: OK.
+
+404
+00:18:36,900 --> 00:18:41,710
+我听说一个黑色的实心圆圈是大小的十分之一。
+A black, filled in circle, I heard, that's a tenth of the size.
+
+405
+00:18:41,710 --> 00:18:46,580
+因此，我将要做类似的事情，然后将其阴影化。
+So I'm going to do something like this, and then just kind of shade it in.
+
+406
+00:18:46,579 --> 00:18:48,109
+好的，谢谢索菲亚。
+All right, thank you, Sophia.
+
+407
+00:18:48,109 --> 00:18:48,799
+第三步？
+Step three?
+
+408
+00:18:48,799 --> 00:18:50,269
+布莱恩·于：我们去圣地亚哥。
+BRIAN YU: Let's go to Santiago.
+
+409
+00:18:50,269 --> 00:18:55,289
+学生：您将再画一个圆。
+STUDENT: You're going to draw another circle.
+
+410
+00:18:55,289 --> 00:18:57,439
+但这实际上不是一个圆圈，
+But it's not actually going to be a circle,
+
+411
+00:18:57,440 --> 00:19:04,190
+它更像是一个椭圆，它将比第一个更大。
+it's more of an ellipse, that's going to be bigger than the first one.
+
+412
+00:19:04,190 --> 00:19:05,610
+所以它将在中间。
+So it's going to be in the middle.
+
+413
+00:19:05,609 --> 00:19:08,359
+并将其围成一个圆圈
+And it's going to enclose that filled in circle
+
+414
+00:19:08,359 --> 00:19:10,722
+并在底部留一些空间。
+and leave some room in the bottom.
+
+415
+00:19:10,722 --> 00:19:11,389
+戴维·马兰：好的。
+DAVID MALAN: OK.
+
+416
+00:19:11,390 --> 00:19:12,182
+所以这是一个椭圆形。
+So it's an ellipse.
+
+417
+00:19:12,182 --> 00:19:14,670
+它比第一个圆圈大。
+It's bigger than the first circle.
+
+418
+00:19:14,670 --> 00:19:18,320
+但是它包围着较小的那个吗？
+But it encloses the smaller one?
+
+419
+00:19:18,319 --> 00:19:20,104
+好吧，所以我听到了这样的话。
+All right, so I heard kind of this.
+
+420
+00:19:23,559 --> 00:19:26,259
+好的。
+OK.
+
+421
+00:19:26,259 --> 00:19:27,909
+第4步？
+Step 4?
+
+422
+00:19:27,910 --> 00:19:30,280
+学生：在那个较小的椭圆下，
+STUDENT: Under that smaller ellipse, you're
+
+423
+00:19:30,279 --> 00:19:35,109
+想要在其下画一个更大的圆圈
+going to want to draw a bigger circle underneath it
+
+424
+00:19:35,109 --> 00:19:38,019
+并表现得好像圆正穿过那个椭圆，
+and act as if the circle is going through that ellipse,
+
+425
+00:19:38,019 --> 00:19:41,319
+但实际上不显示穿过椭圆的线。
+but don't actually show the lines going through the ellipse.
+
+426
+00:19:41,319 --> 00:19:44,589
+也就是说，我们在下面画了一个更大的圆圈，但没有
+So that is, we draw a bigger circle underneath, but without having
+
+427
+00:19:44,589 --> 00:19:46,239
+线通过。
+the lines go through.
+
+428
+00:19:46,240 --> 00:19:50,250
+看起来它似乎正在经历其边缘。
+It looks like it will kind of be going through the edge of it.
+
+429
+00:19:50,250 --> 00:19:51,270
+戴维·马兰：好的。
+DAVID MALAN: OK.
+
+430
+00:19:51,269 --> 00:20:01,849
+我在这里有点担心，但是我听到的是这样的，也许是吗？
+I'm a little worried here, but what I heard was like this, maybe?
+
+431
+00:20:01,849 --> 00:20:03,619
+第五步？
+Step five?
+
+432
+00:20:03,619 --> 00:20:07,189
+布莱恩·于（Brian Yu）：好的，接下来我们转到[音频不清晰]。
+BRIAN YU: All right, let's go to [INAUDIBLE] next.
+
+433
+00:20:07,190 --> 00:20:11,060
+学生：所以在这种中椭圆形中，
+STUDENT: So in that kind of middle ellipse,
+
+434
+00:20:11,059 --> 00:20:14,001
+你知道，例如当孩子表现得像飞机一样时，
+you know, like, when kids act like they're an airplane,
+
+435
+00:20:14,001 --> 00:20:15,709
+然后他们发出飞机噪音，
+and then they make, like, airplane noise,
+
+436
+00:20:15,710 --> 00:20:17,627
+然后他们用胳膊做那奇怪的事情？
+then they do that weird thing with their arms?
+
+437
+00:20:17,626 --> 00:20:18,829
+大卫·马兰（David MALAN）：恩。
+DAVID MALAN: Uh huh.
+
+438
+00:20:18,829 --> 00:20:21,889
+学生：所以在那中间的椭圆形上画些像手臂一样的东西，
+STUDENT: So draw those kind of, like, arms in that middle ellipse,
+
+439
+00:20:21,890 --> 00:20:24,152
+从大椭圆形出来。
+coming out of the big middle ellipse.
+
+440
+00:20:24,152 --> 00:20:25,610
+戴维·马兰（DAVID MALAN）：在椭圆的中间吗？
+DAVID MALAN: In the middle ellipse?
+
+441
+00:20:25,609 --> 00:20:28,009
+这个低一点？
+This lower one?
+
+442
+00:20:28,009 --> 00:20:29,959
+学生：外面的那个。
+STUDENT: The one outside of it.
+
+443
+00:20:29,960 --> 00:20:32,720
+大卫·马兰（David MALAN）：哦，这个大椭圆形？
+DAVID MALAN: Oh, this big ellipse?
+
+444
+00:20:32,720 --> 00:20:34,050
+学生：是的，外在的界限。
+STUDENT: Yeah, the outer bound.
+
+445
+00:20:34,049 --> 00:20:34,549
+是的。
+Yeah.
+
+446
+00:20:34,549 --> 00:20:37,882
+戴维·马兰（David MALAN）：好的，所以我应该像小孩子一样举起手来-
+DAVID MALAN: All right, so I should draw some hands like a kid would have when--
+
+447
+00:20:42,400 --> 00:20:43,570
+好的。
+OK.
+
+448
+00:20:43,569 --> 00:20:45,526
+我不确定这会顺利结束。
+I'm not sure this is going to end well.
+
+449
+00:20:45,527 --> 00:20:46,360
+布莱恩·于：好的。
+BRIAN YU: All right.
+
+450
+00:20:46,359 --> 00:20:49,179
+我们需要更多的志愿者来帮助David完成这项工作。
+We need some more volunteers to help David finish this.
+
+451
+00:20:49,180 --> 00:20:51,420
+让我们去加布里埃尔。
+Let's go to Gabrielle.
+
+452
+00:20:51,420 --> 00:20:52,590
+学生：好的。
+STUDENT: OK.
+
+453
+00:20:52,589 --> 00:20:55,146
+尝试画一个-
+Try to draw a--
+
+454
+00:20:55,146 --> 00:20:56,771
+大卫·马兰（DAVID MALAN）：尝试是有效的词。
+DAVID MALAN: Try is the operative word.
+
+455
+00:20:56,771 --> 00:20:58,499
+[笑声]
+[LAUGHTER]
+
+456
+00:20:58,500 --> 00:21:00,344
+学生：您有一个更大的椭圆
+STUDENT: You've got a bigger ellipse that's
+
+457
+00:21:00,345 --> 00:21:04,110
+在最底部，它比顶部和中部都大，
+at the very bottom, that's bigger than both the top and middle one,
+
+458
+00:21:04,109 --> 00:21:07,619
+但中间的那条和那一条之间没有重叠的线
+but showing no overlapping lines between the middle one and the one
+
+459
+00:21:07,619 --> 00:21:08,579
+您正在尝试。
+that you're trying.
+
+460
+00:21:08,579 --> 00:21:10,439
+戴维·马兰（DAVID MALAN）：所以不要显示重叠的线。
+DAVID MALAN: So show no overlapping lines.
+
+461
+00:21:10,440 --> 00:21:12,460
+因此，我听到了更大的椭圆。
+So I heard an even bigger ellipse.
+
+462
+00:21:12,460 --> 00:21:14,640
+因此，抱歉，对不起。
+So, like, oops, sorry.
+
+463
+00:21:14,640 --> 00:21:15,540
+这？
+This?
+
+464
+00:21:15,539 --> 00:21:16,709
+好的？
+OK?
+
+465
+00:21:16,710 --> 00:21:17,550
+学生：干得好。
+STUDENT: Good job.
+
+466
+00:21:17,549 --> 00:21:18,149
+戴维·马兰：谢谢。
+DAVID MALAN: Thank you.
+
+467
+00:21:18,150 --> 00:21:18,570
+好的。
+OK.
+
+468
+00:21:18,569 --> 00:21:18,869
+好的。
+Good.
+
+469
+00:21:18,869 --> 00:21:20,609
+保持积极的援军到来。
+Keep the positive reinforcement coming.
+
+470
+00:21:20,609 --> 00:21:21,861
+最后几步？
+Final couple steps?
+
+471
+00:21:21,862 --> 00:21:22,695
+布莱恩·于：好的。
+BRIAN YU: All right.
+
+472
+00:21:22,694 --> 00:21:23,636
+[？伊卡？]
+[? Ika? ?]
+
+473
+00:21:23,636 --> 00:21:25,469
+学生：您还必须执行另一步骤
+STUDENT: One other step you would have to do
+
+474
+00:21:25,470 --> 00:21:30,840
+画一个小圆圈，比那个小
+is draw a small, filled in circle, slightly smaller than the one
+
+475
+00:21:30,839 --> 00:21:34,229
+你已经画过了，就在第一个圆的中心
+you already drew, right in the center of the first circle
+
+476
+00:21:34,230 --> 00:21:35,883
+你在顶部画了。
+you drew right at the top.
+
+477
+00:21:35,883 --> 00:21:36,550
+戴维·马兰：好的。
+DAVID MALAN: OK.
+
+478
+00:21:36,549 --> 00:21:38,216
+就在第一个圆的中心。
+Right in the center of the first circle.
+
+479
+00:21:38,217 --> 00:21:38,820
+好的。
+OK.
+
+480
+00:21:38,819 --> 00:21:41,159
+我认为这对我来说已经初具规模。
+And I think this is starting to take shape for me.
+
+481
+00:21:41,160 --> 00:21:44,013
+我为我之前的一些决定感到遗憾。
+And I regret some of my earlier decisions.
+
+482
+00:21:44,012 --> 00:21:46,929
+布莱恩·于：[音频不清晰]，您想提供额外的说明吗？
+BRIAN YU: [INAUDIBLE],, you want to provide an additional instruction?
+
+483
+00:21:46,930 --> 00:21:49,472
+学生：您刚刚绘制的最后一个圆圈之间的另一个圆圈
+STUDENT: Another circle in between the last one you just drew
+
+484
+00:21:49,471 --> 00:21:53,519
+在圆的边缘之间，所以
+and in between the edge of the circle, so
+
+485
+00:21:53,519 --> 00:21:56,489
+在该圆的左侧，您将绘制另一个圆。
+to the left of that circle you're going to draw another circle.
+
+486
+00:21:56,490 --> 00:21:59,550
+戴维·马兰（DAVID MALAN）：在这个圆圈的左边？
+DAVID MALAN: To the left of this circle?
+
+487
+00:21:59,549 --> 00:22:00,389
+学生：嗯。
+STUDENT: Mhm.
+
+488
+00:22:00,390 --> 00:22:01,057
+戴维·马兰：好的。
+DAVID MALAN: OK.
+
+489
+00:22:03,380 --> 00:22:05,150
+布莱恩·于：还有瑞安？
+BRIAN YU: And Ryan?
+
+490
+00:22:05,150 --> 00:22:08,730
+学生：在下面，您将要重复相同的过程，
+STUDENT: Underneath, you're going to want to repeat the same process,
+
+491
+00:22:08,730 --> 00:22:10,850
+除了在右侧画一个圆。
+except draw a circle on the right side.
+
+492
+00:22:10,849 --> 00:22:12,279
+戴维·马兰：好的。
+DAVID MALAN: OK.
+
+493
+00:22:12,279 --> 00:22:13,257
+小循环。
+Little loop.
+
+494
+00:22:13,258 --> 00:22:15,800
+布莱恩·于：我想我们可能还要再走一两个步骤。
+BRIAN YU: I think we've got maybe one or two more steps left.
+
+495
+00:22:15,799 --> 00:22:17,199
+让我们回到索菲亚。
+Let's go back to Sophia.
+
+496
+00:22:17,200 --> 00:22:22,130
+学生：在实心圆圈下方，即椭圆的中间，
+STUDENT: Underneath the filled in circle, that's in the middle ellipse,
+
+497
+00:22:22,130 --> 00:22:25,360
+您想绘制该圆的两个副本
+you want to draw two replicas of that circle
+
+498
+00:22:25,359 --> 00:22:28,629
+在原始椭圆的下方。
+below the original one in the middle ellipse.
+
+499
+00:22:28,630 --> 00:22:33,310
+戴维·马兰（DAVID MALAN）：在椭圆的中间，所以在这里。
+DAVID MALAN: In the middle ellipse, so here, OK.
+
+500
+00:22:33,309 --> 00:22:35,529
+我想我知道这是什么。
+I think I know what this is.
+
+501
+00:22:35,529 --> 00:22:37,869
+布莱恩·于：杰森，最后一条指令怎么样？
+BRIAN YU: And Jason, how about one last instruction?
+
+502
+00:22:37,869 --> 00:22:39,609
+戴维·马兰：好的。
+DAVID MALAN: All right.
+
+503
+00:22:39,609 --> 00:22:42,099
+学生：在最上方的圆圈下方，
+STUDENT: Underneath, in the top most circle,
+
+504
+00:22:42,099 --> 00:22:46,839
+在三下，因此排成三个圆圈，画一个宽V，
+under the three, so the row of three circles, draw a wide V,
+
+505
+00:22:46,839 --> 00:22:48,849
+有两条直线的形状。
+sort of shaped with two straight lines.
+
+506
+00:22:48,849 --> 00:22:51,999
+DAVID MALAN：宽V带两条直线。
+DAVID MALAN: A wide V with two straight lines.
+
+507
+00:22:52,000 --> 00:22:52,750
+好的。
+OK.
+
+508
+00:22:52,750 --> 00:22:54,930
+我认为那部分我被钉住了。
+That part, I think, I nailed.
+
+509
+00:22:54,930 --> 00:22:57,640
+我可以切换显示吗？
+Shall I switch over and reveal?
+
+510
+00:22:57,640 --> 00:23:00,130
+因此，这是我相信所有人都给的URL。
+So this is the URL I believe all of you were given.
+
+511
+00:23:00,130 --> 00:23:01,510
+我还没去过
+I have not visited it yet.
+
+512
+00:23:01,509 --> 00:23:04,779
+但是，如果我现在去参观。
+But if I go and visit this now.
+
+513
+00:23:04,779 --> 00:23:06,909
+嘿，那还不算太糟。
+Hey, that's not all that bad.
+
+514
+00:23:06,910 --> 00:23:09,245
+好吧，我绝对是绕道而行。
+All right, I definitely took a detour partway through.
+
+515
+00:23:09,244 --> 00:23:10,369
+但这是另一个例子。
+But here's another example.
+
+516
+00:23:10,369 --> 00:23:13,839
+您是否刚开始按如下方式绘制雪人，例如，
+Had you just started with draw a snowman as follows, like,
+
+517
+00:23:13,839 --> 00:23:16,599
+确实可以帮助我使自己的精神定位相似
+that might have helped orient me, truthfully, similar in spirit
+
+518
+00:23:16,599 --> 00:23:20,196
+但以丹尼尔（Daniel）的设计为例，它将为您提供有关我的思想模型
+to Daniel's design that would have given you a mental model of what I,
+
+519
+00:23:20,196 --> 00:23:23,029
+或给我一个我应该一直在画的心智模型。
+or given me a mental model of what it is I should have been drawing.
+
+520
+00:23:23,029 --> 00:23:25,089
+因此，在这里，抽象也很难。
+So here, too, abstraction is hard.
+
+521
+00:23:25,089 --> 00:23:28,839
+甚至精度也很难确定正确的细节水平
+And even precision is hard and figuring out the right level of detail
+
+522
+00:23:28,839 --> 00:23:32,229
+操作是解决问题过程的一部分。
+to operate at is kind of part of the process of problem solving.
+
+523
+00:23:32,230 --> 00:23:34,780
+不过，现在看来，这还算不错。
+Though, now that I look at it, that's actually not half bad.
+
+524
+00:23:34,779 --> 00:23:36,821
+就像，我肯定在这里做错了。
+Like, I definitely did the wrong thing over here.
+
+525
+00:23:36,821 --> 00:23:40,389
+但是对我们所有的在线志愿者都做得很好。
+But very well done to all of our volunteers online.
+
+526
+00:23:40,390 --> 00:23:43,060
+因此，当您
+So remember these kinds of details when you're
+
+527
+00:23:43,059 --> 00:23:46,177
+当你给某人某事时，试图向某人解释一些过程
+trying to explain some process to someone, when you're giving someone
+
+528
+00:23:46,178 --> 00:23:48,970
+说明，即使是在现实世界中，
+instructions, even if it's for something mundane in the real world,
+
+529
+00:23:48,970 --> 00:23:53,470
+就像去办事或在市场上取货一样，要精确
+like going to run errands or pick up supplies at the market, being precise
+
+530
+00:23:53,470 --> 00:23:56,830
+当然很重要，但是您提供的精度越高，就越容易
+is certainly important, but the more precision you provide, the much easier
+
+531
+00:23:56,829 --> 00:23:59,869
+这是一个人迷失在那些杂草中。
+it is for the person to get lost in those weeds.
+
+532
+00:23:59,869 --> 00:24:05,029
+因此，有时某个人可能需要的只是更高级别的详细信息列表。
+And so sometimes a higher level list of details is all that someone might need.
+
+533
+00:24:05,029 --> 00:24:07,946
+因此，您现在具备了编程和做事的能力
+So now that you have this ability to program and to do things
+
+534
+00:24:07,946 --> 00:24:10,029
+我们已经在讲座和习题集中向您展示了
+that we've shown you in lectures and problem sets,
+
+535
+00:24:10,029 --> 00:24:11,799
+确实有能力找出
+and indeed, have the ability to figure out
+
+536
+00:24:11,799 --> 00:24:13,869
+如何做我们甚至还没有向您展示的事情，
+how to do things that we haven't even shown you,
+
+537
+00:24:13,869 --> 00:24:17,349
+我们想花点时间考虑一下您是否应该做这些事情
+we wanted to take a moment to consider just whether you should do those things
+
+538
+00:24:17,349 --> 00:24:19,219
+以及，如果应该的话，应该如何做。
+and, if you should, how you should do them.
+
+539
+00:24:19,220 --> 00:24:21,970
+但是，您不仅可以凭自己的直觉回答这些问题，
+But beyond just answering these questions with your own instincts,
+
+540
+00:24:21,970 --> 00:24:24,012
+我们认为我们会邀请一些同事
+we thought we would invite some of our colleagues
+
+541
+00:24:24,011 --> 00:24:27,279
+由哲学系提出一个更正式的框架，
+from the Philosophy department to propose a more formal framework,
+
+542
+00:24:27,279 --> 00:24:29,739
+一个思考过程，通过它我们可以解决问题
+a thought process by which we can approach problems
+
+543
+00:24:29,740 --> 00:24:32,050
+在技术和代码编写方面
+when it comes to technology and the writing of code
+
+544
+00:24:32,049 --> 00:24:36,079
+最终只是因为我可以编写一些东西来帮助我们做出决定，
+to help us decide, ultimately, just because I can code something,
+
+545
+00:24:36,079 --> 00:24:39,819
+我应该，如果确实如此，我应该怎么做？
+should I, and if so, indeed, how should I do that?
+
+546
+00:24:39,819 --> 00:24:43,089
+因此，请允许我介绍一下Meica哲学系的同事
+So allow me to introduce our colleagues from the Philosophy department, Meica
+
+547
+00:24:43,089 --> 00:24:45,609
+Magnani和Susan Kennedy。
+Magnani and also Susan Kennedy.
+
+548
+00:24:45,609 --> 00:24:46,599
+梅卡（Meica）？
+Meica?
+
+549
+00:24:46,599 --> 00:24:47,589
+MEICA MAGNANI：嗨。
+MEICA MAGNANI: So hi.
+
+550
+00:24:47,589 --> 00:24:48,999
+我是Meica Magnani。
+I'm Meica Magnani.
+
+551
+00:24:49,000 --> 00:24:52,689
+我是嵌入式道德计划的哲学博士后
+I am a philosophy postdoc with the Embedded Ethics Program
+
+552
+00:24:52,690 --> 00:24:53,380
+在哈佛。
+here at Harvard.
+
+553
+00:24:53,380 --> 00:24:54,130
+苏珊·肯尼迪：你好。
+SUSAN KENNEDY: Hi.
+
+554
+00:24:54,130 --> 00:24:54,910
+我是Susan Kennedy。
+I'm Susan Kennedy.
+
+555
+00:24:54,910 --> 00:24:59,020
+我还是哈佛大学嵌入式道德计划的哲学博士后。
+And I'm also a philosophy postdoc with the Embedded Ethics Program at Harvard.
+
+556
+00:24:59,019 --> 00:25:01,039
+MEICA MAGNANI：在我们开始之前，
+MEICA MAGNANI: And before we get started,
+
+557
+00:25:01,039 --> 00:25:03,859
+我只想谈谈嵌入式道德计划。
+I'll just say a few things about the Embedded Ethics Program.
+
+558
+00:25:03,859 --> 00:25:08,379
+所以我们是哲学家和计算机的跨学科团队
+So we are an interdisciplinary team of philosophers and computer
+
+559
+00:25:08,380 --> 00:25:12,250
+科学家们共同努力，将伦理学纳入计算机科学
+scientists working together to integrate ethics into the computer science
+
+560
+00:25:12,250 --> 00:25:13,570
+课程。
+curriculum.
+
+561
+00:25:13,569 --> 00:25:17,919
+这种方法背后的想法是嵌入道德推理工具
+The idea behind this approach is to embed tools of ethical reasoning
+
+562
+00:25:17,920 --> 00:25:21,040
+自己进入计算机科学课程。
+into computer science courses themselves.
+
+563
+00:25:21,039 --> 00:25:25,539
+这样做的原因是，在对设计，部署进行决策时，
+The reason for this is that when making decisions about the design, deployment,
+
+564
+00:25:25,539 --> 00:25:30,129
+或一项技术的发展，无论是否意识到，
+or development of a piece of technology, one is, whether or not one realizes it,
+
+565
+00:25:30,130 --> 00:25:31,990
+做出符合道德的决定。
+making ethical decisions.
+
+566
+00:25:31,990 --> 00:25:35,210
+也就是说，做出具有社会，政治，
+That is, making decisions which stand to have social, political,
+
+567
+00:25:35,210 --> 00:25:36,612
+或人类的影响。
+or human impact.
+
+568
+00:25:36,612 --> 00:25:39,070
+在哈佛，我们认为这对计算机科学家很重要
+At Harvard, we think it's important for computer scientists
+
+569
+00:25:39,069 --> 00:25:42,729
+配备用于思考这些影响的工具。
+to be equipped with tools for thinking through these implications.
+
+570
+00:25:42,730 --> 00:25:45,730
+苏珊·肯尼迪（SUSAN KENNEDY）：技术对我们拥有强大的力量和影响力。
+SUSAN KENNEDY: Technology holds a lot of power and influence over us.
+
+571
+00:25:45,730 --> 00:25:49,938
+从广义上讲，这意味着设计技术的人员也可以这样做。
+And that means, by extension, that the people who design technology do, too.
+
+572
+00:25:49,938 --> 00:25:52,480
+现在，您开始考虑什么职责
+Now that you're starting to think about what responsibilities
+
+573
+00:25:52,480 --> 00:25:54,940
+您可能是计算机科学家，所以您
+you might have as computer scientists, so you
+
+574
+00:25:54,940 --> 00:25:58,570
+可以避免明显的不幸事故，例如面部混搭，
+can avoid notable mishaps, like face mash, for instance,
+
+575
+00:25:58,569 --> 00:26:01,959
+我们将把您的注意力转向社交媒体平台的主题
+we're going to turn your attention to the topic of social media platforms
+
+576
+00:26:01,960 --> 00:26:04,420
+以及它们如何影响和参与的分布
+and how they affect the distribution of and engagement
+
+577
+00:26:04,420 --> 00:26:07,010
+新闻和信息。
+with news and information.
+
+578
+00:26:07,009 --> 00:26:09,259
+看来这个话题特别重要
+It would seem that this topic is especially relevant
+
+579
+00:26:09,259 --> 00:26:13,369
+现在，鉴于最近的美国总统大选，政治内容已经
+now, given the recent US presidential election, where political content has
+
+580
+00:26:13,369 --> 00:26:17,119
+一直主导着互联网和电视广播以及争议
+been dominating the internet and television broadcasts and controversy
+
+581
+00:26:17,119 --> 00:26:19,879
+在社交媒体上大放异彩，赢得了关注
+has played out on social media, garnering attention
+
+582
+00:26:19,880 --> 00:26:21,930
+来自世界各地的。
+from around the world.
+
+583
+00:26:21,930 --> 00:26:24,840
+毫无疑问，技术已彻底革命
+Undoubtedly, technology has completely revolutionized
+
+584
+00:26:24,839 --> 00:26:28,739
+信息和新闻的传播和消费方式。
+the way information and news is both disseminated and consumed.
+
+585
+00:26:28,740 --> 00:26:32,370
+不要在纸上男孩大喊大叫，而是在街角把您的新闻放在这里，
+Instead of a paper boy shouting, get your news here on the street corner,
+
+586
+00:26:32,369 --> 00:26:34,589
+几乎每个人都使用互联网熬夜
+just about everyone uses the internet to stay up
+
+587
+00:26:34,589 --> 00:26:39,249
+迄今为止，不仅发生在本地，而且发生在世界各地。
+to date with what's happening, not just locally, but around the world.
+
+588
+00:26:39,250 --> 00:26:42,790
+在过去的几年中，尤其是社交媒体平台，
+And in the past few years, social media platforms, in particular,
+
+589
+00:26:42,789 --> 00:26:46,239
+在人们获取，分享，
+have started to play a huge role in how people access, share,
+
+590
+00:26:46,240 --> 00:26:48,460
+并与信息互动。
+and engage with information.
+
+591
+00:26:48,460 --> 00:26:52,630
+例如，研究表明，美国有44％的成年人
+For instance, research shows that 44% of US adults
+
+592
+00:26:52,630 --> 00:26:55,850
+报告从Facebook获取新闻。
+report getting the news from Facebook.
+
+593
+00:26:55,849 --> 00:26:58,849
+可以肯定地说，近年来发生了很多变化，
+It's safe to say a lot has changed in recent years,
+
+594
+00:26:58,849 --> 00:27:01,229
+由于技术的发展。
+owing to developments in technology.
+
+595
+00:27:01,230 --> 00:27:05,030
+当我们考虑关键问题时，这很重要，即能力
+And this matters when we consider what's at stake, namely, the ability
+
+596
+00:27:05,029 --> 00:27:07,009
+公众参与的话语
+for the public to engage in discourse that
+
+597
+00:27:07,009 --> 00:27:09,949
+支持运作良好的民主。
+supports a well-functioning democracy.
+
+598
+00:27:09,950 --> 00:27:13,280
+首先，我将向您简要介绍我们的来源
+So I'll first present you a brief overview of where we came from
+
+599
+00:27:13,279 --> 00:27:16,429
+以及我们现在的位置，由于技术的发展
+and where we are now, owing to technological developments
+
+600
+00:27:16,430 --> 00:27:20,220
+然后考虑我们今天面临的挑战。
+and then consider what challenges we're faced with today.
+
+601
+00:27:20,220 --> 00:27:22,530
+在上网之前，新闻和信息
+Before the internet, news and information
+
+602
+00:27:22,529 --> 00:27:26,669
+几乎完全掌握在几个主要广播电台和印刷品的手中
+was almost entirely in the hands of a few major broadcast stations and print
+
+603
+00:27:26,670 --> 00:27:31,020
+媒体渠道，也称为大众媒体领域。
+media outlets, otherwise known as the mass media sphere.
+
+604
+00:27:31,019 --> 00:27:34,109
+由于一些组织负责传播
+Since a few organizations were responsible for disseminating
+
+605
+00:27:34,109 --> 00:27:37,229
+所有的新闻，信息本质上是
+all the news, information was essentially
+
+606
+00:27:37,230 --> 00:27:40,110
+通过狭窄的镜头或狭窄的光圈过滤
+filtered through a narrow lens or narrow aperture
+
+607
+00:27:40,109 --> 00:27:44,079
+从组织到广大公众。
+from organizations to a wide public audience.
+
+608
+00:27:44,079 --> 00:27:46,899
+负责研究和写作的记者
+The journalists who are responsible for researching and writing
+
+609
+00:27:46,900 --> 00:27:51,680
+这些组织的内容都具有专业精神。
+the content for these organizations all shared a professional ethos.
+
+610
+00:27:51,680 --> 00:27:55,520
+他们关心真理，社会团体的代表，
+They were concerned with truth, representation of social groups,
+
+611
+00:27:55,519 --> 00:28:00,399
+创建一个批评论坛，阐明公共价值观，
+creating a forum for criticism, clarifying public values,
+
+612
+00:28:00,400 --> 00:28:03,190
+并提供全面的覆盖范围。
+and offering comprehensive coverage.
+
+613
+00:28:03,190 --> 00:28:05,380
+尤其是因为目标是生产
+And notably, since the aim was to produce
+
+614
+00:28:05,380 --> 00:28:07,720
+吸引了广大观众的内容，
+content that appealed to a wide audience,
+
+615
+00:28:07,720 --> 00:28:12,810
+如今，我们所看到的两极分化和极端主义评论较少。
+there was less polarization and extremist commentary than we see today.
+
+616
+00:28:12,809 --> 00:28:15,269
+但是负责新闻报道的新闻记者
+But the journalists responsible for news coverage
+
+617
+00:28:15,269 --> 00:28:17,739
+在很多方面都非常统一
+were very uniform in a lot of ways.
+
+618
+00:28:17,740 --> 00:28:22,380
+有相对富裕，受过高等教育的人，大多数是白人，男性，
+There were relatively affluent, highly educated, mostly white, male,
+
+619
+00:28:22,380 --> 00:28:24,040
+等等。
+and so forth.
+
+620
+00:28:24,039 --> 00:28:28,169
+这影响了种族政治，经济政策，
+And this had effects on the coverage of racial politics, economic policy,
+
+621
+00:28:28,170 --> 00:28:31,660
+以及对美国在世界上的作用的看法。
+and views about the role of the US in the world.
+
+622
+00:28:31,660 --> 00:28:34,720
+而且，观众很少有机会
+Moreover, there were seldom opportunities for the audience
+
+623
+00:28:34,720 --> 00:28:37,810
+做出回应，开发新的主题或主题，
+to respond, to develop new themes or topics,
+
+624
+00:28:37,809 --> 00:28:41,109
+或针对大众传媒领域的批评。
+or level criticism against the mass media sphere.
+
+625
+00:28:41,109 --> 00:28:43,209
+没有任何喜欢和评论的部分
+There weren't any likes and comment sections
+
+626
+00:28:43,210 --> 00:28:46,270
+用于报纸或电视广播。
+for the newspaper or television broadcasts.
+
+627
+00:28:46,269 --> 00:28:49,569
+如果您不喜欢它，那么，祝您好运。
+If you didn't like it, well, tough luck.
+
+628
+00:28:49,569 --> 00:28:51,639
+近年来，这一切开始改变，
+This all started to change in recent years,
+
+629
+00:28:51,640 --> 00:28:56,290
+因为新闻报道不仅转移到网上，而且转移到社交媒体平台上。
+as news coverage not only moved online, but onto social media platforms.
+
+630
+00:28:56,289 --> 00:28:59,829
+我们现在生活在一个数字网络化的公共领域。
+We now live in a digitally networked public sphere.
+
+631
+00:28:59,829 --> 00:29:03,069
+因此，与其进行狭窄的交流，
+So instead of having a narrow aperture of communications,
+
+632
+00:29:03,069 --> 00:29:06,939
+或只有少数几个组织向公众传播信息，
+or just a few organizations to disseminate information to the public,
+
+633
+00:29:06,940 --> 00:29:10,600
+我们现在有了一个大口径的数字领域，那里有很多人
+we now have a digital sphere with a wide aperture, where lots of people
+
+634
+00:29:10,599 --> 00:29:13,169
+可以分享新闻和信息。
+can share news and information.
+
+635
+00:29:13,170 --> 00:29:15,450
+更具体地说，内容的来源
+More specifically, the sources of content
+
+636
+00:29:15,450 --> 00:29:19,140
+不仅是他们所雇用的组织和专业新闻工作者，
+are not just organizations and the professional journalists they employed,
+
+637
+00:29:19,140 --> 00:29:22,920
+但公众，尤其是社交媒体用户。
+but the public and particularly, social media users.
+
+638
+00:29:22,920 --> 00:29:26,010
+任何人都可以在Facebook上发推文或发布信息，任何人都可以
+Anyone can tweet or post on Facebook, and anyone
+
+639
+00:29:26,009 --> 00:29:28,589
+可以阅读这些推文和帖子。
+can read those tweets and posts.
+
+640
+00:29:28,589 --> 00:29:30,629
+不仅带来更大的多样性
+It's not only resulted in greater diversity
+
+641
+00:29:30,630 --> 00:29:34,250
+内容，但也可以更好地访问信息。
+of content, but greater access to information as well.
+
+642
+00:29:34,250 --> 00:29:36,899
+如果您想关注新闻，有很多选择
+If you want to follow the news, there are a ton of options
+
+643
+00:29:36,900 --> 00:29:41,500
+以及在线免费场所，只需单击几下鼠标即可访问。
+and free places online you can access with just a few mouse clicks.
+
+644
+00:29:41,500 --> 00:29:43,990
+增加多样性和获取机会的这些前景
+These prospects of increased diversity and access
+
+645
+00:29:43,990 --> 00:29:47,230
+是什么导致许多人相信数字领域
+are what led many people to believe that the digital sphere held
+
+646
+00:29:47,230 --> 00:29:49,990
+改善公众话语的巨大希望
+great promise for improving the public discourse that
+
+647
+00:29:49,990 --> 00:29:52,540
+支持运作良好的民主。
+supports a well-functioning democracy.
+
+648
+00:29:52,539 --> 00:29:55,459
+在某些方面，这是事实。
+And in some ways, this has been true.
+
+649
+00:29:55,460 --> 00:29:57,930
+例如，感谢Twitter和Facebook，
+For example, thanks to Twitter and Facebook,
+
+650
+00:29:57,930 --> 00:30:00,560
+我们看到了社会正义运动的动员，
+we saw the mobilization of social justice movements,
+
+651
+00:30:00,559 --> 00:30:03,439
+像我，《太黑了》和《黑色生活》
+like Me, Too and Black Lives Matter.
+
+652
+00:30:03,440 --> 00:30:05,780
+并且观点的多样性增加
+And the increased diversity of perspectives
+
+653
+00:30:05,779 --> 00:30:08,929
+为个人研究人员和科学家提供了可能
+made it possible for individual researchers and scientists
+
+654
+00:30:08,930 --> 00:30:12,350
+权衡CDC关于冠状病毒的主张。
+to weigh in on the CDC'S claims about coronavirus.
+
+655
+00:30:12,349 --> 00:30:16,159
+因此，尽管CDC最初并未说冠状病毒是特征
+So while the CDC did not initially say coronavirus was characterized
+
+656
+00:30:16,160 --> 00:30:19,363
+通过空中传播，导致社区扩散，
+by airborne transmission, leading to community spread,
+
+657
+00:30:19,363 --> 00:30:21,530
+他们最终在科学家之后改变了自己的立场
+they ended up revising their stance after scientists
+
+658
+00:30:21,529 --> 00:30:25,699
+拿到Twitter上的证据证明确实如此。
+took to Twitter with evidence proving that this was the case.
+
+659
+00:30:25,700 --> 00:30:28,260
+尽管数字领域带来了一些进步，
+While the digital sphere has brought about some improvements,
+
+660
+00:30:28,259 --> 00:30:32,679
+它还加剧了一些问题并带来了新的挑战。
+it's also exacerbated some problems and created new challenges.
+
+661
+00:30:32,680 --> 00:30:37,120
+例如，由于任何人都可以创建内容，因此进行事实检查和监视
+For example, since anyone can create content, fact checking and monitoring
+
+662
+00:30:37,119 --> 00:30:39,454
+已经变得更加困难。人们是
+have become much more difficult. People are
+
+663
+00:30:39,454 --> 00:30:42,579
+在弄清楚是否有东西时要自己照顾自己
+left to fend for themselves when it comes to figuring out whether something
+
+664
+00:30:42,579 --> 00:30:45,389
+他们在网上阅读是值得信赖的。
+they read online is trustworthy.
+
+665
+00:30:45,390 --> 00:30:48,240
+我们还看到，尊重方面的个性化程度有所提高
+We've also seen increased personalization with respect
+
+666
+00:30:48,240 --> 00:30:51,600
+新闻和信息，其中特定内容可以
+to news and information, where specific content could
+
+667
+00:30:51,599 --> 00:30:54,869
+通过精选新闻将特定用户定位为特定用户
+be targeted to specific users by the means of curated news
+
+668
+00:30:54,869 --> 00:30:58,259
+大量涌现社交媒体和有线电视新闻台
+feeds on social media and cable news stations cropping up
+
+669
+00:30:58,259 --> 00:31:02,309
+他们所报道的新闻具有特殊的角度。
+that take a particular angle on the news that they cover.
+
+670
+00:31:02,309 --> 00:31:03,509
+这很重要。
+This is significant.
+
+671
+00:31:03,509 --> 00:31:06,659
+因为我们最终会产生某种自相矛盾的效果。
+Because we end up with a somewhat paradoxical effect.
+
+672
+00:31:06,660 --> 00:31:09,720
+尽管可用内容的多样性更大，
+Despite a greater diversity in the content that's available,
+
+673
+00:31:09,720 --> 00:31:12,390
+新闻和信息人员的多样性较少
+there's less diversity in the news and information people
+
+674
+00:31:12,390 --> 00:31:16,650
+最终最终消耗掉了，信息的个性化
+actually end up consuming, with the personalization of information having
+
+675
+00:31:16,650 --> 00:31:19,110
+倾向于强化一个人的观点，
+a tendency to reinforce a person's viewpoints,
+
+676
+00:31:19,109 --> 00:31:22,069
+而不是挑战或扩大它们。
+rather than challenge or broaden them.
+
+677
+00:31:22,069 --> 00:31:25,149
+此外，在缺乏集中新闻来源的情况下，
+Additionally, in the absence of centralized sources of news,
+
+678
+00:31:25,150 --> 00:31:29,650
+我们还看到了创建和共享内容所表达的不同目标。
+we've also seen different aims expressed by those creating and sharing content.
+
+679
+00:31:29,650 --> 00:31:33,550
+一些人绕开了对真理的关注，以争取更多的观点。
+Some have bypassed a concern for truth in an effort to garner more views
+
+680
+00:31:33,549 --> 00:31:37,539
+并且喜欢带有极端主义内容或虚假新闻的人。
+and likes with extremist content or fake news.
+
+681
+00:31:37,539 --> 00:31:39,819
+假新闻在当时成为一个巨大的问题
+And fake news became a huge issue around the time
+
+682
+00:31:39,819 --> 00:31:43,269
+令人担忧的是2016年总统大选
+of the 2016 presidential election, as there were concerns
+
+683
+00:31:43,269 --> 00:31:46,329
+错误信息在社交媒体上的大量传播
+that the massive spread of misinformation on social media
+
+684
+00:31:46,329 --> 00:31:50,589
+可能影响或影响个人的政治观点。
+could influence or sway individuals political views.
+
+685
+00:31:50,589 --> 00:31:53,379
+尽管错误信息的传播一直是一个问题，
+While the spread of misinformation has always been an issue,
+
+686
+00:31:53,380 --> 00:31:56,740
+数字公共领域确实加剧了这种情况，
+it's truly been exacerbated by the digital public sphere,
+
+687
+00:31:56,740 --> 00:32:00,910
+社交媒体平台实质上是将汽油浇在火上。
+with social media platforms essentially pouring gasoline on the fire.
+
+688
+00:32:00,910 --> 00:32:04,210
+假新闻的传播在社交媒体上激增
+The dissemination of fake news explodes on social media
+
+689
+00:32:04,210 --> 00:32:07,810
+因为数字环境的结构，从喜欢到转发，
+because the structure of digital environments, from likes to retweets,
+
+690
+00:32:07,809 --> 00:32:10,899
+允许有关假新闻的单个帖子广为传播，
+allows a single post on fake news to go viral,
+
+691
+00:32:10,900 --> 00:32:13,570
+到达全世界数以百万计的屏幕。
+reaching the screens of millions around the world.
+
+692
+00:32:13,569 --> 00:32:16,689
+而且，对于假新闻如何发挥作用也存在严重的担忧
+And there are serious worries about how fake news has played a role
+
+693
+00:32:16,690 --> 00:32:20,200
+加剧政治上的两极分化。
+in amplifying political polarization.
+
+694
+00:32:20,200 --> 00:32:23,350
+因此，尽管技术带来了独特的优势，
+So while technology has made possible unique advantages,
+
+695
+00:32:23,349 --> 00:32:26,079
+它也带来了独特的挑战。
+it's also brought on unique challenges.
+
+696
+00:32:26,079 --> 00:32:28,419
+我们现在面临的一个主要问题
+One major question that we're faced with now
+
+697
+00:32:28,420 --> 00:32:32,800
+正在研究如何在社交媒体平台上对内容进行监管，
+is figuring out how content should be regulated on social media platforms,
+
+698
+00:32:32,799 --> 00:32:34,269
+如果有的话。
+if at all.
+
+699
+00:32:34,269 --> 00:32:37,179
+考虑到问题的严重性，有些人可能会持怀疑态度，
+Given the scale of the problem, some might be skeptical,
+
+700
+00:32:37,180 --> 00:32:40,760
+认为任何形式的内容监管都是不可能的。
+believing that any form of content regulation would be impossible.
+
+701
+00:32:40,759 --> 00:32:43,659
+在线发布的人太多，无法对所有事实进行事实检查。
+There's just too many people posting online to fact check them all.
+
+702
+00:32:43,660 --> 00:32:46,990
+假新闻传播如此之快，很难在它已经停止之前停止
+And fake news spreads so quickly, it's hard to stop before it's already
+
+703
+00:32:46,990 --> 00:32:49,280
+吸引了很多观众
+reached a huge audience.
+
+704
+00:32:49,279 --> 00:32:51,259
+还有担心会试图调节
+There's also worries that attempts to regulate
+
+705
+00:32:51,259 --> 00:32:54,739
+内容最终可能会成为一种违背审查制度的形式
+content could end up becoming a form of censorship that violates
+
+706
+00:32:54,740 --> 00:32:57,380
+言论自由权。
+the right to freedom of speech.
+
+707
+00:32:57,380 --> 00:33:00,020
+但是有些人对这种可能性更加乐观
+But some people are more optimistic about the possibilities
+
+708
+00:33:00,019 --> 00:33:03,619
+以促进和保存的方式设计社交媒体平台的过程
+of designing social media platforms in a way that promotes and preserves
+
+709
+00:33:03,619 --> 00:33:05,299
+民主。
+democracy.
+
+710
+00:33:05,299 --> 00:33:08,509
+特别是，负责任的设计
+In particular, there's a possibility that with responsibly designed
+
+711
+00:33:08,509 --> 00:33:11,299
+算法和用户界面选择，我们
+algorithms and user interface choices, we
+
+712
+00:33:11,299 --> 00:33:13,309
+也许能够减缓虚假新闻的传播
+might be able to slow the spread of fake news
+
+713
+00:33:13,309 --> 00:33:17,149
+并从总体上改善信息的传播和参与方式
+and more generally improve the ways information is disseminated and engaged
+
+714
+00:33:17,150 --> 00:33:19,410
+与社交媒体上。
+with on social media.
+
+715
+00:33:19,410 --> 00:33:23,340
+例如，有些人认为Facebook，Twitter等公司
+For example, some people believe that companies like Facebook, Twitter
+
+716
+00:33:23,339 --> 00:33:26,339
+YouTube负责规范内容
+and YouTube have a responsibility to regulate content
+
+717
+00:33:26,339 --> 00:33:29,459
+因为他们对我们有巨大的影响。
+because of the enormous influence they have over us.
+
+718
+00:33:29,460 --> 00:33:33,300
+特别是，人们认为社交媒体平台有责任
+In particular, it's thought that social media platforms have a responsibility
+
+719
+00:33:33,299 --> 00:33:37,139
+警戒虚假新闻并降低数据驱动算法的功能
+to police fake news and reduce the power of data driven algorithms that
+
+720
+00:33:37,140 --> 00:33:40,590
+个性化用户体验，即使这样做
+personalize the user experience, even if doing these things
+
+721
+00:33:40,589 --> 00:33:42,959
+将以用户参与为代价，
+would come at the cost of user engagement,
+
+722
+00:33:42,960 --> 00:33:48,330
+从而减少了在平台上花费的时间，并减少了广告收入。
+resulting in less time spent on the platform and less advertising revenue.
+
+723
+00:33:48,329 --> 00:33:50,369
+显然，就此而言，前进的道路
+It's clear that the path going forward in terms
+
+724
+00:33:50,369 --> 00:33:54,629
+社交媒体平台上的内容监管将非常棘手。
+of content regulation on social media platforms is going to be tricky.
+
+725
+00:33:54,630 --> 00:33:57,600
+我们是否提倡民主理想或破坏民主理想
+Whether or not we promote democratic ideals or undermine
+
+726
+00:33:57,599 --> 00:34:01,669
+他们将取决于我们做出的特定设计选择。
+them will come down to the particular design choices we make.
+
+727
+00:34:01,670 --> 00:34:04,070
+为了使用技术创造解决方案
+In order to use technology to create solutions
+
+728
+00:34:04,069 --> 00:34:06,319
+面对我们今天面临的问题，我们将
+to the problems we're facing today, we'll
+
+729
+00:34:06,319 --> 00:34:08,968
+需要就设计选择做出明智的决定。
+need to make informed decisions about design choices.
+
+730
+00:34:08,969 --> 00:34:12,620
+这需要对道德和哲学进行批判性思考
+And this requires some critical thinking about ethics and philosophy
+
+731
+00:34:12,619 --> 00:34:15,129
+找出执行此操作的最佳方法。
+to figure out the best way to do this.
+
+732
+00:34:15,130 --> 00:34:17,815
+但是我们希望像您一样的学生参加CS50，
+But we're hoping that students like you, taking CS50,
+
+733
+00:34:17,815 --> 00:34:21,594
+可以利用您的创造力，技术知识和道德推理
+can harness your creativity, technical knowledge, and ethical reasoning
+
+734
+00:34:21,594 --> 00:34:25,703
+以负责任的方式设计技术。
+to design technology in a responsible way.
+
+735
+00:34:25,702 --> 00:34:27,619
+所以我现在要把事情交给梅卡，
+So I'm now going to pass things over to Meica,
+
+736
+00:34:27,619 --> 00:34:30,399
+谁会告诉你一些哲学概念
+who will tell you about some philosophical concepts that'll
+
+737
+00:34:30,400 --> 00:34:32,679
+帮助您主动思考特定的设计
+help you think proactively about particular design
+
+738
+00:34:32,679 --> 00:34:36,550
+可以实现结构的选择和算法工具
+choices and algorithmic tools that can be implemented to structure
+
+739
+00:34:36,550 --> 00:34:40,960
+社交媒体平台，以促进民主公众话语的方式。
+social media platforms in a way that promotes democratic public discourse.
+
+740
+00:34:40,960 --> 00:34:43,420
+MEICA MAGNANI：在民主与数字公共领域，
+MEICA MAGNANI: In Democracy and The Digital Public Sphere,
+
+741
+00:34:43,420 --> 00:34:46,900
+一篇可以很好地诊断我们情况的文章，
+an article which offers a fantastic diagnosis of our situation,
+
+742
+00:34:46,900 --> 00:34:49,000
+苏珊和我从中大量汲取金钱
+and from which Susan and I are drawing heavily
+
+743
+00:34:49,000 --> 00:34:53,080
+在本次演讲中，作者约书亚·科恩（Joshua Cohen）和冯宗Arch（Archon Fung）
+upon for this lecture, the authors Joshua Cohen and Archon Fung,
+
+744
+00:34:53,079 --> 00:34:56,408
+告诉我们，数字玫瑰绽放了。
+tell us that the bloom is off the digital rose.
+
+745
+00:34:56,409 --> 00:34:58,840
+正如苏珊（Susan）所描述的，我们寄予厚望
+As Susan was describing, we had such high hopes
+
+746
+00:34:58,840 --> 00:35:02,200
+为社交媒体和互联网的民主化潜力。
+for the democratizing potential of social media and the internet.
+
+747
+00:35:02,199 --> 00:35:05,739
+但是现在我们面临假新闻泛滥的环境，
+But now we face an environment in which fake news runs rampant,
+
+748
+00:35:05,739 --> 00:35:08,379
+市民似乎两极分化，
+citizens appear to be dramatically polarized,
+
+749
+00:35:08,380 --> 00:35:11,020
+信息在它自己的孤立气泡中回旋，
+information swirls in its own isolated bubbles,
+
+750
+00:35:11,019 --> 00:35:14,139
+仇恨言论达到令人震惊的硫酸水平。
+and hate speech reaches appalling levels of vitriol.
+
+751
+00:35:14,139 --> 00:35:17,439
+所有这些都会威胁到人们的猜测，
+All of which stand to threaten, or so people speculate,
+
+752
+00:35:17,440 --> 00:35:20,290
+有效民主所需的条件。
+the conditions required for an effective democracy.
+
+753
+00:35:20,289 --> 00:35:23,499
+所以出现以下问题，以什么方式
+So the following questions arise, in what ways
+
+754
+00:35:23,500 --> 00:35:25,720
+民主的条件受到威胁吗？
+are the conditions of democracy threatened?
+
+755
+00:35:25,719 --> 00:35:27,579
+对此可以或应该做些什么？
+What can or should be done about it?
+
+756
+00:35:27,579 --> 00:35:29,919
+我们的技术结构负责吗？
+Is the structure of our technology responsible?
+
+757
+00:35:29,920 --> 00:35:33,610
+还是我们作为人类创造了这些问题？
+Or is it just us, as human beings, creating these problems?
+
+758
+00:35:33,610 --> 00:35:35,830
+在本模块中，我们将重点关注
+In this module, we're focusing specifically
+
+759
+00:35:35,829 --> 00:35:38,139
+关于内容监管的问题。
+on the issue of content regulation.
+
+760
+00:35:38,139 --> 00:35:40,959
+社交媒体公司，例如Twitter，Facebook和YouTube
+Social media companies like Twitter, Facebook, and YouTube
+
+761
+00:35:40,960 --> 00:35:44,200
+现在都在尝试通过平台解决这些问题
+are now all in the game of trying to address these problems through platform
+
+762
+00:35:44,199 --> 00:35:45,969
+设计和功能。
+design and features.
+
+763
+00:35:45,969 --> 00:35:49,749
+从一个角度来看，他们正在为维护民主服务
+From one angle then, they are acting in the service of protecting democracy
+
+764
+00:35:49,750 --> 00:35:52,959
+通过试图控制错误信息的传播，
+by trying to get control over the spread of misinformation,
+
+765
+00:35:52,960 --> 00:35:56,530
+仇恨言论的放大和两极分化的加深。
+the amplification of hate speech, and the deepening of polarization.
+
+766
+00:35:56,530 --> 00:35:58,810
+但是，从另一个角度来看，他们正在介入
+However, from another angle, they're stepping in
+
+767
+00:35:58,809 --> 00:36:01,219
+塑造信息的分布。
+to shape the distribution of information.
+
+768
+00:36:01,219 --> 00:36:03,519
+根据特定的设计选择，
+And depending on the particular design choices,
+
+769
+00:36:03,519 --> 00:36:05,559
+可能被设置为调节或沉默
+might be set to be regulating or silencing
+
+770
+00:36:05,559 --> 00:36:09,309
+演讲，这当然与民主承诺背道而驰
+speech, which of course, is at odds with democratic commitments
+
+771
+00:36:09,309 --> 00:36:11,589
+言论自由和话语权。
+to free speech and discourse.
+
+772
+00:36:11,590 --> 00:36:14,170
+然后，本模块的重点是为您提供一些工具
+The point of this module, then, is to give you some tools
+
+773
+00:36:14,170 --> 00:36:18,040
+思考这些问题，了解问题的工具，
+to think through these issues, tools for understanding the problem,
+
+774
+00:36:18,039 --> 00:36:22,509
+诊断问题的根源，并集思广益。
+diagnosing the sources of the problem, and brainstorming solutions.
+
+775
+00:36:22,510 --> 00:36:24,640
+在剩下的10或15分钟内，我要去
+In the remaining 10 or 15 minutes, I'm going
+
+776
+00:36:24,639 --> 00:36:27,079
+提供主要工具的概述
+to provide an overview of the main tools which
+
+777
+00:36:27,079 --> 00:36:29,199
+您将在阅读材料中找到详细信息。
+you will find detailed in the readings.
+
+778
+00:36:29,199 --> 00:36:33,349
+它们也是您将需要在本周的实验室中进行分析的工具。
+They are also the tools you will be asked to analyze in this week's lab.
+
+779
+00:36:33,349 --> 00:36:35,619
+所以首先，我们需要清楚地考虑一下
+So first then, we need to think clearly about what
+
+780
+00:36:35,619 --> 00:36:37,869
+健康的民主是必需的。
+is required for a healthy democracy.
+
+781
+00:36:37,869 --> 00:36:42,039
+如果我们要宣称技术如何威胁民主，
+If we're going to be making claims about how tech threatens democracy,
+
+782
+00:36:42,039 --> 00:36:46,749
+我们更好地了解A，什么是民主，B，什么样的条件
+we better understand A, what a democracy is, and B, what sort of conditions
+
+783
+00:36:46,750 --> 00:36:50,860
+支持民主，使这些条件可能受到威胁。
+support democracy, such that those conditions could come under threat.
+
+784
+00:36:50,860 --> 00:36:54,610
+政治学教授冯宗宪在他们的文章中
+In their article, Archon Fung, who is a professor in political science
+
+785
+00:36:54,610 --> 00:36:58,900
+在哈佛大学和政治哲学家约书亚·科恩（Joshua Cohen）一起工作
+here at Harvard, and Joshua Cohen, who is a political philosopher now working
+
+786
+00:36:58,900 --> 00:37:03,800
+与苹果大学的教职员工一起，为我们提供这些工具。
+with the faculty at Apple University, provide us with these tools.
+
+787
+00:37:03,800 --> 00:37:06,070
+因此，在民主理念背后是理想的选择
+So behind the idea of democracy is an ideal
+
+788
+00:37:06,070 --> 00:37:08,170
+政治社会应该是什么。
+of what political society should be.
+
+789
+00:37:08,170 --> 00:37:11,810
+冯和科恩将此理想简化为三个要素。
+Fung and Cohen reduce this ideal to three elements.
+
+790
+00:37:11,809 --> 00:37:15,609
+首先，民主社会的思想
+First, the idea of a democratic society, a society
+
+791
+00:37:15,610 --> 00:37:19,982
+政治文化将个人视为自由和平等。
+in which the political culture views individuals as free and equal.
+
+792
+00:37:19,981 --> 00:37:21,939
+即使这些人可能
+Even though it is likely that these people have
+
+793
+00:37:21,940 --> 00:37:25,900
+不同的利益，身份和信仰体系，作为公民，
+different interests, identities, and systems of belief, as citizens,
+
+794
+00:37:25,900 --> 00:37:30,040
+他们致力于通过反思和话语到达原则
+they are committed to arriving m through reflection and discourse, principles
+
+795
+00:37:30,039 --> 00:37:33,039
+这将使他们能够在尊重自由的同时共同努力
+that will enable them to work together while respecting their freedom
+
+796
+00:37:33,039 --> 00:37:35,039
+和平等。
+and equality.
+
+797
+00:37:35,039 --> 00:37:38,399
+其次是民主政治体制的思想，
+Second is the idea of a democratic political regime, which
+
+798
+00:37:38,400 --> 00:37:42,060
+其特点是定期选举，参与权，
+is characterized by regular elections, rights of participation,
+
+799
+00:37:42,059 --> 00:37:44,159
+以及关联权和表达权
+along with associative and expressive rights
+
+800
+00:37:44,159 --> 00:37:48,219
+使参与既有见地又有效。
+that make participation both informed and effective.
+
+801
+00:37:48,219 --> 00:37:52,029
+第三，最后是协商民主的思想，
+Third and lastly is the idea of a deliberative democracy,
+
+802
+00:37:52,030 --> 00:37:54,130
+根据哪个政治讨论
+according to which political discussion should
+
+803
+00:37:54,130 --> 00:37:56,620
+诉诸适合合作的理由
+appeal to reasons that are suitable for cooperation
+
+804
+00:37:56,619 --> 00:38:00,069
+自由平等的人之间。
+amongst free and equal persons.
+
+805
+00:38:00,070 --> 00:38:04,330
+因此，在为一项政策辩护时，您不能诉诸于自己的宗教信仰，
+So in justifying a policy, you cannot appeal to, say, your own religion,
+
+806
+00:38:04,329 --> 00:38:07,659
+鉴于其他人不一定持有相同的信念。
+given that others do not necessarily hold those same beliefs.
+
+807
+00:38:07,659 --> 00:38:10,899
+您可以诉诸宗教自由的概念，但不能
+You can appeal to the notion of, say, religious freedom, but not
+
+808
+00:38:10,900 --> 00:38:14,990
+宗教本身所包含的特定信仰。
+the particular beliefs contained within the religion itself.
+
+809
+00:38:14,989 --> 00:38:17,439
+因此，民主基本上是一种理想
+So democracy, then, is basically an ideal
+
+810
+00:38:17,440 --> 00:38:20,920
+我们通过集体决策来控制自己，
+that we govern ourselves by collective decision making, decision making that
+
+811
+00:38:20,920 --> 00:38:23,200
+尊重我们的自由与平等。
+respects our freedom and equality.
+
+812
+00:38:23,199 --> 00:38:26,979
+这项决策不仅包括正式的投票程序，
+This decision making consists not only of the formal procedures of voting,
+
+813
+00:38:26,980 --> 00:38:31,750
+选举和立法，也由非正式的公共领域提供信息，
+elections, and legislation, it is also informed by the informal public sphere,
+
+814
+00:38:31,750 --> 00:38:35,140
+也就是说，公民发现问题和关切，
+that is, citizens identifying problems and concerns,
+
+815
+00:38:35,139 --> 00:38:38,889
+讨论和辩论问题，表达意见，挑战
+discussing and debating problems, expressing opinions, challenging
+
+816
+00:38:38,889 --> 00:38:41,589
+观点，并围绕原因进行组织。
+viewpoints, and organizing around causes.
+
+817
+00:38:41,590 --> 00:38:45,850
+这是民主决策过程中绝对关键的部分。
+This is an absolutely critical part of the democratic decision-making process.
+
+818
+00:38:45,849 --> 00:38:51,009
+在这里，我们作为公众形成，测试，分散，交流，
+It is where we, as the public, form, test, disperse, exchange,
+
+819
+00:38:51,010 --> 00:38:53,290
+挑战，并修改我们的观点。
+challenge, and revise our views.
+
+820
+00:38:53,289 --> 00:38:56,079
+信息流以及用户参与度
+The flow of information, along with user engagement
+
+821
+00:38:56,079 --> 00:38:58,509
+在Facebook，YouTube和Twitter上都是
+on Facebook, YouTube, and Twitter, are all part
+
+822
+00:38:58,510 --> 00:39:01,740
+这个非正式的公共领域。
+of this informal public sphere.
+
+823
+00:39:01,739 --> 00:39:03,839
+为了个人可以参与
+In order that individuals can participate
+
+824
+00:39:03,840 --> 00:39:07,200
+在这个公共演讲舞台上作为自由和平等的公民，
+as free and equal citizens in this arena of public discourse,
+
+825
+00:39:07,199 --> 00:39:10,139
+Cohen和Fung提出了一系列权利和机会
+Cohen and Fung lay out a set of rights and opportunities
+
+826
+00:39:10,139 --> 00:39:12,929
+一个运作良好的民主国家将需要的。
+that a well-functioning democracy will require.
+
+827
+00:39:12,929 --> 00:39:15,899
+这些是提供的分析工具。
+And these are the tools of analysis on offer.
+
+828
+00:39:15,900 --> 00:39:18,030
+首先，权利。
+So first, rights.
+
+829
+00:39:18,030 --> 00:39:20,610
+“作为民主国家的公民，我们享有权利
+"As citizens of a democracy, we have rights
+
+830
+00:39:20,610 --> 00:39:24,930
+基本自由，表达自由和结社自由。
+to basic liberties, liberties of expression and association.
+
+831
+00:39:24,929 --> 00:39:27,089
+表达自由权很重要
+The right to expressive liberty is important
+
+832
+00:39:27,090 --> 00:39:29,160
+不仅为了个人的自由，
+not only for the freedom of the individual,
+
+833
+00:39:29,159 --> 00:39:33,519
+这样他或她就不会受到审查，而且也会受到民主本身的审查。
+so that he or she will not be censored, but also for democracy itself.
+
+834
+00:39:33,519 --> 00:39:37,409
+它使公民能够将他们的想法相互交流
+It enables citizens to bring their ideas into conversation with one another
+
+835
+00:39:37,409 --> 00:39:41,249
+并批评和追究行使权力的人。”
+and to criticize and hold accountable those who exercise power."
+
+836
+00:39:41,250 --> 00:39:44,700
+第二是表达的机会。
+Second is the opportunity for expression.
+
+837
+00:39:44,699 --> 00:39:47,039
+“我们不仅应该不受审查，而且
+"Not only should we be free of censorship, but
+
+838
+00:39:47,039 --> 00:39:50,939
+我们应该有公平的机会参加公开讨论。
+we should have fair opportunity to participate in public discussion.
+
+839
+00:39:50,940 --> 00:39:53,190
+并非应该因为某人是这样，
+It shouldn't be the case that because someone is, say,
+
+840
+00:39:53,190 --> 00:39:58,260
+富裕或更强大，他们就有更多参与的机会。”
+wealthier or more powerful, that they have more opportunity to participate."
+
+841
+00:39:58,260 --> 00:40:00,390
+第三是访问。
+Third is access.
+
+842
+00:40:00,389 --> 00:40:03,149
+“每个人都应享有平等的机会
+"Each person should have good and equal access
+
+843
+00:40:03,150 --> 00:40:06,540
+获得有关公共事务的质量可靠的信息。
+to quality and reliable information on public matters.
+
+844
+00:40:06,539 --> 00:40:08,639
+也就是说，如果我们付出努力，我们应该
+That is, if we make the effort, we should
+
+845
+00:40:08,639 --> 00:40:10,689
+能够获取此信息。
+be able to acquire this information.
+
+846
+00:40:10,690 --> 00:40:16,200
+有效参与决策需要知情。”
+Effective participation in decision making requires being informed."
+
+847
+00:40:16,199 --> 00:40:18,539
+第四是多样性。
+Fourth is diversity.
+
+848
+00:40:18,539 --> 00:40:23,069
+“每个人都应该有平等机会听取各种各样的意见。
+"Each person should have good and equal chances to hear a wide range of views.
+
+849
+00:40:23,070 --> 00:40:25,440
+我们需要获得竞争观点才能拥有
+We need access to competing views in order to have
+
+850
+00:40:25,440 --> 00:40:28,410
+更加明智和理性的立场”
+a more informed and reasoned position"
+
+851
+00:40:28,409 --> 00:40:31,619
+最后，第五，沟通能力。
+And lastly, number five, communicative power.
+
+852
+00:40:31,619 --> 00:40:35,879
+“公民应有平等机会探索兴趣和思想
+"Citizens should have good and equal chances to explore interests and ideas
+
+853
+00:40:35,880 --> 00:40:37,570
+与他人合作。
+in association with others.
+
+854
+00:40:37,570 --> 00:40:40,710
+通过这些协会，发展出新的关注点，
+And through these associations, to develop new concerns that
+
+855
+00:40:40,710 --> 00:40:44,120
+可能会挑战主流观点。”
+might challenge the mainstream view."
+
+856
+00:40:44,119 --> 00:40:47,359
+这些权利和机会共同提供了关键条件
+These rights and opportunities together provide critical conditions
+
+857
+00:40:47,360 --> 00:40:50,360
+使人们能够参与公共讨论。
+for enabling participation in public discussion.
+
+858
+00:40:50,360 --> 00:40:53,120
+他们可能需要跟踪很多东西，
+They might seem like a lot to keep track of initially,
+
+859
+00:40:53,119 --> 00:40:56,419
+但是如果我们要思考一下社交媒体如何威胁民主，
+but if we're going to think through how social media threatens democracy,
+
+860
+00:40:56,420 --> 00:41:00,210
+更具体地说，平台设计如何促进或阻碍民主，
+and more concretely, how platform design might promote or hinder democracy,
+
+861
+00:41:00,210 --> 00:41:01,910
+这些都是有价值的工具。
+these are valuable tools.
+
+862
+00:41:01,909 --> 00:41:04,699
+我们可以使用访问条件，想法
+We can use, say, the access condition, the idea
+
+863
+00:41:04,699 --> 00:41:07,279
+我们所有人都应该能够获得可靠的信息，
+that we should all have access to reliable information,
+
+864
+00:41:07,280 --> 00:41:09,470
+作为分析的镜头。
+as a lens of analysis.
+
+865
+00:41:09,469 --> 00:41:11,839
+我们的平台是否阻止某些群体或用户
+Does our platform prevent certain groups or users
+
+866
+00:41:11,840 --> 00:41:14,270
+从访问可靠的信息？
+from accessing reliable information?
+
+867
+00:41:14,269 --> 00:41:17,269
+或者我们可以使用多样性条件
+Or we can use the diversity condition, the idea
+
+868
+00:41:17,269 --> 00:41:20,179
+我们所有人都应该可以访问多种矛盾的观点
+that we should all have access to a plurality of conflicting views
+
+869
+00:41:20,179 --> 00:41:22,019
+作为分析的镜头。
+as a lens of analysis.
+
+870
+00:41:22,019 --> 00:41:25,639
+例如，我们可能会问自己，我们的平台是否
+So for example, we might ask ourselves, does our platform
+
+871
+00:41:25,639 --> 00:41:28,879
+创建一个过滤泡，使个人不再面对
+create a filter bubble in which individuals are no longer confronted
+
+872
+00:41:28,880 --> 00:41:31,610
+有反对意见？
+with opposing views?
+
+873
+00:41:31,610 --> 00:41:34,100
+除了了解什么条件支持
+In addition to understanding what conditions support
+
+874
+00:41:34,099 --> 00:41:38,689
+一个民主社会，我们还需要了解所谓的问题
+a democratic society, we also need to understand the purported problems
+
+875
+00:41:38,690 --> 00:41:42,010
+在我们提出有效的干预措施之前。
+before we can propose effective interventions.
+
+876
+00:41:42,010 --> 00:41:43,720
+考虑假新闻。
+Consider fake news.
+
+877
+00:41:43,719 --> 00:41:47,079
+当涉及到假新闻时，为什么人们这么容易被骗呢？
+Why are people so gullible when it comes to fake news?
+
+878
+00:41:47,079 --> 00:41:51,489
+为什么他们经常在没有适当的严格评估的情况下重新发布？
+Why do they often repost without proper critical assessment?
+
+879
+00:41:51,489 --> 00:41:54,489
+里贾纳·里尼（Regina Rini）在阅读中建议
+Regina Rini, in the reading, proposes that in order
+
+880
+00:41:54,489 --> 00:41:56,619
+了解假新闻现象，
+to understand the phenomenon of fake news,
+
+881
+00:41:56,619 --> 00:41:59,779
+我们应该把它当作证词的一种形式。
+we should think about it as a form of testimony.
+
+882
+00:41:59,780 --> 00:42:01,780
+当其他人与您共享信息时，
+When another person shares information with you,
+
+883
+00:42:01,780 --> 00:42:04,310
+您通常会认为它是真实的。
+you typically take it to be true.
+
+884
+00:42:04,309 --> 00:42:07,239
+这是因为规范我们作证行为的准则。
+This is because of the norms governing our practice of testimony.
+
+885
+00:42:07,239 --> 00:42:09,939
+当您断言某些东西，并将其传递给其他人时，
+When you assert something, passing it on to others,
+
+886
+00:42:09,940 --> 00:42:12,580
+您通常会对它的真实性负责。
+you typically take responsibility for its truth.
+
+887
+00:42:12,579 --> 00:42:15,159
+假设您已获得证据
+It is assumed that you have either acquired evidence
+
+888
+00:42:15,159 --> 00:42:18,459
+为您自己，或者您已从某个来源收到此信息
+for yourself or you've received this information from a source
+
+889
+00:42:18,460 --> 00:42:20,440
+您认为可靠。
+that you deem reliable.
+
+890
+00:42:20,440 --> 00:42:23,710
+我们对世界的大部分了解都来自这种实践。
+Most of our knowledge about the world comes through this practice.
+
+891
+00:42:23,710 --> 00:42:27,280
+我们不可能获得所有我们持有的信念的证据。
+We could not possibly acquire evidence for all the beliefs we hold.
+
+892
+00:42:27,280 --> 00:42:31,860
+因此，我们常常不得不依靠我们认为并希望可信的资源。
+So we often have to rely on sources we deem and hope to be credible.
+
+893
+00:42:31,860 --> 00:42:36,690
+但里尼指出，社交媒体尚未制定出推荐规范。
+But social media, Rini points out, has unsettled testimonial norms.
+
+894
+00:42:36,690 --> 00:42:41,670
+当某人发布一条新闻时，我们似乎持有两种相互矛盾的观点。
+When someone posts a piece of news, we seem to hold two conflicting views.
+
+895
+00:42:41,670 --> 00:42:44,730
+一方面，我们认为这是积极的认可。
+On the one hand, we see it as an active endorsement.
+
+896
+00:42:44,730 --> 00:42:48,660
+发布者已承担了一定程度的责任
+The person posting has taken some degree of responsibility
+
+897
+00:42:48,659 --> 00:42:51,209
+为了他们的帖子的准确性，以相同的方式之一
+for the accuracy of their post, the same way one
+
+898
+00:42:51,210 --> 00:42:54,480
+在进行对话之前传递信息。
+would before passing on information in a conversation.
+
+899
+00:42:54,480 --> 00:42:57,240
+但另一方面，这只是一部分。
+On the other hand, though, it's just a share.
+
+900
+00:42:57,239 --> 00:43:00,479
+当唐纳德·特朗普大声疾呼时，我们会看到这种态度
+We see this attitude coming through when Donald Trump, called out
+
+901
+00:43:00,480 --> 00:43:06,060
+在他的一条可疑推文中，用eh反驳，这只是一条推文。
+on one of his questionable tweets, retorts with, eh, it's just a tweet.
+
+902
+00:43:06,059 --> 00:43:09,089
+为了打击假新闻，Rini认为我们
+To fight fake news, then, Rini argues that we
+
+903
+00:43:09,090 --> 00:43:13,440
+需要稳定社交媒体的证词规范，以便如她所说，
+need to stabilize social media's norms of testimony so that, as she says,
+
+904
+00:43:13,440 --> 00:43:15,870
+保持我们对鸡尾酒诚实的相同准则
+the same norms that keep us honest over cocktails
+
+905
+00:43:15,869 --> 00:43:18,149
+将使我们对自己的职位保持诚实。
+will keep us honest in our posts.
+
+906
+00:43:18,150 --> 00:43:20,340
+我们需要对人们负责，
+We need people to be held accountable for,
+
+907
+00:43:20,340 --> 00:43:22,920
+或对信息负有责任感
+or to have a sense of responsibility, for the information
+
+908
+00:43:22,920 --> 00:43:24,840
+他们与他人分享。
+that they share with others.
+
+909
+00:43:24,840 --> 00:43:29,650
+她的具体建议，给用户一个信誉分数。
+Her concrete proposal, give users a credibility score.
+
+910
+00:43:29,650 --> 00:43:33,300
+因此，实际上，这将是对Facebook系统的修正，
+So in practice, this would be an amendment to Facebook's system,
+
+911
+00:43:33,300 --> 00:43:35,910
+使用独立的事实检查组织，
+using independent fact checking organizations,
+
+912
+00:43:35,909 --> 00:43:41,459
+Facebook会标记有问题的新闻，并在用户重新发布之前警告用户。
+Facebook flags problematic news and warns users before they repost it.
+
+913
+00:43:41,460 --> 00:43:44,280
+当用户尝试发布已确定的内容时
+When a user tries to post something that has been identified
+
+914
+00:43:44,280 --> 00:43:47,760
+如果是错误或误导性内容，则会出现一个弹出窗口，说明问题所在
+as false or misleading, a pop up appears that explains the problem
+
+915
+00:43:47,760 --> 00:43:49,930
+并标识原始来源。
+and identifies the original source.
+
+916
+00:43:49,929 --> 00:43:51,929
+然后，它要求用户确认他们会
+It then asks the user to confirm that they would
+
+917
+00:43:51,929 --> 00:43:54,619
+喜欢继续他们的转发。
+like to continue with their repost.
+
+918
+00:43:54,619 --> 00:43:57,689
+对于Rini，用户的信誉分数将
+A user's credibility score, for Rini, would
+
+919
+00:43:57,690 --> 00:44:00,450
+取决于他们选择忽略这些警告的频率
+depend on how often they choose to ignore these warnings
+
+920
+00:44:00,449 --> 00:44:02,819
+并传递误导性信息。
+and pass on misleading information.
+
+921
+00:44:02,820 --> 00:44:05,220
+引用，“用户名旁边的绿点可以
+Quote, "a green dot by the user's name could
+
+922
+00:44:05,219 --> 00:44:08,819
+表示用户未选择分享很多有争议的新闻。
+indicate that the user hasn't chosen to share much disputed news.
+
+923
+00:44:08,820 --> 00:44:11,250
+黄点可能表示他们有时会这样做。
+A yellow dot could indicate that they do it sometimes.
+
+924
+00:44:11,250 --> 00:44:13,350
+红色可能表明他们经常这样做。”
+And a red could indicate that they do it often."
+
+925
+00:44:13,349 --> 00:44:14,669
+取消报价。
+Unquote.
+
+926
+00:44:14,670 --> 00:44:16,710
+那么，想法就是信誉分数
+The idea, then, is that a credibility score
+
+927
+00:44:16,710 --> 00:44:18,960
+会激励用户承担责任
+would incentivize users to take responsibility
+
+928
+00:44:18,960 --> 00:44:22,470
+他们分享的东西，也会使别人对他们的信赖感
+for what they share and would also give others a sense of their reliability
+
+929
+00:44:22,469 --> 00:44:24,689
+作为来源。
+as sources.
+
+930
+00:44:24,690 --> 00:44:27,540
+因此，Rini经过仔细分析后提出了此解决方案
+So Rini comes up with this solution through a careful analysis
+
+931
+00:44:27,539 --> 00:44:30,239
+为什么我们如此容易冒充假新闻。
+of why we are so gullible to fake news.
+
+932
+00:44:30,239 --> 00:44:33,089
+我留给你考虑这个建议
+I will leave it up to you to consider this proposal
+
+933
+00:44:33,090 --> 00:44:35,730
+根据所需的各种权利和机会
+in light of the various rights and opportunities required
+
+934
+00:44:35,730 --> 00:44:38,010
+民主的公共领域。
+for a democratic public sphere.
+
+935
+00:44:38,010 --> 00:44:41,190
+里尼的提议是否侵犯或威胁了言论自由？
+Does Rini's proposal violate or threaten freedom of expression?
+
+936
+00:44:41,190 --> 00:44:45,000
+它是否促进或阻碍了我们对可靠信息的访问，我们的访问
+Does it promote or hinder our access to reliable information, our access
+
+937
+00:44:45,000 --> 00:44:48,299
+观点的多样性，还是促进或阻碍了
+to diversity of views, or does it promote or hinder
+
+938
+00:44:48,300 --> 00:44:50,190
+我们的沟通能力？
+our communicative power?
+
+939
+00:44:50,190 --> 00:44:51,990
+我们希望这些问题是
+It is these sorts of questions that we hope
+
+940
+00:44:51,989 --> 00:44:54,031
+在思考时会开始问自己
+that you will start to ask yourself when thinking
+
+941
+00:44:54,032 --> 00:44:56,760
+通过以下问题。
+through the following sorts of issues.
+
+942
+00:44:56,760 --> 00:45:00,520
+假新闻，仇恨言论，两极分化等问题会发生什么
+What problems do fake news, hate speech, polarization, et cetera
+
+943
+00:45:00,519 --> 00:45:02,549
+对民主构成？
+pose to democracy?
+
+944
+00:45:02,550 --> 00:45:05,830
+Twitter，YouTube，
+How successful are various attempts by companies like Twitter, YouTube,
+
+945
+00:45:05,829 --> 00:45:08,369
+和Facebook解决这些问题？
+and Facebook to address these problems?
+
+946
+00:45:08,369 --> 00:45:11,399
+以及社交媒体平台的特定设计功能如何
+And how might particular design features of social media platforms
+
+947
+00:45:11,400 --> 00:45:15,180
+促进或阻碍这些特殊的权利和机会？
+promote or hinder these particular rights and opportunities?
+
+948
+00:45:15,179 --> 00:45:18,749
+无论是作为未来的计算机科学家，技术行业的领导者，
+Whether as a future computer scientist, a tech industry leader,
+
+949
+00:45:18,750 --> 00:45:22,950
+或只是作为这些技术的用户，我们希望问这些问题
+or just as a user of these technologies, we hope asking these sorts of questions
+
+950
+00:45:22,949 --> 00:45:25,782
+将帮助您更审慎地解决这些棘手的问题。
+will help you navigate these tricky issues with a more critical eye.
+
+951
+00:45:25,782 --> 00:45:28,866
+苏珊·肯尼迪：我们真的很期待各种各样的设计选择
+SUSAN KENNEDY: We're really looking forward to the sorts of design choices
+
+952
+00:45:28,867 --> 00:45:30,850
+你将来会做的。
+that you'll be making in the future.
+
+953
+00:45:30,849 --> 00:45:31,199
+MEICA MAGNANI：太好了。
+MEICA MAGNANI: Great.
+
+954
+00:45:31,199 --> 00:45:32,866
+非常感谢您今天有我们来这里。
+Thanks so much for having us here today.
+
+955
+00:45:32,867 --> 00:45:36,052
+祝大家好运。
+And best of luck to everybody.
+
+956
+00:45:36,052 --> 00:45:39,010
+DAVID MALAN：好的，非常感谢Susan和Meica加入我们的行列。
+DAVID MALAN: Well, thank you so much to Susan and Meica for joining us.
+
+957
+00:45:39,010 --> 00:45:41,510
+确实，在接下来的一周的实验中，我们将有机会
+Indeed, in this coming week's lab, we'll have an opportunity
+
+958
+00:45:41,510 --> 00:45:44,050
+在一些非常大的背景下考虑其中的一些问题
+to consider some of these issues in the context of some very
+
+959
+00:45:44,050 --> 00:45:46,730
+特定的现实世界场景。
+specific real world scenarios.
+
+960
+00:45:46,730 --> 00:45:49,690
+因此，我们现在认为我们将期待您可以做的事情
+So we now thought we would take a look forward at what you can do
+
+961
+00:45:49,690 --> 00:45:52,300
+以及CS50之后的处理方式
+and how you can do it after CS50 when it comes
+
+962
+00:45:52,300 --> 00:45:56,530
+超出了计算思维本身的实际范围。
+to the more practical side of things beyond computational thinking alone.
+
+963
+00:45:56,530 --> 00:45:58,910
+因此，当然，对于许多人来说，
+So programming, of course, for many of you,
+
+964
+00:45:58,909 --> 00:46:02,126
+这将是设计使然的唯一计算机科学或编程课程
+this will be by design the only computer science or programming course
+
+965
+00:46:02,126 --> 00:46:02,709
+你拿的。
+that you take.
+
+966
+00:46:02,710 --> 00:46:04,030
+那当然可以。
+And that's certainly OK.
+
+967
+00:46:04,030 --> 00:46:06,130
+确实，我们希望您现在能够返回
+Indeed, we hope that you'll be able now to return
+
+968
+00:46:06,130 --> 00:46:09,970
+您对艺术和人文科学，社会科学感兴趣的领域，
+to your own domains of interest in the arts and humanities, social sciences,
+
+969
+00:46:09,969 --> 00:46:13,839
+或科学，实际上能够拥有一套具体的实践技能
+or sciences and actually be able to have a concrete set of practical skills
+
+970
+00:46:13,840 --> 00:46:16,630
+是使用Python还是C或任何其他技术语言编写的
+be it in Python or C or any of the other technical languages
+
+971
+00:46:16,630 --> 00:46:20,470
+我们研究并可以实际解决您自己喜欢的领域中的问题。
+we looked at and can actually solve problems in your own preferred domain.
+
+972
+00:46:20,469 --> 00:46:23,139
+如果您有兴趣了解有关计算机科学的更多信息
+And if you're interested in learning more about computer science
+
+973
+00:46:23,139 --> 00:46:25,329
+本身，并在那个世界上前进，我们希望
+itself and moving on in that world, we hope
+
+974
+00:46:25,329 --> 00:46:27,399
+您将拥有坚实的基础
+that you'll walk away with a solid foundation
+
+975
+00:46:27,400 --> 00:46:32,800
+以便对该特定领域进行进一步的理论和系统探索。
+for further theoretical and systematic explorations of this particular field.
+
+976
+00:46:32,800 --> 00:46:34,720
+但实际上，我们希望现在
+But very practically speaking, we hope now
+
+977
+00:46:34,719 --> 00:46:38,229
+这样，您不仅可以编程，而且可以更好地提出问题，
+that you can not only program, but also ask questions better,
+
+978
+00:46:38,230 --> 00:46:41,240
+无论是在技术世界还是在现实世界中。
+whether that's in the technical world or even in just the real world.
+
+979
+00:46:41,239 --> 00:46:44,809
+奇怪的是，如果您曾经在CS50的论坛上提问，
+Odds are, if you've ever asked a question on CS50's discussion forums,
+
+980
+00:46:44,809 --> 00:46:48,039
+老师或我可能很好地回答了问题
+the teaching fellows or I might have very well responded with questions
+
+981
+00:46:48,039 --> 00:46:49,209
+请您澄清一下。
+asking you to clarify.
+
+982
+00:46:49,210 --> 00:46:52,090
+或者更好的是，您会在预期中为我们提供，
+Or better yet, you would have provided us, in anticipation,
+
+983
+00:46:52,090 --> 00:46:55,000
+回答我们可能遇到的所有问题。
+with answers to all of the questions that we might have.
+
+984
+00:46:55,000 --> 00:46:56,949
+如果您在Ed上注意到了，我们特意
+And if you've noticed on Ed, we deliberately
+
+985
+00:46:56,949 --> 00:46:59,229
+有这样的模板，您可以通过
+have this sort of template via which you're
+
+986
+00:46:59,230 --> 00:47:02,242
+哄着回答，您看到的是什么症状？
+coaxed to answer, well, what are the symptoms that you are seeing?
+
+987
+00:47:02,242 --> 00:47:04,450
+您遇到的错误消息是什么？
+What's the error message that you're struggling with?
+
+988
+00:47:04,449 --> 00:47:06,669
+您尝试采取什么步骤解决此问题？
+What steps have you tried to resolve the problem?
+
+989
+00:47:06,670 --> 00:47:09,295
+因为如果我们在现实世界中进行想象，即使只是伸出手
+Because if we imagine in the real world, even just reaching out
+
+990
+00:47:09,295 --> 00:47:11,860
+到一些随机公司的客户服务热线，
+to some random company's customer service line,
+
+991
+00:47:11,860 --> 00:47:14,450
+这些恰恰是别人提出的那种问题
+those are exactly the kinds of questions that someone else
+
+992
+00:47:14,449 --> 00:47:16,449
+将不得不请你更好地了解
+is going to have to ask you to better understand
+
+993
+00:47:16,449 --> 00:47:18,709
+从您自己的角度来看问题。
+a problem from your own perspective.
+
+994
+00:47:18,710 --> 00:47:22,270
+因此，当您从CS50本身诞生时，我们鼓励您考虑一下，
+And so we would encourage you to think about, as you emerge from CS50 itself,
+
+995
+00:47:22,269 --> 00:47:24,549
+只是如何向人们提出更好的问题。
+just how to ask better questions of people.
+
+996
+00:47:24,550 --> 00:47:26,420
+如果您有比他们更多的信息，
+If you've got more information than they,
+
+997
+00:47:26,420 --> 00:47:29,950
+您如何简洁却正确地将信息传达给他们
+how can you succinctly but correctly convey that information to them
+
+998
+00:47:29,949 --> 00:47:32,709
+以便他们可以更有效地帮助您。
+so that they can help you more efficiently.
+
+999
+00:47:32,710 --> 00:47:34,120
+而且，找到答案。
+But also, finding answers.
+
+1000
+00:47:34,119 --> 00:47:39,969
+就像，我们绝对理解CS50的许多周，CS50的所有周，
+Like, we absolutely understand that many of CS50's weeks, all of CS50's weeks,
+
+1001
+00:47:39,969 --> 00:47:42,117
+也许，已经很无奈了。
+maybe, have been quite the frustration.
+
+1002
+00:47:42,117 --> 00:47:45,159
+因为您经常会觉得，好吧，我们在讲座中没有涉及到这一点。
+Because you quite often feel like, well, we didn't cover that in lecture.
+
+1003
+00:47:45,159 --> 00:47:46,719
+或者我没有在本节中看到这一点。
+Or I didn't see that in section.
+
+1004
+00:47:46,719 --> 00:47:48,279
+我看到头有些点头。
+And I see some noddings of the head.
+
+1005
+00:47:48,280 --> 00:47:49,690
+因此，似乎是这种情况。
+So this seems to be the case.
+
+1006
+00:47:49,690 --> 00:47:52,870
+就像我很想保证的那样，
+And much as I would love to reassure otherwise, like,
+
+1007
+00:47:52,869 --> 00:47:54,579
+这是非常有意图的。
+that was very much the intent.
+
+1008
+00:47:54,579 --> 00:47:57,789
+因为像这样的任何课程的最后一个训练轮
+Because the last of the training wheels of any course like this
+
+1009
+00:47:57,789 --> 00:47:59,639
+现在真的确实正式起飞了。
+now really do officially come off.
+
+1010
+00:47:59,639 --> 00:48:01,389
+在接下来的几周中，我们仍然
+And in the coming weeks, while we'll still
+
+1011
+00:48:01,389 --> 00:48:03,781
+与您一起为最终项目助一臂之力
+be with you to lend a hand with final projects
+
+1012
+00:48:03,782 --> 00:48:05,740
+并按照这些思路回答问题，
+and answer questions along those lines, there's
+
+1013
+00:48:05,739 --> 00:48:09,969
+当然，最终项目的规范没有告诉您确切的操作，
+of course no specification for the final project telling you exactly what to do,
+
+1014
+00:48:09,969 --> 00:48:12,779
+或使用哪种语言或使用哪种库。
+or in what language to do it, or what libraries to use.
+
+1015
+00:48:12,780 --> 00:48:14,530
+无疑，在接下来的几周中，您将
+Undoubtedly, in the coming weeks, you will
+
+1016
+00:48:14,530 --> 00:48:16,870
+遇到以前从未见过的错误消息。
+run into error messages you haven't even seen before.
+
+1017
+00:48:16,869 --> 00:48:20,379
+坦白说，也许我，也许布莱恩，也许是助教，
+And frankly, maybe I, maybe Brian, maybe the teaching assistants,
+
+1018
+00:48:20,380 --> 00:48:23,260
+而且课程助理甚至从未见过这些错误。
+and the course assistants haven't even seen those errors before.
+
+1019
+00:48:23,260 --> 00:48:26,470
+但是，当然，目标是以某种方式使您克服这些障碍
+But the goal, of course, is to get you over those hurdles in a way
+
+1020
+00:48:26,469 --> 00:48:29,049
+您可以找出如何自行执行这些操作的方法。
+that you can figure out how to do those things on your own.
+
+1021
+00:48:29,050 --> 00:48:32,380
+因此，仅使用互联网时，无论是Google还是Stack
+And so when it comes to just using the internet, be it Google, or Stack
+
+1022
+00:48:32,380 --> 00:48:34,360
+溢出或与其他人互动，
+Overflow, or interacting with other humans,
+
+1023
+00:48:34,360 --> 00:48:37,870
+只是在编程世界中找到答案
+just finding answers when it comes to the world of programming
+
+1024
+00:48:37,869 --> 00:48:41,799
+或实际上只是更广泛地解决问题的世界，
+or really just the world of problem solving more generally,
+
+1025
+00:48:41,800 --> 00:48:44,450
+我们希望这实际上是一种持久的技能。
+we hope that is actually a lasting skill.
+
+1026
+00:48:44,449 --> 00:48:48,039
+我们希望您能够做到无可奈何地做到这一点，
+And we hope that you've been able to do that with admittedly frustration,
+
+1027
+00:48:48,039 --> 00:48:51,319
+但是这几个月来，您的课程都拥有安全网。
+but with the safety net of the course underneath you all these months.
+
+1028
+00:48:51,320 --> 00:48:55,180
+但是，从现在开始，我们希望您再舒适一点，再舒服一点
+But here on out, we hope you'll be more comfortable, again, being uncomfortable
+
+1029
+00:48:55,179 --> 00:48:56,971
+当您发现新事物时。
+as you figure out new things.
+
+1030
+00:48:56,972 --> 00:48:58,930
+其中一部分只是阅读文档。
+And part of that is just reading documentation.
+
+1031
+00:48:58,929 --> 00:49:02,439
+在这里，这也是一种挫败感，它很可能永远不会消失。
+And here, too, this is a frustration that may very well never go away.
+
+1032
+00:49:02,440 --> 00:49:06,430
+像是某些语言或库的一些文档，
+Like, some documentation out there for certain languages or libraries, just
+
+1033
+00:49:06,429 --> 00:49:07,149
+不好
+isn't good.
+
+1034
+00:49:07,150 --> 00:49:10,630
+它是由那些不认为的人写的
+It was written by people that just don't think
+
+1035
+00:49:10,630 --> 00:49:14,780
+像您或我一样，不要以您所希望的同理心思考。
+like you or I do, don't think with the same form of empathy as you might hope.
+
+1036
+00:49:14,780 --> 00:49:18,100
+因此，它是在非常低的技术细节水平下编写的，
+And therefore, it's written at a very low level of technical detail,
+
+1037
+00:49:18,099 --> 00:49:20,469
+而且他们不仅仅告诉您该函数的作用。
+and they don't just tell you what does the function do.
+
+1038
+00:49:20,469 --> 00:49:23,139
+或者相反，它写得太高了，我的上帝，
+Or conversely, it's written at such a high level that, my God,
+
+1039
+00:49:23,139 --> 00:49:25,989
+您必须开始查看库的源代码
+you have to start looking at the source code of the library
+
+1040
+00:49:25,989 --> 00:49:27,669
+甚至弄清楚如何使用它。
+to even figure out how to use it.
+
+1041
+00:49:27,670 --> 00:49:29,770
+您将看到两个极端。
+And you will see both extremes.
+
+1042
+00:49:29,769 --> 00:49:33,279
+但是，您可以轻松阅读Python文档等内容，
+But getting comfortable with reading things like Python's documentation,
+
+1043
+00:49:33,280 --> 00:49:36,670
+就像某些API文档将帮助您一样，我们希望，
+like some API's documentation is just going to empower you, we hope,
+
+1044
+00:49:36,670 --> 00:49:39,070
+更要做些更酷的事情
+all the more to just do much cooler things
+
+1045
+00:49:39,070 --> 00:49:42,910
+并最终自行解决更强大的问题。
+and solve more powerful problems on your own, ultimately.
+
+1046
+00:49:42,909 --> 00:49:46,029
+最后，这也许是最大的一个，教你
+And then lastly, and this is perhaps the biggest one, teaching you
+
+1047
+00:49:46,030 --> 00:49:47,860
+如何教自己新的语言。
+how to teach yourself new languages.
+
+1048
+00:49:47,860 --> 00:49:51,250
+我们没有在Python上花费太多时间是有原因的。
+There is a reason we didn't spend that much time on Python.
+
+1049
+00:49:51,250 --> 00:49:53,680
+而且我们在JavaScript上花费的时间更少。
+And we spent even less time on JavaScript.
+
+1050
+00:49:53,679 --> 00:49:55,839
+在SQL上的时间差不多。
+And about an equal amount of time on SQL.
+
+1051
+00:49:55,840 --> 00:49:58,603
+我们花了几周时间在C上，不是因为C
+We spent a number of weeks on C, not because C
+
+1052
+00:49:58,603 --> 00:50:00,520
+比任何一种语言都重要，
+is more important than any of those languages,
+
+1053
+00:50:00,519 --> 00:50:02,739
+但是因为一路走来，你们中的很多人
+but because along the way, many of you, most of you
+
+1054
+00:50:02,739 --> 00:50:04,749
+只是在学习编程本身。
+were just learning programming itself.
+
+1055
+00:50:04,750 --> 00:50:08,319
+即使随着课程的进行语言发生了变化和发展，
+And even as the language has changed and evolved as the course went on,
+
+1056
+00:50:08,320 --> 00:50:09,520
+想法并没有消失。
+the ideas didn't go away.
+
+1057
+00:50:09,519 --> 00:50:12,399
+仍然有函数，条件，循环，甚至
+There were still functions, and conditions, and loops, and even
+
+1058
+00:50:12,400 --> 00:50:13,550
+事件的条款。
+events by terms.
+
+1059
+00:50:13,550 --> 00:50:16,690
+再说一遍，所以我们希望您不要参加这样的课程
+And, again, so we hope that you walk away from a class like this
+
+1060
+00:50:16,690 --> 00:50:19,450
+没想到，哦，我学会了用C语言编程。
+not thinking that, oh, I learned how to program in C.
+
+1061
+00:50:19,449 --> 00:50:21,489
+或者，哦，我学会了如何用Python编程。
+Or oh, I learned how to program in Python.
+
+1062
+00:50:21,489 --> 00:50:24,609
+因为我们还没有人是这些方面的专家。
+Because none of us have been experts at those things yet.
+
+1063
+00:50:24,610 --> 00:50:28,390
+但是您现在肯定会变得更加熟练，只是成为一名程序员
+But you certainly are now more expert at just being a programmer
+
+1064
+00:50:28,389 --> 00:50:31,359
+找出需要填补哪些知识的漏洞，什么
+and figuring out what holes you need to fill in in your knowledge, what
+
+1065
+00:50:31,360 --> 00:50:33,740
+您需要填补空白才能弄清楚，
+gaps you need to fill in order to figure out,
+
+1066
+00:50:33,739 --> 00:50:36,879
+哦，这种语言中相同方法的语法是什么
+oh, what is the syntax for this same approach in this language
+
+1067
+00:50:36,880 --> 00:50:38,738
+正如我已经在另一个地方看到的那样。
+as I've already seen in another.
+
+1068
+00:50:38,737 --> 00:50:41,529
+这就是为什么我们比较了许多这样的语言的原因
+And that's, indeed, why we compared so many of these languages side
+
+1069
+00:50:41,530 --> 00:50:45,640
+并肩而立，只是强调想法没有什么不同，甚至
+by side to just reinforce that the ideas are no different, even
+
+1070
+00:50:45,639 --> 00:50:49,796
+尽管语法需要使用大量Google搜索，也需要大量询问。
+though the syntax is going to require a bunch of Googling, a bunch of asking.
+
+1071
+00:50:49,797 --> 00:50:52,630
+这也是我们希望您能够自己做的事情
+And that, too, is something we hope you'll be able to do on your own
+
+1072
+00:50:52,630 --> 00:50:56,832
+在这些语言之后，下一件事就是最好的事情。
+as the next and best thing comes along well after these languages.
+
+1073
+00:50:56,831 --> 00:50:58,539
+好吧，说到训练轮，你就是
+Well, speaking of training wheels, you're
+
+1074
+00:50:58,539 --> 00:51:02,409
+欢迎并鼓励您在最终项目中继续使用CS50 IDE。
+welcome and encouraged to keep using CS50 IDE for your final project.
+
+1075
+00:51:02,409 --> 00:51:05,509
+而且，您甚至可以将其用于其他课程或项目。
+And heck, you can use it even after that for other courses or projects.
+
+1076
+00:51:05,510 --> 00:51:08,260
+但归根结底，这也可能是一个训练轮
+But at the end of the day, this, too, is probably a training wheel
+
+1077
+00:51:08,260 --> 00:51:10,360
+你应该自己起飞。
+that you should take off for yourself.
+
+1078
+00:51:10,360 --> 00:51:14,720
+IDE旨在代表现实世界中的编程
+The IDE is designed to be representative of a real world programming
+
+1079
+00:51:14,719 --> 00:51:15,219
+环境。
+environment.
+
+1080
+00:51:15,219 --> 00:51:17,619
+但是我们绝对为您做了很多事情。
+But we definitely did a lot of things for you.
+
+1081
+00:51:17,619 --> 00:51:20,391
+我们安装了您可能需要的所有库
+We installed all the libraries you might need over
+
+1082
+00:51:20,391 --> 00:51:21,849
+本学期的课程。
+the course of the semester for you.
+
+1083
+00:51:21,849 --> 00:51:24,579
+我们有这些漂亮的命令以数字50结尾。
+We've got these nice commands that end in the number 50.
+
+1084
+00:51:24,579 --> 00:51:27,677
+当您从事第一份工作时，那些往往不存在于现实世界中，
+Those don't tend to exist in the real world when you're at your first job,
+
+1085
+00:51:27,677 --> 00:51:29,469
+或者你要回到自己的部门
+or you're going back to your own department
+
+1086
+00:51:29,469 --> 00:51:31,209
+解决代码中的一些问题
+and solving some problem in code, there's
+
+1087
+00:51:31,210 --> 00:51:32,937
+不会成为长期的help50。
+not going to be a help50 longer term.
+
+1088
+00:51:32,936 --> 00:51:35,769
+因此，我们认为我们也将花费几分钟
+And so what we thought we would do, too, is spend just a few minutes
+
+1089
+00:51:35,769 --> 00:51:38,889
+让您大致了解一些行业标准
+giving you a sense of what are some of the more industry standard
+
+1090
+00:51:38,889 --> 00:51:42,009
+您应该考虑使用，玩耍的工具
+tools that you should consider using, playing with, perhaps
+
+1091
+00:51:42,010 --> 00:51:45,820
+过度休息或在接下来的几个月里，以便您确切地知道该怎么做
+over break or in the months to come, so that you know exactly how to do
+
+1092
+00:51:45,820 --> 00:51:48,880
+与本学期一样，但在您自己的Mac上
+the same kinds of things you did this term, but on your own Mac
+
+1093
+00:51:48,880 --> 00:51:51,380
+或PC或其他设备。
+or PC or some other device.
+
+1094
+00:51:51,380 --> 00:51:55,870
+因此，例如，如果您想安装一组命令行工具
+So for instance, if you would like to install a set of command line tools
+
+1095
+00:51:55,869 --> 00:51:59,199
+在Mac或PC上，事实证明其中有些已经存在。
+on your Mac or PC, turns out some of them are already there.
+
+1096
+00:51:59,199 --> 00:52:01,509
+确实，我曾经提到Mac OS
+Indeed, I mentioned at one point that Mac OS
+
+1097
+00:52:01,510 --> 00:52:05,170
+在其应用程序文件夹实用程序的终端下有一个终端窗口。
+has under its applications folder utility's terminal a terminal window.
+
+1098
+00:52:05,170 --> 00:52:07,180
+Windows也有类似的东西。
+And Windows has an analog as well.
+
+1099
+00:52:07,179 --> 00:52:10,809
+但是Mac或PC不一定附带其他命令，
+But there's other commands that don't necessarily come with your Mac or PC,
+
+1100
+00:52:10,809 --> 00:52:13,899
+例如，用于C或其他工具的编译器。
+for instance, a compiler for C or some other tools.
+
+1101
+00:52:13,900 --> 00:52:17,650
+因此，我们鼓励您在Mac或PC上访问此类网址，
+And so we would encourage you to visit URLs like these on your Mac or PC,
+
+1102
+00:52:17,650 --> 00:52:21,490
+分别，如果您只想安装更多的命令行工具
+respectively, if you'd like to just install more of the command line tools
+
+1103
+00:52:21,489 --> 00:52:26,119
+您在自己的环境中在CS50中看到和使用的内容。
+that you saw and used in CS50 in your own environment.
+
+1104
+00:52:26,119 --> 00:52:29,379
+我们建议您阅读另一种工具，在这种情况下，请继续阅读
+Another tool we would recommend that you read up on, or in this case
+
+1105
+00:52:29,380 --> 00:52:31,650
+观看，布莱恩（Brian）的视频是吉特（Git）。
+watch, a video by Brian, is Git.
+
+1106
+00:52:31,650 --> 00:52:35,410
+Git是版本控制的一个示例，它是基础构建
+Git is an example of version control, a fundamental building
+
+1107
+00:52:35,409 --> 00:52:38,649
+这些天来，任何好的软件实践都无法实现。
+block of any good software practice these days.
+
+1108
+00:52:38,650 --> 00:52:42,460
+我们在CS50中使用了Git，但是我们向您隐藏了此细节。
+We kind of use Git in CS50, but we hide this detail from you.
+
+1109
+00:52:42,460 --> 00:52:46,465
+每当您运行check50或Submit50时，我们都会在后台进行检查，
+Any time you have run check50 or submit50, we underneath the hood,
+
+1110
+00:52:46,465 --> 00:52:51,230
+一直在运行一个名为Git的开源命令，该命令会推送您的代码，
+have been running an open source command called Git, which pushes your code,
+
+1111
+00:52:51,230 --> 00:52:54,550
+在这种情况下，从CS50 IDE到GitHub.com，这仅仅是一个
+in this case from CS50 IDE to GitHub.com, which is just one
+
+1112
+00:52:54,550 --> 00:52:56,980
+几个热门网站中，您可以通过
+of several popular websites via which you
+
+1113
+00:52:56,980 --> 00:53:00,400
+可以托管代码，共享代码，在代码上进行协作，运行自动化测试，
+can host code, share code, collaborate on code, run automated tests,
+
+1114
+00:53:00,400 --> 00:53:01,220
+等等。
+and the like.
+
+1115
+00:53:01,219 --> 00:53:05,019
+但是Git本身可以用来终止约定
+But Git itself can be used to put an end to the convention
+
+1116
+00:53:05,019 --> 00:53:08,472
+即使是Microsoft Word或Google Docs之类的东西，您也可能拥有
+that you probably have, even with things like Microsoft Word or Google Docs,
+
+1117
+00:53:08,472 --> 00:53:11,139
+当您想保存某些内容或文件的另一个副本时，
+where when you want to save something or another copy of a file,
+
+1118
+00:53:11,139 --> 00:53:14,019
+也许您只是将文件名的末尾更改为2，
+maybe you just changed the end of the file name to 2,
+
+1119
+00:53:14,019 --> 00:53:16,719
+然后下一次到3或4。
+and then the next time to 3, or to 4.
+
+1120
+00:53:16,719 --> 00:53:19,567
+或者，也许您在星期日晚上破折号，在星期一早晨破折号。
+Or maybe you do dash Sunday night, dash Monday morning.
+
+1121
+00:53:19,568 --> 00:53:21,610
+我的意思是，有时我仍然为此感到内gui
+I mean, I'm still guilty of this sometimes when I
+
+1122
+00:53:21,610 --> 00:53:22,960
+想要对我的文件进行版本控制。
+want to version my files.
+
+1123
+00:53:22,960 --> 00:53:24,770
+有更好的方法可以做到这一点。
+There are better ways to do that.
+
+1124
+00:53:24,769 --> 00:53:26,769
+因此，如果您将来发现自己，
+And so if you find yourself in the future,
+
+1125
+00:53:26,769 --> 00:53:29,649
+做一些您认为必须有更好方法的事情，
+doing something that you think there's got to be a better way,
+
+1126
+00:53:29,650 --> 00:53:33,007
+Git是这些更好方法之一的示例。
+Git is an example of one of those better ways.
+
+1127
+00:53:33,007 --> 00:53:34,840
+如果您观看此特定视频，请阅读
+And if you watch this particular video, read
+
+1128
+00:53:34,840 --> 00:53:38,950
+从本质上讲，它不仅可以帮助您维护多个版本，
+up a bit more, it will help you not only maintain multiple versions, in essence,
+
+1129
+00:53:38,949 --> 00:53:42,009
+您自己的代码的备份，它最终还将使您有能力
+backups of your own code, it will also empower you ultimately
+
+1130
+00:53:42,010 --> 00:53:44,230
+与他人合作。
+to collaborate with others.
+
+1131
+00:53:44,230 --> 00:53:46,390
+至于文字编辑器，您可能会使用的工具
+As for text editors, the tool that you might
+
+1132
+00:53:46,389 --> 00:53:50,224
+用于实际编写代码，也许是最新，最出色和最先进的代码之一
+use to actually write code, perhaps one of the latest and greatest and most
+
+1133
+00:53:50,224 --> 00:53:52,599
+这些天流行的是称为VS Code的东西。
+popular out there these days is something called VS Code.
+
+1134
+00:53:52,599 --> 00:53:56,259
+这是一个开放源代码工具，您可以在自己的Mac和PC上下载。
+This is an open source tool that you can download on your own Mac and PCs.
+
+1135
+00:53:56,260 --> 00:53:58,840
+它也越来越多地在网络上可用。
+Increasingly, it's available on the web as well.
+
+1136
+00:53:58,840 --> 00:54:02,170
+但这无疑是当今最受欢迎的工具之一。
+But this is one of the most popular tools, certainly, out there today.
+
+1137
+00:54:02,170 --> 00:54:03,410
+但这只是一个文本编辑器。
+But it's just a text editor.
+
+1138
+00:54:03,409 --> 00:54:06,699
+这些工具中的每一个都有绝对的替代品
+And there are absolutely alternatives to each and every one of these tools
+
+1139
+00:54:06,699 --> 00:54:09,351
+当然也欢迎您来看看。
+that you're certainly welcome to take a look at as well.
+
+1140
+00:54:09,351 --> 00:54:11,559
+好吧，如果您对事物的网络方面感兴趣，
+Well, if you're interested in the web side of things,
+
+1141
+00:54:11,559 --> 00:54:14,199
+而您想要托管一个网站（例如静态网站），
+and you want to host a website, like a static website, just
+
+1142
+00:54:14,199 --> 00:54:17,559
+您自己的个人主页，GitHub页面就是一回事。
+your own personal homepage, GitHub pages is a thing.
+
+1143
+00:54:17,559 --> 00:54:18,699
+Netlify是一回事。
+Netlify is a thing.
+
+1144
+00:54:18,699 --> 00:54:21,799
+还有点点点滴滴，还有很多其他的虚拟主机，
+And dot dot dot, there are so many other web hosts out there,
+
+1145
+00:54:21,800 --> 00:54:24,640
+其中许多提供免费或学生级别
+many of which offer free or student level
+
+1146
+00:54:24,639 --> 00:54:28,239
+帐户，这样他们就不必花费任何费用。
+accounts so that they don't necessarily need to even cost anything.
+
+1147
+00:54:28,239 --> 00:54:30,009
+但是静态不同于动态。
+But static is different from dynamic.
+
+1148
+00:54:30,010 --> 00:54:33,370
+而且，如果您实际上想托管一个实际需要使用的Web应用程序，
+And if you actually want to host a web application that actually takes
+
+1149
+00:54:33,369 --> 00:54:35,559
+用户输入，将内容存储在数据库中，执行
+user input, stores things in a database, does
+
+1150
+00:54:35,559 --> 00:54:37,649
+比静态网站更有趣的事情，
+more interesting things than a static website,
+
+1151
+00:54:37,650 --> 00:54:40,150
+您可能想使用一种叫做Heroku的东西，
+you might want to use something called Heroku, which is just
+
+1152
+00:54:40,150 --> 00:54:43,930
+受欢迎的第三方服务，其中也包含您免费的入门级帐户
+a popular third party service that also has a free entry level account that you
+
+1153
+00:54:43,929 --> 00:54:46,029
+可以用来开始玩，很常用
+can use to start playing with, quite commonly used
+
+1154
+00:54:46,030 --> 00:54:47,560
+由学生进行最终项目。
+by students for final projects.
+
+1155
+00:54:47,559 --> 00:54:50,629
+然后还有其他提供商，更大的云提供商，
+And then there's other providers out there, bigger cloud providers,
+
+1156
+00:54:50,630 --> 00:54:52,888
+可以这么说，例如亚马逊，微软和谷歌，
+so to speak, like Amazon, and Microsoft, and Google,
+
+1157
+00:54:52,887 --> 00:54:55,179
+为此，学习曲线可能会更高一些。
+for which the learning curve's perhaps a little higher.
+
+1158
+00:54:55,179 --> 00:54:58,539
+但是它们通常在提供折扣方面也非常好
+But they, too, are really good typically about providing discounts
+
+1159
+00:54:58,539 --> 00:55:01,689
+或免费帐户供学生使用。
+or free accounts for student uses as well.
+
+1160
+00:55:01,690 --> 00:55:04,180
+如何与技术主题保持同步。
+How to stay abreast of topics in technology.
+
+1161
+00:55:04,179 --> 00:55:07,179
+当然，我们将重点放在此类基础知识上。
+We focus, of course, in a class like this really on fundamentals.
+
+1162
+00:55:07,179 --> 00:55:10,599
+但是您将无法以任何形式获取新闻
+But you're not going to be able to pick up the news in any form down the road
+
+1163
+00:55:10,599 --> 00:55:12,789
+却看不到与技术有关的东西。
+and not see something that's technology related.
+
+1164
+00:55:12,789 --> 00:55:15,849
+而且，如果您只是想让自己紧跟事物的脉搏
+And if you'd just like to keep your fingers on the pulse of things
+
+1165
+00:55:15,849 --> 00:55:18,939
+在更广泛的科技世界中，这里只有几个地方
+in the tech world more generally, here's just a few places
+
+1166
+00:55:18,940 --> 00:55:21,010
+您可能会喜欢与之并驾齐驱。
+that you might enjoy staying abreast of.
+
+1167
+00:55:21,010 --> 00:55:24,285
+因此，Reddit有几个不同的社区，即subreddit，特别是
+So Reddit has a couple of different communities, or subreddit, specifically
+
+1168
+00:55:24,284 --> 00:55:26,409
+关于编程的内容，都适合有经验的程序员
+about programming, both for experienced programmers
+
+1169
+00:55:26,409 --> 00:55:28,034
+和我们中那些仍在学习中的人。
+and those of us who are still learning.
+
+1170
+00:55:28,034 --> 00:55:29,784
+当然，堆栈溢出
+Stack Overflow, of course, you've probably
+
+1171
+00:55:29,784 --> 00:55:32,379
+在过去的学期中用于解决小问题。
+used to solve small problems over the course of the past term.
+
+1172
+00:55:32,380 --> 00:55:34,610
+服务器故障在本质上与此类似，
+Server Fault is similar in spirit to that,
+
+1173
+00:55:34,610 --> 00:55:38,770
+但它更侧重于管理以及Linux类型的内容。
+but it's focused more on administration, Linux-type stuff as well.
+
+1174
+00:55:38,769 --> 00:55:41,717
+Techcrunch是一个受欢迎的地方，不仅是面向消费者的新闻，
+Techcrunch is a popular place, not just for consumer-focused news,
+
+1175
+00:55:41,717 --> 00:55:43,759
+但实际上，任何技术趋势都在发展。
+but just really anything that's trending in tech.
+
+1176
+00:55:43,760 --> 00:55:47,650
+然后在YCombinator的网站上建立了一个名为Hacker News的网站
+And then a website called Hacker News on YCombinator's site
+
+1177
+00:55:47,650 --> 00:55:49,982
+那也是偶尔看一眼的地方
+that also is a place to just glance at once in a while
+
+1178
+00:55:49,981 --> 00:55:52,689
+因为您会看到最新和最好的库或其他内容
+because you'll see the latest and greatest libraries or something
+
+1179
+00:55:52,690 --> 00:55:53,770
+那是新生的。
+that's quite nascent.
+
+1180
+00:55:53,769 --> 00:55:56,229
+因此，如果总的来说，您只是想了解新功能
+So if in general you just want to get a sense of what's new
+
+1181
+00:55:56,230 --> 00:55:58,150
+以及科技界的趋势，事物
+and what's trending out there in the tech world, things
+
+1182
+00:55:58,150 --> 00:56:00,442
+即使你不在乎也应该意识到
+that you should just be aware of even if you don't care
+
+1183
+00:56:00,442 --> 00:56:02,860
+进入那些做这些事情的杂草，
+to get into the weeds of doing those things hands on,
+
+1184
+00:56:02,860 --> 00:56:06,740
+这些都是不错的网站，肯定还有其他网站。
+these are all good sites and surely others out there as well.
+
+1185
+00:56:06,739 --> 00:56:10,179
+然后，CS50当然拥有自己的在线社区，其中一些
+And then, CS50, of course, has its own online community, some of which
+
+1186
+00:56:10,179 --> 00:56:13,419
+你们中的一些人在高中甚至更早之前就已经参加了一段时间。
+some of you have been part for some time, in high school or even prior.
+
+1187
+00:56:13,420 --> 00:56:15,700
+请随时与我们保持联系，
+Please feel free to keep in touch with us in some way,
+
+1188
+00:56:15,699 --> 00:56:17,949
+或还一些东西给你的继任者
+or give back a little something to your successors who
+
+1189
+00:56:17,949 --> 00:56:20,139
+可能会沿着这条路线或其他路线走
+might take this or another course down the road
+
+1190
+00:56:20,139 --> 00:56:23,289
+并不仅在这里参与这些社区的提问，
+and participate not only in asking questions in these communities here,
+
+1191
+00:56:23,289 --> 00:56:27,469
+而且还要回答别人的问题。
+but also in answering others' questions as well.
+
+1192
+00:56:27,469 --> 00:56:30,099
+所以我们认为我们会少做一些讨论
+So we thought we would do a little less of the talking
+
+1193
+00:56:30,099 --> 00:56:34,789
+现在，一起扭转局面，共同进行最终的社区活动。
+now and turn things around for a sort of final community activity together.
+
+1194
+00:56:34,789 --> 00:56:37,319
+感谢许多提出问题的人
+Thanks to many of you who have contributed questions
+
+1195
+00:56:37,320 --> 00:56:38,570
+在过去的几周中。
+over the past couple of weeks.
+
+1196
+00:56:38,570 --> 00:56:41,950
+多亏了Brian，我们认为我们可以一起举办CS50测验节目
+Thanks to Brian, we thought we'd put together a CS50 quiz show
+
+1197
+00:56:41,949 --> 00:56:43,959
+在此结束最后的演讲。
+on which to end this final lecture.
+
+1198
+00:56:43,960 --> 00:56:47,200
+这些是您，员工，Brian提出的问题。
+These are questions written by you, by the staff, by Brian.
+
+1199
+00:56:47,199 --> 00:56:49,899
+这将是每个人嗡嗡作响的机会
+And it'll be an opportunity for everyone to buzz in
+
+1200
+00:56:49,900 --> 00:56:54,250
+他们对我们预先准备的大约20个问题的回答。
+with their answers to some 20 questions that we have prepared in advance.
+
+1201
+00:56:54,250 --> 00:56:55,639
+时间就是生命。
+Time is of the essence.
+
+1202
+00:56:55,639 --> 00:56:59,059
+因此，如果您加快蜂鸣速度，您的分数将会更高。
+So your score will be higher if you buzz in more quickly.
+
+1203
+00:56:59,059 --> 00:57:01,149
+因此，重要的是不仅要正确，
+So it's important not only to be correct,
+
+1204
+00:57:01,150 --> 00:57:04,820
+而且对于这个特定对象也要快速。
+but also to be fast for this particular one as well.
+
+1205
+00:57:04,820 --> 00:57:08,060
+稍后，我将继续分享我的屏幕。
+And in just a moment, I'm going to go ahead and share my screen.
+
+1206
+00:57:08,059 --> 00:57:12,249
+再说一次，我们这里有大约20个问题，所有问题都来自于
+And, again, we'll have some 20 questions here, all of them drawn from,
+
+1207
+00:57:12,250 --> 00:57:14,529
+受CS50启发的某种形式。
+inspired by CS50 in some form.
+
+1208
+00:57:14,530 --> 00:57:18,640
+在每个问题之后，根据有多少人是对是错，
+And after each question, depending on how many people get it right or wrong,
+
+1209
+00:57:18,639 --> 00:57:21,969
+我们将花一点时间至少说明它在哪里正确
+we'll take a moment to at least explain where it is you went right
+
+1210
+00:57:21,969 --> 00:57:23,919
+还是在哪里你错了。
+or where it is you went wrong.
+
+1211
+00:57:23,920 --> 00:57:24,700
+好吧，布莱恩。
+All right, Brian.
+
+1212
+00:57:24,699 --> 00:57:26,171
+准备好了吗？
+Ready on your end?
+
+1213
+00:57:26,172 --> 00:57:27,380
+布莱恩·于：我们已经准备好出发了。
+BRIAN YU: We are ready to go.
+
+1214
+00:57:27,380 --> 00:57:29,880
+大卫·马兰（David MALAN）：好吧，让我们继续看一下
+DAVID MALAN: All right, well, let's go ahead and take a look
+
+1215
+00:57:29,880 --> 00:57:31,150
+这里有第一个问题。
+with the first question here.
+
+1216
+00:57:31,150 --> 00:57:35,860
+将源代码编译为机器代码的步骤是什么？
+What are the steps for compiling source code into machine code?
+
+1217
+00:57:35,860 --> 00:57:38,290
+预处理，编译，组装和链接？
+Preprocessing, compiling, assembling, and linking?
+
+1218
+00:57:38,289 --> 00:57:40,809
+编写，编译，调试和测试？
+Writing, compiling, debugging, and testing?
+
+1219
+00:57:40,809 --> 00:57:43,269
+处理，创建，声明和叮当声？
+Processing, creating, asserting, and clang?
+
+1220
+00:57:43,269 --> 00:57:45,409
+还是赚？
+Or make?
+
+1221
+00:57:45,409 --> 00:57:49,309
+继续并在手机，笔记本电脑或台式机上嗡嗡作响，
+Go ahead and buzz in on your phone or laptop or desktop,
+
+1222
+00:57:49,309 --> 00:57:51,499
+使用与Brian提供的网址相同的网址。
+using that same URL that Brian provided.
+
+1223
+00:57:51,500 --> 00:57:55,040
+每个问题您有20秒的时间，现在剩下两个。
+You've got 20 seconds for each question, two of which now remain.
+
+1224
+00:57:55,039 --> 00:57:55,969
+时间到了。
+That's it for time.
+
+1225
+00:57:55,969 --> 00:57:58,094
+让我们继续来看一下这里的结果。
+Let's go ahead and take a look at the results here.
+
+1226
+00:57:58,094 --> 00:58:01,999
+你们当中有70％的人说要进行预处理，编译，组装，
+It looks like 70% of you said preprocessing, compiling, assembling,
+
+1227
+00:58:02,000 --> 00:58:02,750
+和链接。
+and linking.
+
+1228
+00:58:02,750 --> 00:58:04,987
+布莱恩，您想告诉我们是否正确吗？
+Brian, would you like to tell us if that's right?
+
+1229
+00:58:04,987 --> 00:58:05,570
+布莱恩·于：是的。
+BRIAN YU: Yes.
+
+1230
+00:58:05,570 --> 00:58:06,800
+这是正确的答案。
+That is the correct answer.
+
+1231
+00:58:06,800 --> 00:58:10,010
+首先进行预处理，然后进行编译，组装和链接
+Preprocessing first, compiling, assembling, and linking, all of that
+
+1232
+00:58:10,010 --> 00:58:11,440
+在幕后。
+is behind the scenes.
+
+1233
+00:58:11,440 --> 00:58:13,940
+因此，您不必每次编译时都考虑。
+So you don't necessarily think about every time you compile.
+
+1234
+00:58:13,940 --> 00:58:15,590
+但这确实是步骤。
+But those are, indeed, the steps.
+
+1235
+00:58:15,590 --> 00:58:18,245
+DAVID MALAN：公平地说，make可以说是一种抽象
+DAVID MALAN: And to be fair, make is arguably an abstraction
+
+1236
+00:58:18,244 --> 00:58:20,869
+因为这只是整个过程的开始。
+for all of that insofar as it just kicks off the whole process.
+
+1237
+00:58:20,869 --> 00:58:24,169
+但我认为，更准确地说，步骤的答案是，
+But I think a little more precisely, an answer to steps would be,
+
+1238
+00:58:24,170 --> 00:58:25,543
+确实，那四件事在那里。
+indeed, those four things there.
+
+1239
+00:58:25,543 --> 00:58:27,710
+好吧，让我们在这里看一下计分板。
+All right, let's take a look at the scoreboard here.
+
+1240
+00:58:27,710 --> 00:58:29,418
+我们有大量的来宾帐户。
+We have a whole number of guest accounts.
+
+1241
+00:58:29,418 --> 00:58:33,500
+第200位来宾处于领先地位，但在此与其他几位客人并列。
+Guest number 200 is in the lead, but tied with several other guests here.
+
+1242
+00:58:33,500 --> 00:58:36,240
+因此，那些拥有1,000分的人很快就会嗡嗡作响。
+So those of you with 1,000 points buzzed in really quickly.
+
+1243
+00:58:36,239 --> 00:58:37,909
+因此，时间再次至关重要。
+So again time is of the essence.
+
+1244
+00:58:37,909 --> 00:58:42,559
+下一个问题，二进制搜索的运行时间是多少？
+Next question, what is the runtime of binary search?
+
+1245
+00:58:42,559 --> 00:58:47,329
+它是1的O，log n的O，n的O，还是n的O的平方？
+Is it O of 1, O of log n, O of n, or O of n squared?
+
+1246
+00:58:47,329 --> 00:58:52,699
+剩下15秒，即二进制搜索的运行时间。
+15 seconds remain, the runtime of binary search.
+
+1247
+00:58:52,699 --> 00:58:55,279
+回想一下，这是我们研究的首批算法之一。
+Recall, this was one of the first algorithms we looked at.
+
+1248
+00:58:55,280 --> 00:58:57,350
+它最初带有电话簿，
+It was first incarnated with a phone book,
+
+1249
+00:58:57,349 --> 00:59:00,499
+即使我们并没有在很早以前就用这个名字来称呼它。
+even if we didn't call it that by name early on.
+
+1250
+00:59:00,500 --> 00:59:02,779
+布莱恩，让我们看一下结果。
+Brian, let's take a look at the results.
+
+1251
+00:59:02,780 --> 00:59:05,690
+看起来有61％的人说登录n。
+Looks like 61% of you say log n.
+
+1252
+00:59:05,690 --> 00:59:06,840
+布莱恩？
+Brian?
+
+1253
+00:59:06,840 --> 00:59:08,670
+布莱恩·于：答案n是正确的答案。
+BRIAN YU: Log n is the correct answer.
+
+1254
+00:59:08,670 --> 00:59:10,040
+如果您还记得那本电话簿，问题是
+If you remember that phone book, the question
+
+1255
+00:59:10,039 --> 00:59:11,899
+真的可以归结为多少次
+really came down to how many times can we
+
+1256
+00:59:11,900 --> 00:59:13,940
+一次又一次地将电话簿分开
+divide that phone book and half again and again
+
+1257
+00:59:13,940 --> 00:59:16,590
+一次又一次，直到我们只讨论一页。
+and again, until we get down to just one page.
+
+1258
+00:59:16,590 --> 00:59:20,120
+如果电话簿中有三页是n页，那么结果就是n的日志。
+And that turns out to be log of n if three are n pages in the phone book.
+
+1259
+00:59:20,119 --> 00:59:23,239
+大卫·马兰（David MALAN）：的确，随时随地都有一些技巧在向前发展
+DAVID MALAN: Indeed, and sort of pro tip moving forward in life, any time
+
+1260
+00:59:23,239 --> 00:59:26,149
+您会看到一半又一半又一半发生了一些事情，
+you see something happening in half and half and half and half,
+
+1261
+00:59:26,150 --> 00:59:28,670
+很有可能会涉及一种算法
+odds are there's going to be an algorithm involved
+
+1262
+00:59:28,670 --> 00:59:31,070
+在其分析中的某处。
+somewhere in the analysis thereof.
+
+1263
+00:59:31,070 --> 00:59:34,710
+好吧，这里的下一个排行榜，来宾200略有下降。
+All right, next leaderboard here, guest 200 slipped down a little bit.
+
+1264
+00:59:34,710 --> 00:59:39,200
+但是现在我们有一大堆人以2,000分排在第一位。
+But we have a whole bunch of people tied in first place for 2,000 points now.
+
+1265
+00:59:39,199 --> 00:59:42,499
+下一个问题，其中哪些动物是第一个
+Next question, which of these animals was the first
+
+1266
+00:59:42,500 --> 00:59:45,620
+在CS50讲座中提到？
+to be mentioned in a CS50 lecture?
+
+1267
+00:59:45,619 --> 00:59:50,249
+骆驼，蟒蛇，鸭，猫。
+Llama, python, duck, cat.
+
+1268
+00:59:50,250 --> 00:59:52,750
+剩下15秒。
+15 seconds remain.
+
+1269
+00:59:52,750 --> 00:59:57,929
+CS50讲座中首先提到的是哪个？
+Which was mentioned first in a CS50 lecture?
+
+1270
+00:59:57,929 --> 00:59:59,909
+让我们看看结果。
+And let's see the results.
+
+1271
+00:59:59,909 --> 01:00:04,499
+看起来猫只勉强接受了51％的鸭子。
+Looks like cat just barely eked out duck with 51%.
+
+1272
+01:00:04,500 --> 01:00:05,177
+布莱恩？
+Brian?
+
+1273
+01:00:05,177 --> 01:00:07,260
+布莱恩·于：实际上，猫是正确的答案。
+BRIAN YU: And cat is, in fact, the correct answer.
+
+1274
+01:00:07,260 --> 01:00:10,520
+骆驼出现在实验室1中，但在讲课中没有提及。
+Llamas showed up in Lab 1, but they were not mentioned in lecture.
+
+1275
+01:00:10,519 --> 01:00:12,269
+鸭子直到一点点才露面
+The duck didn't show up until a little bit
+
+1276
+01:00:12,269 --> 01:00:13,889
+稍后当我们谈论调试时。
+later when we talked about debugging.
+
+1277
+01:00:13,889 --> 01:00:17,279
+在讲座的最后简短地提到了Python。
+And Python was briefly mentioned at the end of the lecture.
+
+1278
+01:00:17,280 --> 01:00:19,590
+但这是在我们向Scratch介绍自己之后。
+But it was after we introduced ourselves to Scratch.
+
+1279
+01:00:19,590 --> 01:00:22,350
+而且，Scratch的主要角色当然是猫。
+And the main character in Scratch is, of course, the cat.
+
+1280
+01:00:22,349 --> 01:00:25,599
+大卫·马兰（David MALAN）：好的，我们可能很快就会在这里看到一些传播。
+DAVID MALAN: All right, we're probably going to see a bit of spread here soon.
+
+1281
+01:00:25,599 --> 01:00:27,851
+但是，我们有一整群人有3,000。
+We have a whole bunch of people with 3,000, though.
+
+1282
+01:00:27,851 --> 01:00:29,309
+但是名称开始有所不同。
+But the names are starting to vary.
+
+1283
+01:00:29,309 --> 01:00:30,989
+让我们继续下一个问题。
+Let's move on to the next question.
+
+1284
+01:00:30,989 --> 01:00:34,919
+每次分配内存时，还必须确保-
+Every time you malloc memory, you must also be sure to--
+
+1285
+01:00:34,920 --> 01:00:39,690
+重新分配，返回，释放还是退出？
+realloc, return, free, or exit?
+
+1286
+01:00:39,690 --> 01:00:44,310
+每次分配内存时，还应确保重新分配内存，
+Every time you malloc memory, you should also be sure to realloc,
+
+1287
+01:00:44,309 --> 01:00:48,269
+返回，免费还是退出？
+return, free, or exit?
+
+1288
+01:00:48,269 --> 01:00:51,419
+回想一下，malloc是许多分段错误的根源
+Recall that malloc was the source of a lot of segmentation faults
+
+1289
+01:00:51,420 --> 01:00:52,230
+学期中。
+mid-semester.
+
+1290
+01:00:52,230 --> 01:00:55,950
+现在有78％的受访者表示免费。
+The responses now are 78% said free.
+
+1291
+01:00:55,949 --> 01:00:57,041
+布莱恩，你同意吗？
+Brian, do you concur?
+
+1292
+01:00:57,041 --> 01:00:58,499
+布莱恩·于：他们都是正确的。
+BRIAN YU: And they are all correct.
+
+1293
+01:00:58,500 --> 01:01:01,541
+每当您分配内存时，请动态地向计算机请求一些内存。
+Whenever you malloc memory, ask the computer for some memory dynamically.
+
+1294
+01:01:01,541 --> 01:01:04,249
+完成后，应将其还给计算机
+When you're done with it, you should give it back to the computer
+
+1295
+01:01:04,250 --> 01:01:05,010
+通过免费拨打。
+by calling free.
+
+1296
+01:01:05,010 --> 01:01:06,927
+大卫·马兰（David MALAN）：确实，还有布莱恩（Brian），
+DAVID MALAN: Indeed, and Brian, as a teachable
+
+1297
+01:01:06,927 --> 01:01:10,140
+那一刻，为什么我们从来没有免费拨打过电话的got_string，我们现在
+moment, why is it that we never had a call free forget_string, which we now
+
+1298
+01:01:10,139 --> 01:01:12,089
+知道引擎盖下面正在使用某种东西
+know underneath the hood is using something
+
+1299
+01:01:12,090 --> 01:01:14,070
+像malloc分配内存？
+like malloc to allocate memory?
+
+1300
+01:01:14,070 --> 01:01:16,500
+布莱恩·于：所以get_string是CS50库中的一个函数。
+BRIAN YU: So get_string was a function in CS50's library.
+
+1301
+01:01:16,500 --> 01:01:19,890
+CS50的库将为您处理该内存管理过程。
+And CS50's library takes care of that memory management process for you.
+
+1302
+01:01:19,889 --> 01:01:23,069
+因此，您不必担心自己释放所有这些内存。
+So you didn't have to worry about freeing all of that memory yourself.
+
+1303
+01:01:23,070 --> 01:01:26,250
+DAVID MALAN：的确如此，但是任何时候调用malloc都必须免费。
+DAVID MALAN: Indeed, but anytime you call malloc, you must call free.
+
+1304
+01:01:26,250 --> 01:01:28,439
+好吧，这里的排行榜看起来像我们
+All right, the leaderboard here looks like we have
+
+1305
+01:01:28,440 --> 01:01:30,840
+来宾600仍然领先4,000。
+guest 600 still in the lead with 4,000.
+
+1306
+01:01:30,840 --> 01:01:31,860
+下一个问题。
+Next question.
+
+1307
+01:01:31,860 --> 01:01:34,550
+什么是比赛条件？
+What is a race condition?
+
+1308
+01:01:34,550 --> 01:01:37,040
+什么时候适合赛车比赛？
+When conditions are nice out for racing?
+
+1309
+01:01:37,039 --> 01:01:40,669
+当两件事同时发生并产生意想不到的结果时？
+When two things happen at the same time and produce an unexpected result?
+
+1310
+01:01:40,670 --> 01:01:43,170
+当一行代码执行得太快时？
+When a line of code is executed too quickly?
+
+1311
+01:01:43,170 --> 01:01:45,830
+当一行代码执行得太慢时？
+When a line of code is executed too slowly?
+
+1312
+01:01:45,829 --> 01:01:49,129
+什么是比赛条件？
+What is a race condition?
+
+1313
+01:01:49,130 --> 01:01:50,850
+啊，事情很快就升级了。
+Ah, things just escalated quickly.
+
+1314
+01:01:50,849 --> 01:01:54,589
+但是您会记得这是在SQL上下文中出现的。
+But you'll recall this came up in the context of SQL.
+
+1315
+01:01:54,590 --> 01:01:57,020
+和数据库，0秒，让我们看看。
+And databases, 0 seconds, let's see.
+
+1316
+01:01:57,019 --> 01:02:00,169
+85％的人说同时发生两件事
+85% said when two things happen at the same time
+
+1317
+01:02:00,170 --> 01:02:02,138
+并产生意想不到的结果。布莱恩？
+and produce an unexpected result. Brian?
+
+1318
+01:02:02,137 --> 01:02:03,679
+布莱恩·于：这是正确的答案。
+BRIAN YU: That is the correct answer.
+
+1319
+01:02:03,679 --> 01:02:06,649
+我赞赏至少有1％的人说，如果外面有条件
+I appreciate that at least 1% of people said when conditions outside
+
+1320
+01:02:06,650 --> 01:02:07,640
+非常适合赛车。
+are nice for racing.
+
+1321
+01:02:07,639 --> 01:02:10,077
+但是至少在计算机科学的背景下，
+But in the context of computer science, at least,
+
+1322
+01:02:10,077 --> 01:02:13,369
+当两件事同时发生并且可能产生意想不到的结果时，
+when two things happen at the same time and could produce an unexpected result,
+
+1323
+01:02:13,369 --> 01:02:15,679
+这就是我们所说的竞赛条件。
+that is what we would refer to as a race condition.
+
+1324
+01:02:15,679 --> 01:02:17,329
+大卫·马兰（David MALAN）：的确，回想起我和布莱恩的结局
+DAVID MALAN: Indeed, recall that's how Brian and I ended up
+
+1325
+01:02:17,329 --> 01:02:18,972
+冰箱里有太多牛奶。
+with too much milk in the refrigerator.
+
+1326
+01:02:18,972 --> 01:02:21,139
+因为我们都检查了该变量的状态
+Because we both inspected the state of that variable
+
+1327
+01:02:21,139 --> 01:02:22,954
+基本上是在同一时间。
+at essentially the same time.
+
+1328
+01:02:22,954 --> 01:02:24,329
+好吧，这里的排行榜。
+All right, the leader board here.
+
+1329
+01:02:24,329 --> 01:02:26,629
+现在，我们有一大群人获得了5,000分。
+Now we have a whole bunch of people with 5,000 points.
+
+1330
+01:02:26,630 --> 01:02:27,590
+让我们继续。
+Let's move on.
+
+1331
+01:02:27,590 --> 01:02:32,660
+放大照片是否可以增强照片以产生更多细节？
+Does zooming in on a photo let you enhance it to generate more detail?
+
+1332
+01:02:32,659 --> 01:02:35,209
+是的，就像CSI中一样。
+Yes, just like in CSI.
+
+1333
+01:02:35,210 --> 01:02:39,370
+不，一张照片只有一定数量的细节。
+No, a photo only has a certain amount of detail.
+
+1334
+01:02:39,369 --> 01:02:45,119
+放大照片是否可以增强照片以产生更多细节？
+Does zooming in on a photo let you enhance it to generate more detail?
+
+1335
+01:02:45,119 --> 01:02:48,389
+我会承认，我最近在看一些节目并想到了你
+And I will admit, I was watching some show recently and thought of you
+
+1336
+01:02:48,389 --> 01:02:50,339
+当他们从字面上说时，一切都会增强。
+all when they literally said, enhance.
+
+1337
+01:02:50,340 --> 01:02:52,490
+好的，0秒。
+All right, 0 seconds.
+
+1338
+01:02:52,489 --> 01:02:56,969
+似乎有93％的人说过，不，一张照片只有一定数量的细节。
+Looks like 93% of you said, no, a photo only has a certain amount of detail.
+
+1339
+01:02:56,969 --> 01:02:59,009
+你们中有7％的人说是，就像在CSI中一样。
+7% of you said yes, just like in CSI.
+
+1340
+01:02:59,010 --> 01:03:01,290
+布莱恩，您能帮助我们调和两者吗？
+Brian, can you help us reconcile the two?
+
+1341
+01:03:01,289 --> 01:03:03,479
+布莱恩·于：在这种情况下，93％是正确的。
+BRIAN YU: The 93%, in this case, are correct.
+
+1342
+01:03:03,480 --> 01:03:05,800
+一张照片只有一定数量的像素。
+A photo only has a certain number of pixels.
+
+1343
+01:03:05,800 --> 01:03:08,100
+如果您继续放大一个像素，
+And if you keep zooming in on one pixel, you're
+
+1344
+01:03:08,099 --> 01:03:10,469
+无法产生更多的细节，
+not going to be able to generate additional detail that
+
+1345
+01:03:10,469 --> 01:03:11,527
+以前不在那里。
+wasn't there before.
+
+1346
+01:03:11,527 --> 01:03:14,069
+戴维·马兰（David MALAN）：公平地说，这是一种变化。
+DAVID MALAN: And to be fair, that's kind of sort of changing.
+
+1347
+01:03:14,070 --> 01:03:15,840
+或者至少答案现在变得越来越难了
+Or at least the answer is getting a little harder nowadays
+
+1348
+01:03:15,840 --> 01:03:18,450
+借助机器学习或人工智能，
+with machine learning or artificial intelligence,
+
+1349
+01:03:18,449 --> 01:03:21,209
+算法在哪里弄清楚什么级别的细节
+where algorithms sort of figure out what level of detail
+
+1350
+01:03:21,210 --> 01:03:22,750
+可能或应该在那里。
+could or should be there.
+
+1351
+01:03:22,750 --> 01:03:24,810
+但这实际上只是统计推断，
+But that really is just statistical inference,
+
+1352
+01:03:24,809 --> 01:03:27,809
+实际上并没有恢复曾经存储的信息
+that is not actually recovering information that was ever stored
+
+1353
+01:03:27,809 --> 01:03:29,819
+在相机或其他设备上。
+on the camera or some other device.
+
+1354
+01:03:29,820 --> 01:03:34,290
+好吧，现在排行榜的得分是6,000分，这些人并列。
+All right, the leaderboard now is at 6,000 points with these folks tied.
+
+1355
+01:03:34,289 --> 01:03:38,669
+以下哪一项不是好的哈希函数的特征？
+Which of the following is not a characteristic of a good hash function?
+
+1356
+01:03:38,670 --> 01:03:44,280
+确定性输出，随机性，均匀分布，效率。
+Deterministic output, randomness, uniform distribution, efficiency.
+
+1357
+01:03:44,280 --> 01:03:45,780
+事情再次变得真实。
+Things just got real again.
+
+1358
+01:03:45,780 --> 01:03:50,160
+以下哪一项不是好的哈希函数的特征？
+Which of the following is not a characteristic of a good hash function?
+
+1359
+01:03:50,159 --> 01:03:54,599
+回想一下我们在哈希表的上下文中使用了哈希函数
+Recall we used hash functions in the context of hash tables
+
+1360
+01:03:54,599 --> 01:03:57,069
+在谈论数据结构时。
+when talking about data structures.
+
+1361
+01:03:57,070 --> 01:03:57,570
+好的？
+All right?
+
+1362
+01:03:57,570 --> 01:03:58,770
+一秒。
+One second.
+
+1363
+01:03:58,769 --> 01:04:00,929
+这次的答案更加广泛。
+The answers are more spread this time.
+
+1364
+01:04:00,929 --> 01:04:03,269
+62％的人不喜欢随机性。
+62% don't like randomness.
+
+1365
+01:04:03,269 --> 01:04:04,171
+布赖恩，应该吗？
+Brian, should they?
+
+1366
+01:04:04,172 --> 01:04:05,880
+布莱恩·于：那是正确的答案。
+BRIAN YU: And that is the correct answer.
+
+1367
+01:04:05,880 --> 01:04:08,670
+随机性不是良好哈希函数的特征。
+Randomness is not a characteristic of a good hash function.
+
+1368
+01:04:08,670 --> 01:04:10,650
+您希望您的哈希函数始终为您提供
+You want your hash function to always give you
+
+1369
+01:04:10,650 --> 01:04:12,330
+相同的输出给出相同的输入。
+the same output given the same input.
+
+1370
+01:04:12,329 --> 01:04:15,149
+这样，您可以依靠它的输出结果。
+That way you can rely on whatever the output of it is.
+
+1371
+01:04:15,150 --> 01:04:17,290
+如果是随机的，将很难使用。
+If it's random, it's going to be hard to use.
+
+1372
+01:04:17,289 --> 01:04:19,122
+大卫·马兰（David MALAN）：确实，请考虑使用拼写检查器
+DAVID MALAN: Indeed, consider a spellchecker
+
+1373
+01:04:19,123 --> 01:04:20,550
+随机说是或否。
+that randomly says yes or no.
+
+1374
+01:04:20,550 --> 01:04:23,250
+这是一个词，可能不是您想要的属性。
+This is a word, probably not a property you want.
+
+1375
+01:04:23,250 --> 01:04:26,430
+好吧，现在排行榜，我们正在努力达到7,000点，
+All right, the leaderboard now, we're eking our way up to 7,000 points,
+
+1376
+01:04:26,429 --> 01:04:28,589
+但终于开始看到一些传播。
+but finally starting to see some spread.
+
+1377
+01:04:28,590 --> 01:04:31,260
+因此，你们中的一些人还不够快或不够正确。
+So a few of you haven't been quite quick or correct enough.
+
+1378
+01:04:31,260 --> 01:04:34,140
+下一个问题，FIFO代表什么？
+Next question, what does FIFO stand for?
+
+1379
+01:04:34,139 --> 01:04:35,549
+先进先出
+FIFO.
+
+1380
+01:04:35,550 --> 01:04:40,620
+它是普通狗的名字吗，您的信用评分，先进先出，
+Is it a common dog's name, your credit score, first in, first out,
+
+1381
+01:04:40,619 --> 01:04:43,579
+功能输入，文件输出？
+function input, file output?
+
+1382
+01:04:43,579 --> 01:04:46,699
+FIFO代表什么？
+What does FIFO stand for?
+
+1383
+01:04:46,699 --> 01:04:49,219
+我会很好奇看到这里的蔓延。
+I'll be curious to see the spread here.
+
+1384
+01:04:49,219 --> 01:04:50,329
+让我们来看看。
+Let's see.
+
+1385
+01:04:50,329 --> 01:04:52,189
+你们中有80％说的是先进先出。
+80% of you said first in, first out.
+
+1386
+01:04:52,190 --> 01:04:52,777
+布莱恩？
+Brian?
+
+1387
+01:04:52,777 --> 01:04:53,860
+布莱恩·于：是的。
+BRIAN YU: That is correct.
+
+1388
+01:04:53,860 --> 01:04:56,090
+那就是我们用来形容的
+And that was what we were using to describe
+
+1389
+01:04:56,090 --> 01:04:58,490
+所谓的队列，队列中的第一件事
+what would be called like a queue, where the first thing in the queue
+
+1390
+01:04:58,489 --> 01:05:00,447
+是队列中的第一件事。
+is the first thing that comes out of the queue.
+
+1391
+01:05:00,447 --> 01:05:02,442
+因此，它遵循FIFO顺序。
+So it obeys that FIFO ordering.
+
+1392
+01:05:02,443 --> 01:05:04,610
+大卫·马兰（David MALAN）：的确，让我们在这里查看排行榜。
+DAVID MALAN: Indeed, let's see the leaderboard here.
+
+1393
+01:05:04,610 --> 01:05:07,880
+好吧，我们有大约8,000辆，但在7,000辆范围内还有更多。
+All right, we have some 8,000s, but more in the 7,000 range.
+
+1394
+01:05:07,880 --> 01:05:09,860
+接下来是一个更丰富多彩的问题。
+Next up is a more colorful question.
+
+1395
+01:05:09,860 --> 01:05:13,760
+以下哪一项将使用RGB值表示粉红色？
+Which of the following would represent pink using RGB values?
+
+1396
+01:05:13,760 --> 01:05:15,980
+我会让您自己阅读这些内容。
+And I'll let you read these on your own.
+
+1397
+01:05:15,980 --> 01:05:19,730
+当然，现在在幕后发生了一些谷歌搜索。
+And surely, there's some Googling happening behind the scenes now.
+
+1398
+01:05:19,730 --> 01:05:21,050
+但是没关系。
+But that's OK.
+
+1399
+01:05:21,050 --> 01:05:22,430
+实际上，谷歌非常聪明。
+In fact, Google is pretty smart.
+
+1400
+01:05:22,429 --> 01:05:24,859
+如果您输入一个十六进制代码，它甚至可能
+If you type in a hexadecimal code, it might even
+
+1401
+01:05:24,860 --> 01:05:28,017
+告诉您一些色轮或色板。
+show you a little color wheel or swatch.
+
+1402
+01:05:28,016 --> 01:05:29,849
+好吧，让我们看一下结果。
+All right, let's take a look at the results.
+
+1403
+01:05:29,849 --> 01:05:33,589
+似乎您中有55％的人说ffd0e0。
+Looks like 55% of you said ffd0e0.
+
+1404
+01:05:33,590 --> 01:05:34,370
+布莱恩？
+Brian?
+
+1405
+01:05:34,369 --> 01:05:35,669
+布莱恩·于：那是正确的。
+BRIAN YU: And that is correct.
+
+1406
+01:05:35,670 --> 01:05:38,450
+所以这些RGB值就像六个不同的值，
+So those RGB values are like six different values,
+
+1407
+01:05:38,449 --> 01:05:42,437
+其中每两个对应一种颜色，两个对应红色，两个对应绿色，
+where each two correspond to one color, two for red, two for green,
+
+1408
+01:05:42,438 --> 01:05:42,980
+两个为蓝色。
+two for blue.
+
+1409
+01:05:42,980 --> 01:05:44,300
+全部为十六进制。
+This is all in hexadecimal.
+
+1410
+01:05:44,300 --> 01:05:46,668
+而且粉红色每个都会很多。
+And pink would be a lot of each of them.
+
+1411
+01:05:46,668 --> 01:05:48,710
+因为它非常接近白色，就像
+Because it's very close to white, which is, like,
+
+1412
+01:05:48,710 --> 01:05:50,360
+全红，全绿，全蓝。
+all red, all green, and all blue.
+
+1413
+01:05:50,360 --> 01:05:52,740
+但是它比绿色和蓝色更红。
+But it's more red than it is green and blue.
+
+1414
+01:05:52,739 --> 01:05:58,129
+这样ffd0e0就是很多红色，绿色少了一点，
+And so that one, ffd0e0, is a lot of red, a little bit less green,
+
+1415
+01:05:58,130 --> 01:05:59,460
+少一点蓝色。
+and a little bit less blue.
+
+1416
+01:05:59,460 --> 01:06:00,080
+戴维·马兰（David MALAN）：的确如此。
+DAVID MALAN: Indeed.
+
+1417
+01:06:00,079 --> 01:06:01,787
+好吧，让我们看看我们在这里的位置。
+All right, let's see where we're at here.
+
+1418
+01:06:01,788 --> 01:06:03,560
+我们现在要做的-有趣。
+We're now up to-- interesting.
+
+1419
+01:06:03,559 --> 01:06:05,299
+没有人再有完美的分数了。
+No one has a perfect score anymore.
+
+1420
+01:06:05,300 --> 01:06:09,800
+但是，来宾200仍以9000点的微弱优势遥遥领先。
+But guest 200 is still in the lead with just shy of 9,000 points.
+
+1421
+01:06:09,800 --> 01:06:12,330
+在C中，以下哪几行代码分配
+In C, which of the following lines of code allocates
+
+1422
+01:06:12,329 --> 01:06:17,089
+足够的内存来存储字符串s的副本？
+enough memory for a copy of the string s?
+
+1423
+01:06:17,090 --> 01:06:19,160
+我会让你读这些。
+I'll let you read these.
+
+1424
+01:06:19,159 --> 01:06:21,679
+在C中，以下哪几行代码分配
+In C, which of the following lines of code allocates
+
+1425
+01:06:21,679 --> 01:06:25,969
+足够的内存来存储字符串s的副本？
+enough memory for a copy of the string s?
+
+1426
+01:06:25,969 --> 01:06:28,249
+似乎这里有很多可行的选择。
+Bunch of viable choices here, it would seem.
+
+1427
+01:06:28,250 --> 01:06:31,129
+时间，让我们看一下结果。
+And time, let's take a look at the results.
+
+1428
+01:06:31,130 --> 01:06:34,880
+看起来有46％的人说过大小为s的malloc。
+Looks like 46% said malloc of size s.
+
+1429
+01:06:34,880 --> 01:06:39,110
+但是33％的布莱恩说s的strlen的malloc加1。
+But Brian, 33% said malloc of strlen of s plus 1.
+
+1430
+01:06:39,110 --> 01:06:40,490
+谁是对的？
+Who is right?
+
+1431
+01:06:40,489 --> 01:06:43,609
+布莱恩·于：在这种情况下，少数族裔在这里是33％是正确的。
+BRIAN YU: And in this case, the minority, the 33% are correct here.
+
+1432
+01:06:43,610 --> 01:06:46,940
+记住，Malloc将内存的字节数作为其参数
+Malloc, remember, takes as its argument the number of bytes of memory
+
+1433
+01:06:46,940 --> 01:06:48,080
+您要分配的。
+that you want to allocate.
+
+1434
+01:06:48,079 --> 01:06:50,849
+如果您有一个字符串，并且想弄清楚需要多少个字节，
+And if you have a string and you want to figure out how many bytes you need,
+
+1435
+01:06:50,849 --> 01:06:52,599
+你需要知道的第一件事是弄清楚
+first thing you need to know is figure out
+
+1436
+01:06:52,599 --> 01:06:54,679
+那弦多久。很高兴会告诉你
+how long is that string. strlen will tell you
+
+1437
+01:06:54,679 --> 01:06:56,689
+该字符串中有多少个字符。
+how many characters are in that string.
+
+1438
+01:06:56,690 --> 01:07:00,050
+但是您确实需要一个额外的字节，因为在每个字符串的末尾，
+But you do need one additional byte, because at the end of every string,
+
+1439
+01:07:00,050 --> 01:07:01,880
+我们有一个空终止符。
+we have that null terminating character.
+
+1440
+01:07:01,880 --> 01:07:03,680
+为此，我们需要一个字节的内存。
+And we need one byte of memory for that.
+
+1441
+01:07:03,679 --> 01:07:07,039
+因此，str的slen将为您提供字符串的长度加1。
+So strlen of s will give you the length of the string plus 1.
+
+1442
+01:07:07,039 --> 01:07:09,169
+那就是您需要多少字节的内存。
+That's how many bytes you need for memory.
+
+1443
+01:07:09,170 --> 01:07:09,590
+戴维·马兰（David MALAN）：的确如此。
+DAVID MALAN: Indeed.
+
+1444
+01:07:09,590 --> 01:07:11,007
+瞧，您免费获得任何东西。
+And see, you get nothing for free.
+
+1445
+01:07:11,007 --> 01:07:12,830
+您想要做的任何事情都需要自己做。
+Anything you want you need to do yourself.
+
+1446
+01:07:12,829 --> 01:07:15,739
+实际上，加号1是您要解决的问题。
+And indeed, the plus 1 is a problem for you to solve.
+
+1447
+01:07:15,739 --> 01:07:19,579
+现在的发行，访客200仍然领先
+The distribution now, guest 200 still in the lead with just
+
+1448
+01:07:19,579 --> 01:07:20,899
+低于10,000点。
+shy of 10,000 points.
+
+1449
+01:07:20,900 --> 01:07:22,010
+那是问题10。
+That was question 10.
+
+1450
+01:07:22,010 --> 01:07:23,750
+我们在比赛的下半场。
+We're in the second half of the game.
+
+1451
+01:07:23,750 --> 01:07:26,930
+您应该如何整理衣服以保持凉爽？
+How should you organize your clothes to be cool?
+
+1452
+01:07:26,929 --> 01:07:28,099
+这是11号。
+This is number 11.
+
+1453
+01:07:28,099 --> 01:07:32,119
+堆栈，队列，字典，二叉树。
+Stack, queue, dictionary, binary tree.
+
+1454
+01:07:32,119 --> 01:07:35,839
+您应该如何整理衣服以保持凉爽？
+How should you organize your clothes to be cool?
+
+1455
+01:07:35,840 --> 01:07:39,830
+您可能还记得教过我们的杰克和娄。
+You might recall Jack and Lou, who taught us this one.
+
+1456
+01:07:39,829 --> 01:07:41,739
+剩下两秒钟。
+Two seconds remain.
+
+1457
+01:07:41,739 --> 01:07:44,999
+好像有48％的人说队列，Brian。
+And it looks like 48% said queue, Brian.
+
+1458
+01:07:45,000 --> 01:07:46,250
+布莱恩·于：那是正确的。
+BRIAN YU: And that is correct.
+
+1459
+01:07:46,250 --> 01:07:48,560
+因此，从与杰克和娄在一起的视频中
+So from that video with Jack and Lou, there
+
+1460
+01:07:48,559 --> 01:07:50,441
+是组织线索的不同方式。
+were different ways of organizing the clues.
+
+1461
+01:07:50,442 --> 01:07:52,150
+但是那段视频的结论是，你
+But the conclusion of that video was, you
+
+1462
+01:07:52,150 --> 01:07:53,830
+想把你的衣服排成一排。
+want to put your clothes in a queue.
+
+1463
+01:07:53,829 --> 01:07:56,289
+这样，在处理完一个之后，就将其放在队列的末尾。
+So that after you're done with one, you put it at the end of the queue.
+
+1464
+01:07:56,289 --> 01:07:59,469
+在返回到已经穿过的衣服之前，请先使用其他衣服。
+And you use something else before you go back to the one you already wore.
+
+1465
+01:07:59,469 --> 01:08:00,069
+戴维·马兰（David MALAN）：的确如此。
+DAVID MALAN: Indeed.
+
+1466
+01:08:00,070 --> 01:08:00,570
+好的。
+All right.
+
+1467
+01:08:00,570 --> 01:08:03,040
+现在排行榜上，来宾10打破了10,000。
+And the leaderboard now, looks like guest 10 broke 10,000.
+
+1468
+01:08:03,039 --> 01:08:04,629
+但是其他人也是如此。
+But so did a bunch of other people.
+
+1469
+01:08:04,630 --> 01:08:07,540
+下一个问题，什么是细分错误？
+Next question, what is a segmentation fault?
+
+1470
+01:08:07,539 --> 01:08:10,059
+当计算机内存不足时，当我们的程序尝试
+When a computer runs out of memory, when our program tries
+
+1471
+01:08:10,059 --> 01:08:13,479
+当程序尝试访问它的内存时读取空文件
+to read an empty file, when a program tries to access memory that it
+
+1472
+01:08:13,480 --> 01:08:16,620
+不应该，当地震发生时。
+shouldn't, when an earthquake happens.
+
+1473
+01:08:16,619 --> 01:08:19,608
+看起来其中许多可能都非常接近。
+Looks like a lot of these could be pretty close.
+
+1474
+01:08:19,609 --> 01:08:21,260
+两秒钟
+Two seconds.
+
+1475
+01:08:21,260 --> 01:08:22,963
+让我们看看。
+And let's see.
+
+1476
+01:08:22,962 --> 01:08:26,129
+看起来有80％的人说，当程序尝试访问内存时，不应这样做。
+Looks like 80% said when a program tries to access memory that it shouldn't.
+
+1477
+01:08:26,130 --> 01:08:26,810
+布莱恩？
+Brian?
+
+1478
+01:08:26,810 --> 01:08:28,160
+布莱恩·于：这是正确的答案。
+BRIAN YU: That is the correct answer.
+
+1479
+01:08:28,159 --> 01:08:30,076
+尝试时可能会发生细分错误
+Segmentation fault can happen if you're trying
+
+1480
+01:08:30,077 --> 01:08:33,790
+触摸您不应该访问程序内部的内存。
+to touch memory that you're not supposed to have access to inside of a program.
+
+1481
+01:08:33,789 --> 01:08:35,539
+大卫·马兰（David MALAN）：对于13％的人
+DAVID MALAN: And for the 13% of people who
+
+1482
+01:08:35,539 --> 01:08:38,926
+说，当计算机内存不足时，为什么这里不是答案？
+said when a computer runs out of memory, why is that not quite the answer here?
+
+1483
+01:08:38,926 --> 01:08:41,009
+布莱恩·于：这样计算机可能会耗尽内存。
+BRIAN YU: So the computer could run out of memory.
+
+1484
+01:08:41,010 --> 01:08:43,640
+当您调用malloc时，malloc可能会返回null，
+Where when you call malloc, malloc might return null,
+
+1485
+01:08:43,640 --> 01:08:46,040
+因为没有可用的内存来分配。
+because there's no available memory to allocate.
+
+1486
+01:08:46,039 --> 01:08:48,706
+但是只要您对此进行检查，并且我们会尽力鼓励您，
+But as long as you check for that, and we try and encourage you,
+
+1487
+01:08:48,707 --> 01:08:52,100
+每当您分配内存时，都要检查一下您是否返回了该值
+whenever you're mallocing memory, to check to see if the value you get back
+
+1488
+01:08:52,100 --> 01:08:52,760
+一片空白。
+is null.
+
+1489
+01:08:52,760 --> 01:08:54,805
+这可以帮助您避免这些类型的错误。
+That can help you to avoid those types of errors.
+
+1490
+01:08:54,805 --> 01:08:56,930
+戴维·马兰（DAVID MALAN）：现在让我们看一下董事会。
+DAVID MALAN: So let's take a look at the board now.
+
+1491
+01:08:56,930 --> 01:08:59,569
+11,000位客人200的东西。
+11,000 something for guest 200.
+
+1492
+01:08:59,569 --> 01:09:01,670
+现在让我们继续这个问题。
+Let's now proceed with this question.
+
+1493
+01:09:01,670 --> 01:09:05,689
+递归会导致以下哪种类型的溢出
+Which of the following types of overflow can result from recursion
+
+1494
+01:09:05,689 --> 01:09:07,340
+没有基本情况？
+without a base case?
+
+1495
+01:09:07,340 --> 01:09:13,359
+堆溢出，整数溢出，堆栈溢出，缓冲区溢出。
+Heap overflow, integer overflow, stack overflow, buffer overflow.
+
+1496
+01:09:13,359 --> 01:09:16,370
+确实出现了各种形式的溢出。
+And all forms of overflow, indeed, came up.
+
+1497
+01:09:16,369 --> 01:09:19,509
+当然，其中之一也是受欢迎的网站的名称。
+One of them is also, of course, the name of a popular website.
+
+1498
+01:09:19,510 --> 01:09:21,580
+但是所有这些都是实际的东西。
+But all of these are actual things.
+
+1499
+01:09:21,579 --> 01:09:23,659
+但是哪个是正确的？
+But which is correct?
+
+1500
+01:09:23,659 --> 01:09:25,148
+好吧，让我们看看结果。
+All right, let's see the results.
+
+1501
+01:09:25,149 --> 01:09:29,319
+看起来有61％，60％发生了堆栈溢出。
+Looks like 61%, 60% went with stack overflow.
+
+1502
+01:09:29,319 --> 01:09:29,990
+布莱恩？
+Brian?
+
+1503
+01:09:29,989 --> 01:09:31,239
+布莱恩·于：那是正确的。
+BRIAN YU: And that is correct.
+
+1504
+01:09:31,239 --> 01:09:34,597
+每次调用函数时，您最终都会获得一点内存
+Every time you call a function, you end up getting a little bit of memory
+
+1505
+01:09:34,597 --> 01:09:35,889
+在该功能的堆栈上。
+on the stack for that function.
+
+1506
+01:09:35,890 --> 01:09:38,515
+而且，如果您一遍又一遍地递归地调用该函数
+And if you keep calling that function recursively over and over
+
+1507
+01:09:38,515 --> 01:09:40,960
+永不停止，因为没有基本情况，
+and never stop, because there's no base case,
+
+1508
+01:09:40,960 --> 01:09:42,460
+那么您可能会耗尽堆栈空间。
+then you can run out of stack space.
+
+1509
+01:09:42,460 --> 01:09:43,997
+我们称之为堆栈溢出。
+And we call that a stack overflow.
+
+1510
+01:09:43,997 --> 01:09:44,830
+戴维·马兰（David MALAN）：的确如此。
+DAVID MALAN: Indeed.
+
+1511
+01:09:44,829 --> 01:09:46,659
+好吧，让我们现在来看排行榜。
+All right, let's see the leaderboard now.
+
+1512
+01:09:46,659 --> 01:09:48,969
+来宾200人，仍然是要击败的人。
+Guest 200, still the one to beat.
+
+1513
+01:09:48,970 --> 01:09:52,149
+但是来宾216并不太落后。
+But guest 216 is not too far behind.
+
+1514
+01:09:52,149 --> 01:09:53,020
+下一个问题。
+Next question.
+
+1515
+01:09:53,020 --> 01:09:55,630
+在Fiftyville镇，名字叫什么
+In the town of Fiftyville, what were the names
+
+1516
+01:09:55,630 --> 01:09:59,680
+目睹橡皮鸭抢劫案的三个人中有谁？
+of the three people who witnessed the rubber duck robbery?
+
+1517
+01:09:59,680 --> 01:10:01,720
+我会让你读这些。
+I'll let you read these.
+
+1518
+01:10:01,720 --> 01:10:04,660
+在Fiftyville镇，这三个人的名字是什么
+In the town of Fiftyville, what were the names of the three people
+
+1519
+01:10:04,659 --> 01:10:06,429
+目睹了橡皮鸭抢劫案。
+who witnessed the rubber duck robbery.
+
+1520
+01:10:06,430 --> 01:10:10,810
+今年出现了一个新问题，回想起他完全从IDE中消失了
+A new problem this year, recall that he disappeared altogether from the IDE
+
+1521
+01:10:10,810 --> 01:10:11,770
+那个星期。
+for that week.
+
+1522
+01:10:11,770 --> 01:10:13,540
+好吧，让我们看看结果。
+All right, let's see the results.
+
+1523
+01:10:13,539 --> 01:10:15,459
+布莱恩，这个很近。
+Brian, this one is close.
+
+1524
+01:10:15,460 --> 01:10:17,875
+33％的人说露丝，尤金和雷蒙德。
+33% said Ruth, Eugene, and Raymond.
+
+1525
+01:10:17,875 --> 01:10:20,000
+布莱恩·于：露丝，尤金和雷蒙德是正确的。
+BRIAN YU: And Ruth, Eugene, and Raymond is correct.
+
+1526
+01:10:20,000 --> 01:10:22,083
+他们得到的回应比其他任何人都多。
+They've got more responses than any of the others.
+
+1527
+01:10:22,082 --> 01:10:22,929
+这很棘手。
+It was tricky.
+
+1528
+01:10:22,930 --> 01:10:24,430
+但是，是的，这是正确的答案。
+But yeah, that's the correct answer.
+
+1529
+01:10:24,430 --> 01:10:26,500
+名称背后没有太多理由。
+There wasn't a whole lot of reason behind the names.
+
+1530
+01:10:26,500 --> 01:10:28,300
+我对这个故事本身做了很多思考。
+I put a lot of thought into the story itself.
+
+1531
+01:10:28,300 --> 01:10:29,500
+但是对名称并没有太多的想法。
+But not a lot of thought to the names.
+
+1532
+01:10:29,500 --> 01:10:31,629
+这些只是随机选择的。
+Those were kind of just randomly selected.
+
+1533
+01:10:31,630 --> 01:10:33,767
+但这只是证人的名字。
+But those were the names of the witnesses.
+
+1534
+01:10:33,766 --> 01:10:34,599
+戴维·马兰（David MALAN）：的确如此。
+DAVID MALAN: Indeed.
+
+1535
+01:10:34,600 --> 01:10:38,380
+而现在的排行榜上，我们还有200位来宾被击败。
+And the leaderboard now, we still have guest 200 is the one to beat.
+
+1536
+01:10:38,380 --> 01:10:39,530
+这是问题15。
+This is question 15.
+
+1537
+01:10:39,529 --> 01:10:42,279
+因此，我们快结束了，仍然有机会继续前进。
+So we are nearing the end, still chance to pull ahead.
+
+1538
+01:10:42,279 --> 01:10:46,179
+以下哪个命令行程序检查您的代码是否存在内存泄漏？
+Which of these command line programs checks your code for memory leaks?
+
+1539
+01:10:46,180 --> 01:10:50,110
+Valgrind，clang，mkdir，make。
+Valgrind, clang, mkdir, make.
+
+1540
+01:10:50,109 --> 01:10:53,859
+请注意，这些都没有50，这意味着它们都是真实世界
+Notice that none of these have 50 on it, which means these are all real world
+
+1541
+01:10:53,859 --> 01:10:56,949
+您将继续在自己的Mac或PC上看到的命令
+commands that you would continue to see on your own Mac or PC
+
+1542
+01:10:56,949 --> 01:10:59,799
+或某些将来的Linux系统。
+or some future Linux system.
+
+1543
+01:10:59,800 --> 01:11:02,380
+让我们看看结果。
+And let's see the results.
+
+1544
+01:11:02,380 --> 01:11:05,020
+在这里，瓦尔格朗德是最明显的赢家，占78％。
+Here we have valgrind, the clear winner, 78%.
+
+1545
+01:11:05,020 --> 01:11:05,560
+布莱恩？
+Brian?
+
+1546
+01:11:05,560 --> 01:11:06,760
+布莱恩·于：那是正确的答案。
+BRIAN YU: And that's the correct answer.
+
+1547
+01:11:06,760 --> 01:11:09,302
+那是您可以用来检查程序的程序
+That's the program you can use in order to check your program
+
+1548
+01:11:09,301 --> 01:11:11,379
+看看是否有内存泄漏，看看
+to see if you have any memory leaks, to see
+
+1549
+01:11:11,380 --> 01:11:14,890
+如果您要触摸内存，那您就不应该，如果您忘记释放某些东西。
+if you're touching memory you shouldn't, if you're forgetting to free something.
+
+1550
+01:11:14,890 --> 01:11:16,100
+Valgrind对于所有这些都很有用。
+Valgrind is useful for all of that.
+
+1551
+01:11:16,100 --> 01:11:19,030
+戴维·马兰（DAVID MALAN）：如果可以的话，我觉得你们中有5％的人现在正与我们混为一谈。
+DAVID MALAN: And if I may, I feel like 5% of you are just messing with us now.
+
+1552
+01:11:19,029 --> 01:11:20,319
+希望如此，但我们会看到的。
+Hopefully, but we shall see.
+
+1553
+01:11:20,319 --> 01:11:22,299
+好的，最后五个问题。
+All right, last five questions to go.
+
+1554
+01:11:22,300 --> 01:11:26,210
+现在查看排行榜之后，访客200仍然位于顶部。
+After taking a look at the leaderboard now, guest 200's still up at the top.
+
+1555
+01:11:26,210 --> 01:11:30,130
+以下哪项在C中存在，但在Python中不存在。
+Which of the following exists in C, but not Python.
+
+1556
+01:11:30,130 --> 01:11:32,800
+布尔表达式，do-while循环，递归
+Boolean expressions, do-while loops, recursive
+
+1557
+01:11:32,800 --> 01:11:35,740
+函数，浮点数。
+functions, floating-point numbers.
+
+1558
+01:11:35,739 --> 01:11:40,449
+C中存在以下哪项，但Python中不存在？
+Which of the following exists in C, but not Python?
+
+1559
+01:11:40,449 --> 01:11:44,739
+两种语言之间有趣的比较，超出了语法。
+An interesting comparison between two languages that goes beyond syntax.
+
+1560
+01:11:44,739 --> 01:11:45,579
+好的。
+All right.
+
+1561
+01:11:45,579 --> 01:11:46,329
+时间到。
+Time's up.
+
+1562
+01:11:46,329 --> 01:11:47,589
+让我们来看看。
+Let's take a look.
+
+1563
+01:11:47,590 --> 01:11:50,380
+看起来68％的用户使用了do-while循环。
+Looks like 68% went with do-while loops.
+
+1564
+01:11:50,380 --> 01:11:51,160
+布莱恩？
+Brian?
+
+1565
+01:11:51,159 --> 01:11:52,359
+布莱恩·于：是的。
+BRIAN YU: That is correct.
+
+1566
+01:11:52,359 --> 01:11:53,559
+Python具有for循环。
+Python has for loops.
+
+1567
+01:11:53,560 --> 01:11:54,910
+Python具有while循环。
+Python has while loops.
+
+1568
+01:11:54,909 --> 01:11:57,729
+但是它没有C所具有的do-while循环。
+But it doesn't have do-while loops in the same way that C does.
+
+1569
+01:11:57,729 --> 01:12:00,189
+您必须找到其他方法来尝试实现
+You'd have to find some other way of trying to achieve
+
+1570
+01:12:00,189 --> 01:12:01,809
+同样的逻辑想法。
+that same kind of logical idea.
+
+1571
+01:12:01,810 --> 01:12:02,200
+戴维·马兰（David MALAN）：的确如此。
+DAVID MALAN: Indeed.
+
+1572
+01:12:02,199 --> 01:12:04,407
+布赖恩，当我们
+And Brian, what was the approach that we took when we
+
+1573
+01:12:04,408 --> 01:12:06,010
+试图在几周前重新创建？
+tried to recreate that some weeks ago?
+
+1574
+01:12:06,010 --> 01:12:06,250
+布莱恩·于：是的。
+BRIAN YU: Yeah.
+
+1575
+01:12:06,250 --> 01:12:09,069
+因此，一种解决方法是无限循环，尽管如此，
+So one approach to it is having an infinite loop, while true,
+
+1576
+01:12:09,069 --> 01:12:10,779
+这只会一直重复。
+that will just always repeat.
+
+1577
+01:12:10,779 --> 01:12:13,719
+然后，当您到达可以退出循环的位置时，
+And then when you reach a point where you can exit the loop,
+
+1578
+01:12:13,720 --> 01:12:16,000
+您可以使用命令中断来跳出循环
+you can use the command break to get out of the loop
+
+1579
+01:12:16,000 --> 01:12:17,627
+并继续执行该程序的其余部分。
+and move on to the rest of the program.
+
+1580
+01:12:17,627 --> 01:12:18,460
+戴维·马兰（David MALAN）：的确如此。
+DAVID MALAN: Indeed.
+
+1581
+01:12:18,460 --> 01:12:20,210
+好吧，让我们看一下董事会。
+All right, let's take a look at the board.
+
+1582
+01:12:20,210 --> 01:12:25,810
+来宾200仍为15938，但仍落后几个亲密朋友。
+Guest 200 still now at 15,938, but still a few close folks behind.
+
+1583
+01:12:25,810 --> 01:12:30,310
+发送私人信息时应使用哪种HTTP请求方法
+What HTTP request method should you use when sending private information
+
+1584
+01:12:30,310 --> 01:12:31,600
+像密码一样？
+like a password?
+
+1585
+01:12:31,600 --> 01:12:35,200
+GET，POST，SELECT还是TEXT？
+GET, POST, SELECT, or TEXT?
+
+1586
+01:12:35,199 --> 01:12:37,899
+发送时应使用哪种HTTP请求方法
+Which HTTP request method should use when sending
+
+1587
+01:12:37,899 --> 01:12:41,859
+私人信息（例如密码）？
+private information like a password?
+
+1588
+01:12:41,859 --> 01:12:43,509
+看一下结果。
+Take a look at the results.
+
+1589
+01:12:43,510 --> 01:12:44,290
+好的。
+All right.
+
+1590
+01:12:44,289 --> 01:12:48,547
+POST的发布者很多，Brian，74％
+And the distribution is a lot of people said POST, Brian, 74%
+
+1591
+01:12:48,547 --> 01:12:49,839
+布莱恩·于：他们是正确的。
+BRIAN YU: And they are correct.
+
+1592
+01:12:49,840 --> 01:12:52,007
+是的，如果这是一个获取请求，那么您最终会
+Yeah, if it was a get request, then you would end up
+
+1593
+01:12:52,006 --> 01:12:54,789
+网址中可能包含敏感信息
+with sensitive information inside the URL that might show up
+
+1594
+01:12:54,789 --> 01:12:56,694
+例如，在您的浏览历史记录中。
+in your browsing history, for example.
+
+1595
+01:12:56,694 --> 01:12:59,599
+为了安全起见，您需要确保使用POST请求
+So to be secure, you want to be sure to use the POST request
+
+1596
+01:12:59,600 --> 01:13:00,850
+这种类型的东西的方法。
+method for that type of stuff.
+
+1597
+01:13:00,850 --> 01:13:02,410
+戴维·马兰（David MALAN）：明确一点，请不要这样做。
+DAVID MALAN: And to be clear, don't do this.
+
+1598
+01:13:02,409 --> 01:13:04,309
+获取是可能的，我们看到了如何做到这一点。
+Get is possible, and we saw how to do that.
+
+1599
+01:13:04,310 --> 01:13:07,420
+但是，当然那会在您的历史记录和其他暴露的地方结束。
+But of course, that then ends up in your history and other exposed places.
+
+1600
+01:13:07,420 --> 01:13:10,550
+SELECT和TEXT不是HTTP动词。
+SELECT and TEXT were not HTTP verbs.
+
+1601
+01:13:10,550 --> 01:13:12,010
+因此POST确实可以实现。
+So POST is indeed spot on.
+
+1602
+01:13:12,010 --> 01:13:14,140
+好的，只剩下三个问题。
+All right, only three questions remain.
+
+1603
+01:13:14,140 --> 01:13:17,830
+来宾200仍然是被击败的人，其次是来宾216。
+Guest 200 is still the one to beat, followed by guest 216.
+
+1604
+01:13:17,829 --> 01:13:22,869
+什么数据结构允许恒定时间查找字典中的单词？
+What data structure allows for constant time look up for words in a dictionary?
+
+1605
+01:13:22,869 --> 01:13:28,329
+链表，二进制搜索树，数组还是特里？
+A linked list, a binary search tree, an array, or a trie?
+
+1606
+01:13:28,329 --> 01:13:30,729
+回想一下字典是一个抽象数据
+Recall that a dictionary was an abstract data
+
+1607
+01:13:30,729 --> 01:13:33,879
+类型，只要您可以以不同的方式实现它即可。
+type, insofar as you could implement it in different ways.
+
+1608
+01:13:33,880 --> 01:13:37,000
+但是要获取恒定的时间，您可能需要
+But to get constant time look up, you might want
+
+1609
+01:13:37,000 --> 01:13:40,779
+在其中之一上使用其中之一。
+to use one of these over the others.
+
+1610
+01:13:40,779 --> 01:13:42,569
+让我们看看结果。
+Let's see the results.
+
+1611
+01:13:42,569 --> 01:13:43,799
+有趣的。
+Interesting.
+
+1612
+01:13:43,800 --> 01:13:45,870
+布赖恩，有32％的人说特里。
+Brian, 32% said trie.
+
+1613
+01:13:45,869 --> 01:13:47,009
+您能在这里帮助我们吗？
+Can you help us out here?
+
+1614
+01:13:47,010 --> 01:13:47,310
+布莱恩·于：是的。
+BRIAN YU: Yeah.
+
+1615
+01:13:47,310 --> 01:13:48,602
+特里是正确的答案。
+The trie is the correct answer.
+
+1616
+01:13:48,601 --> 01:13:52,019
+对于其他所有链接列表，二进制搜索树和数组，
+For all of the others, the linked list, the binary search tree, and the array,
+
+1617
+01:13:52,020 --> 01:13:54,220
+随着字典中越来越多的单词，
+as you have more and more words in the dictionary,
+
+1618
+01:13:54,220 --> 01:13:56,580
+找到一个单词将花费越来越长的时间，
+it's going to take longer and longer to find a word,
+
+1619
+01:13:56,579 --> 01:13:58,649
+因为您必须通过它进行线性搜索
+as you have to either linear search through it
+
+1620
+01:13:58,649 --> 01:14:02,339
+否则您必须遍历二叉搜索树中的各个节点。
+or you have to go down through various nodes in the binary search tree.
+
+1621
+01:14:02,340 --> 01:14:05,580
+另一方面，特里仅取决于单词的长度
+The trie on the other hand, it only depends upon the length of the word
+
+1622
+01:14:05,579 --> 01:14:06,539
+您正在查找。
+that you're looking up.
+
+1623
+01:14:06,539 --> 01:14:08,969
+词典中有多少个单词都没有关系。
+It doesn't matter how many words are in the dictionary.
+
+1624
+01:14:08,970 --> 01:14:12,090
+您只需在要查找的单词中的每个字母后面跟随一个节点。
+You just follow one node for each letter in the word you're looking up.
+
+1625
+01:14:12,090 --> 01:14:14,490
+而且您会在恒定时间内找到该单词。
+And you'll find that word in constant time.
+
+1626
+01:14:14,489 --> 01:14:17,439
+大卫·马兰（David MALAN）：布赖恩（Brian），如果持续时间不变，那么1的大O值是如此之好，
+DAVID MALAN: And Brian, if constant time, Big O of 1 is so good,
+
+1627
+01:14:17,439 --> 01:14:19,106
+那么，为什么不对所有内容都使用尝试呢？
+why not use tries, then, for everything?
+
+1628
+01:14:19,106 --> 01:14:21,272
+布莱恩·于：嗯，一切都有取舍。
+BRIAN YU: Well, there are trade offs for everything.
+
+1629
+01:14:21,273 --> 01:14:23,640
+尝试可为您提供理论上恒定的时间。
+The trie gives you theoretically constant time.
+
+1630
+01:14:23,640 --> 01:14:25,440
+但是最大的折衷之一是记忆力。
+But one of the big trade offs is memory.
+
+1631
+01:14:25,439 --> 01:14:27,569
+尝试最终使用更多的内存来
+That tries end up using much more memory to be
+
+1632
+01:14:27,569 --> 01:14:31,296
+能够比许多其他数据结构存储字典。
+able to store a dictionary than many of those other data structures would.
+
+1633
+01:14:31,296 --> 01:14:32,129
+戴维·马兰（David MALAN）：的确如此。
+DAVID MALAN: Indeed.
+
+1634
+01:14:32,130 --> 01:14:33,450
+让我们看一下结果。
+Let's look at the results.
+
+1635
+01:14:33,449 --> 01:14:35,399
+和来宾200仍然处于领先地位。
+And guest 200 still at the lead.
+
+1636
+01:14:35,399 --> 01:14:38,309
+但是，来宾752现在正踩在他们的脚跟上。
+But guest 752 is now nipping at their heels.
+
+1637
+01:14:38,310 --> 01:14:40,500
+最后两个问题。
+We have two final questions.
+
+1638
+01:14:40,500 --> 01:14:42,899
+速度又很重要。
+And speed, again, does matter.
+
+1639
+01:14:42,899 --> 01:14:44,979
+什么是Cookie？
+What is a cookie?
+
+1640
+01:14:44,979 --> 01:14:48,729
+用于在网站上识别您的计算机的数据，美味小吃，
+Data used to identify your computer to websites, a delicious snack,
+
+1641
+01:14:48,729 --> 01:14:53,139
+以上两种情况，或以上两种都不存在。
+both of the above, or none of the above.
+
+1642
+01:14:53,140 --> 01:14:54,310
+布赖恩，这是一个艰难的过程。
+This is a tough one, Brian.
+
+1643
+01:14:54,310 --> 01:14:56,950
+特别是在只有一个正确答案的情况下。
+Especially if there's only one right answer.
+
+1644
+01:14:56,949 --> 01:14:58,659
+我们可能会看到更多分歧。
+We might see a bit more of a split.
+
+1645
+01:14:58,659 --> 01:15:00,229
+其中哪一个是Cookie？
+Which of these is a cookie?
+
+1646
+01:15:00,229 --> 01:15:02,589
+好吧，让我们看看结果。
+All right, let's see the results.
+
+1647
+01:15:02,590 --> 01:15:05,530
+用于识别您的计算机的数据占网站总数的60％。
+Data used to identify your computer to websites with 60%.
+
+1648
+01:15:05,529 --> 01:15:07,299
+以上两者均为35％。
+Both of the above was 35%.
+
+1649
+01:15:07,300 --> 01:15:09,340
+你们中只有2％的人喜欢饼干。
+Only 2% of you like cookies alone.
+
+1650
+01:15:09,340 --> 01:15:10,215
+布莱恩？
+Brian?
+
+1651
+01:15:10,215 --> 01:15:12,340
+布莱恩·于：上面的两个都是正确的答案。
+BRIAN YU: Both of the above was the correct answer.
+
+1652
+01:15:12,340 --> 01:15:15,465
+我要提醒的是，所有这些问题都是由学生最初写的
+I'll remind that all of these questions were written originally by students
+
+1653
+01:15:15,465 --> 01:15:18,490
+被选为正确答案的学生的答案选择是
+and the answer choice of students selected as the correct one was
+
+1654
+01:15:18,489 --> 01:15:19,451
+以上两者。
+both of the above.
+
+1655
+01:15:19,452 --> 01:15:20,410
+戴维·马兰：好的。
+DAVID MALAN: All right.
+
+1656
+01:15:20,409 --> 01:15:24,399
+而现在倒数第二的排行榜，Guest 200仍然处于领先地位。
+And now the second to last leaderboard, Guest 200 is still in the lead.
+
+1657
+01:15:24,399 --> 01:15:26,769
+但是底部有一些差异。
+But there's been some variance toward the bottom there.
+
+1658
+01:15:26,770 --> 01:15:30,580
+CS50本身的最后一个问题。
+Very last question of CS50 itself.
+
+1659
+01:15:30,579 --> 01:15:34,329
+您现在的舒适水平是多少？
+What's your comfort level now?
+
+1660
+01:15:34,329 --> 01:15:39,559
+我们也将让您在这些答案中做出决定。
+And we'll let you decide among these answers, too.
+
+1661
+01:15:39,560 --> 01:15:40,760
+好的。
+All right.
+
+1662
+01:15:40,760 --> 01:15:41,720
+答案全在。
+Answers are all in.
+
+1663
+01:15:41,720 --> 01:15:43,520
+让我们看一下分布。
+Let's take a look at the distribution.
+
+1664
+01:15:43,520 --> 01:15:47,360
+似乎有43％的人说您更自在。
+Looks like 43% of you said you're among more of those more comfortable.
+
+1665
+01:15:47,359 --> 01:15:49,609
+你们中有24％的人选择了第二名。
+24% of you went with the second.
+
+1666
+01:15:49,609 --> 01:15:52,479
+19％，从上到下的分布非常引人入胜。
+19%, very fascinating distribution from top to bottom.
+
+1667
+01:15:52,479 --> 01:15:55,639
+但关键是，您现在的确已正式入职
+But the point is that you are all indeed now officially inducted
+
+1668
+01:15:55,640 --> 01:15:57,410
+进入那些更舒适的地方。
+into those more comfortable.
+
+1669
+01:15:57,409 --> 01:15:59,299
+非常感谢您加入CS50。
+Thank you so much for joining us in CS50.
+
+1670
+01:15:59,300 --> 01:16:01,610
+我们迫不及待想看到您的最终项目。
+We cannot wait to see your final projects.
+
+1671
+01:16:01,609 --> 01:16:03,109
+到此，这就是结局。
+This, then, is the end.
+
+1672
+01:16:03,109 --> 01:16:04,489
+这就是CS50。
+And this was CS50.
+
+1673
+01:16:14,090 --> 01:16:17,440
+[音乐播放]
+[MUSIC PLAYING]
+
