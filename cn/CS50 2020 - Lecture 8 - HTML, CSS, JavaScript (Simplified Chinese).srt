@@ -10,7 +10,7 @@ DAVID J. MALAN: All right.
 
 3
 00:00:49,890 --> 00:00:54,365
-所以这是CS50，这是万圣节前夕的第八周。
+所以这是CS50，这是第八周，万圣节前夕的一周。
 So this CS50, and this is week eight, the week of all Hallows' Eve.
 
 4
@@ -20,157 +20,157 @@ Indeed, thanks to our friends here in the American Repertory Theater,
 
 5
 00:00:57,240 --> 00:01:00,720
-今天的舞台上有一些特殊的灯光，看起来很棒
+今天的舞台上在有一些特殊的灯光和一些特殊的角色映衬下显的
 the stage looks amazing today with some special lighting
 
 6
 00:01:00,719 --> 00:01:02,279
-和一些特殊字符。
+格外精彩。
 and some special characters.
 
 7
 00:01:02,280 --> 00:01:04,410
-当然，在过去的一周里，谈到角色
+当然，说到人物，在过去的一周里，
 Of course, speaking of characters, this past week
 
 8
 00:01:04,409 --> 00:01:08,399
-你们都是第一次探索50-ville，寻找橡胶
+你们都第一次探索了50-ville，寻找失踪的
 you all explored 50-ville for the very first time, looking for the rubber
 
 9
 00:01:08,400 --> 00:01:09,720
-失踪的鸭子。
+橡皮鸭子。
 duck that had gone missing.
 
 10
 00:01:09,719 --> 00:01:12,599
-幸运的是，找到了罪魁祸首，
+幸运的是，罪魁祸首（橡皮鸭）已经被找到，
 And thankfully, the culprits have been found,
 
 11
 00:01:12,599 --> 00:01:18,689
-并允许我说一个小人想打个招呼。
+允许我说有一个小人物（橡皮鸭）想向你们问好。
 and allow me to say that a little someone would like to say hello.
 
 12
 00:01:18,689 --> 00:01:21,749
-是的，即使他为此打扮得很漂亮，
+是的，即使是他也为这个场合打扮了一番，
 Yes, even he has rather dressed up for the occasion,
 
 13
 00:01:21,750 --> 00:01:24,399
-但感谢您在这里所做的所有辛勤工作。
+但还是感谢你们在这里所做的一切努力。
 but thank you for all the hard work there.
 
 14
 00:01:24,400 --> 00:01:28,080
-所以，当然，这周我们过渡到了网络编程的世界，
+因此本周，我们当然要过渡到web编程的世界，
 So this week, of course, we transition to the world of web programming,
 
 15
 00:01:28,079 --> 00:01:30,367
-动机是过去几周，
+其动机是，在过去的几周里，
 the motivation being that for the past many weeks,
 
 16
 00:01:30,367 --> 00:01:32,159
-我们编写的几乎所有代码
+我们写的几乎所有的代码
 pretty much all of the code we have written
 
 17
 00:01:32,159 --> 00:01:35,896
-一直专注于命令行程序，编译代码，
+都集中在命令行程序上，编译代码，
 has been focused on command line programs, compiling your code,
 
 18
 00:01:35,897 --> 00:01:38,730
-解释您的代码，但通常只是与一个相当
+解析你的代码，但通常只是与一个相当
 interpreting your code, but generally just interacting with a fairly
 
 19
 00:01:38,730 --> 00:01:41,970
-文字上，普通的闪烁提示。
+平凡的闪烁的提示进行文本上的互动。
 mundane blinking prompt, textually.
 
 20
 00:01:41,969 --> 00:01:44,549
-但是，当然，您和我每天使用的软件
+但是，当然，现在你和我每天使用的软件
 But of course, the software that you and I use every day
 
 21
 00:01:44,549 --> 00:01:48,629
-这些天以浏览器中的笔记本电脑和台式机的形式出现
+是以笔记本电脑和台式机的浏览器
 these days is in the form of laptops and desktops in browsers
 
 22
 00:01:48,629 --> 00:01:53,369
-或在移动设备或应用上，今天，我们开始过渡
+或移动设备或应用程序的形式出现的，今天，我们开始过渡到
 or on mobile devices or apps, and today, we begin to transition
 
 23
 00:01:53,370 --> 00:01:55,860
-一套语言和一套技术
+一组语言和一组技术，
 to a set of languages and a set of technologies
 
 24
 00:01:55,859 --> 00:01:59,339
-通过它您可以开始应用过去一周的所有知识
+通过它们，你可以将过去一周所有的程序化编程的知识和
 via which you can start to apply all of the past week's knowledge
 
 25
 00:01:59,340 --> 00:02:02,670
-和心理模型的程序设计
+心理模型开始应用
 and mental models for procedural programming
 
 26
 00:02:02,670 --> 00:02:05,872
-到更熟悉，更图形化的领域。
+到一个更熟悉、更图形化的领域。
 to a much more familiar, a much more graphical domain.
 
 27
 00:02:05,871 --> 00:02:08,038
-确实，在接下来的几周内，
+事实上，在接下来的几周的课程里
 Indeed, over the course of the next couple of weeks,
 
 28
 00:02:08,038 --> 00:02:11,399
-我们将专注于网络编程和语言的使用
+我们将专注于网络编程和
 we'll be focused on web programming and the use of languages
 
 29
 00:02:11,400 --> 00:02:15,780
-称为HTML，CSS和JavaScript，它们构成了当今的网站，
+称为HTML，CSS和JavaScript的语言的使用，这些语言构成了当今的网站，
 called HTML and CSS and JavaScript, with which today's websites are made,
 
 30
 00:02:15,780 --> 00:02:19,740
-并越来越多地与当今的移动应用程序或应用程序一起使用
+并且当今移动应用或你手机上的应用程序也越来越多地
 and increasingly with which today's mobile applications or apps
 
 31
 00:02:19,740 --> 00:02:22,090
-也可以在手机上制作。
+用到这些语言。
 on your phone are made as well.
 
 32
 00:02:22,090 --> 00:02:24,270
-但是为了达到这个故事的目的，
+但是为了达到这个目的，
 But in order to get to that point in the story,
 
 33
 00:02:24,270 --> 00:02:27,840
-我们需要考虑框架是什么
+我们需要考虑我们要在其上运行这些网站
 we need to consider what the framework is
 
 34
 00:02:27,840 --> 00:02:31,920
-最重要的是，我们将运行这些网站或这些Web应用程序。
+或这些网络应用的框架是什么。
 on top of which we're going to run these websites or these web applications.
 
 35
 00:02:31,919 --> 00:02:34,199
-因此，这引发了互联网问题。
+因此，这引出了互联网问题。
 And so that invites the question of the internet.
 
 36
@@ -180,52 +180,52 @@ Exactly what is the internet?
 
 37
 00:02:36,180 --> 00:02:39,600
-我们所有人每天都在使用它，但让我们带几个志愿者
+我们所有人每天都在使用它，但让我们从
 All of us use it every day, but let's take a couple of volunteers
 
 38
 00:02:39,599 --> 00:02:44,939
-听众，只是为我们定义互联网的含义。
+观众中选出几位志愿者，为我们定义下我们所说的互联网。
 from the audience, just to define for us what we mean by the internet.
 
 39
 00:02:44,939 --> 00:02:47,759
-我们所有人现在都已经上网了，
+我们所有人现在都在互联网上，
 All of us are literally on the internet right now,
 
 40
 00:02:47,759 --> 00:02:52,599
-但是如果您退后一步考虑一下，互联网是什么？
+但如果你退一步想一想，互联网是什么？
 but if you take a step back and think about it, what is the internet?
 
 41
 00:02:52,599 --> 00:02:56,469
-您如何为技术水平不高的人定义它
+对于技术水平不如你或者你不太熟悉的人，你如何
 How might you define it for someone less technical than you
 
 42
 00:02:56,469 --> 00:02:58,359
-还是不那么熟悉的人？
+定义互联网？
 or someone less familiar?
 
 43
 00:02:58,360 --> 00:03:00,060
-索菲娅，您将如何定义它？
+索菲娅，你将如何定义它？
 Sophia, how would you define it?
 
 44
 00:03:00,060 --> 00:03:01,810
-听众：所有计算机的网络
+听众：世界各地的所有计算机，
 AUDIENCE: The network of all the computers
 
 45
 00:03:01,810 --> 00:03:05,320
-从网络获取信息的世界各地
+它们从网络中吸收信息，
 around the world that are taking in information from the network
 
 46
 00:03:05,319 --> 00:03:06,879
-并提供信息。
+同时也给互联网提供信息。
 and also giving it information.
 
 47
@@ -235,72 +235,72 @@ DAVID J. MALAN: Perfect.
 
 48
 00:03:07,879 --> 00:03:09,709
-互联网就是这个网络的网络，
+互联网是这个网络的网络，
 The internet is this network of networks,
 
 49
 00:03:09,710 --> 00:03:12,610
-因此，如果您家中有小型网络，那么小型网络
+所以如果你在家里有一个小网络，
 so if you have a small network in your home, a small network
 
 50
 00:03:12,610 --> 00:03:15,010
-或公司或大学中的大型网络
+在你的公司或你的大学有一个小网络或一个大网络，
 or a large network at your company or you university
 
 51
 00:03:15,009 --> 00:03:18,039
-然后您开始使用电缆互连所有这些网络
+你开始使用电缆或某种无线技术将所有这些网络互联起来，
 and you start to interconnect all of those networks using cables
 
 52
 00:03:18,039 --> 00:03:22,089
-或某种无线技术，就可以上网，可以这么说，
+你就得到了互联网，可以说是
 or some kind of wireless technology, you get the internet, so to speak,
 
 53
 00:03:22,090 --> 00:03:23,690
-网络的网络。
+一个网络的网络。
 a network of networks.
 
 54
 00:03:23,689 --> 00:03:26,619
-如果您愿意的话，这实际上是基础架构，
+这是真正的基础设施，如果你愿意的话，
 And this is really the infrastructure, if you will,
 
 55
 00:03:26,620 --> 00:03:29,690
-可以运行当今所有的应用程序。
+当今所有的应用程序都能在其上运行。
 on top of which all of today's applications are run.
 
 56
 00:03:29,689 --> 00:03:33,099
-因此，当您使用网络，使用聊天，使用Slack时，
+因此，当你使用网络，使用聊天，使用Slack时，
 So when you use the web, when you use chat, when you use Slack,
 
 57
 00:03:33,099 --> 00:03:36,399
-当您使用视频会议，缩放等功能时，您正在使用互联网，
+当你使用视频会议，Zoom或类似的应用时，你正在使用互联网，
 when you use video conferencing, Zoom or the like, you're using the internet,
 
 58
 00:03:36,400 --> 00:03:39,430
-但实际上将互联网视为下层管道
+但把互联网真正看作是低层次的管道，
 but think of the internet really as the lower-level plumbing that
 
 59
 00:03:39,430 --> 00:03:42,910
-从您那里获取零和一，再返回给其他人，
+把0和1从你那里送到别人那里，然后再回来，
 gets the zeros and ones from you to someone else and back,
 
 60
 00:03:42,909 --> 00:03:45,339
-最重要的是所有的应用程序
+而上面的应用程序最终都是
 and the applications on top of that are all
 
 61
 00:03:45,340 --> 00:03:47,410
-最终以软件实现。
+通过软件实现的。
 implemented, ultimately, in software.
 
 62
@@ -463,6 +463,7 @@ to the web server that you're trying to contact
 然后将服务器的响应返回给您。
 and then back to you with the server's response.
 
+TODO next start
 94
 00:05:23,240 --> 00:05:24,490
 那么，所有这些工作如何进行？
