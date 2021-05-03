@@ -1405,7 +1405,7 @@ typically start counting from zero, just because it makes sense
 
 282
 00:14:03,019 --> 00:14:05,899
-因为当一切都关闭时，你最好将其称为 0。
+因为当一切都关闭时，你或许将其称为 0。
 because when everything is off, you might as well call that zero.
 
 283
@@ -1425,27 +1425,27 @@ allow us to count as high as seven.
 
 286
 00:14:14,330 --> 00:14:17,450
-所以从零到七个，所以七是最大的
+从零到七，所以七我们用三个灯泡
 So from zero to seven, so seven is the highest
 
 287
 00:14:17,450 --> 00:14:19,320
-我们可以用三个灯泡数。
+数到最大的数。
 we can count with three light bulbs.
 
 288
 00:14:19,320 --> 00:14:22,760
-正确答案是 7 ，有36％
+正确答案是 7 ，有 36％ 的人
 So those of you who propose that seven was the answer, 36% of you
 
 289
 00:14:22,759 --> 00:14:24,409
-的回答是正确的。
+回答是正确的。
 were indeed correct.
 
 290
 00:14:24,409 --> 00:14:29,509
-如果你假设我们从 1 开始算，那么 87% 的人回答 8 是对的，
+如果你假设我们从 1 开始算，那么 87% 的人回答是对的，
 57% of you who said eight are correct if you assume we start counting at one,
 
 291
@@ -1460,7 +1460,7 @@ But at least in the computing world now, we'll generally, by convention,
 
 293
 00:14:33,388 --> 00:14:34,430
-从零开始计数。
+都是从零开始计数。
 start counting from zero.
 
 294
@@ -1680,7 +1680,7 @@ not zeros through nines.
 
 337
 00:16:43,149 --> 00:16:46,989
-所以，如果我们现在抽象地考虑，只是在这里表示三个可能的数字，
+所以，如果我们现在抽象地思考，只是在这里表示三个可能的数字，
 So if we consider now in the abstract, just three possible digits
 
 338
@@ -1740,12 +1740,12 @@ is that it jumps out that 10 is involved.
 
 349
 00:17:18,338 --> 00:17:24,229
-有 10 个数字，从 0 到 9，所以这些列使用10的基数。
+有 10 个数字，从 0 到 9，所以这些列使用 10 为基数。
 There's 10 digits, zero through nine, so the columns are using this base of 10.
 
 350
 00:17:24,230 --> 00:17:26,230
-所以你现在也许可以比我更早地考虑到，
+所以你现在也许可以比我更早地想到了，
 So you can perhaps now get even ahead of me
 
 351
@@ -1855,12 +1855,12 @@ Well, it's just going to change that rightmost bit from a zero to a one,
 
 372
 00:18:33,430 --> 00:18:37,270
-或者，比喻来说，它将打开并点亮该开关
+或者打个比方，把最右边的灯泡开关打开，
 or, more metaphorically, it's going to turn that switch on and illuminate
 
 373
 00:18:37,269 --> 00:18:40,059
-就像我之前所做的那样，那个最右边的灯泡。
+就像我之前所做的那样。
 that rightmost light bulb just like I did earlier.
 
 374
@@ -1890,17 +1890,17 @@ Now I'm putting on two of those switches,
 
 379
 00:18:49,647 --> 00:18:52,689
-因为我需要在2和1的位置上有一些东西来给我，
+因为从一位进到二位，
 because I need something in the twos place and the ones place to give me,
 
 380
 00:18:52,690 --> 00:18:54,340
-从数学上讲，3。
+从数学上讲，这是 3。
 mathematically, three.
 
 381
 00:18:54,339 --> 00:18:57,249
-接下来，如果我们继续选择-
+接下来，如果我们继续选择，
 Next, if we go ahead and choose--
 
 382
@@ -1915,7 +1915,7 @@ if I want to count up to five, that's going to be 101,
 
 384
 00:19:02,950 --> 00:19:10,840
-6将是 110，最后，数字 7 将是 111。
+6 将是 110，最后，数字 7 将是 111。
 six is going to be 110, and finally, the number seven is going to be 111.
 
 385
@@ -2005,12 +2005,12 @@ So let's go ahead and ask a question then.
 
 402
 00:20:01,660 --> 00:20:07,720
-如果这些灯泡现在不仅仅是一个灯泡，或两个或三个，
+如果这些灯泡现在不仅仅是一个灯泡，两个或三个，
 If these light bulbs now represent not just one light bulb or two or three,
 
 403
 00:20:07,720 --> 00:20:10,750
-而是多个-在这种情况下，至少有六个灯泡，
+而是多个，在这种情况下，至少有六个灯泡，
 but several more-- in this case, at least six light bulbs,
 
 404
@@ -2025,7 +2025,7 @@ Well, let me go ahead and put a question on the screen here,
 
 406
 00:20:15,259 --> 00:20:18,079
-一会儿就把你们弹出来。
+一会儿就会在你们那边弹出来。
 which should pop up on yours in just a moment.
 
 407
@@ -2035,12 +2035,12 @@ And you should see now on your end this same question.
 
 408
 00:20:22,009 --> 00:20:26,259
-用二进制表示，什么数字-
+二进制的
 Put in binary terms, what number--
 
 409
 00:20:26,259 --> 00:20:33,789
-二进制数 110010 表示十进制的什么数？
+110010 表示十进制的什么数？
 in decimal, does binary number 110010 represents?
 
 410
@@ -2150,7 +2150,7 @@ it would seem that the only things computers can do is compute.
 
 431
 00:21:32,279 --> 00:21:33,929
-即，充当计算器。
+那就是充当计算器。
 That is, behave as calculators.
 
 432
@@ -2160,12 +2160,12 @@ And in fact, early on, that's exactly what computers were designed to do,
 
 433
 00:21:37,589 --> 00:21:41,219
-确实促进了数学计算，否则本来就相当
+确实促进了数学计算，有些计算本来就相当
 was really facilitate mathematical calculations that were otherwise quite
 
 434
 00:21:41,220 --> 00:21:43,110
-对人类而言是乏味或不可能的。
+乏味或者对人类来说是不可能完成的。
 tedious or impossible for humans.
 
 435
@@ -2175,7 +2175,7 @@ But, of course, what you and I are using right now,
 
 436
 00:21:45,390 --> 00:21:49,290
-我们每天在手机，笔记本电脑和台式机上使用的东西更多
+我们每天在手机，笔记本电脑和台式机上使用的东西是更
 what we use every day on our phones and our laptops and desktops is much more
 
 437
@@ -2190,17 +2190,17 @@ So let's consider how could a computer represent not just numbers,
 
 439
 00:21:53,940 --> 00:21:56,700
-但是字母。
+而是表示字母。
 but letters of the alphabet.
 
 440
 00:21:56,700 --> 00:21:58,620
-布莱恩，我们可以请这个人吗？
+Brian，我们可以请谁来回答吗？
 Brian, could we call on someone for this one?
 
 441
 00:21:58,619 --> 00:22:00,809
-如果你想举起虚拟牌，
+如果你想举起手来，
 If you'd like to raise your virtual hand,
 
 442
