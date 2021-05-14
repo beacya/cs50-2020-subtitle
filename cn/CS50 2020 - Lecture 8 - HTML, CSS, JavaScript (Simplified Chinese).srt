@@ -305,52 +305,52 @@ implemented, ultimately, in software.
 
 62
 00:03:47,409 --> 00:03:50,499
-因此，如果我们考虑的话，我们已经拥有了所有这些计算机
+因此，如果我们考虑到，我们所拥有的这些计算机
 And so if we consider, then, that we've got all of these computers
 
 63
 00:03:50,500 --> 00:03:52,810
-以某种方式相互联系，这是有道理的
+以某种方式相互连接，
 interconnected somehow, it stands to reason
 
 64
 00:03:52,810 --> 00:03:55,570
-我们需要以某种方式决定作为全球社区
+我们需要以某种方式决定作为一个全球社区
 that we need to somehow decide as a global community
 
 65
 00:03:55,569 --> 00:03:59,389
-如何从A点到B点以及其他地方获取数据。
+如何从A点到B点以及其它地方获取数据？
 how to get data from point A to point B and beyond.
 
 66
 00:03:59,389 --> 00:04:03,257
-因此，在整个互联网中，这些计算机称为路由器。
+因此，在整个互联网中有这些称为路由器的计算机。
 And so throughout the internet are these computers called routers.
 
 67
 00:04:03,258 --> 00:04:05,050
-归根结底，他们可能是
+归根结底，它们可能比
 And at the end of the day, they're probably
 
 68
 00:04:05,050 --> 00:04:07,750
-比您和我所用的台式机和笔记本电脑大一点
+你我熟悉的台式机和笔记本电脑大一点，
 a little bigger than the desktops and laptops with which you and I are
 
 69
 00:04:07,750 --> 00:04:09,582
-熟悉，但归根结底，他们是
+但最终，它们都有同样的设备，
 familiar, but at the end of the day, they're
 
 70
 00:04:09,582 --> 00:04:13,389
-具有CPU，中央处理器和大脑的同类设备
+具有CPU，中央处理器，是计算机
 the same kinds of devices with CPUs, Central Processing Units, the brains
 
 71
 00:04:13,389 --> 00:04:15,849
-在计算机内部进行所有思考的人，
+内部进行所有思考的大脑，
 inside of the computer that do all the thinking,
 
 72
@@ -360,22 +360,22 @@ RAM or memory, where all of the values are stored,
 
 73
 00:04:18,610 --> 00:04:20,829
-和保留数据的硬盘。
+还有硬盘，数据保存在里面。
 and hard disks, where data is persisted.
 
 74
 00:04:20,829 --> 00:04:23,320
-例如，这里的照片是麻省理工学院的图片
+例如，这里有一张来自麻省理工学院的图片
 And pictured here, for instance, is an image from MIT
 
 75
 00:04:23,319 --> 00:04:27,942
-这说明了几年前的事-一些最重要的对等
+描述了几年前美国各地互联网上
 that depicted a few years back of what-- some of the most significant peering
 
 76
 00:04:27,942 --> 00:04:30,109
-遍及整个美国的互联网。
+一些最重要的对接点的情况。
 points on the internet throughout the United States.
 
 77
@@ -385,22 +385,22 @@ So each of the red dots here represents essentially one router
 
 78
 00:04:33,670 --> 00:04:36,880
-或一个非常重要的地方，有很多电缆
+或一个非常重要的地方，大量的电缆进入然后出去，
 or one very important place into which a lot of cables
 
 79
 00:04:36,879 --> 00:04:40,751
-进来然后出去，将全国各地联系起来。
+与全国所有的点相互连接。
 come in and then go out and interconnect all points of the country.
 
 80
 00:04:40,752 --> 00:04:43,210
-然后这个故事在美国以外的地方继续发展。
+然后这些事一直延续到美国以外的地方，
 And then this story continues well beyond the United States
 
 81
 00:04:43,209 --> 00:04:46,569
-这些天使用海洋电缆和其他无线设备
+如今使用海洋电缆和其他无线
 these days using oceanic cables and other wireless
 
 82
@@ -410,103 +410,102 @@ or satellite technologies or the like.
 
 83
 00:04:48,319 --> 00:04:52,509
-可以这么说，就是这个网格，这个互连
+因此足以说明，有这样的网状结构，
 So suffice it to say, there's this mesh, this interconnection
 
 84
 00:04:52,509 --> 00:04:56,679
-所有这些不同的计算机，进而遍及全球的网络，
+所有这些不同的计算机和世界各地的网络相互连接，
 of all of these different computers and in turn networks throughout the world,
 
 85
 00:04:56,680 --> 00:04:59,830
-也就是说，数据可以采用许多不同的路径
+也就是说，有许多不同的路径将数据
 which is to say that there's many different paths that data can take
 
 86
 00:04:59,829 --> 00:05:03,669
-从A点到B点
+从A点发送到B点。你和Facebook.com或
 to go from point A to point B. There isn't necessarily a line between you
 
 87
 00:05:03,670 --> 00:05:06,250
-和Facebook.com或Stanford.edu。
+Stanford.edu之间没有必然的界限。
 and Facebook.com or Stanford.edu.
 
 88
 00:05:06,250 --> 00:05:08,950
-而是有一堆路由器-
+相反，有一大堆路由器
 Rather, there's a whole bunch of routers--
 
 89
 00:05:08,949 --> 00:05:11,739
-有时很少，有时多达30个-
+有时是少数几个，有时多大30个
 sometimes a handful, sometimes as many as 30--
 
 90
 00:05:11,740 --> 00:05:14,230
-从左到右中继您的数据，
+将你的数据从左到右，
 that will relay your data from left to right,
 
 91
 00:05:14,230 --> 00:05:18,340
-向上或向下移动，或从其他方向获取您的数据
+从上到下，或者其他方向转发，以便把数据从你那里
 to up to down, or in some other direction in order to get data from you
 
 92
 00:05:18,339 --> 00:05:20,409
-到您尝试联系的Web服务器
+发送到你试图联系的网络服务器上，
 to the web server that you're trying to contact
 
 93
 00:05:20,410 --> 00:05:23,240
-然后将服务器的响应返回给您。
+然后再把服务器的响应反馈给你。
 and then back to you with the server's response.
 
-TODO next start
 94
 00:05:23,240 --> 00:05:24,490
-那么，所有这些工作如何进行？
+那么这一切是如何进行的呢？
 So how does all of this work?
 
 95
 00:05:24,490 --> 00:05:26,380
-好吧，几十年前，人类
+好吧，几十年前，人类基本上不得不
 Well, decades ago, humans essentially had
 
 96
 00:05:26,379 --> 00:05:31,329
-聚在一起，共同决定他们要使用什么标准，
+聚在一起，作为一个团队决定他们要使用什么标准，
 to get together and decide as a group what standards they were going to use,
 
 97
 00:05:31,329 --> 00:05:35,439
-更具体地说，所有这些计算机都将使用哪种协议。
+或者更具体地说，所有这些计算机要用什么协议。
 or more specifically, what protocols all of these computers are going to speak.
 
 98
 00:05:35,439 --> 00:05:39,369
-协议与其说是一组约定，不如说是一种语言，对吗？
+协议与其说是一种语言，不如说是一组约定，对吗？
 A protocol isn't so much a language as it is a set of conventions, right?
 
 99
 00:05:39,370 --> 00:05:42,550
-回到更健康的时代，如果我们本人见面，您和我，
+回到更健康的时代，你和我，如果我们见到彼此，
 Back in healthier times, you and I, if we were meeting each other in person,
 
 100
 00:05:42,550 --> 00:05:45,040
-可能会伸出一只手，如果我这样做，您会立即
+可能会伸出一只手，如果我这样做了，你会立即
 might extend a hand, and if I did this, you would immediately
 
 101
 00:05:45,040 --> 00:05:47,165
-知道你也应该伸出手，
+知道你可能也应该伸出你的手，
 know that you should probably extend your hand too,
 
 102
 00:05:47,165 --> 00:05:49,130
-我们将进行物理握手。
+我们会进行实体的握手。
 and we would have a physical handshake.
 
 103
@@ -516,27 +515,27 @@ And that's a human protocol.
 
 104
 00:05:50,649 --> 00:05:53,512
-我伸出手与您进行交流。
+我通过伸出我的手来启动与你的沟通。
 I initiate a communication with you by extending my hand.
 
 105
 00:05:53,512 --> 00:05:55,929
-您通过伸出双手来确认这种沟通。
+您通过伸出你的手来承认这种沟通。
 You acknowledge that communication by extending your hand.
 
 106
 00:05:55,930 --> 00:05:58,040
-然后，该交互完成。
+然后这种互动就完成了。
 And then that interaction is complete.
 
 107
 00:05:58,040 --> 00:05:59,560
-因此，我们有了这些人工协议。
+因此我们有这些人类协议。
 So we have these human protocols.
 
 108
 00:05:59,560 --> 00:06:02,260
-在计算机世界中，有类似的协议，
+在计算机的世界里，也有类似的协议，
 In the world of computers, there's similarly protocols,
 
 109
@@ -556,27 +555,27 @@ the other computer should reply with a different set of zeros and ones.
 
 112
 00:06:11,540 --> 00:06:13,840
-这些协议我们将要讨论的只是
+因此我们将要讨论的这些协议只是
 And so these protocols we're about to discuss just
 
 113
 00:06:13,839 --> 00:06:16,389
-标准化那些零和一的模式是什么，
+标准化了这些零和一的模式是什么，
 standardize what those patterns of zeros and ones are,
 
 114
 00:06:16,389 --> 00:06:19,659
-或实际上，所有消息都是来回传递的。
+或者说，所有的信息是如何来回传递。
 or really, what all of the messages are going back and forth.
 
 115
 00:06:19,660 --> 00:06:23,860
-还有两个最常用于在互联网上获取数据的协议
+在互联网上从A点到B点获取数据最常用的两个
 And two of the protocols most commonly used to get data on the internet
 
 116
 00:06:23,860 --> 00:06:27,760
-从点A到点B称为TCP / IP。
+协议被称为TCP/IP。
 from point A to point B are called TCP/IP.
 
 117
@@ -586,87 +585,87 @@ TCP and IP are two separate protocols, but they're so often
 
 118
 00:06:31,600 --> 00:06:35,530
-一起使用时，您通常会一口气提到它们，即TCP / IP。
+一起使用，你通常会一口气提到它们，即TCP/IP。
 used together that you typically mention them in one breath, TCP/IP.
 
 119
 00:06:35,529 --> 00:06:39,399
-这些是您可能在Mac或PC上见过的首字母缩写词
+这些是你可能已经看到的缩写，也许在你的Mac或PC上
 And these are acronyms you've probably seen maybe on your Mac or PC
 
 120
 00:06:39,399 --> 00:06:41,499
-或手机设置中的某处。
+或你的手机设置的某个地方。
 or somewhere on your phone settings.
 
 121
 00:06:41,500 --> 00:06:44,470
-它实际上指的是两组约定
+它基本上是指计算机用来将数据从一个点到
 And it refers to essentially two sets of conventions
 
 122
 00:06:44,470 --> 00:06:48,432
-计算机用来从一个点到另一个点获取数据的工具。
+另一个点的两套惯例。
 that computers use to get data from one point to another.
 
 123
 00:06:48,432 --> 00:06:50,140
-那么我们所说的数据是什么意思，我们是什么意思
+那么我们所说的数据是什么意思，我们在A点和
 So what do we mean by data and what do we
 
 124
 00:06:50,139 --> 00:06:52,629
-是指在A点和B点之间移动东西？
+B点之间移动东西是什么意思？
 mean by moving things between point A and point B?
 
 125
 00:06:52,629 --> 00:06:55,989
-我们将其视为老式信封，因此
+我们就把它看作是一个老式的信封，据此
 We'll just consider it as an old-school envelope, whereby
 
 126
 00:06:55,990 --> 00:06:58,917
-如果您想寄一封信给世界上的其他人，
+如果你想给世界上的其他人寄信，
 if you wanted to send a letter to someone else in the world,
 
 127
 00:06:58,916 --> 00:07:01,749
-你和我可能会在一天中拿出一张纸。
+你和我在当年可能会伸手去拿一张纸。
 you and I would probably reach for a piece of paper back in the day.
 
 128
 00:07:01,750 --> 00:07:04,299
-我们将拿起一个信封，然后写我们的便条
+我们就拿起一个信封，在那张纸上写下我们的字条
 We would pick up an envelope and we would write our note
 
 129
 00:07:04,300 --> 00:07:07,010
-在那张纸上，把纸放在信封里，
+把字条放进信封里，
 on that piece of paper, put the paper in the envelope,
 
 130
 00:07:07,009 --> 00:07:10,449
-然后写出实际信息后最重要的步骤
+然后在写完真正的信息后最重要的一步是在信封
 and then the most important step after writing the actual message
 
 131
 00:07:10,449 --> 00:07:12,219
-将解决信封。
+上写上地址。
 would be to address the envelope.
 
 132
 00:07:12,220 --> 00:07:15,370
-当然，在现实世界中，您会输入收件人的地址
+当然，在现实世界中，你会把收件人的地址
 And of course, in the real world, you would put the recipient's address
 
 133
 00:07:15,370 --> 00:07:17,290
-通常在信封中间。
+通常写在信封的中间。
 typically in the middle of the envelope.
 
 134
 00:07:17,290 --> 00:07:20,860
-您可以将寄信人地址放在信封的右上角，
+你可以在信封的上部写上你的回信地址，
 You might put your return address in the top corner of the envelope,
 
 135
@@ -676,27 +675,27 @@ and then maybe postage or something like that.
 
 136
 00:07:22,910 --> 00:07:25,390
-但是我们人类已经非常标准化
+但是我们人类
 But we humans have pretty much standardized
 
 137
 00:07:25,389 --> 00:07:28,059
-通过所有邮政系统
+通过所有邮政系统，在使用信封时已经基本实现了标准化
 through all of the postal systems that kind of convention
 
 138
 00:07:28,060 --> 00:07:29,080
-使用信封时。
+的那种惯例。
 when using envelopes.
 
 139
 00:07:29,079 --> 00:07:32,499
-所以这里的隐喻是信封和信息
+所以这里的隐喻是信封和其中的信息
 So the metaphor here is that the envelope and the message
 
 140
 00:07:32,500 --> 00:07:36,849
-其中通常被认为是或称为数据包，
+通常被认为或称为数据包，
 therein are generally thought of or referred to as packets,
 
 141
@@ -706,97 +705,97 @@ packets of information.
 
 142
 00:07:38,040 --> 00:07:39,790
-这将是肉体的化身
+而这将是计算机最终将使用
 And this would be the physical incarnation
 
 143
 00:07:39,790 --> 00:07:43,010
-最终计算机将要使用零和一完成的操作。
+零和一进行的物理化身。
 of what computers ultimately are just going to do using zeros and ones.
 
 144
 00:07:43,009 --> 00:07:45,009
-因此，让我们来梳理这两组约定
+因此，让我们把他们用于实际
 So let's tease apart the two sets of conventions
 
 145
 00:07:45,009 --> 00:07:48,129
-他们实际上是将数据放入这些信封中，
+将数据放入这些信封、给这些信封编写地址以及
 they use for actually putting data in these envelopes,
 
 146
 00:07:48,129 --> 00:07:52,419
-处理这些信封，然后将它们从A点发送到B点。
+将它们从A点发送到B点的两套惯例分开。
 addressing these envelopes, and sending them out from point A to point B.
 
 147
 00:07:52,420 --> 00:07:53,980
-让我们考虑第一个IP。
+我们首先考虑IP。
 Let's consider first IP.
 
 148
 00:07:53,980 --> 00:07:56,650
-IP代表Internet协议，几乎是
+IP代表Internet协议，如今几乎所有的
 IP stands for Internet Protocol, and pretty much
 
 149
 00:07:56,649 --> 00:08:00,579
-任何Mac和PC以及iPhone和iPad以及Android设备
+Mac、PC、iPhone、iPad和安卓设备
 any Mac and PC and iPhone and iPad and Android device
 
 150
 00:08:00,579 --> 00:08:05,079
-这些天是由Apple或Google或其他人设计的
+都被苹果或谷歌或其他公司设计成
 these days has been designed by Apple or Google or someone else
 
 151
 00:08:05,079 --> 00:08:07,029
-了解IP。
+能够理解IP。
 to understand IP.
 
 152
 00:08:07,029 --> 00:08:09,849
-好像那些公司写过软件
+就好像那些公司编写了
 It's as though those companies have written software
 
 153
 00:08:09,850 --> 00:08:14,320
-在确保这些设备均支持IP的设备上运行，
+运行在这些设备上的软件，确保这些设备都支持IP，
 running on those devices that make sure that those devices all support IP,
 
 154
 00:08:14,319 --> 00:08:17,949
-就像我被某个人教过的，这个人类惯例
+就像当年我被教导，大概被某个人教导
 just like I was taught, presumably by some human, this human convention
 
 155
 00:08:17,949 --> 00:08:19,959
-握手的日子。
+这种人类握手的惯例。
 of shaking hands back in the day.
 
 156
 00:08:19,959 --> 00:08:23,499
-IP，Internet协议，仅是标准化
+IP，Internet协议，简单地将计算机
 IP, Internet Protocol, simply standardizes
 
 157
 00:08:23,500 --> 00:08:26,390
-计算机如何相互寻址。
+之间的寻址方式标准化。
 how computers address each other.
 
 158
 00:08:26,389 --> 00:08:29,641
-因此，在我们人类的现实世界中，如果您想寄给我一个信封
+因此，在我们人类的现实世界中，如果你想给我寄一个信封
 So in our physical human world, if you wanted to send me an envelope
 
 159
 00:08:29,641 --> 00:08:32,558
-例如，您可以写信给哈佛大学的计算机科学系
+你可以写信给哈弗大学的计算机科学系
 for instance, you might write to Harvard's Computer Science Department
 
 160
 00:08:32,558 --> 00:08:38,109
-地点：美国马萨诸塞州剑桥市牛津街33号，邮政编码：02138。
+地址是33 Oxford Street, Cambridge, Massachusetts, 02138, USA。
 at 33 Oxford Street, Cambridge, Massachusetts, 02138, USA.
 
 161
@@ -806,67 +805,67 @@ That is presumably a unique postal address
 
 162
 00:08:41,558 --> 00:08:43,899
-专门针对校园中的计算机科学大楼
+地址是校园里的计算机科学大楼
 that addresses the Computer Science building on campus
 
 163
 00:08:43,899 --> 00:08:47,529
-这样一来，如果您在加利福尼亚州或其他国家/地区的邮件中放入信封
+这样一来如果你在加利福尼亚州或国外的任何地方投下一个信封，
 so that if you drop an envelope in the mail in California or anywhere abroad
 
 164
 00:08:47,529 --> 00:08:51,459
-最终应该通过一定数量的啤酒花和邮递员之类的东西
+它最终通过一些邮件运送者的投递之类的方式
 it should eventually via some number of hops and mail carriers and the like
 
 165
 00:08:51,460 --> 00:08:54,250
-到达该特定地址。
+到达那个特定地址。
 make its way to that particular address.
 
 166
 00:08:54,250 --> 00:09:00,009
-因此，计算机具有类似的唯一地址，称为IP地址。
+因此，计算机也有类似的唯一地址，称为IP地址。
 Computers, then, have similarly unique addresses known as IP addresses.
 
 167
 00:09:00,009 --> 00:09:05,259
-因此，当您的计算机，Mac，PC，电话等设备从其自身发送数据时，
+因此，当你的计算机，Mac，PC，手机等设备，从自身向另一个
 And so when your computer, Mac, PC, phone, whatever, sends data from itself
 
 168
 00:09:05,259 --> 00:09:07,809
-到另一台服务器，它写入的地址
+服务器发送数据时，它写在那个虚拟信封
 to another server, the address that it writes
 
 169
 00:09:07,809 --> 00:09:13,789
-该虚拟信封的外部是远程服务器的IP地址。
+外面的地址就是远程服务器的IP地址。
 on the outside of that virtual envelope is the IP address of the remote server.
 
 170
 00:09:13,789 --> 00:09:16,209
-例如，如果我要向您发送消息，
+例如，如果我要向你发送一条消息，
 So for instance, if I were to send a message to you,
 
 171
 00:09:16,210 --> 00:09:18,070
-我想知道您的IP地址是什么。
+我会找出你的IP地址是什么。
 I would figure out what your IP address is.
 
 172
 00:09:18,070 --> 00:09:21,070
-我会将该IP地址写在这个信封的外面。
+我会将该IP地址写在信封的外面。
 I would write that IP address virtually on the outside of this envelope.
 
 173
 00:09:21,070 --> 00:09:24,730
-我可能会在左上角写下自己的IP地址
+我可能会在这个比喻性的信封的左上角
 I would probably write my own IP address on the top left-hand corner
 
 174
 00:09:24,730 --> 00:09:26,500
-这个隐喻的信封。
+写上我自己的IP地址。
 of this metaphorical envelope.
 
 175
@@ -876,72 +875,72 @@ And then I would send it out on the internet.
 
 176
 00:09:28,539 --> 00:09:29,659
-那是什么意思呢？
+而这意味着什么呢？
 And what does that mean?
 
 177
 00:09:29,659 --> 00:09:33,309
-这意味着我要拿起那个信封，然后将其交给最近的路由器。
+这意味着我要拿着那个信封，然后将其交给最近的路由器。
 It would mean I take that envelope and I hand it to the nearest router.
 
 178
 00:09:33,309 --> 00:09:36,759
-事实证明，当您在家时，您实际上拥有自己的路由器。
+事实证明，当你在家时，你实际上拥有一个自己的路由器。
 So it turns out when you're at home, you actually have a router of your own.
 
 179
 00:09:36,759 --> 00:09:40,089
-那是连接到您的电缆调制解调器或DSL调制解调器之类的设备
+它是连接到你的电缆调制解调器或DSL调制解调器或类似东西
 It's that device that connects to your cable modem or DSL modem or something
 
 180
 00:09:40,090 --> 00:09:40,660
-像那样。
+的那个设备。
 like that.
 
 181
 00:09:40,659 --> 00:09:43,489
-如果您在校园里，例如哈佛或耶鲁大学，
+如果你在校园里，例如哈佛或耶鲁大学这样的地方，
 If you're on campus, like at a place like Harvard or Yale,
 
 182
 00:09:43,490 --> 00:09:46,930
-哈佛大学和耶鲁大学都有自己的路由器，因此您的计算机在校园内时，
+哈佛大学和耶鲁大学都有自己的路由器，所以你的计算机在校园内时，
 Harvard and Yale have their own routers, so your computer, when on campus,
 
 183
 00:09:46,929 --> 00:09:48,639
-只是知道将数据交给那个。
+只需要把数据移交给它。
 just knows to hand data off to that.
 
 184
 00:09:48,639 --> 00:09:50,234
-如果您在家中使用-
+如果你在家中使用-
 And if you're at home using--
 
 185
 00:09:50,235 --> 00:09:53,110
-或者如果您位于世界其他地方，例如星巴克或机场，
+或者如果你位于世界其他地方，例如星巴克或机场，
 or if you're elsewhere in the world, like in Starbucks or an airport,
 
 186
 00:09:53,110 --> 00:09:54,710
-同样，那里也有路由器。
+同样地，那里也有路由器。
 similarly are there routers there.
 
 187
 00:09:54,710 --> 00:09:57,910
-因此，您的计算机通常知道最近的路由器在哪里，
+因此，你的计算机通常知道最近的路由器在哪里，
 So your computers generally know where the closest router is,
 
 188
 00:09:57,909 --> 00:10:00,679
-然后，路由器的生活目的再次是要弄清楚，
+然后路由器的生活目的是，再次弄清楚，
 and then router's purpose in life is, again, to figure out,
 
 189
 00:10:00,679 --> 00:10:03,739
-可以这么说，这个数据包向左，向右，向上，向下走吗？
+这个数据包是否向左，向右，向上，向下，可以这么说
 does this packet go left, right, up, down, so to speak,
 
 190
@@ -951,67 +950,67 @@ in order to get it closer to its destination.
 
 191
 00:10:07,120 --> 00:10:09,740
-但这是鸡和鸡蛋。
+但这有点像鸡和蛋的关系。
 But this sort of is a chicken and an egg.
 
 192
 00:10:09,740 --> 00:10:12,490
-如果我想向您发送一条信息，
+如果我想向你发送一条信息，
 If I want to send you a piece of information,
 
 193
 00:10:12,490 --> 00:10:16,270
-我需要知道你的IP地址，但我真的不知道你的IP地址
+我需要知道你的IP地址，但在我知道你在哪里之前，我并不真正知道
 I need to know your IP address, but I don't really know your IP address
 
 194
 00:10:16,269 --> 00:10:18,319
-直到我知道你在哪里
+你的IP地址。
 until I know where you are.
 
 195
 00:10:18,320 --> 00:10:23,350
-因此，您可能已经看到了另一个系统的缩写，
+因此还有一个系统，你可能也见过它的缩写，
 So there is this other system that you've probably seen an acronym for,
 
 196
 00:10:23,350 --> 00:10:26,540
-也称为DNS，域名系统。
+称为DNS，域名系统。
 too, called DNS, Domain Name System.
 
 197
 00:10:26,539 --> 00:10:30,129
-这是一项在整个互联网上部署的技术
+这是一项部署在整个互联网上的技术，
 And this is a technology that's deployed throughout the internet that's
 
 198
 00:10:30,129 --> 00:10:34,149
-如今受Mac，PC和电话支持，这只是在翻译什么
+如今被Mac，PC和手机所支持，它只是将你和我通常所说的域名
 supported by Macs, PCs, and phones these days, that just translates what
 
 199
 00:10:34,149 --> 00:10:38,409
-您和我通常会称呼域名或完全限定域名，
+或完全合格的域名，
 you and I would typically call domain names, or fully qualified domain names,
 
 200
 00:10:38,409 --> 00:10:42,159
-那些像英语或人类可读的字符
+从那些类似英语或人类可读的字符翻译成
 from those English-like or human-readable characters
 
 201
 00:10:42,159 --> 00:10:44,689
-到相应的IP地址，对不对？
+相应的IP地址，对吗？
 to the corresponding IP addresses, right?
 
 202
 00:10:44,690 --> 00:10:48,280
-有一个原因是公司不宣传其网站
+公司不把他们的网站设置为数字IP
 There's a reason that companies do not advertise their websites
 
 203
 00:10:48,279 --> 00:10:51,309
-作为数字IP地址。
+地址是有原因的。
 as being a numeric IP address.
 
 204
@@ -1021,67 +1020,67 @@ None of us would ever remember them.
 
 205
 00:10:52,940 --> 00:10:55,090
-相反，他们将其广告宣传为Microsoft.com
+他们反而把它们宣传为Microsoft.com
 They instead advertise them as Microsoft.com
 
 206
 00:10:55,090 --> 00:10:57,790
-以及Google.com和NewYorkTimes.com。
+和Google.com以及NewYorkTimes.com。
 and Google.com and NewYorkTimes.com.
 
 207
 00:10:57,789 --> 00:11:01,119
-DNS是Mac，PC和电话使用的一项技术
+DNS是一种你的Mac和PC及电话支持的一项技术
 DNS is a technology that your Mac and PC and phone
 
 208
 00:11:01,120 --> 00:11:03,760
-支持知道人类何时键入
+知道当人类输入那些人类可读的地址，
 support that know when a human types in one
 
 209
 00:11:03,759 --> 00:11:07,209
-这些人类可读的地址，域名，DNS
+即域名，DNS将
 of those human-readable addresses, a domain name, DNS
 
 210
 00:11:07,210 --> 00:11:10,580
-将这些名称转换为IP地址。
+这些名称转换为IP地址。
 converts those names to the IP addresses.
 
 211
 00:11:10,580 --> 00:11:13,720
-因此，从字面上看，如果您输入Harvard.edu或Yale.edu，
+因此，从字面上看，如果你输入Harvard.edu或Yale.edu，
 So literally, if you type in Harvard.edu or Yale.edu,
 
 212
 00:11:13,720 --> 00:11:16,330
-进入您的Web浏览器，Mac或PC
+在你的网络浏览器中，你的Mac或者PC
 enter into your web browser, your Mac or PC
 
 213
 00:11:16,330 --> 00:11:22,600
-使用以下软件快速查找该Web服务器的IP地址：
+会使用MAC或PC自带的软件
 quickly looks up the IP address of that web server using the software that
 
 214
 00:11:22,600 --> 00:11:26,082
-Mac或PC随附提供，并将其转换为相应的IP地址
+迅速查找该网络服务器的IP地址，
 came with the Mac or PC and converts it to the corresponding IP address
 
 215
 00:11:26,081 --> 00:11:28,539
-然后以虚拟方式在信封的外部书写，
+并将其转换为相应的IP地址，然后在信封外面虚拟地写上哈佛或耶鲁的
 and then writes, virtually, on the outside of the envelope,
 
 216
 00:11:28,539 --> 00:11:31,119
-哈佛或耶鲁大学Web服务器的IP地址
+网络服务器的IP地址，
 the IP address of Harvard or Yale's web server
 
 217
 00:11:31,120 --> 00:11:33,170
-然后再将其发送到互联网上。
+然后将其发送到互联网上。
 before sending it out on the internet.
 
 218
@@ -1091,62 +1090,62 @@ So these are just services.
 
 219
 00:11:34,899 --> 00:11:39,699
-DNS是您自己的ISP（Internet服务提供商）提供的服务。
+DNS是你自己的ISP（Internet服务提供商）提供的服务。
 DNS is a service that your own ISP, Internet Service Provider, provides.
 
 220
 00:11:39,700 --> 00:11:41,650
-当您在校园里时，是哈佛或耶鲁大学。
+当你在校园里时，就是哈佛或耶鲁大学。
 When you're on campus, it's Harvard or Yale.
 
 221
 00:11:41,649 --> 00:11:44,016
-当您在星巴克时，可能是星巴克。
+当你在星巴克时，可能就是星巴克。
 When you're at Starbucks, it's probably Starbucks.
 
 222
 00:11:44,017 --> 00:11:45,850
-当您在机场时，就是机场。
+当你在机场时，就是机场。
 When you're in an airport, it's the airport.
 
 223
 00:11:45,850 --> 00:11:48,520
-当您在家时，它就是您自己的互联网服务提供商
+当你在家时，它就是你自己的互联网服务提供商
 When you're at home, it's your own internet service provider
 
 224
 00:11:48,519 --> 00:11:50,929
-例如Verizon或Comcast之类。
+如Verizon或Comcast之类的。
 like Verizon or Comcast or the like.
 
 225
 00:11:50,929 --> 00:11:54,679
-因此，世界刚刚决定也使用该技术。
+因此世界仅仅决定也使用该技术。
 So the world just decided to use that technology as well.
 
 226
 00:11:54,679 --> 00:11:57,819
-最后，TCP是现在的另一个缩写。
+最后，还有一个首字母缩写词，TCP。
 And lastly, one other acronym for now, TCP.
 
 227
 00:11:57,820 --> 00:12:02,380
-TCP，即传输控制协议，是一种解决方案
+TCP，即传输控制协议，是解决
 TCP, or Transmission Control Protocol, is a solution
 
 228
 00:12:02,379 --> 00:12:05,139
-有两个问题，其中之一是
+几个问题的办法，其中之一是
 to a couple of problems, one of which is that it
 
 229
 00:12:05,139 --> 00:12:10,269
-对于Internet上的单个服务器来说往往很方便
+对于互联网上的单个服务器来说它可以
 tends to be pretty convenient for individual servers on the internet
 
 230
 00:12:10,269 --> 00:12:12,874
-能够做多件事，对不对？
+很方便地做很多事情，对吧？
 to be able to do multiple things, right?
 
 231
@@ -1156,7 +1155,7 @@ And you can-- there's lots of things the internet can do.
 
 232
 00:12:15,250 --> 00:12:17,139
-服务器可以托管电子邮件。
+有些服务器可以托管电子邮件。
 The servers can host email.
 
 233
@@ -1171,17 +1170,17 @@ They can host chat servers, video conferencing.
 
 235
 00:12:20,649 --> 00:12:24,819
-我的意思是，这已经是越来越多的软件功能列表
+我的意思是，这已经是一个不断增长的软件功能清单，
 I mean, that's already a growing list of features of software
 
 236
 00:12:24,820 --> 00:12:28,510
-您可以在互联网上使用它，这在财务上会很好，
+你可以在互联网上使用，如果一台服务器
 that you can use on the internet, and it would be nice, financially,
 
 237
 00:12:28,509 --> 00:12:32,109
-在管理上，如果一台服务器可以一次执行多项操作。
+可以同时做很多事情，在财务上、管理上都是不错的。
 administratively, if one server could do multiple things at once.
 
 238
@@ -1191,32 +1190,32 @@ And indeed, they can.
 
 239
 00:12:33,460 --> 00:12:37,120
-因此，当计算机收到这些虚拟信封之一和该计算机时，
+因此，当一台计算机收到这些虚拟信封中的一个，而这台计算机
 So when a computer receives one of these virtual envelopes and that computer,
 
 240
 00:12:37,120 --> 00:12:41,710
-该服务器恰好支持多种服务，包括电子邮件，网络，聊天，
+这台服务器，恰好支持多种服务，电子邮件、网络、聊天
 that server, happens to support multiple services, email, web, chat,
 
 241
 00:12:41,710 --> 00:12:43,150
-视频，随便-
+视频等等
 video, whatever--
 
 242
 00:12:43,149 --> 00:12:46,609
-它会查看信封以获取其他信息。
+它会查看信封中的额外信息。
 it looks at the envelope for one additional piece of information.
 
 243
 00:12:46,610 --> 00:12:51,250
-这些信息称为端口号，端口号，
+而这一信息被称为端口号，即P-O-R-T号码，
 And that piece of information is known as a port number, P-O-R-T number,
 
 244
 00:12:51,250 --> 00:12:56,040
-这只是世界已经决定代表具体的一个小整数
+这只是一些小的整数，世界已经决定代表特定的
 which is just a small integer that the world has decided represents specific
 
 245
@@ -1231,32 +1230,32 @@ So for instance, in the world of TCP, the world
 
 247
 00:13:00,690 --> 00:13:04,020
-几年前决定，我们的计算机应该虚拟地
+全世界在几年前决定，我们的计算机应该在
 decided years ago that our computers should virtually
 
 248
 00:13:04,019 --> 00:13:07,679
-在IP地址后面的信封上写上数字80
+IP地址后面的这些信封上虚拟地写上数字80，
 write the number 80 on these envelopes after the IP address
 
 249
 00:13:07,679 --> 00:13:11,459
-表示这是对网页的请求，即443
+以表示这是一个网页的请求，或者
 to signify that this is a request for a web page, or 443
 
 250
 00:13:11,460 --> 00:13:15,510
-如果是对使用的页面的安全请求，则在信封的外面
+在信封外面写上443，如果它是一个使用称为HTTPS的网页
 on the outside of the envelope if it's a secure request for a page using
 
 251
 00:13:15,509 --> 00:13:16,799
-称为HTTPS的东西。
+的安全请求。
 something called HTTPS.
 
 252
 00:13:16,799 --> 00:13:18,142
-一点点更多。
+稍后会有更多关于这个问题的讲解。
 More on that in a bit.
 
 253
@@ -1271,27 +1270,27 @@ Email has its own unique numbers.
 
 255
 00:13:21,129 --> 00:13:22,517
-缩放具有其自己的唯一编号。
+Zoom具有其自己的唯一编号。
 Zoom has its own unique numbers.
 
 256
 00:13:22,518 --> 00:13:24,810
-还有您和我的所有其他互联网服务
+你和我每天可能使用的所有这些其他互联网
 And all of these other internet services that you and I
 
 257
 00:13:24,809 --> 00:13:27,629
-可能每天使用都有自己独特的TCP
+服务都有自己独特的TCP端口，
 might use every day have their own unique TCP
 
 258
 00:13:27,629 --> 00:13:32,219
-端口，以便公司和人员可以使一台服务器执行多项任务，
+以便公司和人们可以让一台服务器做多种事情，
 ports so that companies and people can have one server doing multiple things,
 
 259
 00:13:32,220 --> 00:13:35,220
-但是在收到这些信封之一后，服务器可以查看它
+但在收到其中一个信封时，服务器可以查看它
 but upon receipt of one of these envelopes, the server can look at it
 
 260
@@ -1309,6 +1308,7 @@ This is a request for a web page.
 这是聊天请求，或其他所有请求。
 This is a request for chat, or something else altogether.
 
+----> TODO video end
 263
 00:13:44,129 --> 00:13:48,779
 现在，值得注意的是，TCP也可以处理传递，
